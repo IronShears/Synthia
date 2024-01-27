@@ -75,29 +75,26 @@ func _on_Commandprompt_option_pressed(optionName:String):
 		intro = ""
 		$NervousTimer.wait_time = 3
 		UniversalFunctions.play_dialogue_JSON(optionName)
+	elif optionName == "AskSupervisorGood" or optionName == "AskSupervisorBad":
+		$Commandprompt.playerName = "Mystery Person"
+		UniversalFunctions.play_dialogue_JSON(optionName)
 	elif optionName == "GiveNameGood":
-		$Commandprompt.name = UniversalFunctions.firstName
+		$Commandprompt.playerName = UniversalFunctions.firstName
 		UniversalFunctions.play_dialogue_JSON(optionName)
 	elif optionName == "GiveNameBad":
-		$Commandprompt.name = "Mystery Person"
 		UniversalFunctions.play_dialogue_JSON(optionName)
 		UniversalFunctions.loneliness +=2
-		
-	elif optionName == "WhatsYourNameGood" or optionName == "WhatsYourNameBad":
-		UniversalFunctions.play_dialogue_JSON(optionName)
-		yield($Commandprompt, "done")
-		UniversalFunctions.play_dialogue_JSON("WhatsYourNameContinue")
 	elif optionName == "reactionToGenerationUgly":
 		split = null
 		UniversalFunctions.topics.append("Simulation")
 	else:
 		UniversalFunctions.play_dialogue_JSON(optionName)
 		
-	
+	var optionChecker = optionName.replace("Converge","")
 	UniversalFunctions.loneliness -=1
-	if optionName.ends_with("Good"):
+	if optionChecker.ends_with("Good"):
 		UniversalFunctions.disgust -=1
-	elif optionName.ends_with("Bad"):
+	elif optionChecker.ends_with("Bad"):
 		UniversalFunctions.disgust +=1
 	
 

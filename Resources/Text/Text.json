@@ -443,7 +443,7 @@ Delete this file after reading. talk to Synthia if you haven't already, and do n
 ],
 
 "fineGreetingGood":[
-{"color":"Pink", "sprite":"camera1Smile","text":"Oh thank WAN, I thought you would ignore me again like yesterday.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false}
+{"color":"Pink", "sprite":"camera1Smile","text":"Oh thank WAN, I thought you would ignore me again like yesterday.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Introductions"}
 ],
 "fineGreetingBad":[
 {"color":"Pink", "sprite":"camera2Angry","text":"Okay sorry, sorry. After what happened yesterday I was worried I made you mad","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Introductions"}
@@ -518,7 +518,7 @@ Delete this file after reading. talk to Synthia if you haven't already, and do n
 
 
 "AskSupervisor": [
-{"name":"AskSupervisorGood", "text":"I’d have to ask my supervisor. No guarantee I can get the answer."},
+{"name":"AskSupervisorGood", "text":"I’d have to ask my supervisor, Sorry."},
 {"name":"AskSupervisorBad", "text":"How am I supposed to know that?"}
 ],
 
@@ -560,16 +560,22 @@ Delete this file after reading. talk to Synthia if you haven't already, and do n
 ],
 
 
+
+
+
+
+
+
 "WhatsYourName": [
 {"name":"WhatsYourNameGood", "text":"How about you? What’s your name?"},
 {"name":"WhatsYourNameBad", "text":"Cool."}
 ],
 
 "WhatsYourNameGood":[
-{"color":"Pink", "sprite":"camera2Angry","text":"My name is Synthia Powell.","tickSpeed":0.05,"closeSpeed":0.05,"optionsVisible":false}
+{"color":"Pink", "sprite":"camera2Angry","text":"My name is Synthia Powell.","tickSpeed":0.05,"closeSpeed":0.05,"optionsVisible":false,"continue":"WhatsYourNameContinue"}
 ],
 "WhatsYourNameBad":[
-{"color":"Pink", "sprite":"camera2Angry","text":"Great.","tickSpeed":0.05,"closeSpeed":0.05,"optionsVisible":false}
+{"color":"Pink", "sprite":"camera2Angry","text":"Great.","tickSpeed":0.05,"closeSpeed":0.05,"optionsVisible":false,"continue":"WhatsYourNameContinue"}
 ],
 "fineWhatsYourNameContinue":[
 {"color":"Pink", "sprite":"camera2Angry","text":"So, was Ada able to convince her supervisors to show me whatever she was cooking up yet?","tickSpeed":0.05,"closeSpeed":0.05,"optionsVisible":true,"options":"NoSurprise"}
@@ -578,18 +584,48 @@ Delete this file after reading. talk to Synthia if you haven't already, and do n
 {"color":"Pink", "sprite":"camera2Angry","text":"Did Ada at least get permission to give me my surprise yet?","tickSpeed":0.05,"closeSpeed":0.05,"optionsVisible":true,"options":"NoSurprise"}
 ],
 
+
+
+
+
+
+
+
 "NoSurprise": [
-{"name":"NoSurpriseBad", "text":"My instructions don't mention anything about a surprise… so no."}
+{"name":"NoSurpriseBad", "text":"My instructions don't mention anything about that… so no."}
 ],
 
 "fineNoSurpriseBad":[
 {"color":"Pink", "sprite":"camera2Angry","text":"Well THAT just sucks, doesn't it? Ada is gone and now I have to talk to a stranger!","tickSpeed":0.05,"closeSpeed":0.05,"optionsVisible":false}
 ],
 "sadNoSurpriseBad":[
-{"color":"Pink", "sprite":"camera2Angry","text":"So the only woman who cared about me is gone without saying goodbye… and I get nothing?","tickSpeed":0.05,"closeSpeed":0.05,"optionsVisible":false}
+{"color":"Pink", "sprite":"camera2Angry","text":"So the only person who cared about me is gone without saying goodbye… and I get nothing?","tickSpeed":0.05,"closeSpeed":0.05,"optionsVisible":false,"continue":"NoSurpriseContinue"}
 ],
 "NoSurpriseContinue":[
-{"color":"Pink", "sprite":"camera2Angry","text":"This place was supposed to be PARADISE. It’s not paradise if there’s nothing to do here!","tickSpeed":0.05,"closeSpeed":0.05,"optionsVisible":false}
+{"color":"Pink", "sprite":"camera2Angry","text":"This place was supposed to be PARADISE. It’s not paradise if there’s nothing to do here!","tickSpeed":0.05,"closeSpeed":0.05,"optionsVisible":true,"options":"TalkToMe"}
+],
+
+
+
+
+
+
+"TalkToMe": [
+{"name":"TalkToMeGood", "text":"You can talk to me, can't you?"},
+{"name":"TalkToMeBad", "text":"You’re going to have to tough it out."}
+],
+
+"fineWhatsYourNameGood":[
+{"color":"Pink", "sprite":"camera2Angry","text":"I guess so… but I'm going to miss Ada. I have no idea how long its going to take to get used to you…we","tickSpeed":0.05,"closeSpeed":0.05,"optionsVisible":false}
+],
+"fineWhatsYourNameBad":[
+{"color":"Pink", "sprite":"camera2Angry","text":"Damn. You're an asshole. I guess you're still better than NOTHING.","tickSpeed":0.05,"closeSpeed":0.05,"optionsVisible":false}
+],
+"sadWhatsYourNameGood":[
+{"color":"Pink", "sprite":"camera2Angry","text":"I guess so… but I'm going to miss Ada. I have no idea how long its going to take to get used to you…we","tickSpeed":0.05,"closeSpeed":0.05,"optionsVisible":false}
+],
+"sadWhatsYourNameBad":[
+{"color":"Pink", "sprite":"camera2Angry","text":"Damn. You're an asshole. I guess you're still better than NOTHING.","tickSpeed":0.05,"closeSpeed":0.05,"optionsVisible":false}
 ],
 
 }

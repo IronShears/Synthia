@@ -53,6 +53,8 @@ func skip_input():
 		_play_dialog()
 	else:
 		emit_signal("done")
+		if dialogue[page].has("continue"):
+			UniversalFunctions.play_dialogue_JSON(dialogue[page]["continue"])
 
 func set_up():
 	first_line()
@@ -62,6 +64,7 @@ func set_up():
 	text = text.replace("{insertText}",pastDialogue[-1]["text"])
 	text = text.replace("{name}", playerName)
 	text = text.replace("{missingDialogue}", currentTree)
+	print(currentTree)
 	if dialogue[page]["color"] == "Teal":
 		text = "[color=#306082]"+text+"[/color]"
 	optionsVisible = dialogue[page]["optionsVisible"]

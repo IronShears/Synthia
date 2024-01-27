@@ -35,7 +35,7 @@ func play_dialogue_JSON(dialogue : String):
 	get_tree().get_root().get_node_or_null("/root/world/Commandprompt/Options/Option3").visible = false
 	if dialogueJson.has(dialogue) == false:
 		dialogueBox.dialogue = dialogueJson["dialogueError"]
-		dialogueBox.currentTree = "dialogueError"
+		dialogueBox.currentTree = dialogue
 		var dialoguechecker = dialogue.replace("Converge", "")
 		if disgust < 60:
 			if loneliness <60:
@@ -50,23 +50,24 @@ func play_dialogue_JSON(dialogue : String):
 				if dialogueJson.has("angry"+dialoguechecker):
 					dialogueBox.dialogue = dialogueJson["angry"+dialoguechecker]
 					dialogueBox.currentTree = "angry"+dialoguechecker
-		if dialogue.ends_with("Converge"):
-			dialoguechecker = dialoguechecker.replace("Good", "")
-			dialoguechecker = dialoguechecker.replace("Bad", "")
-			dialoguechecker = dialoguechecker.replace("Bad", "")
-			if disgust < 60:
-				if loneliness <60:
-					if dialogueJson.has("fine"+dialoguechecker):
-						dialogueBox.dialogue = dialogueJson["fine"+dialoguechecker]
-						dialogueBox.currentTree = "fine"+dialoguechecker
-				elif loneliness >= 60:
-					if dialogueJson.has("sad"+dialoguechecker):
-						dialogueBox.dialogue = dialogueJson["sad"+dialoguechecker]
-						dialogueBox.currentTree = "sad"+dialoguechecker
-			elif disgust >=60:
-					if dialogueJson.has("angry"+dialoguechecker):
-						dialogueBox.dialogue = dialogueJson["angry"+dialoguechecker]
-						dialogueBox.currentTree = "angry"+dialoguechecker
+		if dialogueBox.currentTree == "dialogueError":
+			if dialogue.ends_with("Converge"):
+				dialoguechecker = dialoguechecker.replace("Good", "")
+				dialoguechecker = dialoguechecker.replace("Bad", "")
+				dialoguechecker = dialoguechecker.replace("Bad", "")
+				if disgust < 60:
+					if loneliness <60:
+						if dialogueJson.has("fine"+dialoguechecker):
+							dialogueBox.dialogue = dialogueJson["fine"+dialoguechecker]
+							dialogueBox.currentTree = "fine"+dialoguechecker
+					elif loneliness >= 60:
+						if dialogueJson.has("sad"+dialoguechecker):
+							dialogueBox.dialogue = dialogueJson["sad"+dialoguechecker]
+							dialogueBox.currentTree = "sad"+dialoguechecker
+				elif disgust >=60:
+						if dialogueJson.has("angry"+dialoguechecker):
+							dialogueBox.dialogue = dialogueJson["angry"+dialoguechecker]
+							dialogueBox.currentTree = "angry"+dialoguechecker
 	else:
 		dialogueBox.dialogue = dialogueJson[dialogue]
 		dialogueBox.currentTree = dialogue
