@@ -1,0 +1,1152 @@
+[gd_scene load_steps=53 format=2]
+
+[ext_resource path="res://Resources/GUIpieces/PersephoneOS.tres" type="Theme" id=1]
+[ext_resource path="res://login.gd" type="Script" id=2]
+[ext_resource path="res://Keyboard.gd" type="Script" id=3]
+[ext_resource path="res://key.gd" type="Script" id=4]
+[ext_resource path="res://Resources/GUIpieces/keyboard.png" type="Texture" id=5]
+[ext_resource path="res://Resources/GUIpieces/keyboardButton.png" type="Texture" id=6]
+[ext_resource path="res://Resources/GUIpieces/spaceButton.png" type="Texture" id=7]
+[ext_resource path="res://Resources/GUIpieces/ArrowButton.png" type="Texture" id=8]
+[ext_resource path="res://ibar.gd" type="Script" id=9]
+[ext_resource path="res://Resources/GUIpieces/ShellFont.tres" type="DynamicFont" id=10]
+[ext_resource path="res://Resources/GUIpieces/commandprompt.png" type="Texture" id=11]
+[ext_resource path="res://Resources/GUIpieces/LoginBG.png" type="Texture" id=12]
+[ext_resource path="res://Resources/GUIpieces/y2klogo.png" type="Texture" id=13]
+[ext_resource path="res://Resources/GUIpieces/BoldFont.tres" type="DynamicFont" id=14]
+[ext_resource path="res://Resources/Room/defaultcolors.png" type="Texture" id=15]
+[ext_resource path="res://Resources/GUIpieces/loading.png" type="Texture" id=16]
+[ext_resource path="res://Resources/Room/bluecolors.png" type="Texture" id=17]
+[ext_resource path="res://cursor.gd" type="Script" id=18]
+[ext_resource path="res://Resources/GUIpieces/cursor.png" type="Texture" id=19]
+[ext_resource path="res://Resources/GUIpieces/cursorload.png" type="Texture" id=20]
+[ext_resource path="res://Resources/GUIpieces/cursoribar.png" type="Texture" id=21]
+[ext_resource path="res://Resources/GUIpieces/cursorLocked.png" type="Texture" id=22]
+
+[sub_resource type="Shader" id=5]
+code = "shader_type canvas_item;
+
+uniform bool screen_mode = true;
+uniform int num_colors;
+uniform float precision : hint_range(0.0, 1.0, 0.1) = 0.1;
+
+uniform sampler2D palette_in;
+uniform sampler2D palette_out;
+
+vec4 swap_color(vec4 color) {
+	float inc = 1.0 / float(num_colors); 
+	for (float i = 0.0; i < 1.0; i += inc) {
+		vec2 uv = vec2(i, 0.0);
+		vec4 color_in = texture(palette_in, uv);
+		if (distance(color, color_in) <= precision) {
+			return texture(palette_out, uv);
+		}
+	}
+	return color;
+}
+
+void fragment() {
+	vec4 color = texture(TEXTURE, UV);
+	if (screen_mode) {
+		color = texture(SCREEN_TEXTURE, SCREEN_UV);
+	}
+	COLOR = swap_color(color);
+}"
+
+[sub_resource type="ShaderMaterial" id=468]
+shader = SubResource( 5 )
+shader_param/screen_mode = false
+shader_param/num_colors = 16
+shader_param/precision = 0.0
+shader_param/palette_in = ExtResource( 15 )
+shader_param/palette_out = ExtResource( 17 )
+
+[sub_resource type="AtlasTexture" id=41]
+atlas = ExtResource( 16 )
+region = Rect2( 0, 0, 21, 21 )
+
+[sub_resource type="AtlasTexture" id=42]
+atlas = ExtResource( 16 )
+region = Rect2( 21, 0, 21, 21 )
+
+[sub_resource type="AtlasTexture" id=43]
+atlas = ExtResource( 16 )
+region = Rect2( 42, 0, 21, 21 )
+
+[sub_resource type="AtlasTexture" id=44]
+atlas = ExtResource( 16 )
+region = Rect2( 63, 0, 21, 21 )
+
+[sub_resource type="AtlasTexture" id=460]
+atlas = ExtResource( 16 )
+region = Rect2( 0, 0, 21, 21 )
+
+[sub_resource type="AtlasTexture" id=461]
+atlas = ExtResource( 16 )
+region = Rect2( 21, 0, 21, 21 )
+
+[sub_resource type="AtlasTexture" id=462]
+atlas = ExtResource( 16 )
+region = Rect2( 42, 0, 21, 21 )
+
+[sub_resource type="AtlasTexture" id=463]
+atlas = ExtResource( 16 )
+region = Rect2( 63, 0, 21, 21 )
+
+[sub_resource type="AtlasTexture" id=464]
+atlas = ExtResource( 16 )
+region = Rect2( 0, 0, 21, 21 )
+
+[sub_resource type="AtlasTexture" id=465]
+atlas = ExtResource( 16 )
+region = Rect2( 21, 0, 21, 21 )
+
+[sub_resource type="AtlasTexture" id=466]
+atlas = ExtResource( 16 )
+region = Rect2( 42, 0, 21, 21 )
+
+[sub_resource type="AtlasTexture" id=467]
+atlas = ExtResource( 16 )
+region = Rect2( 63, 0, 21, 21 )
+
+[sub_resource type="SpriteFrames" id=469]
+animations = [ {
+"frames": [ SubResource( 41 ), SubResource( 42 ), SubResource( 43 ), SubResource( 44 ), SubResource( 460 ), SubResource( 461 ), SubResource( 462 ), SubResource( 463 ), SubResource( 464 ), SubResource( 465 ), SubResource( 466 ), SubResource( 467 ) ],
+"loop": false,
+"name": "default",
+"speed": 8.0
+} ]
+
+[sub_resource type="AtlasTexture" id=47]
+atlas = ExtResource( 20 )
+region = Rect2( 0, 0, 7, 9 )
+
+[sub_resource type="AtlasTexture" id=48]
+atlas = ExtResource( 20 )
+region = Rect2( 7, 0, 7, 9 )
+
+[sub_resource type="AtlasTexture" id=49]
+atlas = ExtResource( 20 )
+region = Rect2( 0, 9, 7, 9 )
+
+[sub_resource type="AtlasTexture" id=50]
+atlas = ExtResource( 20 )
+region = Rect2( 7, 9, 7, 9 )
+
+[sub_resource type="AtlasTexture" id=51]
+atlas = ExtResource( 20 )
+region = Rect2( 0, 18, 7, 9 )
+
+[sub_resource type="AtlasTexture" id=52]
+atlas = ExtResource( 20 )
+region = Rect2( 7, 18, 7, 9 )
+
+[sub_resource type="AtlasTexture" id=53]
+atlas = ExtResource( 20 )
+region = Rect2( 0, 27, 7, 9 )
+
+[sub_resource type="AtlasTexture" id=54]
+atlas = ExtResource( 20 )
+region = Rect2( 7, 27, 7, 9 )
+
+[sub_resource type="AtlasTexture" id=55]
+atlas = ExtResource( 20 )
+region = Rect2( 0, 36, 7, 9 )
+
+[sub_resource type="AtlasTexture" id=56]
+atlas = ExtResource( 20 )
+region = Rect2( 7, 36, 7, 9 )
+
+[sub_resource type="AtlasTexture" id=57]
+atlas = ExtResource( 20 )
+region = Rect2( 0, 45, 7, 9 )
+
+[sub_resource type="AtlasTexture" id=58]
+atlas = ExtResource( 20 )
+region = Rect2( 7, 45, 7, 9 )
+
+[sub_resource type="AtlasTexture" id=59]
+atlas = ExtResource( 20 )
+region = Rect2( 0, 54, 7, 9 )
+
+[sub_resource type="AtlasTexture" id=60]
+atlas = ExtResource( 20 )
+region = Rect2( 7, 54, 7, 9 )
+
+[sub_resource type="SpriteFrames" id=470]
+animations = [ {
+"frames": [ ExtResource( 19 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 22 ) ],
+"loop": true,
+"name": "locked",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 47 ), SubResource( 48 ), SubResource( 49 ), SubResource( 50 ), SubResource( 51 ), SubResource( 52 ), SubResource( 53 ), SubResource( 54 ), SubResource( 55 ), SubResource( 56 ), SubResource( 57 ), SubResource( 58 ), SubResource( 59 ), SubResource( 60 ) ],
+"loop": true,
+"name": "loading",
+"speed": 8.0
+}, {
+"frames": [ ExtResource( 21 ) ],
+"loop": true,
+"name": "ibar",
+"speed": 5.0
+} ]
+
+[node name="world" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="ColorRect3" type="ColorRect" parent="."]
+margin_right = 320.0
+margin_bottom = 240.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="Sprite" parent="."]
+texture = ExtResource( 12 )
+centered = false
+
+[node name="SecureContainProtect" type="Label" parent="Background"]
+margin_left = 3.0
+margin_top = 184.0
+margin_right = 145.0
+margin_bottom = 232.0
+theme = ExtResource( 1 )
+custom_fonts/font = ExtResource( 14 )
+text = "SECURE. 
+CONTAIN.
+PROTECT."
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Log In" type="Label" parent="Background"]
+margin_left = 2.0
+margin_top = 74.0
+margin_right = 316.0
+margin_bottom = 88.0
+theme = ExtResource( 1 )
+custom_fonts/font = ExtResource( 14 )
+text = "LOG IN BEFORE ACCESSING SCP-8000"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Y2Klogo" type="Sprite" parent="Background"]
+position = Vector2( 76, 141 )
+texture = ExtResource( 13 )
+
+[node name="Keyboard" type="Sprite" parent="."]
+position = Vector2( 148, 95 )
+texture = ExtResource( 5 )
+centered = false
+script = ExtResource( 3 )
+
+[node name="1" type="TextureButton" parent="Keyboard"]
+margin_left = 5.0
+margin_top = 4.0
+margin_right = 30.0
+margin_bottom = 29.0
+texture_pressed = ExtResource( 6 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Keyboard/1"]
+margin_left = 2.0
+margin_top = 3.0
+margin_right = 24.0
+margin_bottom = 24.0
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.0509804, 0, 0.101961, 1 )
+text = "A"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="2" type="TextureButton" parent="Keyboard"]
+margin_left = 32.0
+margin_top = 4.0
+margin_right = 57.0
+margin_bottom = 29.0
+texture_pressed = ExtResource( 6 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Keyboard/2"]
+margin_left = 2.0
+margin_top = 3.0
+margin_right = 24.0
+margin_bottom = 24.0
+mouse_filter = 1
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.0509804, 0, 0.101961, 1 )
+text = "B"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="3" type="TextureButton" parent="Keyboard"]
+margin_left = 59.0
+margin_top = 4.0
+margin_right = 84.0
+margin_bottom = 29.0
+texture_pressed = ExtResource( 6 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Keyboard/3"]
+margin_left = 2.0
+margin_top = 3.0
+margin_right = 24.0
+margin_bottom = 24.0
+mouse_filter = 1
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.0509804, 0, 0.101961, 1 )
+text = "C"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="4" type="TextureButton" parent="Keyboard"]
+margin_left = 86.0
+margin_top = 4.0
+margin_right = 111.0
+margin_bottom = 29.0
+texture_pressed = ExtResource( 6 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Keyboard/4"]
+margin_left = 2.0
+margin_top = 3.0
+margin_right = 24.0
+margin_bottom = 24.0
+mouse_filter = 1
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.0509804, 0, 0.101961, 1 )
+text = "D"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="5" type="TextureButton" parent="Keyboard"]
+margin_left = 113.0
+margin_top = 4.0
+margin_right = 138.0
+margin_bottom = 29.0
+texture_pressed = ExtResource( 6 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Keyboard/5"]
+margin_left = 2.0
+margin_top = 3.0
+margin_right = 24.0
+margin_bottom = 24.0
+mouse_filter = 1
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.0509804, 0, 0.101961, 1 )
+text = "E"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="6" type="TextureButton" parent="Keyboard"]
+margin_left = 140.0
+margin_top = 4.0
+margin_right = 165.0
+margin_bottom = 29.0
+texture_pressed = ExtResource( 6 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Keyboard/6"]
+margin_left = 2.0
+margin_top = 3.0
+margin_right = 24.0
+margin_bottom = 24.0
+mouse_filter = 1
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.0509804, 0, 0.101961, 1 )
+text = "F"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="7" type="TextureButton" parent="Keyboard"]
+margin_left = 5.0
+margin_top = 31.0
+margin_right = 30.0
+margin_bottom = 56.0
+texture_pressed = ExtResource( 6 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Keyboard/7"]
+margin_left = 2.0
+margin_top = 3.0
+margin_right = 24.0
+margin_bottom = 24.0
+mouse_filter = 1
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.0509804, 0, 0.101961, 1 )
+text = "G"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="8" type="TextureButton" parent="Keyboard"]
+margin_left = 32.0
+margin_top = 31.0
+margin_right = 57.0
+margin_bottom = 56.0
+texture_pressed = ExtResource( 6 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Keyboard/8"]
+margin_left = 2.0
+margin_top = 3.0
+margin_right = 24.0
+margin_bottom = 24.0
+mouse_filter = 1
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.0509804, 0, 0.101961, 1 )
+text = "H"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="9" type="TextureButton" parent="Keyboard"]
+margin_left = 59.0
+margin_top = 31.0
+margin_right = 84.0
+margin_bottom = 56.0
+texture_pressed = ExtResource( 6 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Keyboard/9"]
+margin_left = 2.0
+margin_top = 3.0
+margin_right = 24.0
+margin_bottom = 24.0
+mouse_filter = 1
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.0509804, 0, 0.101961, 1 )
+text = "I"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="10" type="TextureButton" parent="Keyboard"]
+margin_left = 86.0
+margin_top = 31.0
+margin_right = 111.0
+margin_bottom = 56.0
+texture_pressed = ExtResource( 6 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Keyboard/10"]
+margin_left = 2.0
+margin_top = 3.0
+margin_right = 24.0
+margin_bottom = 24.0
+mouse_filter = 1
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.0509804, 0, 0.101961, 1 )
+text = "J"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="11" type="TextureButton" parent="Keyboard"]
+margin_left = 113.0
+margin_top = 31.0
+margin_right = 138.0
+margin_bottom = 56.0
+texture_pressed = ExtResource( 6 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Keyboard/11"]
+margin_left = 2.0
+margin_top = 3.0
+margin_right = 24.0
+margin_bottom = 24.0
+mouse_filter = 1
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.0509804, 0, 0.101961, 1 )
+text = "K"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="12" type="TextureButton" parent="Keyboard"]
+margin_left = 140.0
+margin_top = 31.0
+margin_right = 165.0
+margin_bottom = 56.0
+texture_pressed = ExtResource( 6 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Keyboard/12"]
+margin_left = 2.0
+margin_top = 3.0
+margin_right = 24.0
+margin_bottom = 24.0
+mouse_filter = 1
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.0509804, 0, 0.101961, 1 )
+text = "L"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="13" type="TextureButton" parent="Keyboard"]
+margin_left = 5.0
+margin_top = 58.0
+margin_right = 30.0
+margin_bottom = 83.0
+texture_pressed = ExtResource( 6 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Keyboard/13"]
+margin_left = 2.0
+margin_top = 3.0
+margin_right = 24.0
+margin_bottom = 24.0
+mouse_filter = 1
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.0509804, 0, 0.101961, 1 )
+text = "M"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="14" type="TextureButton" parent="Keyboard"]
+margin_left = 32.0
+margin_top = 58.0
+margin_right = 57.0
+margin_bottom = 83.0
+texture_pressed = ExtResource( 6 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Keyboard/14"]
+margin_left = 2.0
+margin_top = 3.0
+margin_right = 24.0
+margin_bottom = 24.0
+mouse_filter = 1
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.0509804, 0, 0.101961, 1 )
+text = "N"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="15" type="TextureButton" parent="Keyboard"]
+margin_left = 59.0
+margin_top = 58.0
+margin_right = 84.0
+margin_bottom = 83.0
+texture_pressed = ExtResource( 6 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Keyboard/15"]
+margin_left = 2.0
+margin_top = 3.0
+margin_right = 24.0
+margin_bottom = 24.0
+mouse_filter = 1
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.0509804, 0, 0.101961, 1 )
+text = "O"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="16" type="TextureButton" parent="Keyboard"]
+margin_left = 86.0
+margin_top = 58.0
+margin_right = 111.0
+margin_bottom = 83.0
+texture_pressed = ExtResource( 6 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Keyboard/16"]
+margin_left = 2.0
+margin_top = 3.0
+margin_right = 24.0
+margin_bottom = 24.0
+mouse_filter = 1
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.0509804, 0, 0.101961, 1 )
+text = "P"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="17" type="TextureButton" parent="Keyboard"]
+margin_left = 113.0
+margin_top = 58.0
+margin_right = 138.0
+margin_bottom = 83.0
+texture_pressed = ExtResource( 6 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Keyboard/17"]
+margin_left = 2.0
+margin_top = 3.0
+margin_right = 24.0
+margin_bottom = 24.0
+mouse_filter = 1
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.0509804, 0, 0.101961, 1 )
+text = "Q"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="18" type="TextureButton" parent="Keyboard"]
+margin_left = 140.0
+margin_top = 58.0
+margin_right = 165.0
+margin_bottom = 83.0
+texture_pressed = ExtResource( 6 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Keyboard/18"]
+margin_left = 2.0
+margin_top = 3.0
+margin_right = 24.0
+margin_bottom = 24.0
+mouse_filter = 1
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.0509804, 0, 0.101961, 1 )
+text = "R"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="19" type="TextureButton" parent="Keyboard"]
+margin_left = 5.0
+margin_top = 85.0
+margin_right = 30.0
+margin_bottom = 110.0
+texture_pressed = ExtResource( 6 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Keyboard/19"]
+margin_left = 2.0
+margin_top = 3.0
+margin_right = 24.0
+margin_bottom = 24.0
+mouse_filter = 1
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.0509804, 0, 0.101961, 1 )
+text = "S"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="20" type="TextureButton" parent="Keyboard"]
+margin_left = 32.0
+margin_top = 85.0
+margin_right = 57.0
+margin_bottom = 110.0
+texture_pressed = ExtResource( 6 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Keyboard/20"]
+margin_left = 2.0
+margin_top = 3.0
+margin_right = 24.0
+margin_bottom = 24.0
+mouse_filter = 1
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.0509804, 0, 0.101961, 1 )
+text = "T"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="21" type="TextureButton" parent="Keyboard"]
+margin_left = 59.0
+margin_top = 85.0
+margin_right = 84.0
+margin_bottom = 110.0
+texture_pressed = ExtResource( 6 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Keyboard/21"]
+margin_left = 2.0
+margin_top = 3.0
+margin_right = 24.0
+margin_bottom = 24.0
+mouse_filter = 1
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.0509804, 0, 0.101961, 1 )
+text = "U"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="22" type="TextureButton" parent="Keyboard"]
+margin_left = 86.0
+margin_top = 85.0
+margin_right = 111.0
+margin_bottom = 110.0
+texture_pressed = ExtResource( 6 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Keyboard/22"]
+margin_left = 2.0
+margin_top = 3.0
+margin_right = 24.0
+margin_bottom = 24.0
+mouse_filter = 1
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.0509804, 0, 0.101961, 1 )
+text = "V"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="23" type="TextureButton" parent="Keyboard"]
+margin_left = 113.0
+margin_top = 85.0
+margin_right = 138.0
+margin_bottom = 110.0
+texture_pressed = ExtResource( 6 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Keyboard/23"]
+margin_left = 2.0
+margin_top = 3.0
+margin_right = 24.0
+margin_bottom = 24.0
+mouse_filter = 1
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.0509804, 0, 0.101961, 1 )
+text = "W"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="24" type="TextureButton" parent="Keyboard"]
+margin_left = 140.0
+margin_top = 85.0
+margin_right = 165.0
+margin_bottom = 110.0
+texture_pressed = ExtResource( 6 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Keyboard/24"]
+margin_left = 2.0
+margin_top = 3.0
+margin_right = 24.0
+margin_bottom = 24.0
+mouse_filter = 1
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.0509804, 0, 0.101961, 1 )
+text = "X"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="25" type="TextureButton" parent="Keyboard"]
+margin_left = 5.0
+margin_top = 112.0
+margin_right = 30.0
+margin_bottom = 137.0
+texture_pressed = ExtResource( 6 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Keyboard/25"]
+margin_left = 2.0
+margin_top = 3.0
+margin_right = 24.0
+margin_bottom = 24.0
+mouse_filter = 1
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.0509804, 0, 0.101961, 1 )
+text = "Y"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="26" type="TextureButton" parent="Keyboard"]
+margin_left = 32.0
+margin_top = 112.0
+margin_right = 57.0
+margin_bottom = 137.0
+texture_pressed = ExtResource( 6 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Keyboard/26"]
+margin_left = 2.0
+margin_top = 3.0
+margin_right = 24.0
+margin_bottom = 24.0
+mouse_filter = 1
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.0509804, 0, 0.101961, 1 )
+text = "Z"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Backspace" type="TextureButton" parent="Keyboard"]
+margin_left = 113.0
+margin_top = 112.0
+margin_right = 138.0
+margin_bottom = 137.0
+texture_pressed = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="Keyboard/Backspace"]
+position = Vector2( 1, 24 )
+rotation = -1.57079
+texture = ExtResource( 8 )
+centered = false
+flip_v = true
+
+[node name="case" type="TextureButton" parent="Keyboard"]
+margin_left = 140.0
+margin_top = 112.0
+margin_right = 165.0
+margin_bottom = 137.0
+texture_pressed = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ArrowButton" type="Sprite" parent="Keyboard/case"]
+position = Vector2( 13, 13 )
+texture = ExtResource( 8 )
+
+[node name="Space" type="TextureButton" parent="Keyboard"]
+margin_left = 59.0
+margin_top = 112.0
+margin_right = 111.0
+margin_bottom = 137.0
+texture_pressed = ExtResource( 7 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Keyboard/Space"]
+margin_left = 2.0
+margin_top = 3.0
+margin_right = 50.0
+margin_bottom = 24.0
+custom_colors/font_color = Color( 0.0509804, 0, 0.101961, 1 )
+text = " "
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Cmd" type="Sprite" parent="."]
+position = Vector2( 159, -32 )
+texture = ExtResource( 11 )
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+margin_left = 2.0
+margin_top = -8.0
+margin_right = 318.0
+margin_bottom = 3.0
+color = Color( 0.611765, 0.682353, 0.690196, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = 2.0
+margin_top = -9.0
+margin_right = 318.0
+margin_bottom = 2.0
+color = Color( 0.517647, 0.541176, 0.592157, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="RichTextLabel" parent="."]
+margin_left = 7.0
+margin_top = 6.0
+margin_right = 313.0
+margin_bottom = 63.0
+custom_colors/default_color = Color( 0.188235, 0.376471, 0.509804, 1 )
+custom_fonts/normal_font = ExtResource( 10 )
+text = "First Name:|"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SubmitName" type="Button" parent="."]
+margin_left = 233.0
+margin_top = 49.0
+margin_right = 313.0
+margin_bottom = 64.0
+focus_mode = 0
+theme = ExtResource( 1 )
+custom_fonts/font = ExtResource( 10 )
+text = " "
+script = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Blinker" type="Timer" parent="."]
+wait_time = 0.5
+autostart = true
+
+[node name="loading" type="ColorRect" parent="."]
+visible = false
+self_modulate = Color( 1, 1, 1, 0.556863 )
+margin_left = -1.0
+margin_right = 320.0
+margin_bottom = 240.0
+color = Color( 0.0509804, 0, 0.101961, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="loading" type="AnimatedSprite" parent="loading"]
+material = SubResource( 468 )
+position = Vector2( 148, 109 )
+frames = SubResource( 469 )
+centered = false
+
+[node name="SLURTIMEOUT" type="ColorRect" parent="."]
+visible = false
+margin_right = 320.0
+margin_bottom = 240.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="SLURTIMEOUT"]
+margin_left = 15.0
+margin_right = 306.0
+margin_bottom = 240.0
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "If you still don't know why you got this error after I tell you it has to do with the name you chose, please comment the name you were trying to name yourself and I will add an exception.
+
+Refresh and try a different name for now."
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="cursor" type="AnimatedSprite" parent="."]
+position = Vector2( 226, 144 )
+z_index = 6
+frames = SubResource( 470 )
+playing = true
+centered = false
+script = ExtResource( 18 )
+
+[node name="SLURTIMER" type="Timer" parent="."]
+wait_time = 10.0
+
+[connection signal="key_entered" from="Keyboard" to="." method="_on_Keyboard_key_entered"]
+[connection signal="pressed" from="Keyboard/1" to="Keyboard/1" method="_on_key_pressed"]
+[connection signal="pressed_data" from="Keyboard/1" to="Keyboard" method="_on_pressed_data"]
+[connection signal="pressed" from="Keyboard/2" to="Keyboard/2" method="_on_key_pressed"]
+[connection signal="pressed_data" from="Keyboard/2" to="Keyboard" method="_on_pressed_data"]
+[connection signal="pressed" from="Keyboard/3" to="Keyboard/3" method="_on_key_pressed"]
+[connection signal="pressed_data" from="Keyboard/3" to="Keyboard" method="_on_pressed_data"]
+[connection signal="pressed" from="Keyboard/4" to="Keyboard/4" method="_on_key_pressed"]
+[connection signal="pressed_data" from="Keyboard/4" to="Keyboard" method="_on_pressed_data"]
+[connection signal="pressed" from="Keyboard/5" to="Keyboard/5" method="_on_key_pressed"]
+[connection signal="pressed_data" from="Keyboard/5" to="Keyboard" method="_on_pressed_data"]
+[connection signal="pressed" from="Keyboard/6" to="Keyboard/6" method="_on_key_pressed"]
+[connection signal="pressed_data" from="Keyboard/6" to="Keyboard" method="_on_pressed_data"]
+[connection signal="pressed" from="Keyboard/7" to="Keyboard/7" method="_on_key_pressed"]
+[connection signal="pressed_data" from="Keyboard/7" to="Keyboard" method="_on_pressed_data"]
+[connection signal="pressed" from="Keyboard/8" to="Keyboard/8" method="_on_key_pressed"]
+[connection signal="pressed_data" from="Keyboard/8" to="Keyboard" method="_on_pressed_data"]
+[connection signal="pressed" from="Keyboard/9" to="Keyboard/9" method="_on_key_pressed"]
+[connection signal="pressed_data" from="Keyboard/9" to="Keyboard" method="_on_pressed_data"]
+[connection signal="pressed" from="Keyboard/10" to="Keyboard/10" method="_on_key_pressed"]
+[connection signal="pressed_data" from="Keyboard/10" to="Keyboard" method="_on_pressed_data"]
+[connection signal="pressed" from="Keyboard/11" to="Keyboard/11" method="_on_key_pressed"]
+[connection signal="pressed_data" from="Keyboard/11" to="Keyboard" method="_on_pressed_data"]
+[connection signal="pressed" from="Keyboard/12" to="Keyboard/12" method="_on_key_pressed"]
+[connection signal="pressed_data" from="Keyboard/12" to="Keyboard" method="_on_pressed_data"]
+[connection signal="pressed" from="Keyboard/13" to="Keyboard/13" method="_on_key_pressed"]
+[connection signal="pressed_data" from="Keyboard/13" to="Keyboard" method="_on_pressed_data"]
+[connection signal="pressed" from="Keyboard/14" to="Keyboard/14" method="_on_key_pressed"]
+[connection signal="pressed_data" from="Keyboard/14" to="Keyboard" method="_on_pressed_data"]
+[connection signal="pressed" from="Keyboard/15" to="Keyboard/15" method="_on_key_pressed"]
+[connection signal="pressed_data" from="Keyboard/15" to="Keyboard" method="_on_pressed_data"]
+[connection signal="pressed" from="Keyboard/16" to="Keyboard/16" method="_on_key_pressed"]
+[connection signal="pressed_data" from="Keyboard/16" to="Keyboard" method="_on_pressed_data"]
+[connection signal="pressed" from="Keyboard/17" to="Keyboard/17" method="_on_key_pressed"]
+[connection signal="pressed_data" from="Keyboard/17" to="Keyboard" method="_on_pressed_data"]
+[connection signal="pressed" from="Keyboard/18" to="Keyboard/18" method="_on_key_pressed"]
+[connection signal="pressed_data" from="Keyboard/18" to="Keyboard" method="_on_pressed_data"]
+[connection signal="pressed" from="Keyboard/19" to="Keyboard/19" method="_on_key_pressed"]
+[connection signal="pressed_data" from="Keyboard/19" to="Keyboard" method="_on_pressed_data"]
+[connection signal="pressed" from="Keyboard/20" to="Keyboard/20" method="_on_key_pressed"]
+[connection signal="pressed_data" from="Keyboard/20" to="Keyboard" method="_on_pressed_data"]
+[connection signal="pressed" from="Keyboard/21" to="Keyboard/21" method="_on_key_pressed"]
+[connection signal="pressed_data" from="Keyboard/21" to="Keyboard" method="_on_pressed_data"]
+[connection signal="pressed" from="Keyboard/22" to="Keyboard/22" method="_on_key_pressed"]
+[connection signal="pressed_data" from="Keyboard/22" to="Keyboard" method="_on_pressed_data"]
+[connection signal="pressed" from="Keyboard/23" to="Keyboard/23" method="_on_key_pressed"]
+[connection signal="pressed_data" from="Keyboard/23" to="Keyboard" method="_on_pressed_data"]
+[connection signal="pressed" from="Keyboard/24" to="Keyboard/24" method="_on_key_pressed"]
+[connection signal="pressed_data" from="Keyboard/24" to="Keyboard" method="_on_pressed_data"]
+[connection signal="pressed" from="Keyboard/25" to="Keyboard/25" method="_on_key_pressed"]
+[connection signal="pressed_data" from="Keyboard/25" to="Keyboard" method="_on_pressed_data"]
+[connection signal="pressed" from="Keyboard/26" to="Keyboard/26" method="_on_key_pressed"]
+[connection signal="pressed_data" from="Keyboard/26" to="Keyboard" method="_on_pressed_data"]
+[connection signal="pressed" from="Keyboard/Backspace" to="." method="_on_Backspace_pressed"]
+[connection signal="pressed" from="Keyboard/case" to="Keyboard" method="_on_case_pressed"]
+[connection signal="pressed" from="Keyboard/Space" to="Keyboard/Space" method="_on_key_pressed"]
+[connection signal="pressed_data" from="Keyboard/Space" to="Keyboard" method="_on_pressed_data"]
+[connection signal="mouse_entered" from="SubmitName" to="SubmitName" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="SubmitName" to="SubmitName" method="_on_mouse_exited"]
+[connection signal="pressed" from="SubmitName" to="." method="_on_SubmitName_pressed"]
+[connection signal="timeout" from="Blinker" to="." method="_on_Blinker_timeout"]
+[connection signal="timeout" from="SLURTIMER" to="." method="_on_SLURTIMER_timeout"]

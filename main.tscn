@@ -1,0 +1,3517 @@
+[gd_scene load_steps=416 format=2]
+
+[ext_resource path="res://Resources/GUIpieces/bg.png" type="Texture" id=1]
+[ext_resource path="res://Resources/Room/room.png" type="Texture" id=2]
+[ext_resource path="res://Resources/GUIpieces/taskbar.png" type="Texture" id=3]
+[ext_resource path="res://Resources/GUIpieces/virtualhell.png" type="Texture" id=4]
+[ext_resource path="res://Commandprompt.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Resources/GUIpieces/buttonDown.png" type="Texture" id=6]
+[ext_resource path="res://Resources/GUIpieces/buttonUp.png" type="Texture" id=7]
+[ext_resource path="res://Resources/Sprites/Smile.png" type="Texture" id=8]
+[ext_resource path="res://main.gd" type="Script" id=9]
+[ext_resource path="res://Resources/GUIpieces/taskButtonUp.png" type="Texture" id=10]
+[ext_resource path="res://Resources/GUIpieces/taskButtonDown.png" type="Texture" id=11]
+[ext_resource path="res://Resources/GUIpieces/PersephoneOS.tres" type="Theme" id=12]
+[ext_resource path="res://Resources/GUIpieces/file.png" type="Texture" id=13]
+[ext_resource path="res://Resources/GUIpieces/images/cynthia.png" type="Texture" id=14]
+[ext_resource path="res://Resources/GUIpieces/IDE.png" type="Texture" id=15]
+[ext_resource path="res://Resources/Room/roomFrame.png" type="Texture" id=16]
+[ext_resource path="res://Resources/GUIpieces/loading.png" type="Texture" id=17]
+[ext_resource path="res://Resources/GUIpieces/persephonebutton.png" type="Texture" id=18]
+[ext_resource path="res://Resources/GUIpieces/ShellFont.tres" type="DynamicFont" id=19]
+[ext_resource path="res://Resources/GUIpieces/cursor.png" type="Texture" id=20]
+[ext_resource path="res://Resources/GUIpieces/cursorload.png" type="Texture" id=21]
+[ext_resource path="res://Resources/GUIpieces/cursoribar.png" type="Texture" id=22]
+[ext_resource path="res://Resources/GUIpieces/cursorLocked.png" type="Texture" id=23]
+[ext_resource path="res://cursor.gd" type="Script" id=24]
+[ext_resource path="res://Resources/GUIpieces/warning.png" type="Texture" id=25]
+[ext_resource path="res://popup.gd" type="Script" id=26]
+[ext_resource path="res://Resources/GUIpieces/BoldFont.tres" type="DynamicFont" id=27]
+[ext_resource path="res://Resources/GUIpieces/blow_a_wishicon.png" type="Texture" id=28]
+[ext_resource path="res://Resources/GUIpieces/paradiseIcon.png" type="Texture" id=29]
+[ext_resource path="res://Resources/GUIpieces/recyclingBin.png" type="Texture" id=30]
+[ext_resource path="res://Resources/GUIpieces/scpfileIcon.png" type="Texture" id=31]
+[ext_resource path="res://RecyclingBin.gd" type="Script" id=32]
+[ext_resource path="res://Resources/GUIpieces/ParadiseTaskbar.png" type="Texture" id=33]
+[ext_resource path="res://Resources/GUIpieces/WishTaskbar.png" type="Texture" id=34]
+[ext_resource path="res://Resources/GUIpieces/TaskbarSpacer.png" type="Texture" id=35]
+[ext_resource path="res://Resources/GUIpieces/FileTaskbar.png" type="Texture" id=36]
+[ext_resource path="res://IDE.gd" type="Script" id=37]
+[ext_resource path="res://Resources/GUIpieces/longButton.png" type="Texture" id=38]
+[ext_resource path="res://Resources/Room/coolroomFrame.png" type="Texture" id=39]
+[ext_resource path="res://Resources/Room/defaultCube.png" type="Texture" id=40]
+[ext_resource path="res://Resources/Room/cuteRoomFrame.png" type="Texture" id=41]
+[ext_resource path="res://Resources/Room/defaultcolors.png" type="Texture" id=42]
+[ext_resource path="res://Resources/Room/cozyroomFrame.png" type="Texture" id=43]
+[ext_resource path="res://Resources/Room/defaultRoomColors.png" type="Texture" id=44]
+[ext_resource path="res://Resources/Room/coolRoom.png" type="Texture" id=45]
+[ext_resource path="res://Resources/Room/CozyRoom.png" type="Texture" id=46]
+[ext_resource path="res://Resources/GUIpieces/generatebutton.png" type="Texture" id=47]
+[ext_resource path="res://Resources/Room/CoolChairFrame.png" type="Texture" id=48]
+[ext_resource path="res://Resources/Room/CoolChairFinished.png" type="Texture" id=49]
+[ext_resource path="res://Resources/Room/CuteRoomModel.png" type="Texture" id=50]
+[ext_resource path="res://Resources/Room/coolRoomModel.png" type="Texture" id=51]
+[ext_resource path="res://Resources/Room/screenoccluder.png" type="Texture" id=52]
+[ext_resource path="res://Resources/Room/CozyRoomModel.png" type="Texture" id=53]
+[ext_resource path="res://Resources/Room/CuteRoom.png" type="Texture" id=54]
+[ext_resource path="res://Resources/Room/bluecolors.png" type="Texture" id=55]
+[ext_resource path="res://Resources/Sprites/DefaultSynthiaColors.png" type="Texture" id=56]
+[ext_resource path="res://Resources/Sprites/BlueSynthiaColors.png" type="Texture" id=57]
+[ext_resource path="res://Resources/Room/BlueRoomColors.png" type="Texture" id=58]
+[ext_resource path="res://Resources/GUIpieces/FileSystem.png" type="Texture" id=59]
+[ext_resource path="res://Resources/GUIpieces/folderIcon.png" type="Texture" id=60]
+[ext_resource path="res://Resources/GUIpieces/imageFile.png" type="Texture" id=61]
+[ext_resource path="res://FileSystem.gd" type="Script" id=62]
+[ext_resource path="res://Resources/GUIpieces/textFile.png" type="Texture" id=63]
+[ext_resource path="res://File.gd" type="Script" id=64]
+[ext_resource path="res://Resources/GUIpieces/FileOrganizer.png" type="Texture" id=65]
+[ext_resource path="res://Resources/GUIpieces/fileSystemIcon.png" type="Texture" id=66]
+[ext_resource path="res://Resources/GUIpieces/FileViewer.png" type="Texture" id=67]
+[ext_resource path="res://Resources/GUIpieces/fileImages.tres" type="SpriteFrames" id=68]
+[ext_resource path="res://Resources/GUIpieces/FileViewerScroll.png" type="Texture" id=69]
+
+[sub_resource type="SpriteFrames" id=468]
+animations = [ {
+"frames": [ ExtResource( 63 ) ],
+"loop": true,
+"name": "text",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 61 ) ],
+"loop": true,
+"name": "image",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 60 ) ],
+"loop": true,
+"name": "folder",
+"speed": 5.0
+} ]
+
+[sub_resource type="Shader" id=471]
+code = "shader_type canvas_item;
+
+uniform bool screen_mode = true;
+uniform int num_colors;
+uniform float precision : hint_range(0.0, 1.0, 0.1) = 0.1;
+
+uniform sampler2D palette_in;
+uniform sampler2D palette_out;
+
+vec4 swap_color(vec4 color) {
+	float inc = 1.0 / float(num_colors); 
+	for (float i = 0.0; i < 1.0; i += inc) {
+		vec2 uv = vec2(i, 0.0);
+		vec4 color_in = texture(palette_in, uv);
+		if (distance(color, color_in) <= precision) {
+			return texture(palette_out, uv);
+		}
+	}
+	return color;
+}
+
+void fragment() {
+	vec4 color = texture(TEXTURE, UV);
+	if (screen_mode) {
+		color = texture(SCREEN_TEXTURE, SCREEN_UV);
+	}
+	COLOR = swap_color(color);
+}"
+
+[sub_resource type="ShaderMaterial" id=6]
+shader = SubResource( 471 )
+shader_param/screen_mode = false
+shader_param/num_colors = 16
+shader_param/precision = 0.0
+shader_param/palette_in = ExtResource( 42 )
+shader_param/palette_out = ExtResource( 55 )
+
+[sub_resource type="AtlasTexture" id=93]
+atlas = ExtResource( 40 )
+region = Rect2( 0, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=94]
+atlas = ExtResource( 40 )
+region = Rect2( 128, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=95]
+atlas = ExtResource( 40 )
+region = Rect2( 256, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=96]
+atlas = ExtResource( 40 )
+region = Rect2( 384, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=97]
+atlas = ExtResource( 40 )
+region = Rect2( 512, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=98]
+atlas = ExtResource( 40 )
+region = Rect2( 0, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=99]
+atlas = ExtResource( 40 )
+region = Rect2( 128, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=100]
+atlas = ExtResource( 40 )
+region = Rect2( 256, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=101]
+atlas = ExtResource( 40 )
+region = Rect2( 384, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=102]
+atlas = ExtResource( 40 )
+region = Rect2( 512, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=103]
+atlas = ExtResource( 40 )
+region = Rect2( 0, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=104]
+atlas = ExtResource( 40 )
+region = Rect2( 128, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=105]
+atlas = ExtResource( 40 )
+region = Rect2( 256, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=106]
+atlas = ExtResource( 40 )
+region = Rect2( 384, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=107]
+atlas = ExtResource( 40 )
+region = Rect2( 512, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=108]
+atlas = ExtResource( 40 )
+region = Rect2( 0, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=109]
+atlas = ExtResource( 40 )
+region = Rect2( 128, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=110]
+atlas = ExtResource( 40 )
+region = Rect2( 256, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=111]
+atlas = ExtResource( 40 )
+region = Rect2( 384, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=112]
+atlas = ExtResource( 40 )
+region = Rect2( 512, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=113]
+atlas = ExtResource( 40 )
+region = Rect2( 0, 512, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=114]
+atlas = ExtResource( 40 )
+region = Rect2( 128, 512, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=115]
+atlas = ExtResource( 40 )
+region = Rect2( 256, 512, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=116]
+atlas = ExtResource( 40 )
+region = Rect2( 384, 512, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=117]
+atlas = ExtResource( 40 )
+region = Rect2( 512, 512, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=118]
+atlas = ExtResource( 40 )
+region = Rect2( 0, 640, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=119]
+atlas = ExtResource( 40 )
+region = Rect2( 128, 640, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=120]
+atlas = ExtResource( 40 )
+region = Rect2( 256, 640, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=121]
+atlas = ExtResource( 40 )
+region = Rect2( 384, 640, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=122]
+atlas = ExtResource( 40 )
+region = Rect2( 512, 640, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=63]
+atlas = ExtResource( 16 )
+region = Rect2( 0, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=64]
+atlas = ExtResource( 16 )
+region = Rect2( 128, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=65]
+atlas = ExtResource( 16 )
+region = Rect2( 256, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=66]
+atlas = ExtResource( 16 )
+region = Rect2( 384, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=67]
+atlas = ExtResource( 16 )
+region = Rect2( 512, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=68]
+atlas = ExtResource( 16 )
+region = Rect2( 0, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=69]
+atlas = ExtResource( 16 )
+region = Rect2( 128, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=70]
+atlas = ExtResource( 16 )
+region = Rect2( 256, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=71]
+atlas = ExtResource( 16 )
+region = Rect2( 384, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=72]
+atlas = ExtResource( 16 )
+region = Rect2( 512, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=73]
+atlas = ExtResource( 16 )
+region = Rect2( 0, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=74]
+atlas = ExtResource( 16 )
+region = Rect2( 128, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=75]
+atlas = ExtResource( 16 )
+region = Rect2( 256, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=76]
+atlas = ExtResource( 16 )
+region = Rect2( 384, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=77]
+atlas = ExtResource( 16 )
+region = Rect2( 512, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=78]
+atlas = ExtResource( 16 )
+region = Rect2( 0, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=79]
+atlas = ExtResource( 16 )
+region = Rect2( 128, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=80]
+atlas = ExtResource( 16 )
+region = Rect2( 256, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=81]
+atlas = ExtResource( 16 )
+region = Rect2( 384, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=82]
+atlas = ExtResource( 16 )
+region = Rect2( 512, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=83]
+atlas = ExtResource( 16 )
+region = Rect2( 0, 512, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=84]
+atlas = ExtResource( 16 )
+region = Rect2( 128, 512, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=85]
+atlas = ExtResource( 16 )
+region = Rect2( 256, 512, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=86]
+atlas = ExtResource( 16 )
+region = Rect2( 384, 512, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=87]
+atlas = ExtResource( 16 )
+region = Rect2( 512, 512, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=88]
+atlas = ExtResource( 16 )
+region = Rect2( 0, 640, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=89]
+atlas = ExtResource( 16 )
+region = Rect2( 128, 640, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=90]
+atlas = ExtResource( 16 )
+region = Rect2( 256, 640, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=91]
+atlas = ExtResource( 16 )
+region = Rect2( 384, 640, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=92]
+atlas = ExtResource( 16 )
+region = Rect2( 512, 640, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=246]
+atlas = ExtResource( 39 )
+region = Rect2( 0, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=247]
+atlas = ExtResource( 39 )
+region = Rect2( 128, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=248]
+atlas = ExtResource( 39 )
+region = Rect2( 256, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=249]
+atlas = ExtResource( 39 )
+region = Rect2( 384, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=250]
+atlas = ExtResource( 39 )
+region = Rect2( 512, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=251]
+atlas = ExtResource( 39 )
+region = Rect2( 0, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=252]
+atlas = ExtResource( 39 )
+region = Rect2( 128, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=253]
+atlas = ExtResource( 39 )
+region = Rect2( 256, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=254]
+atlas = ExtResource( 39 )
+region = Rect2( 384, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=255]
+atlas = ExtResource( 39 )
+region = Rect2( 512, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=256]
+atlas = ExtResource( 39 )
+region = Rect2( 0, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=257]
+atlas = ExtResource( 39 )
+region = Rect2( 128, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=258]
+atlas = ExtResource( 39 )
+region = Rect2( 256, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=259]
+atlas = ExtResource( 39 )
+region = Rect2( 384, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=260]
+atlas = ExtResource( 39 )
+region = Rect2( 512, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=261]
+atlas = ExtResource( 39 )
+region = Rect2( 0, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=262]
+atlas = ExtResource( 39 )
+region = Rect2( 128, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=263]
+atlas = ExtResource( 39 )
+region = Rect2( 256, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=264]
+atlas = ExtResource( 39 )
+region = Rect2( 384, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=265]
+atlas = ExtResource( 39 )
+region = Rect2( 512, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=266]
+atlas = ExtResource( 39 )
+region = Rect2( 0, 512, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=267]
+atlas = ExtResource( 39 )
+region = Rect2( 128, 512, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=268]
+atlas = ExtResource( 39 )
+region = Rect2( 256, 512, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=269]
+atlas = ExtResource( 39 )
+region = Rect2( 384, 512, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=270]
+atlas = ExtResource( 39 )
+region = Rect2( 512, 512, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=271]
+atlas = ExtResource( 39 )
+region = Rect2( 0, 640, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=272]
+atlas = ExtResource( 39 )
+region = Rect2( 128, 640, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=273]
+atlas = ExtResource( 39 )
+region = Rect2( 256, 640, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=274]
+atlas = ExtResource( 39 )
+region = Rect2( 384, 640, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=275]
+atlas = ExtResource( 39 )
+region = Rect2( 512, 640, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=276]
+atlas = ExtResource( 43 )
+region = Rect2( 0, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=277]
+atlas = ExtResource( 43 )
+region = Rect2( 128, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=278]
+atlas = ExtResource( 43 )
+region = Rect2( 256, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=279]
+atlas = ExtResource( 43 )
+region = Rect2( 384, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=280]
+atlas = ExtResource( 43 )
+region = Rect2( 512, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=281]
+atlas = ExtResource( 43 )
+region = Rect2( 0, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=282]
+atlas = ExtResource( 43 )
+region = Rect2( 128, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=283]
+atlas = ExtResource( 43 )
+region = Rect2( 256, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=284]
+atlas = ExtResource( 43 )
+region = Rect2( 384, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=285]
+atlas = ExtResource( 43 )
+region = Rect2( 512, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=286]
+atlas = ExtResource( 43 )
+region = Rect2( 0, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=287]
+atlas = ExtResource( 43 )
+region = Rect2( 128, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=288]
+atlas = ExtResource( 43 )
+region = Rect2( 256, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=289]
+atlas = ExtResource( 43 )
+region = Rect2( 384, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=290]
+atlas = ExtResource( 43 )
+region = Rect2( 512, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=291]
+atlas = ExtResource( 43 )
+region = Rect2( 0, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=292]
+atlas = ExtResource( 43 )
+region = Rect2( 128, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=293]
+atlas = ExtResource( 43 )
+region = Rect2( 256, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=294]
+atlas = ExtResource( 43 )
+region = Rect2( 384, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=295]
+atlas = ExtResource( 43 )
+region = Rect2( 512, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=296]
+atlas = ExtResource( 43 )
+region = Rect2( 0, 512, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=297]
+atlas = ExtResource( 43 )
+region = Rect2( 128, 512, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=298]
+atlas = ExtResource( 43 )
+region = Rect2( 256, 512, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=299]
+atlas = ExtResource( 43 )
+region = Rect2( 384, 512, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=300]
+atlas = ExtResource( 43 )
+region = Rect2( 512, 512, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=301]
+atlas = ExtResource( 43 )
+region = Rect2( 0, 640, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=302]
+atlas = ExtResource( 43 )
+region = Rect2( 128, 640, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=303]
+atlas = ExtResource( 43 )
+region = Rect2( 256, 640, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=304]
+atlas = ExtResource( 43 )
+region = Rect2( 384, 640, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=305]
+atlas = ExtResource( 43 )
+region = Rect2( 512, 640, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=216]
+atlas = ExtResource( 48 )
+region = Rect2( 0, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=217]
+atlas = ExtResource( 48 )
+region = Rect2( 128, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=218]
+atlas = ExtResource( 48 )
+region = Rect2( 256, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=219]
+atlas = ExtResource( 48 )
+region = Rect2( 384, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=220]
+atlas = ExtResource( 48 )
+region = Rect2( 512, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=221]
+atlas = ExtResource( 48 )
+region = Rect2( 0, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=222]
+atlas = ExtResource( 48 )
+region = Rect2( 128, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=223]
+atlas = ExtResource( 48 )
+region = Rect2( 256, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=224]
+atlas = ExtResource( 48 )
+region = Rect2( 384, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=225]
+atlas = ExtResource( 48 )
+region = Rect2( 512, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=226]
+atlas = ExtResource( 48 )
+region = Rect2( 0, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=227]
+atlas = ExtResource( 48 )
+region = Rect2( 128, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=228]
+atlas = ExtResource( 48 )
+region = Rect2( 256, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=229]
+atlas = ExtResource( 48 )
+region = Rect2( 384, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=230]
+atlas = ExtResource( 48 )
+region = Rect2( 512, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=231]
+atlas = ExtResource( 48 )
+region = Rect2( 0, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=232]
+atlas = ExtResource( 48 )
+region = Rect2( 128, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=233]
+atlas = ExtResource( 48 )
+region = Rect2( 256, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=234]
+atlas = ExtResource( 48 )
+region = Rect2( 384, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=235]
+atlas = ExtResource( 48 )
+region = Rect2( 512, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=236]
+atlas = ExtResource( 48 )
+region = Rect2( 0, 512, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=237]
+atlas = ExtResource( 48 )
+region = Rect2( 128, 512, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=238]
+atlas = ExtResource( 48 )
+region = Rect2( 256, 512, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=239]
+atlas = ExtResource( 48 )
+region = Rect2( 384, 512, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=240]
+atlas = ExtResource( 48 )
+region = Rect2( 512, 512, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=241]
+atlas = ExtResource( 48 )
+region = Rect2( 0, 640, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=242]
+atlas = ExtResource( 48 )
+region = Rect2( 128, 640, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=243]
+atlas = ExtResource( 48 )
+region = Rect2( 256, 640, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=244]
+atlas = ExtResource( 48 )
+region = Rect2( 384, 640, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=245]
+atlas = ExtResource( 48 )
+region = Rect2( 512, 640, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=306]
+atlas = ExtResource( 41 )
+region = Rect2( 0, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=307]
+atlas = ExtResource( 41 )
+region = Rect2( 128, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=308]
+atlas = ExtResource( 41 )
+region = Rect2( 256, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=309]
+atlas = ExtResource( 41 )
+region = Rect2( 384, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=310]
+atlas = ExtResource( 41 )
+region = Rect2( 512, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=311]
+atlas = ExtResource( 41 )
+region = Rect2( 0, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=312]
+atlas = ExtResource( 41 )
+region = Rect2( 128, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=313]
+atlas = ExtResource( 41 )
+region = Rect2( 256, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=314]
+atlas = ExtResource( 41 )
+region = Rect2( 384, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=315]
+atlas = ExtResource( 41 )
+region = Rect2( 512, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=316]
+atlas = ExtResource( 41 )
+region = Rect2( 0, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=317]
+atlas = ExtResource( 41 )
+region = Rect2( 128, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=318]
+atlas = ExtResource( 41 )
+region = Rect2( 256, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=319]
+atlas = ExtResource( 41 )
+region = Rect2( 384, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=320]
+atlas = ExtResource( 41 )
+region = Rect2( 512, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=321]
+atlas = ExtResource( 41 )
+region = Rect2( 0, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=322]
+atlas = ExtResource( 41 )
+region = Rect2( 128, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=323]
+atlas = ExtResource( 41 )
+region = Rect2( 256, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=324]
+atlas = ExtResource( 41 )
+region = Rect2( 384, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=325]
+atlas = ExtResource( 41 )
+region = Rect2( 512, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=326]
+atlas = ExtResource( 41 )
+region = Rect2( 0, 512, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=327]
+atlas = ExtResource( 41 )
+region = Rect2( 128, 512, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=328]
+atlas = ExtResource( 41 )
+region = Rect2( 256, 512, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=329]
+atlas = ExtResource( 41 )
+region = Rect2( 384, 512, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=330]
+atlas = ExtResource( 41 )
+region = Rect2( 512, 512, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=331]
+atlas = ExtResource( 41 )
+region = Rect2( 0, 640, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=332]
+atlas = ExtResource( 41 )
+region = Rect2( 128, 640, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=333]
+atlas = ExtResource( 41 )
+region = Rect2( 256, 640, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=334]
+atlas = ExtResource( 41 )
+region = Rect2( 384, 640, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=335]
+atlas = ExtResource( 41 )
+region = Rect2( 512, 640, 128, 128 )
+
+[sub_resource type="SpriteFrames" id=336]
+animations = [ {
+"frames": [ SubResource( 93 ), SubResource( 94 ), SubResource( 95 ), SubResource( 96 ), SubResource( 97 ), SubResource( 98 ), SubResource( 99 ), SubResource( 100 ), SubResource( 101 ), SubResource( 102 ), SubResource( 103 ), SubResource( 104 ), SubResource( 105 ), SubResource( 106 ), SubResource( 107 ), SubResource( 108 ), SubResource( 109 ), SubResource( 110 ), SubResource( 111 ), SubResource( 112 ), SubResource( 113 ), SubResource( 114 ), SubResource( 115 ), SubResource( 116 ), SubResource( 117 ), SubResource( 118 ), SubResource( 119 ), SubResource( 120 ), SubResource( 121 ), SubResource( 122 ) ],
+"loop": true,
+"name": "default",
+"speed": 8.0
+}, {
+"frames": [ SubResource( 63 ), SubResource( 64 ), SubResource( 65 ), SubResource( 66 ), SubResource( 67 ), SubResource( 68 ), SubResource( 69 ), SubResource( 70 ), SubResource( 71 ), SubResource( 72 ), SubResource( 73 ), SubResource( 74 ), SubResource( 75 ), SubResource( 76 ), SubResource( 77 ), SubResource( 78 ), SubResource( 79 ), SubResource( 80 ), SubResource( 81 ), SubResource( 82 ), SubResource( 83 ), SubResource( 84 ), SubResource( 85 ), SubResource( 86 ), SubResource( 87 ), SubResource( 88 ), SubResource( 89 ), SubResource( 90 ), SubResource( 91 ), SubResource( 92 ) ],
+"loop": true,
+"name": "Room",
+"speed": 8.0
+}, {
+"frames": [ SubResource( 246 ), SubResource( 247 ), SubResource( 248 ), SubResource( 249 ), SubResource( 250 ), SubResource( 251 ), SubResource( 252 ), SubResource( 253 ), SubResource( 254 ), SubResource( 255 ), SubResource( 256 ), SubResource( 257 ), SubResource( 258 ), SubResource( 259 ), SubResource( 260 ), SubResource( 261 ), SubResource( 262 ), SubResource( 263 ), SubResource( 264 ), SubResource( 265 ), SubResource( 266 ), SubResource( 267 ), SubResource( 268 ), SubResource( 269 ), SubResource( 270 ), SubResource( 271 ), SubResource( 272 ), SubResource( 273 ), SubResource( 274 ), SubResource( 275 ) ],
+"loop": true,
+"name": "CoolRoom",
+"speed": 8.0
+}, {
+"frames": [ SubResource( 276 ), SubResource( 277 ), SubResource( 278 ), SubResource( 279 ), SubResource( 280 ), SubResource( 281 ), SubResource( 282 ), SubResource( 283 ), SubResource( 284 ), SubResource( 285 ), SubResource( 286 ), SubResource( 287 ), SubResource( 288 ), SubResource( 289 ), SubResource( 290 ), SubResource( 291 ), SubResource( 292 ), SubResource( 293 ), SubResource( 294 ), SubResource( 295 ), SubResource( 296 ), SubResource( 297 ), SubResource( 298 ), SubResource( 299 ), SubResource( 300 ), SubResource( 301 ), SubResource( 302 ), SubResource( 303 ), SubResource( 304 ), SubResource( 305 ) ],
+"loop": true,
+"name": "CozyRoom",
+"speed": 8.0
+}, {
+"frames": [ SubResource( 216 ), SubResource( 217 ), SubResource( 218 ), SubResource( 219 ), SubResource( 220 ), SubResource( 221 ), SubResource( 222 ), SubResource( 223 ), SubResource( 224 ), SubResource( 225 ), SubResource( 226 ), SubResource( 227 ), SubResource( 228 ), SubResource( 229 ), SubResource( 230 ), SubResource( 231 ), SubResource( 232 ), SubResource( 233 ), SubResource( 234 ), SubResource( 235 ), SubResource( 236 ), SubResource( 237 ), SubResource( 238 ), SubResource( 239 ), SubResource( 240 ), SubResource( 241 ), SubResource( 242 ), SubResource( 243 ), SubResource( 244 ), SubResource( 245 ) ],
+"loop": true,
+"name": "CoolChair",
+"speed": 8.0
+}, {
+"frames": [ SubResource( 306 ), SubResource( 307 ), SubResource( 308 ), SubResource( 309 ), SubResource( 310 ), SubResource( 311 ), SubResource( 312 ), SubResource( 313 ), SubResource( 314 ), SubResource( 315 ), SubResource( 316 ), SubResource( 317 ), SubResource( 318 ), SubResource( 319 ), SubResource( 320 ), SubResource( 321 ), SubResource( 322 ), SubResource( 323 ), SubResource( 324 ), SubResource( 325 ), SubResource( 326 ), SubResource( 327 ), SubResource( 328 ), SubResource( 329 ), SubResource( 330 ), SubResource( 331 ), SubResource( 332 ), SubResource( 333 ), SubResource( 334 ), SubResource( 335 ) ],
+"loop": true,
+"name": "CuteRoom",
+"speed": 8.0
+} ]
+
+[sub_resource type="AtlasTexture" id=427]
+atlas = ExtResource( 51 )
+region = Rect2( 0, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=428]
+atlas = ExtResource( 51 )
+region = Rect2( 128, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=429]
+atlas = ExtResource( 51 )
+region = Rect2( 256, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=430]
+atlas = ExtResource( 51 )
+region = Rect2( 384, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=431]
+atlas = ExtResource( 51 )
+region = Rect2( 512, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=432]
+atlas = ExtResource( 51 )
+region = Rect2( 0, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=433]
+atlas = ExtResource( 51 )
+region = Rect2( 128, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=434]
+atlas = ExtResource( 51 )
+region = Rect2( 256, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=435]
+atlas = ExtResource( 51 )
+region = Rect2( 384, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=436]
+atlas = ExtResource( 51 )
+region = Rect2( 512, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=437]
+atlas = ExtResource( 51 )
+region = Rect2( 0, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=438]
+atlas = ExtResource( 51 )
+region = Rect2( 128, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=439]
+atlas = ExtResource( 51 )
+region = Rect2( 256, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=440]
+atlas = ExtResource( 51 )
+region = Rect2( 384, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=441]
+atlas = ExtResource( 51 )
+region = Rect2( 512, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=442]
+atlas = ExtResource( 51 )
+region = Rect2( 0, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=443]
+atlas = ExtResource( 51 )
+region = Rect2( 128, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=444]
+atlas = ExtResource( 51 )
+region = Rect2( 256, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=445]
+atlas = ExtResource( 51 )
+region = Rect2( 384, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=446]
+atlas = ExtResource( 51 )
+region = Rect2( 512, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=447]
+atlas = ExtResource( 51 )
+region = Rect2( 0, 512, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=448]
+atlas = ExtResource( 51 )
+region = Rect2( 128, 512, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=449]
+atlas = ExtResource( 51 )
+region = Rect2( 256, 512, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=450]
+atlas = ExtResource( 51 )
+region = Rect2( 384, 512, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=451]
+atlas = ExtResource( 51 )
+region = Rect2( 512, 512, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=452]
+atlas = ExtResource( 51 )
+region = Rect2( 0, 640, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=453]
+atlas = ExtResource( 51 )
+region = Rect2( 128, 640, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=454]
+atlas = ExtResource( 51 )
+region = Rect2( 256, 640, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=455]
+atlas = ExtResource( 51 )
+region = Rect2( 384, 640, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=456]
+atlas = ExtResource( 51 )
+region = Rect2( 512, 640, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=367]
+atlas = ExtResource( 53 )
+region = Rect2( 0, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=368]
+atlas = ExtResource( 53 )
+region = Rect2( 128, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=369]
+atlas = ExtResource( 53 )
+region = Rect2( 256, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=370]
+atlas = ExtResource( 53 )
+region = Rect2( 384, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=371]
+atlas = ExtResource( 53 )
+region = Rect2( 512, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=372]
+atlas = ExtResource( 53 )
+region = Rect2( 0, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=373]
+atlas = ExtResource( 53 )
+region = Rect2( 128, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=374]
+atlas = ExtResource( 53 )
+region = Rect2( 256, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=375]
+atlas = ExtResource( 53 )
+region = Rect2( 384, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=376]
+atlas = ExtResource( 53 )
+region = Rect2( 512, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=377]
+atlas = ExtResource( 53 )
+region = Rect2( 0, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=378]
+atlas = ExtResource( 53 )
+region = Rect2( 128, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=379]
+atlas = ExtResource( 53 )
+region = Rect2( 256, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=380]
+atlas = ExtResource( 53 )
+region = Rect2( 384, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=381]
+atlas = ExtResource( 53 )
+region = Rect2( 512, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=382]
+atlas = ExtResource( 53 )
+region = Rect2( 0, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=383]
+atlas = ExtResource( 53 )
+region = Rect2( 128, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=384]
+atlas = ExtResource( 53 )
+region = Rect2( 256, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=385]
+atlas = ExtResource( 53 )
+region = Rect2( 384, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=386]
+atlas = ExtResource( 53 )
+region = Rect2( 512, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=387]
+atlas = ExtResource( 53 )
+region = Rect2( 0, 512, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=388]
+atlas = ExtResource( 53 )
+region = Rect2( 128, 512, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=389]
+atlas = ExtResource( 53 )
+region = Rect2( 256, 512, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=390]
+atlas = ExtResource( 53 )
+region = Rect2( 384, 512, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=391]
+atlas = ExtResource( 53 )
+region = Rect2( 512, 512, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=392]
+atlas = ExtResource( 53 )
+region = Rect2( 0, 640, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=393]
+atlas = ExtResource( 53 )
+region = Rect2( 128, 640, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=394]
+atlas = ExtResource( 53 )
+region = Rect2( 256, 640, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=395]
+atlas = ExtResource( 53 )
+region = Rect2( 384, 640, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=396]
+atlas = ExtResource( 53 )
+region = Rect2( 512, 640, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=337]
+atlas = ExtResource( 49 )
+region = Rect2( 0, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=338]
+atlas = ExtResource( 49 )
+region = Rect2( 128, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=339]
+atlas = ExtResource( 49 )
+region = Rect2( 256, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=340]
+atlas = ExtResource( 49 )
+region = Rect2( 384, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=341]
+atlas = ExtResource( 49 )
+region = Rect2( 512, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=342]
+atlas = ExtResource( 49 )
+region = Rect2( 0, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=343]
+atlas = ExtResource( 49 )
+region = Rect2( 128, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=344]
+atlas = ExtResource( 49 )
+region = Rect2( 256, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=345]
+atlas = ExtResource( 49 )
+region = Rect2( 384, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=346]
+atlas = ExtResource( 49 )
+region = Rect2( 512, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=347]
+atlas = ExtResource( 49 )
+region = Rect2( 0, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=348]
+atlas = ExtResource( 49 )
+region = Rect2( 128, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=349]
+atlas = ExtResource( 49 )
+region = Rect2( 256, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=350]
+atlas = ExtResource( 49 )
+region = Rect2( 384, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=351]
+atlas = ExtResource( 49 )
+region = Rect2( 512, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=352]
+atlas = ExtResource( 49 )
+region = Rect2( 0, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=353]
+atlas = ExtResource( 49 )
+region = Rect2( 128, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=354]
+atlas = ExtResource( 49 )
+region = Rect2( 256, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=355]
+atlas = ExtResource( 49 )
+region = Rect2( 384, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=356]
+atlas = ExtResource( 49 )
+region = Rect2( 512, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=357]
+atlas = ExtResource( 49 )
+region = Rect2( 0, 512, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=358]
+atlas = ExtResource( 49 )
+region = Rect2( 128, 512, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=359]
+atlas = ExtResource( 49 )
+region = Rect2( 256, 512, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=360]
+atlas = ExtResource( 49 )
+region = Rect2( 384, 512, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=361]
+atlas = ExtResource( 49 )
+region = Rect2( 512, 512, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=362]
+atlas = ExtResource( 49 )
+region = Rect2( 0, 640, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=363]
+atlas = ExtResource( 49 )
+region = Rect2( 128, 640, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=364]
+atlas = ExtResource( 49 )
+region = Rect2( 256, 640, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=365]
+atlas = ExtResource( 49 )
+region = Rect2( 384, 640, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=366]
+atlas = ExtResource( 49 )
+region = Rect2( 512, 640, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=397]
+atlas = ExtResource( 50 )
+region = Rect2( 0, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=398]
+atlas = ExtResource( 50 )
+region = Rect2( 128, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=399]
+atlas = ExtResource( 50 )
+region = Rect2( 256, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=400]
+atlas = ExtResource( 50 )
+region = Rect2( 384, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=401]
+atlas = ExtResource( 50 )
+region = Rect2( 512, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=402]
+atlas = ExtResource( 50 )
+region = Rect2( 0, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=403]
+atlas = ExtResource( 50 )
+region = Rect2( 128, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=404]
+atlas = ExtResource( 50 )
+region = Rect2( 256, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=405]
+atlas = ExtResource( 50 )
+region = Rect2( 384, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=406]
+atlas = ExtResource( 50 )
+region = Rect2( 512, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=407]
+atlas = ExtResource( 50 )
+region = Rect2( 0, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=408]
+atlas = ExtResource( 50 )
+region = Rect2( 128, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=409]
+atlas = ExtResource( 50 )
+region = Rect2( 256, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=410]
+atlas = ExtResource( 50 )
+region = Rect2( 384, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=411]
+atlas = ExtResource( 50 )
+region = Rect2( 512, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=412]
+atlas = ExtResource( 50 )
+region = Rect2( 0, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=413]
+atlas = ExtResource( 50 )
+region = Rect2( 128, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=414]
+atlas = ExtResource( 50 )
+region = Rect2( 256, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=415]
+atlas = ExtResource( 50 )
+region = Rect2( 384, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=416]
+atlas = ExtResource( 50 )
+region = Rect2( 512, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=417]
+atlas = ExtResource( 50 )
+region = Rect2( 0, 512, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=418]
+atlas = ExtResource( 50 )
+region = Rect2( 128, 512, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=419]
+atlas = ExtResource( 50 )
+region = Rect2( 256, 512, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=420]
+atlas = ExtResource( 50 )
+region = Rect2( 384, 512, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=421]
+atlas = ExtResource( 50 )
+region = Rect2( 512, 512, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=422]
+atlas = ExtResource( 50 )
+region = Rect2( 0, 640, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=423]
+atlas = ExtResource( 50 )
+region = Rect2( 128, 640, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=424]
+atlas = ExtResource( 50 )
+region = Rect2( 256, 640, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=425]
+atlas = ExtResource( 50 )
+region = Rect2( 384, 640, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=426]
+atlas = ExtResource( 50 )
+region = Rect2( 512, 640, 128, 128 )
+
+[sub_resource type="SpriteFrames" id=457]
+animations = [ {
+"frames": [ SubResource( 93 ), SubResource( 94 ), SubResource( 95 ), SubResource( 96 ), SubResource( 97 ), SubResource( 98 ), SubResource( 99 ), SubResource( 100 ), SubResource( 101 ), SubResource( 102 ), SubResource( 103 ), SubResource( 104 ), SubResource( 105 ), SubResource( 106 ), SubResource( 107 ), SubResource( 108 ), SubResource( 109 ), SubResource( 110 ), SubResource( 111 ), SubResource( 112 ), SubResource( 113 ), SubResource( 114 ), SubResource( 115 ), SubResource( 116 ), SubResource( 117 ), SubResource( 118 ), SubResource( 119 ), SubResource( 120 ), SubResource( 121 ), SubResource( 122 ) ],
+"loop": true,
+"name": "default",
+"speed": 8.0
+}, {
+"frames": [ SubResource( 427 ), SubResource( 428 ), SubResource( 429 ), SubResource( 430 ), SubResource( 431 ), SubResource( 432 ), SubResource( 433 ), SubResource( 434 ), SubResource( 435 ), SubResource( 436 ), SubResource( 437 ), SubResource( 438 ), SubResource( 439 ), SubResource( 440 ), SubResource( 441 ), SubResource( 442 ), SubResource( 443 ), SubResource( 444 ), SubResource( 445 ), SubResource( 446 ), SubResource( 447 ), SubResource( 448 ), SubResource( 449 ), SubResource( 450 ), SubResource( 451 ), SubResource( 452 ), SubResource( 453 ), SubResource( 454 ), SubResource( 455 ), SubResource( 456 ) ],
+"loop": true,
+"name": "CoolRoom",
+"speed": 8.0
+}, {
+"frames": [ SubResource( 367 ), SubResource( 368 ), SubResource( 369 ), SubResource( 370 ), SubResource( 371 ), SubResource( 372 ), SubResource( 373 ), SubResource( 374 ), SubResource( 375 ), SubResource( 376 ), SubResource( 377 ), SubResource( 378 ), SubResource( 379 ), SubResource( 380 ), SubResource( 381 ), SubResource( 382 ), SubResource( 383 ), SubResource( 384 ), SubResource( 385 ), SubResource( 386 ), SubResource( 387 ), SubResource( 388 ), SubResource( 389 ), SubResource( 390 ), SubResource( 391 ), SubResource( 392 ), SubResource( 393 ), SubResource( 394 ), SubResource( 395 ), SubResource( 396 ) ],
+"loop": true,
+"name": "CozyRoom",
+"speed": 8.0
+}, {
+"frames": [ SubResource( 337 ), SubResource( 338 ), SubResource( 339 ), SubResource( 340 ), SubResource( 341 ), SubResource( 342 ), SubResource( 343 ), SubResource( 344 ), SubResource( 345 ), SubResource( 346 ), SubResource( 347 ), SubResource( 348 ), SubResource( 349 ), SubResource( 350 ), SubResource( 351 ), SubResource( 352 ), SubResource( 353 ), SubResource( 354 ), SubResource( 355 ), SubResource( 356 ), SubResource( 357 ), SubResource( 358 ), SubResource( 359 ), SubResource( 360 ), SubResource( 361 ), SubResource( 362 ), SubResource( 363 ), SubResource( 364 ), SubResource( 365 ), SubResource( 366 ) ],
+"loop": true,
+"name": "CoolChair",
+"speed": 8.0
+}, {
+"frames": [ SubResource( 397 ), SubResource( 398 ), SubResource( 399 ), SubResource( 400 ), SubResource( 401 ), SubResource( 402 ), SubResource( 403 ), SubResource( 404 ), SubResource( 405 ), SubResource( 406 ), SubResource( 407 ), SubResource( 408 ), SubResource( 409 ), SubResource( 410 ), SubResource( 411 ), SubResource( 412 ), SubResource( 413 ), SubResource( 414 ), SubResource( 415 ), SubResource( 416 ), SubResource( 417 ), SubResource( 418 ), SubResource( 419 ), SubResource( 420 ), SubResource( 421 ), SubResource( 422 ), SubResource( 423 ), SubResource( 424 ), SubResource( 425 ), SubResource( 426 ) ],
+"loop": true,
+"name": "CuteRoom",
+"speed": 8.0
+} ]
+
+[sub_resource type="AtlasTexture" id=41]
+atlas = ExtResource( 17 )
+region = Rect2( 0, 0, 21, 21 )
+
+[sub_resource type="AtlasTexture" id=42]
+atlas = ExtResource( 17 )
+region = Rect2( 21, 0, 21, 21 )
+
+[sub_resource type="AtlasTexture" id=43]
+atlas = ExtResource( 17 )
+region = Rect2( 42, 0, 21, 21 )
+
+[sub_resource type="AtlasTexture" id=44]
+atlas = ExtResource( 17 )
+region = Rect2( 63, 0, 21, 21 )
+
+[sub_resource type="AtlasTexture" id=460]
+atlas = ExtResource( 17 )
+region = Rect2( 0, 0, 21, 21 )
+
+[sub_resource type="AtlasTexture" id=461]
+atlas = ExtResource( 17 )
+region = Rect2( 21, 0, 21, 21 )
+
+[sub_resource type="AtlasTexture" id=462]
+atlas = ExtResource( 17 )
+region = Rect2( 42, 0, 21, 21 )
+
+[sub_resource type="AtlasTexture" id=463]
+atlas = ExtResource( 17 )
+region = Rect2( 63, 0, 21, 21 )
+
+[sub_resource type="AtlasTexture" id=464]
+atlas = ExtResource( 17 )
+region = Rect2( 0, 0, 21, 21 )
+
+[sub_resource type="AtlasTexture" id=465]
+atlas = ExtResource( 17 )
+region = Rect2( 21, 0, 21, 21 )
+
+[sub_resource type="AtlasTexture" id=466]
+atlas = ExtResource( 17 )
+region = Rect2( 42, 0, 21, 21 )
+
+[sub_resource type="AtlasTexture" id=467]
+atlas = ExtResource( 17 )
+region = Rect2( 63, 0, 21, 21 )
+
+[sub_resource type="SpriteFrames" id=45]
+animations = [ {
+"frames": [ SubResource( 41 ), SubResource( 42 ), SubResource( 43 ), SubResource( 44 ), SubResource( 460 ), SubResource( 461 ), SubResource( 462 ), SubResource( 463 ), SubResource( 464 ), SubResource( 465 ), SubResource( 466 ), SubResource( 467 ) ],
+"loop": false,
+"name": "default",
+"speed": 8.0
+} ]
+
+[sub_resource type="Shader" id=214]
+code = "shader_type canvas_item;
+
+uniform bool screen_mode = true;
+uniform int num_colors;
+uniform float precision : hint_range(0.0, 1.0, 0.1) = 0.1;
+
+uniform sampler2D palette_in;
+uniform sampler2D palette_out;
+
+vec4 swap_color(vec4 color) {
+	float inc = 1.0 / float(num_colors); 
+	for (float i = 0.0; i < 1.0; i += inc) {
+		vec2 uv = vec2(i, 0.0);
+		vec4 color_in = texture(palette_in, uv);
+		if (distance(color, color_in) <= precision) {
+			return texture(palette_out, uv);
+		}
+	}
+	return color;
+}
+
+void fragment() {
+	vec4 color = texture(TEXTURE, UV);
+	if (screen_mode) {
+		color = texture(SCREEN_TEXTURE, SCREEN_UV);
+	}
+	COLOR = swap_color(color);
+}"
+
+[sub_resource type="ShaderMaterial" id=215]
+shader = SubResource( 214 )
+shader_param/screen_mode = false
+shader_param/num_colors = 26
+shader_param/precision = 0.0
+shader_param/palette_in = ExtResource( 44 )
+shader_param/palette_out = ExtResource( 58 )
+
+[sub_resource type="SpriteFrames" id=213]
+animations = [ {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 45 ) ],
+"loop": true,
+"name": "CoolRoom",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 46 ) ],
+"loop": true,
+"name": "CozyRoom",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 54 ) ],
+"loop": true,
+"name": "CuteRoom",
+"speed": 5.0
+} ]
+
+[sub_resource type="Shader" id=458]
+code = "shader_type canvas_item;
+
+uniform bool screen_mode = true;
+uniform int num_colors;
+uniform float precision : hint_range(0.0, 1.0, 0.1) = 0.1;
+
+uniform sampler2D palette_in;
+uniform sampler2D palette_out;
+
+vec4 swap_color(vec4 color) {
+	float inc = 1.0 / float(num_colors); 
+	for (float i = 0.0; i < 1.0; i += inc) {
+		vec2 uv = vec2(i, 0.0);
+		vec4 color_in = texture(palette_in, uv);
+		if (distance(color, color_in) <= precision) {
+			return texture(palette_out, uv);
+		}
+	}
+	return color;
+}
+
+void fragment() {
+	vec4 color = texture(TEXTURE, UV);
+	if (screen_mode) {
+		color = texture(SCREEN_TEXTURE, SCREEN_UV);
+	}
+	COLOR = swap_color(color);
+}"
+
+[sub_resource type="ShaderMaterial" id=459]
+shader = SubResource( 458 )
+shader_param/screen_mode = false
+shader_param/num_colors = 10
+shader_param/precision = 0.0
+shader_param/palette_in = ExtResource( 57 )
+shader_param/palette_out = ExtResource( 56 )
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 8 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=470]
+animations = [ {
+"frames": [ ExtResource( 63 ) ],
+"loop": true,
+"name": "text",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 61 ) ],
+"loop": true,
+"name": "image",
+"speed": 5.0
+} ]
+
+[sub_resource type="Animation" id=4]
+resource_name = "FileMinimize"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/path = NodePath("File:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.5, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 1, 30 ), Vector2( 1, 210 ), Vector2( 1, 240 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("File:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 0.5, 0.01 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("File:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.6, 0.7 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ true, true, false ]
+}
+
+[sub_resource type="Animation" id=469]
+resource_name = "FileSystemMinimize"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/path = NodePath("FileSystem:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.7, 0.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ true, true, false ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("FileSystem:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1, 0.6, 0.7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 1, 30 ), Vector2( 1, 210 ), Vector2( 1, 240 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("FileSystem:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 0.5, 0.01 ) ]
+}
+
+[sub_resource type="Animation" id=39]
+resource_name = "IDEMinimize"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/path = NodePath("IDE:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.6, 0.7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 68, 1 ), Vector2( 68, 30 ), Vector2( 68, 210 ), Vector2( 68, 240 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("IDE:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.7, 0.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ true, true, false ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("IDE:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 0.5, 0.01 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Virtualhell:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 66, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Virtualhell:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Virtualhell:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("File:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("File:scale")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("File:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("IDE:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 68, 1 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("IDE/ColorRect:rect_size")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 2 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("IDE/ColorRect:rect_position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 3, 118 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("IDE:visible")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("IDE:scale")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ) ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("IDE/loading:visible")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("IDE/ScreenOccluder:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 67, 64 ) ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("FileSystem:visible")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+tracks/14/type = "value"
+tracks/14/path = NodePath("FileSystem:position")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ) ]
+}
+tracks/15/type = "value"
+tracks/15/path = NodePath("FileSystem:scale")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "SynthiaMinimize"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/path = NodePath("Virtualhell:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.5, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 66, 1 ), Vector2( 66, 30 ), Vector2( 66, 210 ), Vector2( 66, 240 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Virtualhell:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.6, 0.7 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ true, true, false ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Virtualhell:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 0.5, 0.01 ) ]
+}
+
+[sub_resource type="Animation" id=40]
+resource_name = "load"
+length = 10.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("IDE/ColorRect:rect_size")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.4, 1.7, 2.3, 2.5, 3.4, 3.7, 5.8, 6.1, 7.9, 8.1, 9.3, 9.4, 10 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 2 ), Vector2( 17, 2 ), Vector2( 17, 2 ), Vector2( 45, 2 ), Vector2( 45, 2 ), Vector2( 72, 2 ), Vector2( 72, 2 ), Vector2( 95, 2 ), Vector2( 95, 2 ), Vector2( 106, 2 ), Vector2( 106, 2 ), Vector2( 120, 2 ), Vector2( 120, 2 ), Vector2( 127, 2 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("IDE/loading:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 16.9 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("IDE/ScreenOccluder:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 10 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 67, 64 ), Vector2( 67, 166 ) ]
+}
+
+[sub_resource type="AtlasTexture" id=47]
+atlas = ExtResource( 21 )
+region = Rect2( 0, 0, 7, 9 )
+
+[sub_resource type="AtlasTexture" id=48]
+atlas = ExtResource( 21 )
+region = Rect2( 7, 0, 7, 9 )
+
+[sub_resource type="AtlasTexture" id=49]
+atlas = ExtResource( 21 )
+region = Rect2( 0, 9, 7, 9 )
+
+[sub_resource type="AtlasTexture" id=50]
+atlas = ExtResource( 21 )
+region = Rect2( 7, 9, 7, 9 )
+
+[sub_resource type="AtlasTexture" id=51]
+atlas = ExtResource( 21 )
+region = Rect2( 0, 18, 7, 9 )
+
+[sub_resource type="AtlasTexture" id=52]
+atlas = ExtResource( 21 )
+region = Rect2( 7, 18, 7, 9 )
+
+[sub_resource type="AtlasTexture" id=53]
+atlas = ExtResource( 21 )
+region = Rect2( 0, 27, 7, 9 )
+
+[sub_resource type="AtlasTexture" id=54]
+atlas = ExtResource( 21 )
+region = Rect2( 7, 27, 7, 9 )
+
+[sub_resource type="AtlasTexture" id=55]
+atlas = ExtResource( 21 )
+region = Rect2( 0, 36, 7, 9 )
+
+[sub_resource type="AtlasTexture" id=56]
+atlas = ExtResource( 21 )
+region = Rect2( 7, 36, 7, 9 )
+
+[sub_resource type="AtlasTexture" id=57]
+atlas = ExtResource( 21 )
+region = Rect2( 0, 45, 7, 9 )
+
+[sub_resource type="AtlasTexture" id=58]
+atlas = ExtResource( 21 )
+region = Rect2( 7, 45, 7, 9 )
+
+[sub_resource type="AtlasTexture" id=59]
+atlas = ExtResource( 21 )
+region = Rect2( 0, 54, 7, 9 )
+
+[sub_resource type="AtlasTexture" id=60]
+atlas = ExtResource( 21 )
+region = Rect2( 7, 54, 7, 9 )
+
+[sub_resource type="SpriteFrames" id=61]
+animations = [ {
+"frames": [ ExtResource( 20 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 23 ) ],
+"loop": true,
+"name": "locked",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 47 ), SubResource( 48 ), SubResource( 49 ), SubResource( 50 ), SubResource( 51 ), SubResource( 52 ), SubResource( 53 ), SubResource( 54 ), SubResource( 55 ), SubResource( 56 ), SubResource( 57 ), SubResource( 58 ), SubResource( 59 ), SubResource( 60 ) ],
+"loop": true,
+"name": "loading",
+"speed": 8.0
+}, {
+"frames": [ ExtResource( 22 ) ],
+"loop": true,
+"name": "ibar",
+"speed": 5.0
+} ]
+
+[node name="world" type="Node2D"]
+script = ExtResource( 9 )
+
+[node name="Bg" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+centered = false
+
+[node name="Icons" type="Node2D" parent="."]
+position = Vector2( 17, 18 )
+script = ExtResource( 32 )
+
+[node name="RecyclingBin" type="Sprite" parent="Icons"]
+texture = ExtResource( 30 )
+
+[node name="RecyclingButton" type="TextureButton" parent="Icons/RecyclingBin"]
+margin_left = -13.0
+margin_top = -14.0
+margin_right = 12.0
+margin_bottom = 13.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FileSystem" type="Sprite" parent="Icons"]
+position = Vector2( 0, 30 )
+texture = ExtResource( 66 )
+
+[node name="File" type="TextureButton" parent="Icons/FileSystem"]
+margin_left = -13.0
+margin_top = -14.0
+margin_right = 12.0
+margin_bottom = 13.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="File" type="Sprite" parent="Icons"]
+position = Vector2( 0, 60 )
+texture = ExtResource( 31 )
+
+[node name="File" type="TextureButton" parent="Icons/File"]
+margin_left = -13.0
+margin_top = -14.0
+margin_right = 12.0
+margin_bottom = 13.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Virtualhell" type="Sprite" parent="Icons"]
+position = Vector2( 0, 90 )
+texture = ExtResource( 29 )
+
+[node name="ParadiseButton" type="TextureButton" parent="Icons/Virtualhell"]
+margin_left = -13.0
+margin_top = -14.0
+margin_right = 12.0
+margin_bottom = 13.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="IDE" type="Sprite" parent="Icons"]
+visible = false
+position = Vector2( 30, 0 )
+texture = ExtResource( 28 )
+
+[node name="BlowAWishButton" type="TextureButton" parent="Icons/IDE"]
+margin_left = -13.0
+margin_top = -14.0
+margin_right = 12.0
+margin_bottom = 13.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="File" type="Sprite" parent="."]
+position = Vector2( 1, 1 )
+z_index = 3
+texture = ExtResource( 13 )
+centered = false
+
+[node name="ScrollContainer" type="ScrollContainer" parent="File"]
+margin_left = 5.0
+margin_top = 13.0
+margin_right = 313.0
+margin_bottom = 139.0
+mouse_filter = 2
+theme = ExtResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="File/ScrollContainer"]
+margin_right = 303.0
+margin_bottom = 915.0
+size_flags_horizontal = 3
+theme = ExtResource( 12 )
+
+[node name="Cynthia" type="Sprite" parent="File/ScrollContainer/VBoxContainer"]
+position = Vector2( 170, 40 )
+texture = ExtResource( 14 )
+centered = false
+
+[node name="description" type="Label" parent="File/ScrollContainer/VBoxContainer/Cynthia"]
+margin_left = 2.0
+margin_top = 87.0
+margin_right = 127.0
+margin_bottom = 139.0
+theme = ExtResource( 12 )
+text = "Cynthia Powell circa 1997, 2 years after the creation of SCP-8000-1."
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SCPText" type="RichTextLabel" parent="File/ScrollContainer/VBoxContainer"]
+margin_right = 303.0
+margin_bottom = 915.0
+focus_mode = 2
+mouse_filter = 2
+size_flags_horizontal = 3
+theme = ExtResource( 12 )
+custom_colors/default_color = Color( 0.0509804, 0, 0.101961, 1 )
+bbcode_enabled = true
+bbcode_text = "[color=#5b6ee1][b]Item #:[/b][/color] SCP-8000
+
+[color=#5b6ee1][b]Object Class:[/b][/color] Safe
+
+[color=#5b6ee1][b]Special Containment
+Procedures:[/b][/color] The computer
+containing SCP-8000 is to
+be kept in Site-XX’s
+electronic containment
+wing. SCP-8000 is to be
+kept running at all times
+in its original file path. It
+should not be copied,
+pasted, or transferred in
+any way whatsoever.
+
+All files on the computer
+hosting SCP-8000, apart
+from SCP-8000
+(“PARADISE.exe”) and the
+SCP-8000 instructional
+file(“SCP-8000.html”) are to
+Be manually DRAGGED to the
+desktop from the storage
+system and DELETED with
+the RECYCLING BIN.
+
+Any adjustments to
+SCP-8000’s coding are
+strictly forbidden. None of
+the files discovered on the device
+are to be viewed.
+
+One individual will be assigned to SCP-8000’s maintenance & monitoring and will rotate out bi-weekly. Personnel will spend one 8-hour shift from 9:00-17:00 observing SCP-8000 each day. Additional monitoring is unnecessary.
+
+[color=#5b6ee1][b]Description:[/b][/color] SCP-8000 is an anomalous Virtual Reality Simulation developed by GOI-004C “The Church of Maxwellism\" between the years 1987 and 1995 when it was abruptly abandoned. The creation of SCP-8000 lined up with Maxwellian transhumanist beliefs regarding Whole Brain Uploads.
+
+SCP-8000 was originally envisioned as a complex and powerful simulation able to sustain up to one thousand individuals’ consciousness digitized through anomalous means and memory to support an additional ten thousand non-digitized individuals accessing the system externally through proprietary virtual reality equipment. Initial plans were made to slowly increase the capacity over the years and create a “digital paradise”. Over time the project suffered multiple downsizes in scope due to technical and financial struggles until it was finally proved technologically unfeasible following the first Whole Brain Upload.
+
+This incident led to the creation of SCP-8000-1, SCP-8000’s only current and permanent resident. SCP-8000-1, is a direct copy of the brain of Cynthia Powell, a former member of GOI-004C, as she was in 1995. Due to the non-anomalous methods of data transfer used, SCP-8000 was unable to perform a true transfer of consciousness, only copying the given information. SCP-8000-1 has been active inside SCP-8000 for the two years since its conception in 1995.
+"
+text = "Item #: SCP-8000
+
+Object Class: Safe
+
+Special Containment
+Procedures: The computer
+containing SCP-8000 is to
+be kept in Site-XX’s
+electronic containment
+wing. SCP-8000 is to be
+kept running at all times
+in its original file path. It
+should not be copied,
+pasted, or transferred in
+any way whatsoever.
+
+All files on the computer
+hosting SCP-8000, apart
+from SCP-8000
+(“PARADISE.exe”) and the
+SCP-8000 instructional
+file(“SCP-8000.html”) are to
+Be manually DRAGGED to the
+desktop from the storage
+system and DELETED with
+the RECYCLING BIN.
+
+Any adjustments to
+SCP-8000’s coding are
+strictly forbidden. None of
+the files discovered on the device
+are to be viewed.
+
+One individual will be assigned to SCP-8000’s maintenance & monitoring and will rotate out bi-weekly. Personnel will spend one 8-hour shift from 9:00-17:00 observing SCP-8000 each day. Additional monitoring is unnecessary.
+
+Description: SCP-8000 is an anomalous Virtual Reality Simulation developed by GOI-004C “The Church of Maxwellism\" between the years 1987 and 1995 when it was abruptly abandoned. The creation of SCP-8000 lined up with Maxwellian transhumanist beliefs regarding Whole Brain Uploads.
+
+SCP-8000 was originally envisioned as a complex and powerful simulation able to sustain up to one thousand individuals’ consciousness digitized through anomalous means and memory to support an additional ten thousand non-digitized individuals accessing the system externally through proprietary virtual reality equipment. Initial plans were made to slowly increase the capacity over the years and create a “digital paradise”. Over time the project suffered multiple downsizes in scope due to technical and financial struggles until it was finally proved technologically unfeasible following the first Whole Brain Upload.
+
+This incident led to the creation of SCP-8000-1, SCP-8000’s only current and permanent resident. SCP-8000-1, is a direct copy of the brain of Cynthia Powell, a former member of GOI-004C, as she was in 1995. Due to the non-anomalous methods of data transfer used, SCP-8000 was unable to perform a true transfer of consciousness, only copying the given information. SCP-8000-1 has been active inside SCP-8000 for the two years since its conception in 1995.
+"
+fit_content_height = true
+selection_enabled = true
+
+[node name="Close" type="TextureButton" parent="File"]
+margin_left = 305.0
+margin_top = 2.0
+margin_right = 314.0
+margin_bottom = 11.0
+texture_normal = ExtResource( 7 )
+texture_pressed = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Minimize" type="TextureButton" parent="File"]
+margin_left = 295.0
+margin_top = 2.0
+margin_right = 304.0
+margin_bottom = 11.0
+texture_normal = ExtResource( 7 )
+texture_pressed = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SCP-8000" type="Label" parent="File"]
+margin_left = 13.0
+margin_right = 161.0
+margin_bottom = 11.0
+theme = ExtResource( 12 )
+text = "SCP-8000"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FileSystem" type="Sprite" parent="."]
+visible = false
+position = Vector2( 1, 1 )
+z_index = 1
+texture = ExtResource( 59 )
+centered = false
+script = ExtResource( 62 )
+
+[node name="FilePath" type="Label" parent="FileSystem"]
+margin_left = 80.0
+margin_top = 11.0
+margin_right = 223.0
+margin_bottom = 22.0
+theme = ExtResource( 12 )
+custom_fonts/font = ExtResource( 19 )
+text = "SYSTEM>CLICK ME"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FileSystem" type="Label" parent="FileSystem"]
+margin_left = 12.0
+margin_right = 155.0
+margin_bottom = 11.0
+theme = ExtResource( 12 )
+text = "FILE SYSTEM"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StorageFile1" type="AnimatedSprite" parent="FileSystem"]
+position = Vector2( 82, 27 )
+frames = SubResource( 468 )
+animation = "folder"
+centered = false
+script = ExtResource( 64 )
+
+[node name="Button" type="TextureButton" parent="FileSystem/StorageFile1"]
+margin_top = -1.0
+margin_right = 140.0
+margin_bottom = 10.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="FileSystem/StorageFile1"]
+margin_left = 9.0
+margin_top = -1.0
+margin_right = 141.0
+margin_bottom = 10.0
+theme = ExtResource( 12 )
+custom_fonts/font = ExtResource( 19 )
+text = "READ_B4_DELETION.rtf"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StorageFile2" type="AnimatedSprite" parent="FileSystem"]
+position = Vector2( 82, 38 )
+frames = SubResource( 468 )
+animation = "image"
+centered = false
+script = ExtResource( 64 )
+
+[node name="Button" type="TextureButton" parent="FileSystem/StorageFile2"]
+margin_top = -1.0
+margin_right = 140.0
+margin_bottom = 10.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="FileSystem/StorageFile2"]
+margin_left = 9.0
+margin_top = -1.0
+margin_right = 141.0
+margin_bottom = 10.0
+theme = ExtResource( 12 )
+custom_fonts/font = ExtResource( 19 )
+text = "IMAGE.jpg"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StorageFile3" type="AnimatedSprite" parent="FileSystem"]
+position = Vector2( 82, 49 )
+frames = SubResource( 468 )
+animation = "text"
+centered = false
+script = ExtResource( 64 )
+
+[node name="Button" type="TextureButton" parent="FileSystem/StorageFile3"]
+margin_top = -1.0
+margin_right = 140.0
+margin_bottom = 10.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="FileSystem/StorageFile3"]
+margin_left = 9.0
+margin_top = -1.0
+margin_right = 141.0
+margin_bottom = 10.0
+theme = ExtResource( 12 )
+custom_fonts/font = ExtResource( 19 )
+text = "CLICK_ME.txt"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StorageFile4" type="AnimatedSprite" parent="FileSystem"]
+position = Vector2( 82, 60 )
+frames = SubResource( 468 )
+animation = "folder"
+centered = false
+script = ExtResource( 64 )
+
+[node name="Button" type="TextureButton" parent="FileSystem/StorageFile4"]
+margin_top = -1.0
+margin_right = 140.0
+margin_bottom = 10.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="FileSystem/StorageFile4"]
+margin_left = 9.0
+margin_top = -1.0
+margin_right = 141.0
+margin_bottom = 10.0
+theme = ExtResource( 12 )
+custom_fonts/font = ExtResource( 19 )
+text = "CLICK_ME.txt"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StorageFile5" type="AnimatedSprite" parent="FileSystem"]
+position = Vector2( 82, 71 )
+frames = SubResource( 468 )
+animation = "folder"
+centered = false
+script = ExtResource( 64 )
+
+[node name="Button" type="TextureButton" parent="FileSystem/StorageFile5"]
+margin_top = -1.0
+margin_right = 140.0
+margin_bottom = 10.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="FileSystem/StorageFile5"]
+margin_left = 9.0
+margin_top = -1.0
+margin_right = 141.0
+margin_bottom = 10.0
+theme = ExtResource( 12 )
+custom_fonts/font = ExtResource( 19 )
+text = "CLICK_ME.txt"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StorageFile6" type="AnimatedSprite" parent="FileSystem"]
+position = Vector2( 82, 82 )
+frames = SubResource( 468 )
+animation = "folder"
+centered = false
+script = ExtResource( 64 )
+
+[node name="Button" type="TextureButton" parent="FileSystem/StorageFile6"]
+margin_top = -1.0
+margin_right = 140.0
+margin_bottom = 10.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="FileSystem/StorageFile6"]
+margin_left = 9.0
+margin_top = -1.0
+margin_right = 141.0
+margin_bottom = 10.0
+theme = ExtResource( 12 )
+custom_fonts/font = ExtResource( 19 )
+text = "CLICK_ME.txt"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="FileSystem"]
+margin_left = 3.0
+margin_top = 13.0
+margin_right = 77.0
+margin_bottom = 139.0
+mouse_filter = 2
+theme = ExtResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="system" type="TextureButton" parent="FileSystem/VBoxContainer"]
+margin_right = 74.0
+margin_bottom = 12.0
+rect_min_size = Vector2( 0, 12 )
+
+[node name="Sprite" type="Sprite" parent="FileSystem/VBoxContainer/system"]
+position = Vector2( 7, 6 )
+texture = ExtResource( 60 )
+
+[node name="Label" type="Label" parent="FileSystem/VBoxContainer/system"]
+margin_left = 12.0
+margin_right = 74.0
+margin_bottom = 11.0
+theme = ExtResource( 12 )
+custom_fonts/font = ExtResource( 19 )
+text = "SYSTEM"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="images" type="TextureButton" parent="FileSystem/VBoxContainer"]
+margin_top = 12.0
+margin_right = 74.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 0, 12 )
+
+[node name="Sprite" type="Sprite" parent="FileSystem/VBoxContainer/images"]
+position = Vector2( 11, 6 )
+texture = ExtResource( 60 )
+
+[node name="DropFileOrganizer2" type="Sprite" parent="FileSystem/VBoxContainer/images/Sprite"]
+position = Vector2( -7, 1 )
+texture = ExtResource( 65 )
+
+[node name="Label" type="Label" parent="FileSystem/VBoxContainer/images"]
+margin_left = 16.0
+margin_right = 74.0
+margin_bottom = 11.0
+theme = ExtResource( 12 )
+custom_fonts/font = ExtResource( 19 )
+text = "IMAGES"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="documents" type="TextureButton" parent="FileSystem/VBoxContainer"]
+margin_top = 24.0
+margin_right = 74.0
+margin_bottom = 36.0
+rect_min_size = Vector2( 0, 12 )
+
+[node name="Sprite" type="Sprite" parent="FileSystem/VBoxContainer/documents"]
+position = Vector2( 11, 6 )
+texture = ExtResource( 60 )
+
+[node name="DropFileOrganizer2" type="Sprite" parent="FileSystem/VBoxContainer/documents/Sprite"]
+position = Vector2( -7, 1 )
+texture = ExtResource( 65 )
+
+[node name="Label" type="Label" parent="FileSystem/VBoxContainer/documents"]
+margin_left = 16.0
+margin_right = 74.0
+margin_bottom = 11.0
+theme = ExtResource( 12 )
+custom_fonts/font = ExtResource( 19 )
+text = "DOCS"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="clickMe" type="TextureButton" parent="FileSystem/VBoxContainer"]
+margin_top = 36.0
+margin_right = 74.0
+margin_bottom = 48.0
+rect_min_size = Vector2( 0, 12 )
+
+[node name="Sprite" type="Sprite" parent="FileSystem/VBoxContainer/clickMe"]
+position = Vector2( 17, 6 )
+texture = ExtResource( 60 )
+
+[node name="DropFileOrganizer2" type="Sprite" parent="FileSystem/VBoxContainer/clickMe/Sprite"]
+position = Vector2( -7, 1 )
+texture = ExtResource( 65 )
+
+[node name="DropFileOrganizer3" type="Sprite" parent="FileSystem/VBoxContainer/clickMe/Sprite"]
+position = Vector2( -13, 1 )
+texture = ExtResource( 65 )
+
+[node name="Label" type="Label" parent="FileSystem/VBoxContainer/clickMe"]
+margin_left = 22.0
+margin_right = 74.0
+margin_bottom = 11.0
+theme = ExtResource( 12 )
+custom_fonts/font = ExtResource( 19 )
+text = "CLICK ME"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Minimize" type="TextureButton" parent="FileSystem"]
+margin_left = 205.0
+margin_top = 2.0
+margin_right = 214.0
+margin_bottom = 11.0
+
+[node name="Close" type="TextureButton" parent="FileSystem"]
+margin_left = 215.0
+margin_top = 2.0
+margin_right = 224.0
+margin_bottom = 11.0
+
+[node name="IDE" type="Sprite" parent="."]
+visible = false
+position = Vector2( 68, 1 )
+texture = ExtResource( 15 )
+centered = false
+script = ExtResource( 37 )
+
+[node name="Minimize" type="TextureButton" parent="IDE"]
+margin_left = 182.0
+margin_top = 2.0
+margin_right = 191.0
+margin_bottom = 11.0
+texture_normal = ExtResource( 7 )
+texture_pressed = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Close" type="TextureButton" parent="IDE"]
+margin_left = 192.0
+margin_top = 2.0
+margin_right = 201.0
+margin_bottom = 11.0
+texture_normal = ExtResource( 7 )
+texture_pressed = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="select" type="Label" parent="IDE"]
+margin_left = 6.0
+margin_top = 123.0
+margin_right = 127.0
+margin_bottom = 135.0
+theme = ExtResource( 12 )
+custom_fonts/font = ExtResource( 19 )
+text = "Select and generate"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WISH" type="Label" parent="IDE"]
+margin_left = 13.0
+margin_right = 107.0
+margin_bottom = 12.0
+theme = ExtResource( 12 )
+text = "BLOW-A-WISH"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Style" type="Label" parent="IDE"]
+margin_left = 133.0
+margin_top = 11.0
+margin_right = 202.0
+margin_bottom = 22.0
+mouse_filter = 1
+theme = ExtResource( 12 )
+text = "Style"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Object" type="Label" parent="IDE"]
+margin_left = 133.0
+margin_top = 66.0
+margin_right = 200.0
+margin_bottom = 77.0
+mouse_filter = 1
+theme = ExtResource( 12 )
+text = "Objects"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Generate" type="TextureButton" parent="IDE"]
+margin_left = 128.0
+margin_top = 136.0
+margin_right = 201.0
+margin_bottom = 149.0
+texture_pressed = ExtResource( 47 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="IDE/Generate"]
+margin_right = 71.0
+margin_bottom = 12.0
+theme = ExtResource( 12 )
+text = "Generate"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Screen" type="AnimatedSprite" parent="IDE"]
+show_behind_parent = true
+material = SubResource( 6 )
+position = Vector2( 3, 7 )
+frames = SubResource( 336 )
+frame = 9
+playing = true
+centered = false
+
+[node name="ScreenOverlay" type="AnimatedSprite" parent="IDE"]
+show_behind_parent = true
+light_mask = 2
+material = SubResource( 6 )
+position = Vector2( 3, 7 )
+frames = SubResource( 457 )
+frame = 9
+playing = true
+centered = false
+
+[node name="ScreenOccluder" type="Light2D" parent="IDE"]
+position = Vector2( 67, 64 )
+texture = ExtResource( 52 )
+mode = 3
+range_item_cull_mask = 2
+shadow_item_cull_mask = 2
+
+[node name="loading" type="ColorRect" parent="IDE"]
+visible = false
+self_modulate = Color( 1, 1, 1, 0.556863 )
+margin_left = 3.0
+margin_top = 13.0
+margin_right = 130.0
+margin_bottom = 115.0
+color = Color( 0.0509804, 0, 0.101961, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="loading" type="AnimatedSprite" parent="IDE/loading"]
+material = SubResource( 6 )
+position = Vector2( 53, 41 )
+frames = SubResource( 45 )
+centered = false
+
+[node name="ColorRect" type="ColorRect" parent="IDE"]
+margin_left = 3.0
+margin_top = 118.0
+margin_right = 3.0
+margin_bottom = 120.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Cool" type="TextureButton" parent="IDE"]
+margin_left = 132.0
+margin_top = 25.0
+margin_right = 201.0
+margin_bottom = 38.0
+texture_pressed = ExtResource( 38 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="IDE/Cool"]
+show_behind_parent = true
+margin_left = 1.0
+margin_right = 68.0
+margin_bottom = 11.0
+theme = ExtResource( 12 )
+custom_fonts/font = ExtResource( 19 )
+text = "Cool"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Cute" type="TextureButton" parent="IDE"]
+margin_left = 132.0
+margin_top = 39.0
+margin_right = 201.0
+margin_bottom = 52.0
+texture_pressed = ExtResource( 38 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="IDE/Cute"]
+show_behind_parent = true
+margin_left = 1.0
+margin_right = 68.0
+margin_bottom = 11.0
+theme = ExtResource( 12 )
+custom_fonts/font = ExtResource( 19 )
+text = "Cute"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Cozy" type="TextureButton" parent="IDE"]
+margin_left = 132.0
+margin_top = 53.0
+margin_right = 201.0
+margin_bottom = 66.0
+texture_pressed = ExtResource( 38 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="IDE/Cozy"]
+show_behind_parent = true
+margin_left = 1.0
+margin_right = 68.0
+margin_bottom = 11.0
+theme = ExtResource( 12 )
+custom_fonts/font = ExtResource( 19 )
+text = "Cozy"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Room" type="TextureButton" parent="IDE"]
+margin_left = 132.0
+margin_top = 80.0
+margin_right = 201.0
+margin_bottom = 93.0
+texture_pressed = ExtResource( 38 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="IDE/Room"]
+show_behind_parent = true
+margin_left = 1.0
+margin_right = 68.0
+margin_bottom = 11.0
+theme = ExtResource( 12 )
+custom_fonts/font = ExtResource( 19 )
+text = "Room"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Bed" type="TextureButton" parent="IDE"]
+margin_left = 132.0
+margin_top = 94.0
+margin_right = 201.0
+margin_bottom = 107.0
+texture_pressed = ExtResource( 38 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="IDE/Bed"]
+show_behind_parent = true
+margin_left = 1.0
+margin_right = 68.0
+margin_bottom = 11.0
+theme = ExtResource( 12 )
+custom_fonts/font = ExtResource( 19 )
+text = "Bed"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Chair" type="TextureButton" parent="IDE"]
+margin_left = 132.0
+margin_top = 108.0
+margin_right = 201.0
+margin_bottom = 121.0
+texture_pressed = ExtResource( 38 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="IDE/Chair"]
+show_behind_parent = true
+margin_left = 1.0
+margin_right = 68.0
+margin_bottom = 11.0
+theme = ExtResource( 12 )
+custom_fonts/font = ExtResource( 19 )
+text = "Chair"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Decor" type="TextureButton" parent="IDE"]
+margin_left = 132.0
+margin_top = 122.0
+margin_right = 201.0
+margin_bottom = 135.0
+texture_pressed = ExtResource( 38 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="IDE/Decor"]
+show_behind_parent = true
+margin_left = 1.0
+margin_right = 68.0
+margin_bottom = 11.0
+theme = ExtResource( 12 )
+custom_fonts/font = ExtResource( 19 )
+text = "Decor"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Red" type="TextureButton" parent="IDE"]
+margin_left = 2.0
+margin_top = 136.0
+margin_right = 15.0
+margin_bottom = 149.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Orange" type="TextureButton" parent="IDE"]
+margin_left = 16.0
+margin_top = 136.0
+margin_right = 29.0
+margin_bottom = 149.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Yellow" type="TextureButton" parent="IDE"]
+margin_left = 30.0
+margin_top = 136.0
+margin_right = 43.0
+margin_bottom = 149.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Green" type="TextureButton" parent="IDE"]
+margin_left = 44.0
+margin_top = 136.0
+margin_right = 57.0
+margin_bottom = 149.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Blue" type="TextureButton" parent="IDE"]
+margin_left = 58.0
+margin_top = 136.0
+margin_right = 71.0
+margin_bottom = 149.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Violet" type="TextureButton" parent="IDE"]
+margin_left = 72.0
+margin_top = 136.0
+margin_right = 85.0
+margin_bottom = 149.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pink" type="TextureButton" parent="IDE"]
+margin_left = 86.0
+margin_top = 136.0
+margin_right = 99.0
+margin_bottom = 149.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="White" type="TextureButton" parent="IDE"]
+margin_left = 100.0
+margin_top = 136.0
+margin_right = 113.0
+margin_bottom = 149.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Black" type="TextureButton" parent="IDE"]
+margin_left = 114.0
+margin_top = 136.0
+margin_right = 127.0
+margin_bottom = 149.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Virtualhell" type="Sprite" parent="."]
+position = Vector2( 66, 1 )
+z_index = 2
+texture = ExtResource( 4 )
+centered = false
+
+[node name="Paradise" type="Label" parent="Virtualhell"]
+margin_left = 12.0
+margin_right = 191.0
+margin_bottom = 11.0
+theme = ExtResource( 12 )
+text = "PARADISE.EXE"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Room" type="AnimatedSprite" parent="Virtualhell"]
+show_behind_parent = true
+material = SubResource( 215 )
+position = Vector2( 3, 13 )
+frames = SubResource( 213 )
+centered = false
+
+[node name="Close" type="TextureButton" parent="Virtualhell"]
+margin_left = 185.0
+margin_top = 2.0
+margin_right = 194.0
+margin_bottom = 11.0
+texture_normal = ExtResource( 7 )
+texture_pressed = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Minimize" type="TextureButton" parent="Virtualhell"]
+margin_left = 175.0
+margin_top = 2.0
+margin_right = 184.0
+margin_bottom = 11.0
+texture_normal = ExtResource( 7 )
+texture_pressed = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Synthia" type="AnimatedSprite" parent="Virtualhell"]
+show_behind_parent = true
+material = SubResource( 459 )
+position = Vector2( 3, 13 )
+frames = SubResource( 1 )
+centered = false
+
+[node name="Commandprompt" parent="." instance=ExtResource( 5 )]
+
+[node name="Taskbar" type="Sprite" parent="."]
+position = Vector2( 0, 222 )
+z_index = 3
+texture = ExtResource( 3 )
+centered = false
+
+[node name="time" type="Label" parent="Taskbar"]
+margin_left = 284.0
+margin_top = 3.0
+margin_right = 318.0
+margin_bottom = 14.0
+theme = ExtResource( 12 )
+text = "09:00"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Icons" type="HBoxContainer" parent="Taskbar"]
+margin_left = 91.0
+margin_top = 3.0
+margin_right = 177.0
+margin_bottom = 16.0
+custom_constants/separation = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="File" type="TextureButton" parent="Taskbar/Icons"]
+margin_right = 13.0
+margin_bottom = 13.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="Taskbar/Icons/File"]
+show_behind_parent = true
+position = Vector2( 7, 7 )
+texture = ExtResource( 36 )
+
+[node name="TaskbarSpacer" type="Sprite" parent="Taskbar/Icons/File/Sprite"]
+position = Vector2( -8, 0 )
+texture = ExtResource( 35 )
+
+[node name="Virtualhell" type="TextureButton" parent="Taskbar/Icons"]
+margin_left = 16.0
+margin_right = 29.0
+margin_bottom = 13.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="Taskbar/Icons/Virtualhell"]
+show_behind_parent = true
+position = Vector2( 7, 7 )
+texture = ExtResource( 33 )
+
+[node name="TaskbarSpacer" type="Sprite" parent="Taskbar/Icons/Virtualhell/Sprite"]
+position = Vector2( -8, 0 )
+texture = ExtResource( 35 )
+
+[node name="FileSystem" type="TextureButton" parent="Taskbar/Icons"]
+margin_left = 32.0
+margin_right = 45.0
+margin_bottom = 13.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="Taskbar/Icons/FileSystem"]
+show_behind_parent = true
+position = Vector2( 7, 7 )
+texture = ExtResource( 60 )
+
+[node name="TaskbarSpacer" type="Sprite" parent="Taskbar/Icons/FileSystem/Sprite"]
+position = Vector2( -8, 0 )
+texture = ExtResource( 35 )
+
+[node name="IDE" type="TextureButton" parent="Taskbar/Icons"]
+visible = false
+margin_left = 48.0
+margin_right = 61.0
+margin_bottom = 13.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="Taskbar/Icons/IDE"]
+show_behind_parent = true
+position = Vector2( 7, 7 )
+texture = ExtResource( 34 )
+
+[node name="TaskbarSpacer" type="Sprite" parent="Taskbar/Icons/IDE/Sprite"]
+position = Vector2( -8, 0 )
+texture = ExtResource( 35 )
+
+[node name="TextureButton" type="TextureButton" parent="Taskbar"]
+margin_left = 1.0
+margin_top = 2.0
+margin_right = 90.0
+margin_bottom = 17.0
+texture_pressed = ExtResource( 18 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FileViewer" type="Sprite" parent="."]
+visible = false
+position = Vector2( 63, 20 )
+z_index = 5
+texture = ExtResource( 67 )
+centered = false
+
+[node name="Label" type="Label" parent="FileViewer"]
+margin_left = 12.0
+margin_right = 182.0
+margin_bottom = 12.0
+theme = ExtResource( 12 )
+text = "HELLO WORLD"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="block" type="TextureButton" parent="FileViewer"]
+margin_left = -151.0
+margin_top = -45.0
+margin_bottom = 265.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="block2" type="TextureButton" parent="FileViewer"]
+margin_left = 193.0
+margin_top = -60.0
+margin_right = 344.0
+margin_bottom = 250.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="block3" type="TextureButton" parent="FileViewer"]
+margin_top = -56.0
+margin_right = 193.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="block4" type="TextureButton" parent="FileViewer"]
+margin_top = 142.0
+margin_right = 193.0
+margin_bottom = 238.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Close" type="TextureButton" parent="FileViewer"]
+margin_left = 182.0
+margin_top = 2.0
+margin_right = 191.0
+margin_bottom = 11.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ImageFile" type="AnimatedSprite" parent="FileViewer"]
+position = Vector2( 3, 16 )
+frames = ExtResource( 68 )
+animation = "mycat2jpg"
+centered = false
+
+[node name="Icon" type="AnimatedSprite" parent="FileViewer"]
+position = Vector2( 2, 2 )
+frames = SubResource( 470 )
+animation = "image"
+centered = false
+
+[node name="TextScroll" type="Sprite" parent="FileViewer"]
+visible = false
+position = Vector2( 184, 78 )
+texture = ExtResource( 69 )
+
+[node name="Text" type="RichTextLabel" parent="FileViewer"]
+visible = false
+margin_left = 6.0
+margin_top = 16.0
+margin_right = 190.0
+margin_bottom = 139.0
+theme = ExtResource( 12 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+text = "If you are reading this, my request regarding SCP-8000'S containment procedures was denied, I was reassigned, my block to prevent automated deletion of files on this computer was successful, and YOU were assigned to clean up after me. Since you are reading this, human curiosity played its role perfectly.
+
+Delete this file after reading. Then read the others that have revealed themselves to you.
+
+	-Dr. Ada Stroustrup"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="popup" type="Sprite" parent="."]
+visible = false
+position = Vector2( 166, 88 )
+z_index = 5
+texture = ExtResource( 25 )
+script = ExtResource( 26 )
+
+[node name="block" type="TextureButton" parent="popup"]
+margin_left = -253.0
+margin_top = -128.0
+margin_right = -102.0
+margin_bottom = 182.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="block2" type="TextureButton" parent="popup"]
+margin_left = 101.0
+margin_top = -114.0
+margin_right = 252.0
+margin_bottom = 196.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="block3" type="TextureButton" parent="popup"]
+margin_left = -102.0
+margin_top = -199.0
+margin_right = 101.0
+margin_bottom = -42.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="block4" type="TextureButton" parent="popup"]
+margin_left = -102.0
+margin_top = 42.0
+margin_right = 101.0
+margin_bottom = 199.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="popup"]
+margin_left = -100.0
+margin_top = -43.0
+margin_right = -24.0
+margin_bottom = -29.0
+theme = ExtResource( 12 )
+custom_colors/font_color = Color( 0.898039, 0.929412, 0.933333, 1 )
+custom_fonts/font = ExtResource( 27 )
+text = "WARNING"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="cancel" type="TextureButton" parent="popup"]
+margin_left = -41.0
+margin_top = 26.0
+margin_right = 28.0
+margin_bottom = 38.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="popup/cancel"]
+margin_right = 69.0
+margin_bottom = 12.0
+theme = ExtResource( 12 )
+custom_fonts/font = ExtResource( 19 )
+text = "Cancel"
+align = 1
+
+[node name="accept" type="TextureButton" parent="popup"]
+margin_left = 29.0
+margin_top = 26.0
+margin_right = 98.0
+margin_bottom = 38.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="popup/accept"]
+margin_right = 69.0
+margin_bottom = 12.0
+theme = ExtResource( 12 )
+custom_fonts/font = ExtResource( 19 )
+text = "Okay"
+align = 1
+
+[node name="ColorRect" type="ColorRect" parent="popup"]
+visible = false
+margin_left = -41.0
+margin_top = 26.0
+margin_right = 28.0
+margin_bottom = 38.0
+color = Color( 0.517647, 0.541176, 0.592157, 1 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="popup"]
+margin_left = -96.0
+margin_top = -28.0
+margin_right = 98.0
+margin_bottom = 24.0
+theme = ExtResource( 12 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+text = "Deletion of this file is permanent."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Close" type="TextureButton" parent="popup"]
+margin_left = 90.0
+margin_top = -41.0
+margin_right = 99.0
+margin_bottom = -32.0
+texture_normal = ExtResource( 7 )
+texture_pressed = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/FileMinimize = SubResource( 4 )
+anims/FileSystemMinimize = SubResource( 469 )
+anims/IDEMinimize = SubResource( 39 )
+anims/RESET = SubResource( 3 )
+anims/SynthiaMinimize = SubResource( 2 )
+anims/load = SubResource( 40 )
+
+[node name="NervousTimer" type="Timer" parent="."]
+wait_time = 10.0
+one_shot = true
+autostart = true
+
+[node name="CurrentTime" type="Timer" parent="."]
+autostart = true
+
+[node name="cursor" type="AnimatedSprite" parent="."]
+position = Vector2( 226, 144 )
+z_index = 6
+frames = SubResource( 61 )
+playing = true
+centered = false
+script = ExtResource( 24 )
+
+[connection signal="FileClicked" from="Icons" to="." method="_on_File_pressed"]
+[connection signal="FileSystemClicked" from="Icons" to="." method="_on_FileSystem_pressed"]
+[connection signal="IDEClicked" from="Icons" to="." method="_on_IDE_pressed"]
+[connection signal="SynthiaClicked" from="Icons" to="." method="_on_Synthia_pressed"]
+[connection signal="openFile" from="Icons" to="." method="_on_Icons_openFile"]
+[connection signal="trashed" from="Icons" to="." method="_on_Icons_trashed"]
+[connection signal="button_down" from="Icons/RecyclingBin/RecyclingButton" to="Icons" method="_on_RecyclingButton_button_down"]
+[connection signal="button_up" from="Icons/RecyclingBin/RecyclingButton" to="Icons" method="_on_RecyclingButton_button_up"]
+[connection signal="button_down" from="Icons/FileSystem/File" to="Icons" method="_on_button_down" binds= [ "FileSystem" ]]
+[connection signal="button_up" from="Icons/FileSystem/File" to="Icons" method="_on_button_up" binds= [ "FileSystem" ]]
+[connection signal="button_down" from="Icons/File/File" to="Icons" method="_on_button_down" binds= [ "File" ]]
+[connection signal="button_up" from="Icons/File/File" to="Icons" method="_on_button_up" binds= [ "File" ]]
+[connection signal="button_down" from="Icons/Virtualhell/ParadiseButton" to="Icons" method="_on_button_down" binds= [ "Virtualhell" ]]
+[connection signal="button_up" from="Icons/Virtualhell/ParadiseButton" to="Icons" method="_on_button_up" binds= [ "Virtualhell" ]]
+[connection signal="button_down" from="Icons/IDE/BlowAWishButton" to="Icons" method="_on_button_down" binds= [ "IDE" ]]
+[connection signal="button_up" from="Icons/IDE/BlowAWishButton" to="Icons" method="_on_button_up" binds= [ "IDE" ]]
+[connection signal="pressed" from="File/Close" to="." method="_on_File_Close_pressed"]
+[connection signal="pressed" from="File/Minimize" to="." method="_on_File_Minimize_pressed"]
+[connection signal="openFile" from="FileSystem" to="." method="_on_Icons_openFile"]
+[connection signal="button_down" from="FileSystem/StorageFile1" to="FileSystem" method="_on_StorageFile_button_down"]
+[connection signal="button_up" from="FileSystem/StorageFile1" to="FileSystem" method="_on_StorageFile_button_up"]
+[connection signal="button_down" from="FileSystem/StorageFile1/Button" to="FileSystem/StorageFile1" method="_on_Button_button_down"]
+[connection signal="button_up" from="FileSystem/StorageFile1/Button" to="FileSystem/StorageFile1" method="_on_Button_button_up"]
+[connection signal="button_down" from="FileSystem/StorageFile2" to="FileSystem" method="_on_StorageFile_button_down"]
+[connection signal="button_up" from="FileSystem/StorageFile2" to="FileSystem" method="_on_StorageFile_button_up"]
+[connection signal="button_down" from="FileSystem/StorageFile2/Button" to="FileSystem/StorageFile2" method="_on_Button_button_down"]
+[connection signal="button_up" from="FileSystem/StorageFile2/Button" to="FileSystem/StorageFile2" method="_on_Button_button_up"]
+[connection signal="button_down" from="FileSystem/StorageFile3" to="FileSystem" method="_on_StorageFile_button_down"]
+[connection signal="button_up" from="FileSystem/StorageFile3" to="FileSystem" method="_on_StorageFile_button_up"]
+[connection signal="button_down" from="FileSystem/StorageFile3/Button" to="FileSystem/StorageFile3" method="_on_Button_button_down"]
+[connection signal="button_up" from="FileSystem/StorageFile3/Button" to="FileSystem/StorageFile3" method="_on_Button_button_up"]
+[connection signal="button_down" from="FileSystem/StorageFile4" to="FileSystem" method="_on_StorageFile_button_down"]
+[connection signal="button_up" from="FileSystem/StorageFile4" to="FileSystem" method="_on_StorageFile_button_up"]
+[connection signal="button_down" from="FileSystem/StorageFile4/Button" to="FileSystem/StorageFile4" method="_on_Button_button_down"]
+[connection signal="button_up" from="FileSystem/StorageFile4/Button" to="FileSystem/StorageFile4" method="_on_Button_button_up"]
+[connection signal="button_down" from="FileSystem/StorageFile5" to="FileSystem" method="_on_StorageFile_button_down"]
+[connection signal="button_up" from="FileSystem/StorageFile5" to="FileSystem" method="_on_StorageFile_button_up"]
+[connection signal="button_down" from="FileSystem/StorageFile5/Button" to="FileSystem/StorageFile5" method="_on_Button_button_down"]
+[connection signal="button_up" from="FileSystem/StorageFile5/Button" to="FileSystem/StorageFile5" method="_on_Button_button_up"]
+[connection signal="button_down" from="FileSystem/StorageFile6" to="FileSystem" method="_on_StorageFile_button_down"]
+[connection signal="button_up" from="FileSystem/StorageFile6" to="FileSystem" method="_on_StorageFile_button_up"]
+[connection signal="button_down" from="FileSystem/StorageFile6/Button" to="FileSystem/StorageFile6" method="_on_Button_button_down"]
+[connection signal="button_up" from="FileSystem/StorageFile6/Button" to="FileSystem/StorageFile6" method="_on_Button_button_up"]
+[connection signal="pressed" from="FileSystem/VBoxContainer/system" to="FileSystem" method="_on_system_pressed" binds= [ "system" ]]
+[connection signal="pressed" from="FileSystem/VBoxContainer/images" to="FileSystem" method="_on_system_pressed" binds= [ "images" ]]
+[connection signal="pressed" from="FileSystem/VBoxContainer/documents" to="FileSystem" method="_on_system_pressed" binds= [ "documents" ]]
+[connection signal="pressed" from="FileSystem/VBoxContainer/clickMe" to="FileSystem" method="_on_system_pressed" binds= [ "clickMe" ]]
+[connection signal="pressed" from="FileSystem/Minimize" to="." method="_on_FileSystem_Minimize_pressed"]
+[connection signal="pressed" from="FileSystem/Close" to="." method="_on_FileSystem_Close_pressed"]
+[connection signal="generated" from="IDE" to="." method="_on_IDE_generated"]
+[connection signal="pressed" from="IDE/Minimize" to="." method="_on_IDE_Minimize_pressed"]
+[connection signal="pressed" from="IDE/Close" to="." method="_on_IDE_Close_pressed"]
+[connection signal="pressed" from="IDE/Generate" to="IDE" method="_on_Generate_pressed"]
+[connection signal="animation_finished" from="IDE/Screen" to="IDE" method="_on_Screen_animation_finished"]
+[connection signal="frame_changed" from="IDE/Screen" to="IDE" method="_on_Screen_frame_changed"]
+[connection signal="pressed" from="IDE/Cool" to="IDE" method="_on_Style_pressed" binds= [ "Cool" ]]
+[connection signal="pressed" from="IDE/Cute" to="IDE" method="_on_Style_pressed" binds= [ "Cute" ]]
+[connection signal="pressed" from="IDE/Cozy" to="IDE" method="_on_Style_pressed" binds= [ "Cozy" ]]
+[connection signal="pressed" from="IDE/Room" to="IDE" method="_on_Object_pressed" binds= [ "Room" ]]
+[connection signal="pressed" from="IDE/Bed" to="IDE" method="_on_Object_pressed" binds= [ "Bed" ]]
+[connection signal="pressed" from="IDE/Chair" to="IDE" method="_on_Object_pressed" binds= [ "Chair" ]]
+[connection signal="pressed" from="IDE/Decor" to="IDE" method="_on_Object_pressed" binds= [ "Decor" ]]
+[connection signal="pressed" from="IDE/Red" to="IDE" method="_on_Color_pressed" binds= [ "Red", "res://Resources/Room/redcolors.png" ]]
+[connection signal="pressed" from="IDE/Orange" to="IDE" method="_on_Color_pressed" binds= [ "Orange", "res://Resources/Room/orangecolors.png" ]]
+[connection signal="pressed" from="IDE/Yellow" to="IDE" method="_on_Color_pressed" binds= [ "Yellow", "res://Resources/Room/yellowcolors.png" ]]
+[connection signal="pressed" from="IDE/Green" to="IDE" method="_on_Color_pressed" binds= [ "Green", "res://Resources/Room/greencolors.png" ]]
+[connection signal="pressed" from="IDE/Blue" to="IDE" method="_on_Color_pressed" binds= [ "Blue", "res://Resources/Room/bluecolors.png" ]]
+[connection signal="pressed" from="IDE/Violet" to="IDE" method="_on_Color_pressed" binds= [ "Violet", "res://Resources/Room/violetcolors.png" ]]
+[connection signal="pressed" from="IDE/Pink" to="IDE" method="_on_Color_pressed" binds= [ "Pink", "res://Resources/Room/pinkcolors.png" ]]
+[connection signal="pressed" from="IDE/White" to="IDE" method="_on_Color_pressed" binds= [ "White", "res://Resources/Room/whitecolors.png" ]]
+[connection signal="pressed" from="IDE/Black" to="IDE" method="_on_Color_pressed" binds= [ "Black", "res://Resources/Room/blackcolors.png" ]]
+[connection signal="pressed" from="Virtualhell/Close" to="." method="_on_Synthia_Close_pressed"]
+[connection signal="pressed" from="Virtualhell/Minimize" to="." method="_on_Synthia_Minimize_pressed"]
+[connection signal="option_pressed" from="Commandprompt" to="." method="_on_Commandprompt_option_pressed"]
+[connection signal="pressed" from="Taskbar/Icons/File" to="." method="_on_File_pressed"]
+[connection signal="pressed" from="Taskbar/Icons/Virtualhell" to="." method="_on_Synthia_pressed"]
+[connection signal="pressed" from="Taskbar/Icons/FileSystem" to="." method="_on_FileSystem_pressed"]
+[connection signal="pressed" from="Taskbar/Icons/IDE" to="." method="_on_IDE_pressed"]
+[connection signal="mouse_entered" from="FileViewer/block" to="popup" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="FileViewer/block" to="popup" method="_on_mouse_exited"]
+[connection signal="pressed" from="FileViewer/block" to="popup" method="_on_TextureButton_pressed"]
+[connection signal="mouse_entered" from="FileViewer/block2" to="popup" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="FileViewer/block2" to="popup" method="_on_mouse_exited"]
+[connection signal="pressed" from="FileViewer/block2" to="popup" method="_on_TextureButton_pressed"]
+[connection signal="mouse_entered" from="FileViewer/block3" to="popup" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="FileViewer/block3" to="popup" method="_on_mouse_exited"]
+[connection signal="pressed" from="FileViewer/block3" to="popup" method="_on_TextureButton_pressed"]
+[connection signal="mouse_entered" from="FileViewer/block4" to="popup" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="FileViewer/block4" to="popup" method="_on_mouse_exited"]
+[connection signal="pressed" from="FileViewer/block4" to="popup" method="_on_TextureButton_pressed"]
+[connection signal="pressed" from="FileViewer/Close" to="." method="_on_FileViewer_Close_pressed"]
+[connection signal="mouse_entered" from="popup/block" to="popup" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="popup/block" to="popup" method="_on_mouse_exited"]
+[connection signal="pressed" from="popup/block" to="popup" method="_on_TextureButton_pressed"]
+[connection signal="mouse_entered" from="popup/block2" to="popup" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="popup/block2" to="popup" method="_on_mouse_exited"]
+[connection signal="pressed" from="popup/block2" to="popup" method="_on_TextureButton_pressed"]
+[connection signal="mouse_entered" from="popup/block3" to="popup" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="popup/block3" to="popup" method="_on_mouse_exited"]
+[connection signal="pressed" from="popup/block3" to="popup" method="_on_TextureButton_pressed"]
+[connection signal="mouse_entered" from="popup/block4" to="popup" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="popup/block4" to="popup" method="_on_mouse_exited"]
+[connection signal="pressed" from="popup/block4" to="popup" method="_on_TextureButton_pressed"]
+[connection signal="pressed" from="popup/cancel" to="." method="_on_Warning_Close_pressed"]
+[connection signal="pressed" from="popup/accept" to="." method="_on_Warning_accept_pressed"]
+[connection signal="pressed" from="popup/Close" to="." method="_on_Warning_Close_pressed"]
+[connection signal="timeout" from="NervousTimer" to="." method="_on_NervousTimer_timeout"]
+[connection signal="timeout" from="CurrentTime" to="." method="_on_CurrentTime_timeout"]

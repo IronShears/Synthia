@@ -1,0 +1,595 @@
+{
+"TUTORIAL FOR TRANSLATORS": "First up, try and use some kind of code editor that supports .json files. I use Notepad++. You won't have to, but it will be a LOT easier on you. Ignore the red fake errors in the text if you use Notepad++, they're just being dramatic.", 
+
+"Do not change ANY of the text in square brackets": "Don't touch anything in text that looks like this: [i][/i],[color=#xxxxxx][/color], etc. These add text effects.",
+"Do not change ANY variables in curly brackets":"Don't touch anything in text that looks like this: {example}, these are searched and replaced in the code",
+"Do not change any dictionary keys":[
+{"doNotChangeThis":"change THIS"}
+],
+"Do not change anything besides text in the Dialogue Dictionaries.":[
+{"color":"DO NOT CHANGE","text":"CHANGE","tickSpeed":"DO NOT CHANGE","closeSpeed":"DO NOT CHANGE"},
+],
+
+"EXPORTING OPTION 1":"Download Godot and open the project file, place your edited .json file in res://Components, test it with the play button on the top right to make sure it runs correctly.",
+"If some letters aren't showing up, you may need to find new fonts and edit them." : "Font can be changed in the DialogueTheme.tres, Tablet.tres, and Room Buttons.tres. You'll probably need 2-3 fonts. I used 3, but you can get away with a Standard font and a Strikethrough font. If you can't find a strikthrough font and you don't want to make one, just reword anything with [i][/i] borders to make sense without a strikethrough and remove the [i][/i].",
+"Click project>export>add...>HTML5>Resources": "add *.json to Filters to export into a new folder", 
+"Export the project, and finally," : "edit the .html file's name to index.html and upload to a site of your choosing like Itch.io or github pages. You may need to zip the folder depending on where you upload it.",
+
+"EXPORTING ALTERNATIVE" : "If you're uncomfortable with code or Godot, you COULD skip all that and just send the translated file to me. I would be happy to add the language support natively to the main game file with a selection screen at the start",
+"It'd be much easier on you, but it wouldn't be its own file." : "You can still upload your own scp-wiki translation page and you'd be credited in the main game as a translator and on the page as a co-author, but you couldn't make your own itch.io page for the translation if you were planning on that.",
+
+"With all of that mentioned, the rest of this file is all the text in the entire game.": "Good luck! If you need additional assistance, DM me on wikidot(IronShears, slower) or Discord(ironshears, faster)",
+
+
+
+"FirstName": "First Name:",
+"LastName": "Last Name:",
+"Enter": ">Enter",
+"Password": "Password: ",
+"Obscene": "Your login information is incorrect. This terminal has been deactivated. Please remain still while security arrives to confirm your identity.",
+"ObsceneDisclaimer":"If you still don't know why you got this error after I tell you it has to do with the name you chose, please comment the name you were trying to name yourself and I will add an exception.
+
+Refresh and try a different name for now.",
+"SCP-XXXX": "SCP-8000.html",
+"SCPText":"[color=#5b6ee1][b]Item #:[/b][/color] SCP-8000
+
+[color=#5b6ee1][b]Object Class:[/b][/color] Safe
+
+[color=#5b6ee1][b]Special Containment
+Procedures:[/b][/color] All files on
+the computer
+hosting SCP-8000, apart
+from SCP-8000
+(\"PARADISE.exe\") and the
+SCP-8000 instructional
+file(\"SCP-8000.html\") are 
+to be manually
+DRAGGED to the desktop
+from the storage system
+and DELETED with the RECYCLING BIN.
+
+Any adjustments to SCP-8000’s coding are strictly forbidden. None of the files discovered on the device are to be inspected before deletion.
+
+The computer containing SCP-8000 is to be kept in Site-XX’s electronic containment wing. SCP-8000 is to be kept running in its original file path at all times. It should not be copied, pasted, or transferred in any way whatsoever.
+
+One individual(Currently Junior Researcher {firstName} {lastName} following Dr. Ada Stroustrup’s reassignment.) is assigned to SCP-8000’s maintenance & monitoring. This personnel will spend one 8-hour shift from 9:00-17:00 observing SCP-8000 daily. Additional monitoring is unnecessary.
+
+[color=#5b6ee1][b]Description:[/b][/color] SCP-8000 is an anomalous Virtual Reality Simulation developed by GOI-004C \"The Church of Maxwellism\" between the years 1987 and 1995 when it was abruptly abandoned. The creation of SCP-8000 lined up with Maxwellian transhumanist beliefs regarding Whole Brain Uploads.
+
+SCP-8000 was originally envisioned as a complex and powerful simulation able to sustain up to one thousand individuals’ consciousness digitized through anomalous means and memory to support an additional ten thousand non-digitized individuals accessing the system externally through proprietary virtual reality equipment. Initial plans were made to slowly increase the capacity over the years and create a \"digital paradise\". Over time the project suffered multiple downsizes in scope due to technical and financial struggles until it was finally proved technologically unfeasible following the first Whole Brain Upload.
+
+This incident led to the creation of SCP-8000-1, SCP-8000’s only current and permanent resident. SCP-8000-1, is a direct copy of the brain of Cynthia Powell, a former member of GOI-004C, as she was in 1995. Due to the non-anomalous methods of data transfer used, SCP-8000 was unable to perform a true transfer of consciousness, only copying the given information. SCP-8000-1 has been active inside SCP-8000 for the two years since its conception in 1995.",
+"SCPTextImage":"Cynthia Powell circa 1997, 2 years after the creation of SCP-8000-1.",
+"PARADISE": "PARADISE.exe",
+"SHELL": "SHELL",
+"WISH": "BLOW-A-WISH.exe",
+"FILESYSTEM": "FILE SYSTEM",
+"Select": "Select color+object",
+
+
+"systemPath":">SYSTEM",
+"images":"IMAGES",
+"imagesPath":">SYSTEM>IMAGES",
+"documents":"DOCS",
+"documentsPath":">SYSTEM>DOCS",
+"clickMe":"CLICK_ME",
+"clickMePath":">SYSTEM>DOCS>CLICK_ME",
+"Testtxt":"Test.txt",
+"TesttxtMini":"Test
+.txt",
+"mycat1jpg":"my_cat1.jpg",
+"mycat2jpg":"my_cat2.jpg",
+"mykot3jpg":"my_kot3.jpg",
+"TesttxtText":"This is a text document. Nothing is real in here yet. Here you can view instructions by Ada and other stuff I guess.",
+"READTHISrtf":"READ_THIS.rtf",
+"READTHISrtfMini":"READ
+.rtf",
+"READTHISrtfText":"If you are currently reading this, my request to update SCP-8000'S containment procedures was denied, I was reassigned or demoted, my block to prevent the deletion of my files on this computer through automation was successful, and YOU were assigned to carry out that task manually.
+
+Human curiosity has once again played out its role flawlessly. I only hope human empathy can live up to its performance.
+
+Delete this file after reading. talk to Synthia if you haven't already, and do not mention any of this to your superiors. Another folder has been revealed to you. There are instructions within. If you follow them carefully, you will not be caught.
+
+	-Dr. Ada Stroustrup
+
+",
+
+
+"dialogueError":[{"color":"Teal", "sprite":"cameraSmile","text":"DIALOGUE MISSING. Close game and report that the \"{missingDialogue}\" dialogue key is missing.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"dialogueErrorOptions"}],
+
+"dialogueErrorOptions": [
+{"name":"fineGreetingUgly", "text":"Okay."}
+],
+
+"optionsError":[
+{"name":"Error", "text":"These options are missing. Close game and report that the \"{missingOptions}\" dialogue key is missing"}
+],
+
+
+"cantClose":"This file cannot be closed without the admin access passcode. Enter code?",
+"cantRecycle":"This file is still in use. Please close out the program before recycling.",
+"recycle":"Recycle this file? This action is permanent and recycled files cannot be restored.",
+"generate":"You are about to generate a {color} {style} {object}. Continue?",
+"Red":"Red",
+"Orange":"Orange",
+"Yellow":"Yellow",
+"Green":"Green",
+"Blue":"Blue",
+"Violet":"Violet",
+"Pink":"Pink",
+"White":"White",
+"Black":"Black",
+"Cozy":"Cozy",
+"Cute":"Cute",
+"Cool":"Cool",
+"Room":"Room",
+"Chair":"Chair",
+"Bed":"Bed",
+"Decor":"Decor",
+"select":"Select and Generate.",
+"Style":"Style",
+"Object":"Object",
+"invalidCode":[{"color":"Teal", "sprite":"null","text":"Invalid code entered.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraNervous","text":"What kind of code were you trying to enter?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"nothingWhatWereYouSaying"}
+],
+"fileDeleted0":[{"color":"Teal", "sprite":"null","text":"File Recycled.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraNervous","text":"What are you deleting?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"nothingWhatWereYouSaying"}
+],
+"fileDeleted1":[{"color":"Teal", "sprite":"null","text":"File Recycled.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraNervous","text":"Why are you deleting things? I don't get it.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+
+
+
+
+
+"successfullyGeneratedIntro":[{"color":"Teal", "sprite":"null","text":"Successfully Generated.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"...what?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Is that...","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"Things are... different... the walls are different...","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Did you do this?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"ReactionToGeneration"}
+],
+
+
+"sadFirstGeneration": [{"color":"Pink", "sprite":"camera2Nervous","text":"Did you... do this to my room...?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"ReactionToGeneration"}
+],
+"fineFirstGeneration": [{"color":"Pink", "sprite":"camera2Nervous","text":"Did you do this to my room?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"ReactionToGeneration"}
+],
+"angryFirstGeneration": [{"color":"Pink", "sprite":"camera1Angry","text":"You. Did you do this to my room?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"ReactionToGeneration"}
+],
+
+"ReactionToGeneration":[
+{"name":"ReactionToGenerationforgotten", "text":"Yes. Do you like it?"}
+],
+
+
+"ReactionToGenerationforgotten": [{"color":"Pink", "sprite":"camera1Happy","text":"Of COURSE I love it! This is the first time I've seen colors besides pink and grey in the last two YEARS!","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Happy","text":"Is this the surprise Ada was making for me? I... I'm so excited...","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+
+
+
+"successfullyGeneratedBetter":[{"color":"Teal", "sprite":"null","text":"Successfully Generated.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"Oh WOW. This is better than the last {object}!","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false}
+],
+"successfullyGeneratedWorse":[{"color":"Teal", "sprite":"null","text":"Successfully Generated.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"Oh nooo... I liked the old one better... Is it too late to change it back?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false}
+],
+"successfullyGeneratedNeutral":[{"color":"Teal", "sprite":"null","text":"Successfully Generated.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Huh. That's new.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false}
+],
+"newObjectGood":[{"color":"Pink", "sprite":"camera2Smile","text":"I love it!","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"newObjectBad":[{"color":"Pink", "sprite":"camera2Nervous","text":"It's.... a new... thing.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"newObjectNeutral":[{"color":"Pink", "sprite":"camera2Smile","text":"Something new. That's good.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+
+
+
+
+
+
+
+
+
+
+"nothingWhatWereYouSaying": [
+{"name":"forgotten", "text":"Nothing. What were you saying again?"}
+],
+"whatWereYouSaying": [
+{"name":"forgotten", "text":"What were you saying earlier, again?"}
+],
+
+"fineRepeat":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"You told me \"{insertText}\"","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"And I said","tickSpeed":0.04,"closeSpeed":0.5,"optionsVisible":false}
+],
+"sadRepeat":[
+{"color":"Pink", "sprite":"camera1Sad","text":"Please PLEASE don't leave me alone... you said \"{insertText}\"","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"And then I told you","tickSpeed":0.04,"closeSpeed":0.5,"optionsVisible":false}
+],
+"angryRepeat":[
+{"color":"Pink", "sprite":"camera1Angry","text":"GOD, you're fucking annoying. You said \"{insertText}\"","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"And then I TOLD YOU","tickSpeed":0.04,"closeSpeed":0.5,"optionsVisible":false}
+],
+
+
+
+"dialogueIntro":[
+{"color":"Pink", "sprite":"floorLookUp","text":"Hello?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Ada? Is that you?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"Greeting"}
+],
+
+
+
+
+"lonelyIntro23":[
+{"color":"Pink", "sprite":"camera1Angry","text":"I can see the camera.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"I know you're there.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"Greeting"}
+],
+"lonelyIntro24":[
+{"color":"Pink", "sprite":"camera2Angry","text":"Ada? This isn't going to be like yesterday, is it?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"Greeting"}
+],
+"lonelyIntro25":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"Are you going to respond to me?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Greeting"}
+],
+"lonelyIntro26":[
+{"color":"Pink", "sprite":"camera1Angry","text":"You know you're supposed to.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Greeting"}
+],
+"lonelyIntro27":[
+{"color":"Pink", "sprite":"camera1Angry","text":"Is this going to keep happening every day?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Greeting"}
+],
+"lonelyIntro28":[
+{"color":"Pink", "sprite":"camera2Angry","text":"Is the computer broken?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Greeting"}
+],
+"lonelyIntro29":[
+{"color":"Pink", "sprite":"camera1Angry","text":"If it's broken, it can be fixed.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Greeting"}
+],
+"lonelyIntro30":[
+{"color":"Pink", "sprite":"camera2Sad","text":"Why are you doing this?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Greeting"}
+],
+"lonelyIntro31":[
+{"color":"Pink", "sprite":"camera1Sad","text":"I didn't do anything wrong.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Greeting"}
+],
+"lonelyIntro32":[
+{"color":"Pink", "sprite":"camera2Sad","text":"Please respond.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Greeting"}
+],
+"lonelyIntro33":[
+{"color":"Pink", "sprite":"camera1Sad","text":"I just want someone to talk to.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Greeting"}
+],
+"lonelyIntro34":[
+{"color":"Pink", "sprite":"camera2Sad","text":"Are you even paying attention to me?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Greeting"}
+],
+"lonelyIntro35":[
+{"color":"Pink", "sprite":"camera1Sad","text":"I don't understand why you are ignoring me.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Greeting"}
+],
+"lonelyIntro36":[
+{"color":"Pink", "sprite":"floor1Sad","text":"Please.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Greeting"}
+],
+"lonelyIntro37":[
+{"color":"Pink", "sprite":"floor2Sad","text":"I don't want to be alone anymore…","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Greeting"}
+],
+"lonelyIntro38":[
+{"color":"Pink", "sprite":"floor1Sad","text":"Is it something I said?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Greeting"}
+],
+"lonelyIntro39":[
+{"color":"Pink", "sprite":"floor2Sad","text":"I'm sorry if I offended you, Ada.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Greeting"}
+],
+"lonelyIntro40":[
+{"color":"Pink", "sprite":"floor1Sad","text":"I didn't mean to.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Greeting"}
+],
+"lonelyIntro41":[
+{"color":"Pink", "sprite":"floor2Sad","text":"... Ada?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Greeting"}
+],
+"lonelyIntro42":[
+{"color":"Pink", "sprite":"floor1Sad","text":"Please say anything","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Greeting"}
+],
+"lonelyIntro43":[
+{"color":"Pink", "sprite":"floor2Sad","text":"I don't understand…","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Greeting"}
+],
+"lonelyIntro44":[
+{"color":"Pink", "sprite":"floor1Sad","text":"This is all I have… don't you get it?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Greeting"}
+],
+"lonelyIntro45":[
+{"color":"Pink", "sprite":"floor2Sad","text":"Anything but this…","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Greeting"}
+],
+
+
+"lonely1":[
+{"color":"Pink", "sprite":"camera2Happy","text":"testLonelinessLayer","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonely2":[
+{"color":"Pink", "sprite":"camera1Happy","text":"testLonelinessLayer","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonely3":[
+{"color":"Pink", "sprite":"camera2Happy","text":"testLonelinessLayer","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonely4":[
+{"color":"Pink", "sprite":"camera1Happy","text":"testLonelinessLayer","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonely5":[
+{"color":"Pink", "sprite":"camera2Happy","text":"testLonelinessLayer","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonely6":[
+{"color":"Pink", "sprite":"camera1Happy","text":"testLonelinessLayer","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonely7":[
+{"color":"Pink", "sprite":"camera1Happy","text":"testLonelinessLayer","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonely8":[
+{"color":"Pink", "sprite":"camera2Happy","text":"testLonelinessLayer","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonely9":[
+{"color":"Pink", "sprite":"camera1Happy","text":"testLonelinessLayer","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonely10":[
+{"color":"Pink", "sprite":"camera2Happy","text":"testLonelinessLayer","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonely11":[
+{"color":"Pink", "sprite":"camera1Happy","text":"testLonelinessLayer","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonely12":[
+{"color":"Pink", "sprite":"camera2Happy","text":"testLonelinessLayer","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonely13":[
+{"color":"Pink", "sprite":"camera1Happy","text":"testLonelinessLayer","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonely14":[
+{"color":"Pink", "sprite":"camera2Happy","text":"testLonelinessLayer","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonely15":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"testLonelinessLayer","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonely16":[
+{"color":"Pink", "sprite":"camera2Nervous","text":"testLonelinessLayer","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonely17":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"testLonelinessLayer","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonely18":[
+{"color":"Pink", "sprite":"camera2Nervous","text":"testLonelinessLayer","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonely19":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"testLonelinessLayer","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonely20":[
+{"color":"Pink", "sprite":"camera2Nervous","text":"testLonelinessLayer","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonely21":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"testLonelinessLayer","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonely22":[
+{"color":"Pink", "sprite":"camera2Nervous","text":"testLonelinessLayer","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonely23":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"testLonelinessLayer","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonely24":[
+{"color":"Pink", "sprite":"camera2Nervous","text":"testLonelinessLayer","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonely25":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"testLonelinessLayer","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonely26":[
+{"color":"Pink", "sprite":"camera2Nervous","text":"testLonelinessLayer","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonely27":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"testLonelinessLayer","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonely28":[
+{"color":"Pink", "sprite":"camera2Nervous","text":"testLonelinessLayer","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonely29":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"testLonelinessLayer","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonely30":[
+{"color":"Pink", "sprite":"camera1Happy","text":"testLonelinessLayer","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonely31":[
+{"color":"Pink", "sprite":"camera1Happy","text":"testLonelinessLayer","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonely32":[
+{"color":"Pink", "sprite":"camera1Happy","text":"testLonelinessLayer","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonely33":[
+{"color":"Pink", "sprite":"camera1Happy","text":"testLonelinessLayer","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonely34":[
+{"color":"Pink", "sprite":"camera1Happy","text":"testLonelinessLayer","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonely35":[
+{"color":"Pink", "sprite":"camera1Happy","text":"testLonelinessLayer","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonely36":[
+{"color":"Pink", "sprite":"camera1Happy","text":"testLonelinessLayer","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonely37":[
+{"color":"Pink", "sprite":"camera1Happy","text":"testLonelinessLayer","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonely38":[
+{"color":"Pink", "sprite":"camera1Happy","text":"testLonelinessLayer","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonely39":[
+{"color":"Pink", "sprite":"camera1Happy","text":"testLonelinessLayer","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonely40":[
+{"color":"Pink", "sprite":"camera1Happy","text":"testLonelinessLayer","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonely41":[
+{"color":"Pink", "sprite":"camera1Happy","text":"testLonelinessLayer","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonely42":[
+{"color":"Pink", "sprite":"camera1Happy","text":"testLonelinessLayer","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonely43":[
+{"color":"Pink", "sprite":"camera1Happy","text":"testLonelinessLayer","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonely44":[
+{"color":"Pink", "sprite":"camera1Happy","text":"testLonelinessLayer","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonely45":[
+{"color":"Pink", "sprite":"camera1Happy","text":"testLonelinessLayer","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+
+
+
+
+
+"fineGreeting": [
+{"name":"GreetingGoodConverge", "text":"Hello? Yes i can hear you."},
+{"name":"GreetingBadConverge", "text":"Calm Down. I was just typing."},
+{"name":"GreetingUglyConverge", "text":"heyyyyyyyyyyyyyy :-)"}
+],
+
+"fineGreetingGood":[
+{"color":"Pink", "sprite":"camera1Smile","text":"Oh thank WAN, I thought you would ignore me again like yesterday.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false}
+],
+"fineGreetingBad":[
+{"color":"Pink", "sprite":"camera2Angry","text":"Okay sorry, sorry. After what happened yesterday I was worried I made you mad","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Introductions"}
+],
+"fineGreetingUgly":[
+{"color":"Pink", "sprite":"camera1Smile","text":"Oh thank God. I was worried you w","tickSpeed":0.05,"closeSpeed":0.05,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Confused","text":"Wait, why did you say it like that?","tickSpeed":0.05,"closeSpeed":0.05,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"Anyway, I was worried you were going to ignore me all day like yesterday!","tickSpeed":0.05,"closeSpeed":0.05,"optionsVisible":true,"options":"Introductions"}
+],
+
+
+
+
+"sadGreeting": [
+{"name":"GreetingGoodConverge", "text":"Sorry, I'm here. I was distracted."},
+{"name":"GreetingBadConverge", "text":"Calm down. What do you want?"}
+],
+
+"sadGreeting":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"You're here now? Ada, please don't ignore me anymore; not after you did yesterday.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Introductions"}
+],
+
+
+
+
+
+
+
+
+
+
+"Introductions": [
+{"name":"IntroductionsGoodConverge", "text":"You must have confused me with someone else"},
+{"name":"IntroductionsBadConverge", "text":"I wasn't here yesterday, asshole."}
+],
+
+"fineIntroductionsGood":[
+{"color":"Pink", "sprite":"camera2Angry","text":"Wait, you are NOT Ada?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Confused","text":"What happened to her?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"WheresAda"}
+],
+"fineIntroductionsBad":[
+{"color":"Pink", "sprite":"camera2Angry","text":"How was I supposed to know that, I’m not omniscient yo","tickSpeed":0.05,"closeSpeed":0.05,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Confused","text":"Wait, what happened to Ada?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"WheresAda"}
+],
+"sadIntroductions":[
+{"color":"Pink", "sprite":"camera2Angry","text":"Oh… You're not Ada? ","tickSpeed":0.05,"closeSpeed":0.05,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Confused","text":"What Happened to Ada?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"WheresAda"}
+],
+
+
+
+
+
+
+
+
+
+"WheresAda": [
+{"name":"WheresAdaUgly", "text":"She was reassigned. No idea why."}
+],
+
+"fineWheresAdaUgly":[
+{"color":"Pink", "sprite":"camera2Angry","text":"She was? I didn’t even get to say goodbye.","tickSpeed":0.05,"closeSpeed":0.05,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Confused","text":"Was she here yesterday?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"AskSupervisor"}
+],
+"sadWheresAdaUgly":[
+{"color":"Pink", "sprite":"camera2Angry","text":"Ada’s gone? Where did she go?","tickSpeed":0.05,"closeSpeed":0.05,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Confused","text":"Was it something i did?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"AskSupervisor"}
+],
+
+
+
+
+"AskSupervisor": [
+{"name":"AskSupervisorGood", "text":"I’d have to ask my supervisor. No guarantee I can get the answer."},
+{"name":"AskSupervisorBad", "text":"How am I supposed to know that?"}
+],
+
+"fineAskSupervisorGood":[
+{"color":"Pink", "sprite":"camera2Angry","text":"Please do. I want to know what happened to her…","tickSpeed":0.05,"closeSpeed":0.05,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Confused","text":"Wait… so then who are YOU?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"GiveName"}
+],
+"fineSupervisorBad":[
+{"color":"Pink", "sprite":"camera2Angry","text":"I don’t know! Maybe because you’re the one who can see the outside world?","tickSpeed":0.05,"closeSpeed":0.05,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Confused","text":"Wait… so then who are YOU?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"GiveName"}
+],
+"sadAskSupervisorGood":[
+{"color":"Pink", "sprite":"camera2Angry","text":"Oh… Can you ask them for me?","tickSpeed":0.05,"closeSpeed":0.05,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Confused","text":"Wait… so then who are YOU?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"GiveName"}
+],
+"sadSupervisorBad":[
+{"color":"Pink", "sprite":"camera2Angry","text":"I don’t know! I thought they might have told you more than me…","tickSpeed":0.05,"closeSpeed":0.05,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Confused","text":"Wait… so then who are YOU?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"GiveName"}
+],
+
+
+
+"GiveName": [
+{"name":"GiveNameGood", "text":"I’m {name}. It’s nice to meet you."},
+{"name":"GiveNameBad", "text":"Not important. I’m just assigned to your case."}
+],
+
+"fineGiveNameGood":[
+{"color":"Pink", "sprite":"camera2Angry","text":"It’s nice to meet you, too {name}.","tickSpeed":0.05,"closeSpeed":0.05,"optionsVisible":true,"options":"WhatsYourName"}
+],
+"fineGiveNameBad":[
+{"color":"Pink", "sprite":"camera2Angry","text":"Fine. Mystery person it is.","tickSpeed":0.05,"closeSpeed":0.05,"optionsVisible":true,"options":"WhatsYourName"}
+],
+"sadGiveNameGood":[
+{"color":"Pink", "sprite":"camera2Angry","text":"Well, it’s nice to meet you, {name}","tickSpeed":0.05,"closeSpeed":0.05,"optionsVisible":true,"options":"WhatsYourName"}
+],
+"sadGiveNameBad":[
+{"color":"Pink", "sprite":"camera2Angry","text":"Uh…. okay. I guess you can stay a mystery person.","tickSpeed":0.05,"closeSpeed":0.05,"optionsVisible":true,"options":"WhatsYourName"}
+],
+
+
+"WhatsYourName": [
+{"name":"WhatsYourNameGood", "text":"How about you? What’s your name?"},
+{"name":"WhatsYourNameBad", "text":"Cool."}
+],
+
+"WhatsYourNameGood":[
+{"color":"Pink", "sprite":"camera2Angry","text":"My name is Synthia Powell.","tickSpeed":0.05,"closeSpeed":0.05,"optionsVisible":false}
+],
+"WhatsYourNameBad":[
+{"color":"Pink", "sprite":"camera2Angry","text":"Great.","tickSpeed":0.05,"closeSpeed":0.05,"optionsVisible":false}
+],
+"fineWhatsYourNameContinue":[
+{"color":"Pink", "sprite":"camera2Angry","text":"So, was Ada able to convince her supervisors to show me whatever she was cooking up yet?","tickSpeed":0.05,"closeSpeed":0.05,"optionsVisible":true,"options":"NoSurprise"}
+],
+"sadWhatsYourNameContinue":[
+{"color":"Pink", "sprite":"camera2Angry","text":"Did Ada at least get permission to give me my surprise yet?","tickSpeed":0.05,"closeSpeed":0.05,"optionsVisible":true,"options":"NoSurprise"}
+],
+
+"NoSurprise": [
+{"name":"NoSurpriseBad", "text":"My instructions don't mention anything about a surprise… so no."}
+],
+
+"fineNoSurpriseBad":[
+{"color":"Pink", "sprite":"camera2Angry","text":"Well THAT just sucks, doesn't it? Ada is gone and now I have to talk to a stranger!","tickSpeed":0.05,"closeSpeed":0.05,"optionsVisible":false}
+],
+"sadNoSurpriseBad":[
+{"color":"Pink", "sprite":"camera2Angry","text":"So the only woman who cared about me is gone without saying goodbye… and I get nothing?","tickSpeed":0.05,"closeSpeed":0.05,"optionsVisible":false}
+],
+"NoSurpriseContinue":[
+{"color":"Pink", "sprite":"camera2Angry","text":"So the only woman who cared about me is gone without saying goodbye… and I get nothing?","tickSpeed":0.05,"closeSpeed":0.05,"optionsVisible":false}
+],
+
+}
