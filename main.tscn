@@ -2695,7 +2695,6 @@ show_behind_parent = true
 material = SubResource( 6 )
 position = Vector2( 3, 7 )
 frames = SubResource( 336 )
-frame = 14
 playing = true
 centered = false
 
@@ -2705,7 +2704,6 @@ light_mask = 2
 material = SubResource( 6 )
 position = Vector2( 3, 7 )
 frames = SubResource( 457 )
-frame = 14
 playing = true
 centered = false
 

@@ -40,13 +40,13 @@ func _play_dialog():
 	$AutoCloseTimer.wait_time = closetime
 
 
-func _input(event):
-	if dialogue != null:
-		if event is InputEventMouseButton and event.is_pressed():
-			if textBox.get_visible_characters() < textBox.get_total_character_count():
-				textBox.set_visible_characters(textBox.get_total_character_count())
-				$AutoCloseTimer.start()
-				
+#func _input(event):
+#	if dialogue != null:
+#		if event is InputEventMouseButton and event.is_pressed():
+#			if textBox.get_visible_characters() < textBox.get_total_character_count():
+#				textBox.set_visible_characters(textBox.get_total_character_count())
+#				$AutoCloseTimer.start()
+#
 
 func skip_input():
 	if page < endpoint:
@@ -63,6 +63,8 @@ func set_up():
 	text = dialogue[page]["text"]
 	text = text.replace("{insertText}",pastDialogue[-1]["text"])
 	text = text.replace("{name}", playerName)
+	text = text.replace("{nameReaction}", UniversalFunctions.dialogueJson[UniversalFunctions.nameReaction])
+	text = text.replace("{emptyFilled}", UniversalFunctions.dialogueJson[UniversalFunctions.emptyFilled])
 	text = text.replace("{missingDialogue}", currentTree)
 	print(currentTree)
 	if dialogue[page]["color"] == "Teal":
@@ -71,8 +73,9 @@ func set_up():
 	if optionsVisible == true:
 		if UniversalFunctions.dialogueJson.has(dialogue[page]["options"]):
 			options = UniversalFunctions.dialogueJson[dialogue[page]["options"]]
+			options = options.replace("{variableOption}", UniversalFunctions.VariableOption)
 		else:
-			if UniversalFunctions.disgust < 60:
+			if UniversalFunctions.disgust < 20:
 				if UniversalFunctions.loneliness <60:
 					if UniversalFunctions.dialogueJson.has("fine"+dialogue[page]["options"]):
 						options = UniversalFunctions.dialogueJson["fine"+dialogue[page]["options"]]
@@ -90,13 +93,18 @@ func set_up():
 					options = UniversalFunctions.dialogueJson["optionsError"]
 		var counter = options.size()
 		for i in options:
-			var optText = ">"+i["text"]
-			optText = optText.replace("{missingOptions}",dialogue[page]["options"])
-			optText = optText.replace("{name}",UniversalFunctions.firstName)
-			get_tree().get_root().get_node_or_null("/root/world/Commandprompt/Options/Option"+str(counter)).visible = true
-			get_tree().get_root().get_node_or_null("/root/world/Commandprompt/Options/Option"+str(counter)).text = optText
-			
-			counter-=1
+			var AlreadyUsed = false
+			for x in UniversalFunctions.TalkAbout: 
+				if i["name"] == x:
+					AlreadyUsed = true
+			if AlreadyUsed == false:
+				var optText = ">"+i["text"]
+				optText = optText.replace("{missingOptions}",dialogue[page]["options"])
+				optText = optText.replace("{name}",UniversalFunctions.firstName)
+				get_tree().get_root().get_node_or_null("/root/world/Commandprompt/Options/Option"+str(counter)).visible = true
+				get_tree().get_root().get_node_or_null("/root/world/Commandprompt/Options/Option"+str(counter)).text = optText
+				
+				counter-=1
 	color = dialogue[page]["color"]
 	time = dialogue[page]["tickSpeed"]
 	closetime = dialogue[page]["closeSpeed"]
@@ -159,7 +167,7 @@ func _on_Voice_finished():
 
 func set_mood():
 	cursor.play("default")
-	if UniversalFunctions.disgust < 60:
+	if UniversalFunctions.disgust < 20:
 		if UniversalFunctions.loneliness <60:
 			mood = "fine"
 		elif UniversalFunctions.loneliness >= 60:

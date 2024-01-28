@@ -16,7 +16,7 @@ func _on_Blinker_timeout():
 			$loading/loading.play("default")
 			$SubmitName.visible = false
 			yield($loading/loading,"animation_finished")
-			check_obscene(UniversalFunctions.firstName+" "+UniversalFunctions.lastName)
+			check_obscene(UniversalFunctions.firstName+UniversalFunctions.lastName)
 			if obscene == false:
 				UniversalFunctions.change_scenes_reload("res://main.tscn")
 			else:
@@ -70,6 +70,7 @@ func _on_SubmitName_pressed():
 		print(setName.replace(" ","."))
 		if setName.length() <= 0:
 			return
+		check_funny(setName)
 		check_obscene(setName)
 		if $"Keyboard/1/Label".text == "a":
 			$Keyboard._on_case_pressed()
@@ -103,8 +104,14 @@ func _on_SubmitName_pressed():
 		var text = $Name.text
 		
 
+func check_funny(setName):
+	for i in ["ass", "balls","fuck", "shit", "penis", "cock", "dick", "cunt","pussy", "vagina","bitch","arse","crap","minger","minging","hell","piss","slut","whore","wank"]:
+		var funnyChecker = setName.to_lower()
+		if i in funnyChecker:
+			UniversalFunctions.nameReaction = "nameFunny"
+
 func check_obscene(setName):
-	for i in ["rapist", "pedophile","nigger", "nigga", "nigguh", "niggar", "niggur", "faggot", "fagot","fag", "wetback", "wet back", "beaner", "kike", "raghead",  "rag head", "towelhead", "towel head", "chink", "racist", "sexist","homophobe","transphobe"]:
+	for i in ["rapist", "pedophile","nigger", "nigga", "nigguh", "niggar", "niggur", "faggot", "fagot","fag", "wetback", "wet back", "beaner", "kike", "raghead",  "rag head", "towelhead", "towel head", "dyke","chink", "racist", "sexist","homophobe","transphobe", "white power"]:
 		var slurChecker = setName.to_lower()
 		if i in slurChecker:
 			var doubleCheck = false

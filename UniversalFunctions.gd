@@ -8,11 +8,15 @@ var dialoguePlaying
 
 var swearWords = ["fuck", "shit", "bitch", "cunt", ]
 var loneliness = 44
-var disgust = 44
+var disgust = 15
 var locked = false
 var topics = []
 var firstName
 var lastName
+var VariableOption = "AdaSurprise"
+var emptyFilled = "stillEmpty"
+var nameReaction = "nameNormal"
+var TalkAbout = []
 
 func reset():
 	dialogueBox = get_tree().get_root().get_node_or_null("/root/world/Commandprompt")
@@ -37,7 +41,7 @@ func play_dialogue_JSON(dialogue : String):
 		dialogueBox.dialogue = dialogueJson["dialogueError"]
 		dialogueBox.currentTree = dialogue
 		var dialoguechecker = dialogue.replace("Converge", "")
-		if disgust < 60:
+		if disgust < 20:
 			if loneliness <60:
 				if dialogueJson.has("fine"+dialoguechecker):
 					dialogueBox.dialogue = dialogueJson["fine"+dialoguechecker]
@@ -46,7 +50,7 @@ func play_dialogue_JSON(dialogue : String):
 				if dialogueJson.has("sad"+dialoguechecker):
 					dialogueBox.dialogue = dialogueJson["sad"+dialoguechecker]
 					dialogueBox.currentTree = "angry"+dialoguechecker
-		elif disgust >=60:
+		elif disgust >=20:
 				if dialogueJson.has("angry"+dialoguechecker):
 					dialogueBox.dialogue = dialogueJson["angry"+dialoguechecker]
 					dialogueBox.currentTree = "angry"+dialoguechecker
@@ -55,7 +59,7 @@ func play_dialogue_JSON(dialogue : String):
 				dialoguechecker = dialoguechecker.replace("Good", "")
 				dialoguechecker = dialoguechecker.replace("Bad", "")
 				dialoguechecker = dialoguechecker.replace("Bad", "")
-				if disgust < 60:
+				if disgust < 20:
 					if loneliness <60:
 						if dialogueJson.has("fine"+dialoguechecker):
 							dialogueBox.dialogue = dialogueJson["fine"+dialoguechecker]
@@ -64,7 +68,7 @@ func play_dialogue_JSON(dialogue : String):
 						if dialogueJson.has("sad"+dialoguechecker):
 							dialogueBox.dialogue = dialogueJson["sad"+dialoguechecker]
 							dialogueBox.currentTree = "sad"+dialoguechecker
-				elif disgust >=60:
+				elif disgust >=20:
 						if dialogueJson.has("angry"+dialoguechecker):
 							dialogueBox.dialogue = dialogueJson["angry"+dialoguechecker]
 							dialogueBox.currentTree = "angry"+dialoguechecker

@@ -50,7 +50,7 @@ func _on_Commandprompt_option_pressed(optionName:String):
 				UniversalFunctions.play_dialogue_JSON("sadGreetingGood")
 			return
 		if split != null:
-			if UniversalFunctions.disgust < 60:
+			if UniversalFunctions.disgust < 20:
 				if UniversalFunctions.loneliness < 60:
 					UniversalFunctions.play_dialogue_JSON("fine"+split)
 				elif UniversalFunctions.loneliness >= 60 and UniversalFunctions.loneliness <= 90:
@@ -59,7 +59,7 @@ func _on_Commandprompt_option_pressed(optionName:String):
 				UniversalFunctions.play_dialogue_JSON("angry"+split)
 			split = null
 			return
-		if UniversalFunctions.disgust < 60:
+		if UniversalFunctions.disgust < 20:
 			if UniversalFunctions.loneliness < 60:
 				UniversalFunctions.play_dialogue_JSON("fineRepeat")
 			elif UniversalFunctions.loneliness >= 60 and UniversalFunctions.loneliness <= 90:
@@ -71,7 +71,7 @@ func _on_Commandprompt_option_pressed(optionName:String):
 			UniversalFunctions.play_dialogue_JSON($Commandprompt.pastDialogue[-1]["name"])
 		else: 
 			UniversalFunctions.play_dialogue_JSON($Commandprompt.pastDialogue[-1]["mood"]+$Commandprompt.pastDialogue[-1]["name"])
-	elif optionName == "GreetingGood" or optionName == "GreetingBad" or  optionName == "GreetingUgly":
+	elif optionName == "GreetingGoodConverge" or optionName == "GreetingBadConverge" or  optionName == "GreetingUglyConverge":
 		intro = ""
 		$NervousTimer.wait_time = 3
 		UniversalFunctions.play_dialogue_JSON(optionName)
@@ -87,6 +87,9 @@ func _on_Commandprompt_option_pressed(optionName:String):
 	elif optionName == "reactionToGenerationUgly":
 		split = null
 		UniversalFunctions.topics.append("Simulation")
+	elif optionName == "SpendTime" or optionName == "WhatWereYouLike" or optionName == "ElfTalk":
+		UniversalFunctions.TalkAbout.append(optionName)
+		UniversalFunctions.play_dialogue_JSON(optionName)
 	else:
 		UniversalFunctions.play_dialogue_JSON(optionName)
 		
@@ -132,7 +135,7 @@ func _on_NervousTimer_timeout():
 		if UniversalFunctions.loneliness <= 90:
 			UniversalFunctions.loneliness += 1
 			if UniversalFunctions.loneliness % 2 == 0:
-				if UniversalFunctions.disgust < 60:
+				if UniversalFunctions.disgust < 20:
 					UniversalFunctions.play_dialogue_JSON("lonely"+intro+str(UniversalFunctions.loneliness/2))
 			else:
 				$NervousTimer.start()
