@@ -130,3 +130,10 @@ func check_obscene(setName):
 
 func _on_SLURTIMER_timeout():
 	$SLURTIMEOUT.visible = true
+
+
+func _on_AudioStreamPlayer_finished():
+	var newStream = load("res://Resources/Sounds/Humming.wav")
+	
+	$AudioStreamPlayer.stream = newStream
+	$AudioStreamPlayer.playing = true

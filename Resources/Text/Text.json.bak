@@ -67,6 +67,8 @@ This incident led to the creation of SCP-8000-1, SCP-8000's only current and per
 "Select": "Select color+object",
 "MouseOn":"Mouse: ON",
 "MouseOff":"Mouse: OFF",
+"AudioOn":"Audio: ON",
+"AudioOff":"Audio: OFF",
 "Fullscreen":"Fullscreen",
 "Windowed":"Windowed",
 "ForMobile":"For Mobile",
@@ -129,31 +131,31 @@ The under-stimulation deeply affects her well-being. I have attached below an in
 
 [b]Foreword:[/b] SCP-8000-1 has expressed extreme discomfort surrounding long periods of isolation. This interview was coordinated to determine whether altering containment procedures would improve SCP-8000-1's morale.
 
-[b]Dr. Stroustrup:[b] Alright, and you are aware these messages are being copied to share with the administrative staff as part of the current review?
+[b]Dr. Stroustrup:[/b] Alright, and you are aware these messages are being copied to share with the administrative staff as part of the current review?
 
-[b]SCP-8000-1:[b] Yes.
+[b]SCP-8000-1:[/b] Yes.
 
-[b]Dr. Stroustrup:[b] Synthia, can you tell me a little bit about how you feel?
+[b]Dr. Stroustrup:[/b] Synthia, can you tell me a little bit about how you feel?
 
-[b]SCP-8000-1:[b] Lonely.
+[b]SCP-8000-1:[/b] Lonely.
 
-[b]Dr. Stroustrup:[b] Can you expand on that?
+[b]Dr. Stroustrup:[/b] Can you expand on that?
 
-[b]SCP-8000-1:[b] I've spent the first year after I was trapped in here talking to someone once every couple of months if I was lucky. After you came along, I got to talk to you for forty hours a week. It's so much better.
+[b]SCP-8000-1:[/b] I've spent the first year after I was trapped in here talking to someone once every couple of months if I was lucky. After you came along, I got to talk to you for forty hours a week. It's so much better.
 
 But I'm still alone for the other 128 hours. I can't keep living like this, Ada. There's nothing to DO in here.
 
-[b]Dr. Stroustrup:[b] And you tried the breathing exercises the therapist recommended?
+[b]Dr. Stroustrup:[b/] And you tried the breathing exercises the therapist recommended?
 
-b]SCP-8000-1:[b] I can't fucking BREATHE, Ada. I have no LUNGS. I'm ones and zeros. I feel shaky. I have this overwhelming sense of doom at all times of the day. I'm stuck.
+b]SCP-8000-1:[/b] I can't fucking BREATHE, Ada. I have no LUNGS. I'm ones and zeros. I feel shaky. I have this overwhelming sense of doom at all times of the day. I'm stuck.
 
-[b]Dr. Stroustrup:[b] I'm... I'm sorry.
+[b]Dr. Stroustrup:[b/] I'm... I'm sorry.
 
-b]SCP-8000-1:[b] Sorry I didn't... I didn't mean to yell at you. All I have is you. This is a gray box. There are no books I can read, a chair to sit in while I do, or a bed to lie in. NOTHING. I want to scream and cry and throw things at the wall. But there's nothing to throw and the only reason I don't scream is because I already TRIED THAT... and I know now I have a better chance of WAN answering me than anyone outside of this box.
+b]SCP-8000-1:[/b] Sorry I didn't... I didn't mean to yell at you. All I have is you. This is a gray box. There are no books I can read, a chair to sit in while I do, or a bed to lie in. NOTHING. I want to scream and cry and throw things at the wall. But there's nothing to throw and the only reason I don't scream is because I already TRIED THAT... and I know now I have a better chance of WAN answering me than anyone outside of this box.
 
-[b]Dr. Stroustrup:[b] And being able to talk to someone at any time would improve that, right?
+[b]Dr. Stroustrup:[/b] And being able to talk to someone at any time would improve that, right?
 
-b]SCP-8000-1:[b] As far as I'm concerned, even one more hour outside of my head is a blessing.
+b]SCP-8000-1:[/b] As far as I'm concerned, even one more hour outside of my head is a blessing.
 
 [b]Closing Statement: :[/b] Following the interview, SCP-8000'S containment procedures have recently been updated. Dr. Ada Stroustrup has volunteered to extend her work-week to a full 7 days; two of which would be spent accessing the computer housing SCP-8000 remotely. Her original request to have remote access to SCP-8000 at all times was denied due to SCP-8000-1's indication that \"even one more hour\" would be sufficient.
 
@@ -566,7 +568,7 @@ WARNING: New folder detected at path SYSTEM>MY_WISH containing 2 files.","tickSp
 
 
 "logInSuccessful":[
-{"color":"Teal", "sprite":"floor1Sad","text":"Log in successful","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false}
+{"color":"Teal", "sprite":"floorSad","text":"Log in successful","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false}
 ],
 "dialogueIntro":[
 {"color":"Pink", "sprite":"floorLookUp","text":"Hello?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
@@ -618,34 +620,34 @@ WARNING: New folder detected at path SYSTEM>MY_WISH containing 2 files.","tickSp
 {"color":"Pink", "sprite":"camera1Sad","text":"I don't understand why you are ignoring me.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"sadGreeting"}
 ],
 "lonelyIntro36":[
-{"color":"Pink", "sprite":"floor1Sad","text":"Please.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"sadGreeting"}
+{"color":"Pink", "sprite":"floorSad","text":"Please.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"sadGreeting"}
 ],
 "lonelyIntro37":[
-{"color":"Pink", "sprite":"floor2Sad","text":"I don't want to be alone anymore...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"sadGreeting"}
+{"color":"Pink", "sprite":"floorSad","text":"I don't want to be alone anymore...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"sadGreeting"}
 ],
 "lonelyIntro38":[
-{"color":"Pink", "sprite":"floor1Sad","text":"Is it something I said?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"sadGreeting"}
+{"color":"Pink", "sprite":"floorSad","text":"Is it something I said?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"sadGreeting"}
 ],
 "lonelyIntro39":[
-{"color":"Pink", "sprite":"floor2Sad","text":"I'm sorry if I offended you, Ada.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"sadGreeting"}
+{"color":"Pink", "sprite":"floorSad","text":"I'm sorry if I offended you, Ada.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"sadGreeting"}
 ],
 "lonelyIntro40":[
-{"color":"Pink", "sprite":"floor1Sad","text":"I didn't mean to.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"sadGreeting"}
+{"color":"Pink", "sprite":"floorSad","text":"I didn't mean to.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"sadGreeting"}
 ],
 "lonelyIntro41":[
-{"color":"Pink", "sprite":"floor2Sad","text":"... Ada?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"sadGreeting"}
+{"color":"Pink", "sprite":"floorSad","text":"... Ada?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"sadGreeting"}
 ],
 "lonelyIntro42":[
-{"color":"Pink", "sprite":"floor1Sad","text":"Please say anything","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"sadGreeting"}
+{"color":"Pink", "sprite":"floorSad","text":"Please say anything","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"sadGreeting"}
 ],
 "lonelyIntro43":[
-{"color":"Pink", "sprite":"floor2Sad","text":"I don't understand...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"sadGreeting"}
+{"color":"Pink", "sprite":"floorSad","text":"I don't understand...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"sadGreeting"}
 ],
 "lonelyIntro44":[
-{"color":"Pink", "sprite":"floor1Sad","text":"This is all I have... don't you get it?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"sadGreeting"}
+{"color":"Pink", "sprite":"floorSad","text":"This is all I have... don't you get it?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"sadGreeting"}
 ],
 "lonelyIntro45":[
-{"color":"Pink", "sprite":"floor2Sad","text":"Anything but this...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"sadGreeting"}
+{"color":"Pink", "sprite":"floorSad","text":"Anything but this...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"sadGreeting"}
 ],
 
 
@@ -800,7 +802,7 @@ WARNING: New folder detected at path SYSTEM>MY_WISH containing 2 files.","tickSp
 "randomAltHint2":[
 {"color":"Pink", "sprite":"camera1Smile","text":"You know that old Victorian arsenic wallpaper that makes people sick?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
 {"color":"Pink", "sprite":"camera1Smile","text":"When I first learned about them, it was because a kid at my elementary school's family had just started remodeling their old historic house in the Vieux Carré, peeled back some wallpaper... and found it.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
-{"color":"Pink", "sprite":"camera1Smile","text":"But It was nice to look at on it's own. I wanted to paint my room like that but she never let me.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+{"color":"Pink", "sprite":"camera1Smile","text":"But it was nice to look at on its own. I wanted to paint my room like that but she never let me.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
 ],
 
 
@@ -926,18 +928,18 @@ WARNING: New folder detected at path SYSTEM>MY_WISH containing 2 files.","tickSp
 "nameSame":"So... your name is also {name}?",
 
 "fineGiveNameGood":[
-{"color":"Pink", "sprite":"camera2Angry","text":"{nameReaction}","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"WhatsYourName"},
-{"color":"Pink", "sprite":"camera2Angry","text":"It's nice to meet you, too {name}.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"WhatsYourName"}
+{"color":"Pink", "sprite":"camera1Smile","text":"{nameReaction}","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"WhatsYourName"},
+{"color":"Pink", "sprite":"camera2Smile","text":"It's nice to meet you, too {name}.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"WhatsYourName"}
 ],
 "fineGiveNameBad":[
 {"color":"Pink", "sprite":"camera2Angry","text":"Fine. Mystery person it is.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"WhatsYourName"}
 ],
 "sadGiveNameGood":[
-{"color":"Pink", "sprite":"camera2Angry","text":"{nameReaction}","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"WhatsYourName"},
-{"color":"Pink", "sprite":"camera2Angry","text":"Well, it's nice to meet you, {name}","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"WhatsYourName"}
+{"color":"Pink", "sprite":"camera1Sad","text":"{nameReaction}","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"WhatsYourName"},
+{"color":"Pink", "sprite":"camera1Smile","text":"Well, it's nice to meet you, {name}","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"WhatsYourName"}
 ],
 "sadGiveNameBad":[
-{"color":"Pink", "sprite":"camera2Angry","text":"Uh.... okay. I guess you can stay a mystery person.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"WhatsYourName"}
+{"color":"Pink", "sprite":"camera1Nervous","text":"Uh.... okay. I guess you can stay a mystery person.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"WhatsYourName"}
 ],
 
 
@@ -977,16 +979,16 @@ WARNING: New folder detected at path SYSTEM>MY_WISH containing 2 files.","tickSp
 ],
 
 "fineNoSurpriseBad":[
-{"color":"Pink", "sprite":"camera2Angry","text":"God dammit... I was really hoping for good news.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false,"continue":"NoSurpriseContinue"}
+{"color":"Pink", "sprite":"camera1Sad","text":"God dammit... I was really hoping for good news.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false,"continue":"NoSurpriseContinue"}
 ],
 "sadNoSurpriseBad":[
-{"color":"Pink", "sprite":"camera2Angry","text":"So the only woman who cared about me is gone without saying goodbye... and I get nothing?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false,"continue":"NoSurpriseContinue"}
+{"color":"Pink", "sprite":"camera2Sad","text":"So the only woman who cared about me is gone without saying goodbye... and I get nothing?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false,"continue":"NoSurpriseContinue"}
 ],
 "angryNoSurpriseBad":[
-{"color":"Pink", "sprite":"camera2Angry","text":"Well THAT just sucks, doesn't it? Ada is gone and now I have to talk to a stranger!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false,"continue":"NoSurpriseContinue"}
+{"color":"Pink", "sprite":"camera1Angry","text":"Well THAT just sucks, doesn't it? Ada is gone and now I have to talk to a stranger!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false,"continue":"NoSurpriseContinue"}
 ],
 "NoSurpriseContinue":[
-{"color":"Pink", "sprite":"camera1Angry","text":"This place was supposed to be PARADISE. It's not paradise if there's nothing to do here!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"TalkToMe"}
+{"color":"Pink", "sprite":"camera2Angry","text":"This place was supposed to be PARADISE. It's not paradise if there's nothing to do here!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"TalkToMe"}
 ],
 
 
@@ -1797,7 +1799,14 @@ AND.jpg:  My players Thursday night by Benimoto, CC-BY 2.0, Edited by IronShears
 
 ONE_DAY.jpg: Jeni and Clara Kissing by kafka4prez, CC-BY 2.0, Edited by IronShears
 
+y2k SCP logo: Y2KLogo.png by etoisle, CC-BY-SA 3.0, Edited by IronShears
 
+PROGRAMS USED:
+Aseprite
+Godot, MIT license
+PicoCAD(For the \"3D models\"), Commercial use of models created with software allowed, creator was contacted to ensure it fit with CC-BY-SA
+OpenUTAU, MIT licensed
+Hitsune Kumi English Voice bank by Cubialpha, Free for commercial use, creator was contacted to ensure it fit with CC-BY-SA
 
 
 All other images by IronShears, CC-BY-SA 3.0.

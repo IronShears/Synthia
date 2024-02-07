@@ -1,4 +1,4 @@
-[gd_scene load_steps=998 format=2]
+[gd_scene load_steps=1032 format=2]
 
 [ext_resource path="res://Resources/GUIpieces/bg.png" type="Texture" id=1]
 [ext_resource path="res://Resources/Room/room.png" type="Texture" id=2]
@@ -108,6 +108,10 @@
 [ext_resource path="res://Resources/Sprites/Camera2Sad.png" type="Texture" id=106]
 [ext_resource path="res://Area2D.gd" type="Script" id=107]
 [ext_resource path="res://Resources/GUIpieces/optionsMenu.png" type="Texture" id=108]
+[ext_resource path="res://Resources/Sprites/floorSad.png" type="Texture" id=109]
+[ext_resource path="res://Resources/Sprites/floorStaticSad.png" type="Texture" id=110]
+[ext_resource path="res://Resources/Sprites/floorStaticLookUp.png" type="Texture" id=111]
+[ext_resource path="res://Resources/Sprites/floorLookUp.png" type="Texture" id=112]
 
 [sub_resource type="RectangleShape2D" id=1042]
 extents = Vector2( 158, 71 )
@@ -3648,6 +3652,126 @@ shader_param/precision = 0.0
 shader_param/palette_in = ExtResource( 57 )
 shader_param/palette_out = ExtResource( 56 )
 
+[sub_resource type="AtlasTexture" id=1045]
+atlas = ExtResource( 110 )
+region = Rect2( 0, 0, 196, 132 )
+
+[sub_resource type="AtlasTexture" id=1046]
+atlas = ExtResource( 110 )
+region = Rect2( 196, 0, 196, 132 )
+
+[sub_resource type="AtlasTexture" id=1047]
+atlas = ExtResource( 110 )
+region = Rect2( 392, 0, 196, 132 )
+
+[sub_resource type="AtlasTexture" id=1048]
+atlas = ExtResource( 110 )
+region = Rect2( 0, 132, 196, 132 )
+
+[sub_resource type="AtlasTexture" id=1049]
+atlas = ExtResource( 110 )
+region = Rect2( 196, 132, 196, 132 )
+
+[sub_resource type="AtlasTexture" id=1050]
+atlas = ExtResource( 110 )
+region = Rect2( 392, 132, 196, 132 )
+
+[sub_resource type="AtlasTexture" id=1063]
+atlas = ExtResource( 111 )
+region = Rect2( 0, 0, 196, 132 )
+
+[sub_resource type="AtlasTexture" id=1064]
+atlas = ExtResource( 111 )
+region = Rect2( 196, 0, 196, 132 )
+
+[sub_resource type="AtlasTexture" id=1065]
+atlas = ExtResource( 111 )
+region = Rect2( 392, 0, 196, 132 )
+
+[sub_resource type="AtlasTexture" id=1066]
+atlas = ExtResource( 111 )
+region = Rect2( 0, 132, 196, 132 )
+
+[sub_resource type="AtlasTexture" id=1067]
+atlas = ExtResource( 111 )
+region = Rect2( 196, 132, 196, 132 )
+
+[sub_resource type="AtlasTexture" id=1068]
+atlas = ExtResource( 111 )
+region = Rect2( 392, 132, 196, 132 )
+
+[sub_resource type="AtlasTexture" id=1069]
+atlas = ExtResource( 112 )
+region = Rect2( 0, 0, 196, 132 )
+
+[sub_resource type="AtlasTexture" id=1070]
+atlas = ExtResource( 112 )
+region = Rect2( 196, 0, 196, 132 )
+
+[sub_resource type="AtlasTexture" id=1071]
+atlas = ExtResource( 112 )
+region = Rect2( 392, 0, 196, 132 )
+
+[sub_resource type="AtlasTexture" id=1072]
+atlas = ExtResource( 112 )
+region = Rect2( 0, 132, 196, 132 )
+
+[sub_resource type="AtlasTexture" id=1073]
+atlas = ExtResource( 112 )
+region = Rect2( 196, 132, 196, 132 )
+
+[sub_resource type="AtlasTexture" id=1074]
+atlas = ExtResource( 112 )
+region = Rect2( 392, 132, 196, 132 )
+
+[sub_resource type="AtlasTexture" id=1051]
+atlas = ExtResource( 109 )
+region = Rect2( 196, 0, 196, 132 )
+
+[sub_resource type="AtlasTexture" id=1052]
+atlas = ExtResource( 109 )
+region = Rect2( 392, 0, 196, 132 )
+
+[sub_resource type="AtlasTexture" id=1053]
+atlas = ExtResource( 109 )
+region = Rect2( 0, 132, 196, 132 )
+
+[sub_resource type="AtlasTexture" id=1054]
+atlas = ExtResource( 109 )
+region = Rect2( 196, 132, 196, 132 )
+
+[sub_resource type="AtlasTexture" id=1055]
+atlas = ExtResource( 109 )
+region = Rect2( 392, 132, 196, 132 )
+
+[sub_resource type="AtlasTexture" id=1056]
+atlas = ExtResource( 109 )
+region = Rect2( 0, 264, 196, 132 )
+
+[sub_resource type="AtlasTexture" id=1057]
+atlas = ExtResource( 109 )
+region = Rect2( 196, 264, 196, 132 )
+
+[sub_resource type="AtlasTexture" id=1058]
+atlas = ExtResource( 109 )
+region = Rect2( 392, 264, 196, 132 )
+
+[sub_resource type="AtlasTexture" id=1059]
+atlas = ExtResource( 109 )
+region = Rect2( 0, 396, 196, 132 )
+
+[sub_resource type="AtlasTexture" id=1060]
+atlas = ExtResource( 109 )
+region = Rect2( 196, 396, 196, 132 )
+
+[sub_resource type="AtlasTexture" id=1061]
+atlas = ExtResource( 109 )
+region = Rect2( 392, 396, 196, 132 )
+
+[sub_resource type="AtlasTexture" id=1062]
+atlas = ExtResource( 109 )
+region = Rect2( 0, 0, 196, 132 )
+
 [sub_resource type="AtlasTexture" id=1011]
 atlas = ExtResource( 103 )
 region = Rect2( 0, 0, 196, 132 )
@@ -3938,6 +4062,26 @@ region = Rect2( 392, 132, 196, 132 )
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
+"frames": [ SubResource( 1045 ), SubResource( 1046 ), SubResource( 1047 ), SubResource( 1048 ), SubResource( 1049 ), SubResource( 1050 ) ],
+"loop": false,
+"name": "floorStaticSad",
+"speed": 8.0
+}, {
+"frames": [ SubResource( 1063 ), SubResource( 1064 ), SubResource( 1065 ), SubResource( 1066 ), SubResource( 1067 ), SubResource( 1068 ) ],
+"loop": false,
+"name": "floorStaticLookUp",
+"speed": 8.0
+}, {
+"frames": [ SubResource( 1069 ), SubResource( 1070 ), SubResource( 1071 ), SubResource( 1072 ), SubResource( 1073 ), SubResource( 1074 ) ],
+"loop": true,
+"name": "floorLookUp",
+"speed": 8.0
+}, {
+"frames": [ SubResource( 1051 ), SubResource( 1052 ), SubResource( 1053 ), SubResource( 1054 ), SubResource( 1055 ), SubResource( 1056 ), SubResource( 1057 ), SubResource( 1058 ), SubResource( 1059 ), SubResource( 1060 ), SubResource( 1061 ), SubResource( 1062 ) ],
+"loop": true,
+"name": "floorSad",
+"speed": 8.0
+}, {
 "frames": [ SubResource( 1011 ), SubResource( 1012 ), SubResource( 1013 ), SubResource( 1014 ), SubResource( 1015 ), SubResource( 1016 ) ],
 "loop": true,
 "name": "camera2Angry",
@@ -4650,7 +4794,7 @@ __meta__ = {
 }
 
 [node name="VBoxContainer" type="VBoxContainer" parent="File/ScrollContainer"]
-margin_right = 303.0
+margin_right = 308.0
 margin_bottom = 915.0
 size_flags_horizontal = 3
 theme = ExtResource( 12 )
@@ -5766,7 +5910,7 @@ show_behind_parent = true
 material = SubResource( 459 )
 position = Vector2( -2, 9 )
 frames = SubResource( 1 )
-animation = "cameraStaticSmile"
+animation = "floorStaticSad"
 frame = 5
 playing = true
 centered = false

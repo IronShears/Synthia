@@ -173,6 +173,7 @@ func _on_Timer_timeout():
 			var spriteSetter = dialogue[page]["sprite"]
 			spriteSetter=spriteSetter.replace("1","Static")
 			spriteSetter=spriteSetter.replace("2","Static")
+			spriteSetter=spriteSetter.replace("floor","floorStatic")
 			if get_tree().get_root().get_node_or_null("/root/world/Virtualhell/Synthia") != null:
 				if get_tree().get_root().get_node_or_null("/root/world/Virtualhell/Synthia").animation != spriteSetter:
 					if dialogue[page]["sprite"] != "null":

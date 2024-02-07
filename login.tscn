@@ -1,4 +1,4 @@
-[gd_scene load_steps=53 format=2]
+[gd_scene load_steps=54 format=2]
 
 [ext_resource path="res://Resources/GUIpieces/PersephoneOS.tres" type="Theme" id=1]
 [ext_resource path="res://login.gd" type="Script" id=2]
@@ -22,6 +22,7 @@
 [ext_resource path="res://Resources/GUIpieces/cursorload.png" type="Texture" id=20]
 [ext_resource path="res://Resources/GUIpieces/cursoribar.png" type="Texture" id=21]
 [ext_resource path="res://Resources/GUIpieces/cursorLocked.png" type="Texture" id=22]
+[ext_resource path="res://Resources/Sounds/StartUp.wav" type="AudioStream" id=23]
 
 [sub_resource type="Shader" id=5]
 code = "shader_type canvas_item;
@@ -1089,6 +1090,10 @@ script = ExtResource( 18 )
 [node name="SLURTIMER" type="Timer" parent="."]
 wait_time = 10.0
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 23 )
+autoplay = true
+
 [connection signal="key_entered" from="Keyboard" to="." method="_on_Keyboard_key_entered"]
 [connection signal="pressed" from="Keyboard/1" to="Keyboard/1" method="_on_key_pressed"]
 [connection signal="pressed_data" from="Keyboard/1" to="Keyboard" method="_on_pressed_data"]
@@ -1151,3 +1156,4 @@ wait_time = 10.0
 [connection signal="pressed" from="SubmitName" to="." method="_on_SubmitName_pressed"]
 [connection signal="timeout" from="Blinker" to="." method="_on_Blinker_timeout"]
 [connection signal="timeout" from="SLURTIMER" to="." method="_on_SLURTIMER_timeout"]
+[connection signal="finished" from="AudioStreamPlayer" to="." method="_on_AudioStreamPlayer_finished"]
