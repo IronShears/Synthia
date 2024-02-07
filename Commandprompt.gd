@@ -27,6 +27,11 @@ var clip3
 var optionsVisible = false
 var currentTree
 var mood = ""
+var prevOption = 0
+
+var objectName = "Room"
+var colorName = "Blue"
+var styleName = "Cool"
 
 
 func _play_dialog():
@@ -40,16 +45,19 @@ func _play_dialog():
 	$AutoCloseTimer.wait_time = closetime
 
 
-#func _input(event):
-#	if dialogue != null:
-#		if event is InputEventMouseButton and event.is_pressed():
-#			if textBox.get_visible_characters() < textBox.get_total_character_count():
-#				textBox.set_visible_characters(textBox.get_total_character_count())
-#				$AutoCloseTimer.start()
-#
+
+func _on_SkipInput_pressed():
+	if dialogue != null:
+		if textBox.get_visible_characters() < textBox.get_total_character_count():
+			textBox.set_visible_characters(textBox.get_total_character_count())
+			$AutoCloseTimer.start()
+		else:
+			skip_input()
 
 func skip_input():
 	if page < endpoint:
+		UniversalFunctions.dialoguePlaying = true
+		UniversalFunctions.nervousTimer.stop()
 		_play_dialog()
 	else:
 		emit_signal("done")
@@ -60,50 +68,63 @@ func set_up():
 	first_line()
 #	$Voice.stream = load("res://Resources/Voices/"+currentTree+str(page)+".wav")
 #	$Voice.play()
+	if dialogue[page].has("split"):
+		get_tree().get_root().get_node_or_null("/root/world/").split = dialogue[page]["split"]
+	else:
+		get_tree().get_root().get_node_or_null("/root/world/").split = null
+		
+		
+	#changes all the variables in text
 	text = dialogue[page]["text"]
 	text = text.replace("{insertText}",pastDialogue[-1]["text"])
-	text = text.replace("{name}", playerName)
+	text = text.replace("{object}",UniversalFunctions.dialogueJson[objectName])
+	text = text.replace("{color}",UniversalFunctions.dialogueJson[colorName])
+	text = text.replace("{style}",UniversalFunctions.dialogueJson[styleName])
+	if currentTree == "newObjectPerfect" or currentTree == "newObjectGood" or currentTree == "newObjectBad" or currentTree == "newObjectNeutral":
+		if UniversalFunctions.dialogueJson.has(colorName+styleName+objectName):
+			text = text.replace("{styleObject}",UniversalFunctions.dialogueJson[colorName+styleName+objectName])
+		else:
+			text = text.replace("{styleObject}",UniversalFunctions.dialogueJson[styleName+objectName])
 	text = text.replace("{nameReaction}", UniversalFunctions.dialogueJson[UniversalFunctions.nameReaction])
+	text = text.replace("{name}", playerName)
+	text = text.replace("Ada", UniversalFunctions.dialogueJson["ada"])
 	text = text.replace("{emptyFilled}", UniversalFunctions.dialogueJson[UniversalFunctions.emptyFilled])
 	text = text.replace("{missingDialogue}", currentTree)
-	print(currentTree)
+	
+	#changes the color of the text and plays sprites
 	if dialogue[page]["color"] == "Teal":
 		text = "[color=#306082]"+text+"[/color]"
+	if get_tree().get_root().get_node_or_null("/root/world/Virtualhell/Synthia") != null:
+		if get_tree().get_root().get_node_or_null("/root/world/Virtualhell/Synthia").animation != dialogue[page]["sprite"]:
+			if dialogue[page]["sprite"] != "null":
+				get_tree().get_root().get_node_or_null("/root/world/Virtualhell/Synthia").play(dialogue[page]["sprite"])
+		
+	#sets the options
 	optionsVisible = dialogue[page]["optionsVisible"]
 	if optionsVisible == true:
 		if UniversalFunctions.dialogueJson.has(dialogue[page]["options"]):
 			options = UniversalFunctions.dialogueJson[dialogue[page]["options"]]
-			options = options.replace("{variableOption}", UniversalFunctions.VariableOption)
 		else:
 			if UniversalFunctions.disgust < 20:
-				if UniversalFunctions.loneliness <60:
-					if UniversalFunctions.dialogueJson.has("fine"+dialogue[page]["options"]):
-						options = UniversalFunctions.dialogueJson["fine"+dialogue[page]["options"]]
-					else:
-						options = UniversalFunctions.dialogueJson["optionsError"]
-				elif UniversalFunctions.loneliness >= 60:
-					if UniversalFunctions.dialogueJson.has("sad"+dialogue[page]["options"]):
-						options = UniversalFunctions.dialogueJson["sad"+dialogue[page]["options"]]
-					else:
-						options = UniversalFunctions.dialogueJson["optionsError"]
-			else:
-				if UniversalFunctions.dialogueJson.has("angry"+dialogue[page]["options"]):
-					options = UniversalFunctions.dialogueJson["angry"+dialogue[page]["options"]]
-				else:
-					options = UniversalFunctions.dialogueJson["optionsError"]
+				options = UniversalFunctions.dialogueJson["optionsError"]
+			if dialogue[page]["options"] == "{variableOption}":
+				options = UniversalFunctions.dialogueJson[UniversalFunctions.variableOptions]
+
+
+		var AlreadyUsed = []
 		var counter = options.size()
 		for i in options:
-			var AlreadyUsed = false
-			for x in UniversalFunctions.TalkAbout: 
-				if i["name"] == x:
-					AlreadyUsed = true
-			if AlreadyUsed == false:
+			if UniversalFunctions.TalkAbout.has(i["name"]): 
+				if UniversalFunctions.TalkAbout[i["name"]] == true:
+					AlreadyUsed.append(i)
+			if not AlreadyUsed.has(i):
 				var optText = ">"+i["text"]
 				optText = optText.replace("{missingOptions}",dialogue[page]["options"])
 				optText = optText.replace("{name}",UniversalFunctions.firstName)
 				get_tree().get_root().get_node_or_null("/root/world/Commandprompt/Options/Option"+str(counter)).visible = true
 				get_tree().get_root().get_node_or_null("/root/world/Commandprompt/Options/Option"+str(counter)).text = optText
-				
+				get_tree().get_root().get_node_or_null("/root/world/Commandprompt/Options/Option"+str(counter)).currentTopic = i
+			
 				counter-=1
 	color = dialogue[page]["color"]
 	time = dialogue[page]["tickSpeed"]
@@ -149,6 +170,13 @@ func _on_Timer_timeout():
 		textBox.set_visible_characters(textBox.get_visible_characters()+1)
 		if textBox.visible_characters == textBox.get_total_character_count():
 			$AutoCloseTimer.start()
+			var spriteSetter = dialogue[page]["sprite"]
+			spriteSetter=spriteSetter.replace("1","Static")
+			spriteSetter=spriteSetter.replace("2","Static")
+			if get_tree().get_root().get_node_or_null("/root/world/Virtualhell/Synthia") != null:
+				if get_tree().get_root().get_node_or_null("/root/world/Virtualhell/Synthia").animation != spriteSetter:
+					if dialogue[page]["sprite"] != "null":
+						get_tree().get_root().get_node_or_null("/root/world/Virtualhell/Synthia").play(spriteSetter)
 			
 		
 
@@ -157,7 +185,9 @@ func _on_AutoCloseTimer_timeout():
 #	if $Voice.playing == true:
 #		yield($Voice,"finished")
 #	$Voice.playing = false
-	skip_input()
+	UniversalFunctions.dialoguePlaying = false
+	UniversalFunctions.nervousTimer.start()
+	#skip_input()
 	
 
 
@@ -175,31 +205,18 @@ func set_mood():
 	else:
 			mood = "angry"
 
-func _on_Option3_pressed():
+func _on_Option3_pressed(currentNode):
+	
 	set_mood()
-	emit_signal("option_pressed", options[0]["name"])
-	pastDialogue.append({"name": options[0]["name"],
-						"text": options[0]["text"],
-						"mood": mood
-		})
-
-
-func _on_Option2_pressed():
-	set_mood()
-	emit_signal("option_pressed", options[options.size()-2]["name"])
-	pastDialogue.append({"name": options[options.size()-2]["name"],
-						"text": options[options.size()-2]["text"],
-						"mood": mood
-		})
-
-
-func _on_Option1_pressed():
-	set_mood()
-	emit_signal("option_pressed", options[options.size()-1]["name"])
-	if not options[options.size()-1]["name"].ends_with("forgotten"):
-		pastDialogue.append({"name": options[options.size()-1]["name"],
-							"text": options[options.size()-1]["text"],
+	if not get_tree().get_root().get_node_or_null("/root/world/Commandprompt/Options/"+currentNode).currentTopic["name"].ends_with("forgotten"):
+		pastDialogue.append({"name": get_tree().get_root().get_node_or_null("/root/world/Commandprompt/Options/"+currentNode).currentTopic["name"],
+							"text": get_tree().get_root().get_node_or_null("/root/world/Commandprompt/Options/"+currentNode).currentTopic["text"],
 							"mood": mood
-		})
+			})
+
+	if UniversalFunctions.TalkAbout.has(get_tree().get_root().get_node_or_null("/root/world/Commandprompt/Options/"+currentNode).currentTopic["name"]): 
+		UniversalFunctions.TalkAbout[get_tree().get_root().get_node_or_null("/root/world/Commandprompt/Options/"+currentNode).currentTopic["name"]] = true
+	prevOption = get_tree().get_root().get_node_or_null("/root/world/Commandprompt/Options/"+currentNode).currentTopic
+	emit_signal("option_pressed", get_tree().get_root().get_node_or_null("/root/world/Commandprompt/Options/"+currentNode).currentTopic["name"])
 
 

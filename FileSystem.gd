@@ -3,10 +3,15 @@ extends Sprite
 signal openFile
 
 var allItems={
-	"system":["images","documents","Testtxt"],
+	"system":["images","documents"],
 	"images":["mycat1jpg","mycat2jpg","mykot3jpg"],
-	"documents":["clickMe","Testtxt"],
-	"clickMe":["READTHISrtf"]
+	"documents":["clickMe"],
+	"clickMe":["IGNOREjpg","YOURjpg","DIRECTIVESjpg","ANDjpg","READTHISrtf"],
+	"why":["AN_EXPLAINATIONrtf"],
+	"cynthia":["LOVErtf"],
+	"myWish":["BLOW_A_WISHzip","WISHINGrtf"],
+	"imSorry":["apologyrtf"],
+	"atPeace":["THANKYOUrtf","ONEDAYjpg"]
 	
 }
 onready var visibleFolders = ["system","images","documents"]
@@ -14,8 +19,9 @@ var currentFolder = "system"
 var process = false
 var currentPos = null
 var current
+var currentSize
 onready var nodesPos = [$StorageFile1.position, $StorageFile2.position, $StorageFile3.position, $StorageFile4.position, $StorageFile5.position, $StorageFile6.position]
-onready var nodes = [$StorageFile1,$StorageFile2,$StorageFile3,$StorageFile4,$StorageFile5,$StorageFile6,$VBoxContainer/system,$VBoxContainer/images,$VBoxContainer/clickMe,$VBoxContainer/documents]
+onready var nodes = [$StorageFile1,$StorageFile2,$StorageFile3,$StorageFile4,$StorageFile5,$StorageFile6,$VBoxContainer/system,$VBoxContainer/images,$VBoxContainer/clickMe,$VBoxContainer/documents,$VBoxContainer/why,$VBoxContainer/cynthia,$VBoxContainer/myWish,$VBoxContainer/imSorry,$VBoxContainer/atPeace]
 
 
 func _ready():
@@ -30,6 +36,7 @@ func set_up():
 	#Makes correct folders visible
 	for i in visibleFolders:
 		get_tree().get_root().get_node_or_null("/root/world/FileSystem/VBoxContainer/"+i).visible = true
+		get_tree().get_root().get_node_or_null("/root/world/FileSystem/VBoxContainer/"+i+"/Label").text = UniversalFunctions.dialogueJson[i]
 	#Makes correct items visible
 	for i in allItems[currentFolder]:
 		get_tree().get_root().get_node_or_null("/root/world/FileSystem/StorageFile"+str(counter)).visible = true
@@ -49,20 +56,25 @@ func _process(_delta):
 	if process == true:
 		if get_global_mouse_position().distance_to(currentPos) < 15:
 			return
-		current.position = Vector2(get_global_mouse_position().x-13,get_global_mouse_position().y-15)
+		current.global_position = Vector2(get_global_mouse_position().x-currentSize,get_global_mouse_position().y-5)
 		Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 
 func _on_StorageFile_button_down(nodeNum,nodeName):
+	if z_index != 3:
+		return
 	if nodeName.ends_with("jpg") or nodeName.ends_with("gif") or nodeName.ends_with("txt") or nodeName.ends_with("rtf"):
 		currentPos = get_global_mouse_position()
 		current = get_tree().get_root().get_node_or_null("/root/world/FileSystem/StorageFile"+str(nodeNum))
+		currentSize = get_tree().get_root().get_node_or_null("/root/world/FileSystem/StorageFile"+str(nodeNum)+"/Label").rect_size.x/3
 		process = true 
 
 
 func _on_StorageFile_button_up(nodeNum,nodeName):
+	if z_index != 3:
+		return
 	if nodeName.ends_with("jpg") or nodeName.ends_with("gif") or nodeName.ends_with("txt") or nodeName.ends_with("rtf"):
 		process = false
-		if get_global_mouse_position().x > 225 and get_global_mouse_position().x >144:
+		if get_global_mouse_position().x < self.position.x or get_global_mouse_position().x-20 > self.position.x + 206 or  get_global_mouse_position().y < self.position.y or get_global_mouse_position().y > self.position.y + 142:
 			get_tree().get_root().get_node_or_null("/root/world/Icons/").new_file(nodeName)
 			get_tree().get_root().get_node_or_null("/root/world/FileSystem/StorageFile"+str(nodeNum)).position = nodesPos[nodeNum-1]
 			allItems[currentFolder].erase(nodeName)
@@ -76,6 +88,12 @@ func _on_StorageFile_button_up(nodeNum,nodeName):
 				emit_signal("openFile", nodeName)
 			else:
 				get_tree().get_root().get_node_or_null("/root/world/FileSystem/StorageFile"+str(nodeNum)).position = nodesPos[nodeNum-1]
+	elif nodeName.ends_with("zip"):
+		allItems[currentFolder].erase(nodeName)
+		if allItems[currentFolder] == []:
+			if currentFolder != "system":
+				empty_folders()
+		emit_signal("openFile", nodeName)
 	else:
 		_on_system_pressed(nodeName)
 
@@ -85,8 +103,10 @@ func empty_folders():
 		allItems["documents"].erase("clickMe")
 		if allItems["documents"] == []:
 			visibleFolders.erase("documents")
+			allItems["system"].erase("documents")
 	else:
 		visibleFolders.erase(currentFolder)
+		allItems["system"].erase(currentFolder)
 	currentFolder = "system"
 	set_up()
 

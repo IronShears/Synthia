@@ -180,6 +180,11 @@ animations = [ {
 "name": "default",
 "speed": 5.0
 }, {
+"frames": [ SubResource( 47 ), SubResource( 48 ), SubResource( 49 ), SubResource( 50 ), SubResource( 51 ), SubResource( 52 ), SubResource( 53 ), SubResource( 54 ), SubResource( 55 ), SubResource( 56 ), SubResource( 57 ), SubResource( 58 ), SubResource( 59 ), SubResource( 60 ) ],
+"loop": true,
+"name": "loading",
+"speed": 8.0
+}, {
 "frames": [ ExtResource( 22 ) ],
 "loop": true,
 "name": "locked",
@@ -189,11 +194,6 @@ animations = [ {
 "loop": true,
 "name": "ibar",
 "speed": 5.0
-}, {
-"frames": [ SubResource( 47 ), SubResource( 48 ), SubResource( 49 ), SubResource( 50 ), SubResource( 51 ), SubResource( 52 ), SubResource( 53 ), SubResource( 54 ), SubResource( 55 ), SubResource( 56 ), SubResource( 57 ), SubResource( 58 ), SubResource( 59 ), SubResource( 60 ) ],
-"loop": true,
-"name": "loading",
-"speed": 8.0
 } ]
 
 [node name="world" type="Node2D"]
@@ -1018,14 +1018,15 @@ __meta__ = {
 }
 
 [node name="SubmitName" type="Button" parent="."]
-margin_left = 233.0
-margin_top = 49.0
-margin_right = 313.0
-margin_bottom = 64.0
+margin_left = 7.0
+margin_top = 48.0
+margin_right = 87.0
+margin_bottom = 63.0
 focus_mode = 0
 theme = ExtResource( 1 )
 custom_fonts/font = ExtResource( 10 )
-text = " "
+text = ">Enter"
+align = 0
 script = ExtResource( 9 )
 __meta__ = {
 "_edit_use_anchors_": false

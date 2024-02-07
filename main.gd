@@ -12,9 +12,28 @@ var minute = 00
 var frozen = false
 var tempData = null
 var split = null
+var counter = 3
+var prepper = null
+var randomHints = ["randomAltHint1","randomAltHint2"]
+var sadTrigger = false
+var movingNode
+var mousePos
+var hoveredElements = []
+var selectedElement
+var intersectingNodes = []
+onready var startPositions = {"File":$File.position,
+							"FileSystem":$FileSystem.position,
+							"IDE":$IDE.position,
+							"Virtualhell":$Virtualhell.position}
+
+
+
+
+
 
 func _ready():
 	UniversalFunctions.reset()
+	UniversalFunctions.play_dialogue_JSON("logInSuccessful")
 	$File/ScrollContainer/VBoxContainer/Cynthia/description.text = UniversalFunctions.dialogueJson["SCPTextImage"]
 	var scpText = UniversalFunctions.dialogueJson["SCPText"]
 	scpText = scpText.replace("{firstName}", UniversalFunctions.firstName)
@@ -24,40 +43,61 @@ func _ready():
 	$Commandprompt/shell.text = UniversalFunctions.dialogueJson["SHELL"]
 	$FileSystem/FileSystem.text = UniversalFunctions.dialogueJson["FILESYSTEM"]
 	$IDE/WISH.text = UniversalFunctions.dialogueJson["WISH"]
-	$IDE/Cool/Label.text = UniversalFunctions.dialogueJson["Cool"]
-	$IDE/Cozy/Label.text = UniversalFunctions.dialogueJson["Cozy"]
-	$IDE/Cute/Label.text = UniversalFunctions.dialogueJson["Cute"]
-	$IDE/Room/Label.text = UniversalFunctions.dialogueJson["Room"]
-	$IDE/Bed/Label.text = UniversalFunctions.dialogueJson["Bed"]
-	$IDE/Chair/Label.text = UniversalFunctions.dialogueJson["Chair"]
-	$IDE/Decor/Label.text = UniversalFunctions.dialogueJson["Decor"]
-	$IDE/select.text = UniversalFunctions.dialogueJson["Decor"]
-	yield($NervousTimer, "timeout")
-	intro = "Intro"
-	$NervousTimer.wait_time = 3
-	UniversalFunctions.play_dialogue_JSON("dialogueIntro")
-	yield($Commandprompt,"done")
+	$IDE/CoolLabel.text = UniversalFunctions.dialogueJson["Cool"]
+	$IDE/CozyLabel.text = UniversalFunctions.dialogueJson["Cozy"]
+	$IDE/CuteLabel.text = UniversalFunctions.dialogueJson["Cute"]
+	$IDE/RoomLabel.text = UniversalFunctions.dialogueJson["Room"]
+	$IDE/BedLabel.text = UniversalFunctions.dialogueJson["Bed"]
+	$IDE/ChairLabel.text = UniversalFunctions.dialogueJson["Chair"]
+	$IDE/DecorLabel.text = UniversalFunctions.dialogueJson["Decor"]
+	$IDE/select.text = UniversalFunctions.dialogueJson["select"]
+	$Taskbar/OptionsMenu/MouseOn/Label.text = UniversalFunctions.dialogueJson["MouseOn"]
+	$Taskbar/OptionsMenu/Fullscreen/Label.text = UniversalFunctions.dialogueJson["Fullscreen"]
+	$Taskbar/OptionsMenu/Mobile/Label.text = UniversalFunctions.dialogueJson["ForMobile"]
 	
-
-func _on_Commandprompt_option_pressed(optionName:String):
-	if UniversalFunctions.locked == true:
-		return
-	if optionName == "forgotten":
-		if $Commandprompt.pastDialogue[-1]["name"] == "start":
-			if UniversalFunctions.loneliness <60:
-				UniversalFunctions.play_dialogue_JSON("fineGreetingGood")
-			elif UniversalFunctions.loneliness >= 60 and UniversalFunctions.loneliness <= 90:
-				UniversalFunctions.play_dialogue_JSON("sadGreetingGood")
-			return
-		if split != null:
-			if UniversalFunctions.disgust < 20:
-				if UniversalFunctions.loneliness < 60:
-					UniversalFunctions.play_dialogue_JSON("fine"+split)
-				elif UniversalFunctions.loneliness >= 60 and UniversalFunctions.loneliness <= 90:
-					UniversalFunctions.play_dialogue_JSON("sad"+split)
+func _input(event):
+	if intro == "null":
+		if event is InputEventMouseButton and event.is_pressed():
+			if counter > 0:
+				counter -=1
+				return
+			$NervousTimer.start()
+			yield($NervousTimer, "timeout")
+			intro = "Intro"
+			$NervousTimer.wait_time = 6
+			UniversalFunctions.play_dialogue_JSON("dialogueIntro")
+			yield($Commandprompt,"done")
+	
+	if event is InputEventMouseButton && event.pressed:
+		if event.button_index == BUTTON_LEFT:
+			if hoveredElements == []:
+				# No object is being clicked, so deselect selected node
+				selectedElement = null
 			else:
-				UniversalFunctions.play_dialogue_JSON("angry"+split)
-			split = null
+				# Call left click for only the top object that is being clicked
+				leftMouseClick()
+	
+func leftMouseClick():
+	if hoveredElements.has(order[3]):
+		selectedElement = order[3]
+	elif hoveredElements.has(order[2]):
+		selectedElement = order[2]
+	elif hoveredElements.has(order[1]):
+		selectedElement = order[1]
+	elif hoveredElements.has(order[0]):
+		selectedElement = order[0]
+	hoveredElements = []
+	resetLayers(true, selectedElement)
+
+
+	
+func _on_Commandprompt_option_pressed(optionName:String):
+	if optionName == "forgotten":
+		if split != null:
+			UniversalFunctions.play_dialogue_JSON(split)
+			return
+		if $Commandprompt.pastDialogue[-1]["name"] == "start":
+			UniversalFunctions.play_dialogue_JSON("GreetingGood")
 			return
 		if UniversalFunctions.disgust < 20:
 			if UniversalFunctions.loneliness < 60:
@@ -67,16 +107,18 @@ func _on_Commandprompt_option_pressed(optionName:String):
 		else:
 			UniversalFunctions.play_dialogue_JSON("angryRepeat")
 		yield($Commandprompt,"done")
-		if UniversalFunctions.dialogueJson.has($Commandprompt.pastDialogue[-1]["name"]):
-			UniversalFunctions.play_dialogue_JSON($Commandprompt.pastDialogue[-1]["name"])
-		else: 
-			UniversalFunctions.play_dialogue_JSON($Commandprompt.pastDialogue[-1]["mood"]+$Commandprompt.pastDialogue[-1]["name"])
-	elif optionName == "GreetingGoodConverge" or optionName == "GreetingBadConverge" or  optionName == "GreetingUglyConverge":
+		UniversalFunctions.play_dialogue_JSON($Commandprompt.pastDialogue[-1]["name"])
+		return
+	elif optionName == "GreetingGood" or optionName == "GreetingBad" or  optionName == "GreetingUgly":
 		intro = ""
-		$NervousTimer.wait_time = 3
+		$NervousTimer.wait_time = 12
+		UniversalFunctions.play_dialogue_JSON(optionName)
+	elif optionName == "IntroductionsGood" or optionName == "IntroductionsBad":
+		$Commandprompt.playerName = UniversalFunctions.dialogueJson["Whoever You Are"]
+		UniversalFunctions.adaOrYou = "ada"
 		UniversalFunctions.play_dialogue_JSON(optionName)
 	elif optionName == "AskSupervisorGood" or optionName == "AskSupervisorBad":
-		$Commandprompt.playerName = "Mystery Person"
+		$Commandprompt.playerName = UniversalFunctions.dialogueJson["Mystery Person"]
 		UniversalFunctions.play_dialogue_JSON(optionName)
 	elif optionName == "GiveNameGood":
 		$Commandprompt.playerName = UniversalFunctions.firstName
@@ -84,16 +126,33 @@ func _on_Commandprompt_option_pressed(optionName:String):
 	elif optionName == "GiveNameBad":
 		UniversalFunctions.play_dialogue_JSON(optionName)
 		UniversalFunctions.loneliness +=2
-	elif optionName == "reactionToGenerationUgly":
-		split = null
-		UniversalFunctions.topics.append("Simulation")
 	elif optionName == "SpendTime" or optionName == "WhatWereYouLike" or optionName == "ElfTalk":
-		UniversalFunctions.TalkAbout.append(optionName)
+		UniversalFunctions.TalkAbout[optionName] = true
+		UniversalFunctions.play_dialogue_JSON(optionName)
+	elif optionName == "AdaSurpriseUgly":
+		UniversalFunctions.variableOptions = "ContinueForwardHuh"
+		UniversalFunctions.play_dialogue_JSON(optionName)
+	elif optionName == "ContinueForwardHuhUgly":
+		UniversalFunctions.variableOptions = "ShiftEndPrompt"
+		UniversalFunctions.play_dialogue_JSON(optionName)
+	elif optionName == "ICanExplainUgly":
+		if UniversalFunctions.disgust >= 20:
+			UniversalFunctions.dialogueEnded = true
+		UniversalFunctions.play_dialogue_JSON(optionName)
+	elif optionName == "ICanExplainUgly":
+		if UniversalFunctions.disgust >= 20:
+			UniversalFunctions.dialogueEnded = true
+		UniversalFunctions.play_dialogue_JSON(optionName)
+	elif optionName == "NotTrueUgly":
+		UniversalFunctions.dialogueEnded = true
+		UniversalFunctions.play_dialogue_JSON(optionName)
+	elif optionName == "TrustHerUgly":
+		UniversalFunctions.dialogueEnded = true
 		UniversalFunctions.play_dialogue_JSON(optionName)
 	else:
 		UniversalFunctions.play_dialogue_JSON(optionName)
 		
-	var optionChecker = optionName.replace("Converge","")
+	var optionChecker = optionName.replace("","")
 	UniversalFunctions.loneliness -=1
 	if optionChecker.ends_with("Good"):
 		UniversalFunctions.disgust -=1
@@ -105,6 +164,7 @@ func _on_Commandprompt_option_pressed(optionName:String):
 func _on_CurrentTime_timeout():
 	if frozen == true:
 		return
+	
 	minute+=1
 	if minute == 60:
 		minute = 0
@@ -119,28 +179,81 @@ func _on_CurrentTime_timeout():
 	else:
 		time=time+str(minute)
 	$Taskbar/time.text = time
+	if $Taskbar/time.text == "17:00":
+		if frozen == false:
+			UniversalFunctions.dialogueEnded = true
+			UniversalFunctions.dialoguePlaying = false
+			time_ending()
+			frozen = true
+		
+		
+func time_ending():
+	if distractions.size() == 4:
+		UniversalFunctions.play_dialogue_JSON("GoodEnd")
+		UniversalFunctions.ending = "firedBest"
+		yield($Commandprompt,"option_pressed")
+		UniversalFunctions.play_dialogue_JSON("GoodEnding2")
+		yield($Commandprompt,"option_pressed")
+	else:
+		if distractions.size() == 0:
+			if $FileSystem.allItems["system"] == []:
+				UniversalFunctions.ending = "followedOrders"
+			else:
+				UniversalFunctions.ending = "disobeyedOrders"
+		else:
+			UniversalFunctions.ending = "fired"
+		UniversalFunctions.play_dialogue_JSON("NeutralEnd")
+		yield($Commandprompt,"option_pressed")
+	$ClosingComputer.visible = true
+	$ClosingComputer.play("default")
+	yield($ClosingComputer,"animation_finished")
+	UniversalFunctions.change_scenes_reload("res://endingAndCredits.tscn")
 
 func _on_NervousTimer_timeout():
 	if UniversalFunctions.dialoguePlaying == true:
 		return
+	if UniversalFunctions.dialogueEnded == true:
+		return
 	
-	if intro != "null":
+	if intro == "Intro":
+		var wait_time = 0.003*pow(UniversalFunctions.loneliness,2)+((-0.27)*UniversalFunctions.loneliness)+12.075
+		$NervousTimer.wait_time = wait_time
+		if UniversalFunctions.loneliness < 90:
+			UniversalFunctions.loneliness += 2
+			UniversalFunctions.play_dialogue_JSON("lonelyIntro"+str(UniversalFunctions.loneliness/2))
+		else:
+			$NervousTimer.start()
+	elif intro == "":
+		var wait_time = 0.004*pow(UniversalFunctions.loneliness,2)+((-0.36)*UniversalFunctions.loneliness)+20.1
+		$NervousTimer.wait_time = wait_time
 		for i in distractions:
 			rng.randomize()
 			var roll = rng.randf_range(0, 250.0)
 			if roll <= i["value"]:
-				print("distraction rolled!")
-				$NervousTimer.start()
+				UniversalFunctions.play_dialogue_JSON("distraction"+i["style"]+i["object"])
 				return
-		if UniversalFunctions.loneliness <= 90:
-			UniversalFunctions.loneliness += 1
-			if UniversalFunctions.loneliness % 2 == 0:
-				if UniversalFunctions.disgust < 20:
-					UniversalFunctions.play_dialogue_JSON("lonely"+intro+str(UniversalFunctions.loneliness/2))
-			else:
-				$NervousTimer.start()
-		else:
-			$NervousTimer.start()
+		if UniversalFunctions.loneliness <= 88:
+			UniversalFunctions.loneliness += 2
+			if UniversalFunctions.disgust < 20:
+				rng.randomize()
+				var roll2 = rng.randi_range(1, 15)
+				if roll2 == 15:
+					if randomHints != []:
+						var randomHint = rng.randi_range(0, randomHints.size()-1)
+						UniversalFunctions.play_dialogue_JSON(randomHints[randomHint])
+						return
+				if UniversalFunctions.loneliness > 60:
+					UniversalFunctions.play_dialogue_JSON("lonelySad"+str(roll2))
+				elif UniversalFunctions.loneliness <= 60 and UniversalFunctions.loneliness > 30:
+					UniversalFunctions.play_dialogue_JSON("lonelyTense"+str(roll2))
+				else:
+					UniversalFunctions.play_dialogue_JSON("lonelyFine"+str(roll2))
+		if UniversalFunctions.loneliness == 90:
+			if UniversalFunctions.disgust < 20:
+				if sadTrigger == false:
+					UniversalFunctions.play_dialogue_JSON("lonelySadEnd")
+					UniversalFunctions.dialogueEnded = true
+					sadTrigger = true
 	
 func resetLayers(moveToFront, current):
 	if UniversalFunctions.locked == true:
@@ -151,90 +264,104 @@ func resetLayers(moveToFront, current):
 	else:
 		order.erase(current)
 		order.append(current)
-	var counter = 0
+	var layerCounter = 0
 	for i in order:
 		if get_tree().get_root().get_node_or_null("/root/world/"+i) != null:
-			get_tree().get_root().get_node_or_null("/root/world/"+i).z_index = counter
-		counter += 1
+			get_tree().get_root().get_node_or_null("/root/world/"+i).z_index = layerCounter
+		layerCounter += 1
 	if $Virtualhell.z_index == 3:
 		$Commandprompt/Options.visible = $Commandprompt.optionsVisible
-		$Virtualhell/Close.disabled = false
-		$Virtualhell/Minimize.disabled = false
+		$Virtualhell/Close.visible = true
+		$Virtualhell/Minimize.visible = true
+		$Virtualhell/mover.visible = true
 	else:
 		$Commandprompt/Options.visible = false
-		$Virtualhell/Close.disabled = true
-		$Virtualhell/Minimize.disabled = true
+		$Virtualhell/Close.visible = false
+		$Virtualhell/Minimize.visible = false
+		$Virtualhell/mover.visible = false
 	if $IDE.z_index == 3:
-		$IDE/Close.disabled = false
-		$IDE/Minimize.disabled = false
-		$IDE/Generate.disabled = false
-		$IDE/Cool.disabled = false
-		$IDE/Cozy.disabled = false
-		$IDE/Cute.disabled = false
-		$IDE/Room.disabled = false
-		$IDE/Bed.disabled = false
-		$IDE/Chair.disabled = false
-		$IDE/Decor.disabled = false
-		$IDE/Red.disabled = false
-		$IDE/Orange.disabled = false
-		$IDE/Yellow.disabled = false
-		$IDE/Green.disabled = false
-		$IDE/Blue.disabled = false
-		$IDE/Violet.disabled = false
-		$IDE/Pink.disabled = false
-		$IDE/White.disabled = false
-		$IDE/Black.disabled = false
+		$IDE/mover.visible = true
+		$IDE/Close.visible = true
+		$IDE/Minimize.visible = true
+		$IDE/Generate.visible = true
+		$IDE/Cool.visible = true
+		$IDE/Cozy.visible = true
+		$IDE/Cute.visible = true
+		$IDE/Room.visible = true
+		$IDE/Bed.visible = true
+		$IDE/Chair.visible = true
+		$IDE/Decor.visible = true
+		$IDE/Red.visible = true
+		$IDE/Orange.visible = true
+		$IDE/Yellow.visible = true
+		$IDE/Green.visible = true
+		$IDE/Blue.visible = true
+		$IDE/Violet.visible = true
+		$IDE/Pink.visible = true
+		$IDE/White.visible = true
+		$IDE/Black.visible = true
 	else:
-		$IDE/Close.disabled = true
-		$IDE/Minimize.disabled = true
-		$IDE/Generate.disabled = true
-		$IDE/Cool.disabled = true
-		$IDE/Cozy.disabled = true
-		$IDE/Cute.disabled = true
-		$IDE/Room.disabled = true
-		$IDE/Bed.disabled = true
-		$IDE/Chair.disabled = true
-		$IDE/Decor.disabled = true
-		$IDE/Red.disabled = true
-		$IDE/Orange.disabled = true
-		$IDE/Yellow.disabled = true
-		$IDE/Green.disabled = true
-		$IDE/Blue.disabled = true
-		$IDE/Violet.disabled = true
-		$IDE/Pink.disabled = true
-		$IDE/White.disabled = true
-		$IDE/Black.disabled = true
+		$IDE/mover.visible = false
+		$IDE/Close.visible = false
+		$IDE/Minimize.visible = false
+		$IDE/Generate.visible = false
+		$IDE/Cool.visible = false
+		$IDE/Cozy.visible = false
+		$IDE/Cute.visible = false
+		$IDE/Room.visible = false
+		$IDE/Bed.visible = false
+		$IDE/Chair.visible = false
+		$IDE/Decor.visible = false
+		$IDE/Red.visible = false
+		$IDE/Orange.visible = false
+		$IDE/Yellow.visible = false
+		$IDE/Green.visible = false
+		$IDE/Blue.visible = false
+		$IDE/Violet.visible = false
+		$IDE/Pink.visible = false
+		$IDE/White.visible = false
+		$IDE/Black.visible = false
 	if $File.z_index == 3:
-		$File/Close.disabled = false
-		$File/Minimize.disabled = false
+		$File/mover.visible = true
+		$File/Close.visible = true
+		$File/Minimize.visible = true
 	else:
-		$File/Close.disabled = true
-		$File/Minimize.disabled = true
+		$File/mover.visible = false
+		$File/Close.visible = false
+		$File/Minimize.visible = false
+	if $FileSystem.z_index == 3:
+		$FileSystem/mover.visible = true
+		$FileSystem/Close.visible = true
+		$FileSystem/Minimize.visible = true
+	else:
+		$FileSystem/mover.visible = false
+		$FileSystem/Close.visible = false
+		$FileSystem/Minimize.visible = false
 
 
 func _on_Synthia_Minimize_pressed():
 	if UniversalFunctions.locked == true:
 		return
-	if $AnimationPlayer.current_animation != "":
-		return
-	$AnimationPlayer.play("SynthiaMinimize")
-	yield($AnimationPlayer,"animation_finished")
+	tweening($Virtualhell,true)
+	yield($Tween,"tween_completed")
+	$Virtualhell.visible = false
 	resetLayers(false, "Virtualhell")
 
 func _on_File_Minimize_pressed():
-	if $AnimationPlayer.current_animation != "":
+	if UniversalFunctions.locked == true:
 		return
-	$AnimationPlayer.play("FileMinimize")
-	yield($AnimationPlayer,"animation_finished")
+	tweening($File,true)
+	yield($Tween,"tween_completed")
+	$File.visible = false
 	resetLayers(false, "File")
+
 
 func _on_IDE_Minimize_pressed():
 	if UniversalFunctions.locked == true:
 		return
-	if $AnimationPlayer.current_animation != "":
-		return
-	$AnimationPlayer.play("IDEMinimize")
-	yield($AnimationPlayer,"animation_finished")
+	tweening($IDE,true)
+	yield($Tween,"tween_completed")
+	$IDE.visible = false
 	resetLayers(false, "IDE")
 
 
@@ -242,10 +369,9 @@ func _on_IDE_Minimize_pressed():
 func _on_FileSystem_Minimize_pressed():
 	if UniversalFunctions.locked == true:
 		return
-	if $AnimationPlayer.current_animation != "":
-		return
-	$AnimationPlayer.play("FileSystemMinimize")
-	yield($AnimationPlayer,"animation_finished")
+	tweening($FileSystem,true)
+	yield($Tween,"tween_completed")
+	$FileSystem.visible = false
 	resetLayers(false, "FileSystem")
 
 
@@ -265,8 +391,6 @@ func _on_Synthia_Close_pressed():
 func _on_File_Close_pressed():
 	if UniversalFunctions.locked == true:
 		return
-	if $AnimationPlayer.current_animation != "":
-		return
 	$File.visible = false
 	resetLayers(false, "File")
 		
@@ -274,15 +398,12 @@ func _on_File_Close_pressed():
 func _on_FileSystem_Close_pressed():
 	if UniversalFunctions.locked == true:
 		return
-	if $AnimationPlayer.current_animation != "":
-		return
 	$FileSystem.visible = false
 	resetLayers(false, "FileSystem")
 
 func _on_IDE_Close_pressed():
+	print(UniversalFunctions.locked)
 	if UniversalFunctions.locked == true:
-		return
-	if $AnimationPlayer.current_animation != "":
 		return
 	$IDE.visible = false
 	resetLayers(false, "IDE")
@@ -291,44 +412,38 @@ func _on_IDE_Close_pressed():
 func _on_Synthia_pressed():
 	if UniversalFunctions.locked == true:
 		return
-	if $AnimationPlayer.current_animation != "":
-		return
 	if $Virtualhell.visible == false:
-		$AnimationPlayer.play_backwards("SynthiaMinimize")
+		$Virtualhell.visible = true
+		tweening($Virtualhell,false)
 	resetLayers(true, "Virtualhell")
 
 
 func _on_File_pressed():
 	if UniversalFunctions.locked == true:
 		return
-	if $AnimationPlayer.current_animation != "":
-		return
 	if $File.visible == false:
-		$AnimationPlayer.play_backwards("FileMinimize")
+		$File.visible = true
+		tweening($File,false)
 	resetLayers(true, "File")
 
 func _on_FileSystem_pressed():
 	if UniversalFunctions.locked == true:
 		return
-	if $AnimationPlayer.current_animation != "":
-		return
 	if $FileSystem.visible == false:
-		$AnimationPlayer.play_backwards("FileSystemMinimize")
+		$FileSystem.visible = true
+		tweening($FileSystem,false)
 	resetLayers(true, "FileSystem")
 	
 func _on_IDE_pressed():
 	if UniversalFunctions.locked == true:
 		return
-	if $AnimationPlayer.current_animation != "":
-		return
 	if $IDE.visible == false:
-		$AnimationPlayer.play_backwards("IDEMinimize")
+		$IDE.visible = true
+		tweening($IDE,false)
 	resetLayers(true, "IDE")
 
 
 func _on_Warning_Close_pressed():
-	if $AnimationPlayer.current_animation != "":
-		return
 	if warningNode != null:
 		get_tree().get_root().get_node_or_null("/root/world/Icons/"+warningNode).visible = true
 	$popup.visible = false
@@ -338,8 +453,9 @@ func _on_Warning_Close_pressed():
 	
 
 func _on_FileViewer_Close_pressed():
-	if $AnimationPlayer.current_animation != "":
-		return
+	if prepper == "THANKYOUrtf":
+		if $Taskbar/time.text != "17:00":
+			return
 	$FileViewer.visible = false
 	UniversalFunctions.locked = false
 	
@@ -355,16 +471,92 @@ func _on_Warning_accept_pressed():
 
 
 func Warning_React():
-	$Commandprompt/AutoCloseTimer.stop()
-	UniversalFunctions.dialoguePlaying = false
 	if warning == "synthia":
-		UniversalFunctions.play_dialogue_JSON("invalidCode")
+		if UniversalFunctions.loneliness == 90:
+			$Commandprompt/AutoCloseTimer.stop()
+			UniversalFunctions.dialoguePlaying = false
+			UniversalFunctions.play_dialogue_JSON("synthiaClosed")
+			$Virtualhell.visible = false
+			resetLayers(false, "Virtualhell")
+		else:
+			$Commandprompt/AutoCloseTimer.stop()
+			UniversalFunctions.dialoguePlaying = false
+			UniversalFunctions.play_dialogue_JSON("invalidCode")
 	elif warning == "trash":
-		if warningNode == "IDE" or warningNode == "Virtualhell" or warningNode == "File":
+		if warningNode == "IDE" or warningNode == "File":
 			get_tree().get_root().get_node_or_null("/root/world/Taskbar/Icons/"+warningNode).visible = false
-		if warningNode != "Virtualhell":
-			UniversalFunctions.play_dialogue_JSON("fileDeleted"+str(filesDeleted))
-			filesDeleted += 1
+		if warningNode == "Virtualhell":
+			UniversalFunctions.locked = true
+			get_tree().get_root().get_node_or_null("/root/world/Taskbar/Icons/"+warningNode).visible = false
+			$Commandprompt/AutoCloseTimer.stop()
+			UniversalFunctions.dialoguePlaying = false
+			UniversalFunctions.play_dialogue_JSON("fileDeletedSynthia")
+			yield($Commandprompt, "done")
+			$NervousTimer.stop()
+			$NervousTimer.start()
+			UniversalFunctions.ending = "demoted"
+			yield($NervousTimer,"timeout")
+			$ClosingComputer.visible = true
+			$ClosingComputer.play("default")
+			yield($ClosingComputer,"animation_finished")
+			UniversalFunctions.change_scenes_reload("res://endingAndCredits.tscn")
+			return
+		if warningNode == "READTHISrtf" or warningNode == "AN_EXPLAINATIONrtf" or warningNode == "LOVErtf":
+			if prepper == null:
+				if UniversalFunctions.dialogueJson.has("fileDeleted"+str(filesDeleted)):
+					$Commandprompt/AutoCloseTimer.stop()
+					UniversalFunctions.dialoguePlaying = false
+					if UniversalFunctions.dialogueEnded == false:
+						UniversalFunctions.play_dialogue_JSON("fileDeleted"+str(filesDeleted))
+					else:
+						UniversalFunctions.play_dialogue_JSON("fileDeletedSynthia")
+				else:
+					$Commandprompt/AutoCloseTimer.stop()
+					UniversalFunctions.dialoguePlaying = false
+					UniversalFunctions.play_dialogue_JSON("fileDeletedLater")
+				filesDeleted += 1
+				return
+			
+			if prepper == "READTHISrtf":
+				$FileSystem.visibleFolders.append("why")
+				$FileSystem.allItems["system"].append("why")
+			elif prepper == "AN_EXPLAINATIONrtf":
+				$FileSystem.visibleFolders.append("cynthia")
+				$FileSystem.allItems["system"].append("cynthia")
+			elif prepper == "LOVErtf":
+				if UniversalFunctions.adaOrYou != "you":
+					$FileSystem.visibleFolders.append("myWish")
+					$FileSystem.allItems["system"].append("myWish")
+				else:
+					if UniversalFunctions.dialogueJson.has("fileDeleted"+str(filesDeleted)):
+						$Commandprompt/AutoCloseTimer.stop()
+						UniversalFunctions.dialoguePlaying = false
+						UniversalFunctions.play_dialogue_JSON("fileDeleted"+str(filesDeleted))
+					else:
+						$Commandprompt/AutoCloseTimer.stop()
+						UniversalFunctions.dialoguePlaying = false
+						UniversalFunctions.play_dialogue_JSON("fileDeletedLater")
+					return
+			$FileSystem.set_up()
+			$Commandprompt/AutoCloseTimer.stop()
+			UniversalFunctions.dialoguePlaying = false
+			
+			if UniversalFunctions.dialogueEnded == false:
+				UniversalFunctions.play_dialogue_JSON("fileDeleted"+warningNode)
+			else:
+				UniversalFunctions.play_dialogue_JSON("fileDeleted"+warningNode+"Ended")
+		else:
+			if UniversalFunctions.dialogueJson.has("fileDeleted"+str(filesDeleted)):
+				$Commandprompt/AutoCloseTimer.stop()
+				UniversalFunctions.dialoguePlaying = false
+				if UniversalFunctions.dialogueEnded == false:
+					UniversalFunctions.play_dialogue_JSON("fileDeleted"+str(filesDeleted))
+				else:
+					UniversalFunctions.play_dialogue_JSON("fileDeletedSynthia")
+			else:
+				$Commandprompt/AutoCloseTimer.stop()
+				UniversalFunctions.dialoguePlaying = false
+				UniversalFunctions.play_dialogue_JSON("fileDeletedLater")
 	elif warning == "generate":
 		generate_Object()
 	warning = null
@@ -372,45 +564,82 @@ func Warning_React():
 
 
 func generate_Object():
+	UniversalFunctions.generating = true
+	UniversalFunctions.emptyFilled = "lessEmpty"
+	#Locking things down, loading it in
 	UniversalFunctions.locked = true
 	$cursor.play("loading")
 	$AnimationPlayer.play("load")
 	UniversalFunctions.dialoguePlaying = true
 	yield($AnimationPlayer,"animation_finished")
+	#Finishing generation
 	$IDE/loading.visible = true
 	$NervousTimer.stop()
 	$Commandprompt/AutoCloseTimer.stop()
 	$IDE/loading/loading.play("default")
+	$IDE/loading/loading.frame = 0
 	yield($IDE/loading/loading,"animation_finished")
+	#everything goes back to normal
 	$IDE.reset()
 	UniversalFunctions.dialoguePlaying = false
 	$cursor.play("default")
+	$Commandprompt.objectName = tempData["object"]
+	$Commandprompt.colorName = tempData["color"]
+	$Commandprompt.styleName = tempData["style"]
+	#adds thing to room
 	if tempData["object"] == "Room":
 		var synthiapaletteLoad = load("res://Resources/Sprites/"+tempData["color"]+"SynthiaColors.png")
 		var roompaletteLoad = load("res://Resources/Room/"+tempData["color"]+"RoomColors.png")
 		$Virtualhell/Room.play(tempData["style"]+tempData["object"])
 		$Virtualhell/Room.get_material().set_shader_param("palette_out", roompaletteLoad)
 		$Virtualhell/Synthia.get_material().set_shader_param("palette_out", synthiapaletteLoad)
+	else:
+		var roompaletteLoad = load("res://Resources/Room/"+tempData["color"]+"RoomColors.png")
+		get_tree().get_root().get_node_or_null("/root/world/Virtualhell/Room/"+tempData["object"]).play(tempData["style"])
+		get_tree().get_root().get_node_or_null("/root/world/Virtualhell/Room/"+tempData["object"]).get_material().set_shader_param("palette_out", roompaletteLoad)
+	UniversalFunctions.locked = false
+	
+	#dialogue if it's the first generated object
 	if distractions == []:
-		split = "FirstGeneration"
 		distractions.append(tempData)
-		tempData = null
 		UniversalFunctions.locked = false
-		UniversalFunctions.play_dialogue_JSON("successfullyGeneratedIntro")
-		yield($Commandprompt,"done")
+		UniversalFunctions.generating = false
+		if UniversalFunctions.dialogueEnded == false:
+			UniversalFunctions.play_dialogue_JSON("successfullyGeneratedIntro")
+		else:
+			UniversalFunctions.play_dialogue_JSON("successfullyGeneratedIntroEnded")
 		return
+		
+	#removes old objects. If you already have a chair and generate a new chair, it replaces the chair with the new chair.
 	var removed
-	var counter = 0 
+	var genCounter = 0 
+	var genLocked
 	var removedSame = false
 	for i in distractions:
 		if tempData["object"] == i["object"]:
 			removed = i
-			print(i)
-			print(distractions[counter])
-			distractions.remove(counter)
-		counter+=1
+			print("currentObject: "+str(i))
+			print("removed: " +str(distractions[genCounter]))
+			genLocked = true
+		if genLocked == false:
+			genCounter+=1
+	if genLocked == true:
+		distractions.erase(distractions[genCounter])
+	distractions.append(tempData)
+	print(distractions)
+	
+	if UniversalFunctions.dialogueEnded == true:
+		UniversalFunctions.generating = false
+		if distractions.size() == 4:
+			$FileSystem.visibleFolders.append("atPeace")
+			$FileSystem.allItems["system"].append("atPeace")
+			$FileSystem.set_up()
+		return
+	
+	
+	#Starts playing dialogue
 	if removed != null:
-		if removed["object"] == tempData["object"] and removed["style"] == tempData["style"] and removed["color"] ==tempData["color"]:
+		if removed["object"] == tempData["object"] and removed["style"] == tempData["style"] and removed["color"] == tempData["color"]:
 			removedSame = true
 		else:
 			if removed["value"] < tempData["value"]:
@@ -424,8 +653,8 @@ func generate_Object():
 				yield($Commandprompt,"done")
 				
 	if removedSame == false:
-		if UniversalFunctions.dialogueJson.has(tempData["color"]+tempData["style"]+tempData["object"]):
-			UniversalFunctions.play_dialogue_JSON(tempData["color"]+tempData["style"]+tempData["object"])
+		if UniversalFunctions.dialogueJson.has("full"+tempData["color"]+tempData["style"]+tempData["object"]):
+			UniversalFunctions.play_dialogue_JSON("full"+tempData["color"]+tempData["style"]+tempData["object"])
 		else:
 			if tempData["value"] > 18:
 				UniversalFunctions.play_dialogue_JSON("newObjectGood")
@@ -436,9 +665,15 @@ func generate_Object():
 			elif tempData["value"] <= 10:
 				UniversalFunctions.play_dialogue_JSON("newObjectBad")
 				yield($Commandprompt,"done")
-	distractions.append(tempData)
-	tempData = null
-	UniversalFunctions.locked = false
+
+
+	#if you've given her one of everything, Ada gives you one last goodbye
+	if distractions.size() == 4:
+		$FileSystem.visibleFolders.append("atPeace")
+		$FileSystem.allItems["system"].append("atPeace")
+		$FileSystem.set_up()
+		
+	UniversalFunctions.generating = false
 	
 
 func _on_Icons_trashed(node):
@@ -475,7 +710,6 @@ func _on_Icons_trashed(node):
 
 
 func _on_IDE_generated(data):
-	print(data)
 	tempData = data
 	UniversalFunctions.locked = true
 	$popup.visible = true
@@ -492,6 +726,24 @@ func _on_IDE_generated(data):
 
 
 func _on_Icons_openFile(nodeName):
+	if nodeName == "BLOW_A_WISHzip":
+		$FileSystem.visibleFolders.append("imSorry")
+		$FileSystem.allItems["system"].append("imSorry")
+		$FileSystem.set_up()
+		UniversalFunctions.dialoguePlaying = false
+		$AnimationPlayer.play_backwards("IDEMinimize")
+		resetLayers(true, "IDE")
+		$Taskbar/Icons/IDE.visible = true
+		$Icons/IDE.visible = true
+		$IDE.visible = true
+		$Icons.position_settling($Icons/IDE)
+		tempData = {
+		"color": "Blue",
+		"style": "Cool",
+		"object": "Room",
+		"value": 10 }
+		generate_Object()
+		return
 	UniversalFunctions.locked = true
 	$FileViewer.visible = true
 	if nodeName.ends_with("txt") or nodeName.ends_with("rtf"):
@@ -501,11 +753,124 @@ func _on_Icons_openFile(nodeName):
 		else:
 			$FileViewer/TextScroll.visible = false
 		$FileViewer/Text.visible = true
-		$FileViewer/Text.text = ""
-		$FileViewer/Text.text = UniversalFunctions.dialogueJson[nodeName+"Text"]
+		$FileViewer/Text.set_bbcode("")
+		$FileViewer/Text.set_bbcode(UniversalFunctions.dialogueJson[nodeName+"Text"])
+		if nodeName == "READTHISrtf" or nodeName == "AN_EXPLAINATIONrtf" or nodeName == "LOVErtf" or nodeName == "THANKYOUrtf":
+			prepper = nodeName
+			if nodeName == "THANKYOUrtf":
+				$CurrentTime.wait_time = 0.05
 	else:
 		$FileViewer/Text.visible = false
 		$FileViewer/ImageFile.visible = true
 		$FileViewer/ImageFile.play(nodeName)
 		$FileViewer/TextScroll.visible = false
 	$FileViewer/Label.text = UniversalFunctions.dialogueJson[nodeName]
+
+
+func _process(_delta):
+	if movingNode != null:
+		get_tree().get_root().get_node_or_null("/root/world/"+movingNode).position.y = get_global_mouse_position().y-mousePos.y
+		get_tree().get_root().get_node_or_null("/root/world/"+movingNode).position.x = get_global_mouse_position().x-mousePos.x
+
+
+func tweening(node, minimize):
+	if minimize == true:
+		$Tween.interpolate_property(node, "position",
+			node.position, Vector2(1, 240), 0.8,
+			Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+		$Tween.interpolate_property(node, "scale",
+			Vector2(1,1), Vector2(0.5, 0.1), 0.8,
+			Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+		$Tween.start()
+	else:
+		$Tween.interpolate_property(node, "position",
+			Vector2(1, 240), startPositions[node.name], 0.8,
+			Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+		$Tween.interpolate_property(node, "scale",
+			Vector2(0.5, 0.1),Vector2(1,1), 0.8,
+			Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+		$Tween.start()
+
+func _on_mover_button_down(nodeName):
+	mousePos = get_global_mouse_position()
+	movingNode = nodeName
+	mousePos.x = mousePos.x-get_tree().get_root().get_node_or_null("/root/world/"+movingNode).position.x
+	mousePos.y = mousePos.y-get_tree().get_root().get_node_or_null("/root/world/"+movingNode).position.y
+	print(mousePos)
+	print(get_tree().get_root().get_node_or_null("/root/world/"+movingNode).position)
+
+
+
+
+func _on_mover_button_up():
+	if get_tree().get_root().get_node_or_null("/root/world/"+movingNode).position.y > 145:
+		get_tree().get_root().get_node_or_null("/root/world/"+movingNode).position.y = 145
+	if get_tree().get_root().get_node_or_null("/root/world/"+movingNode).position.y < 1:
+		get_tree().get_root().get_node_or_null("/root/world/"+movingNode).position.y = 1
+	if get_tree().get_root().get_node_or_null("/root/world/"+movingNode).position.x < -77:
+		get_tree().get_root().get_node_or_null("/root/world/"+movingNode).position.x = -77
+	if get_tree().get_root().get_node_or_null("/root/world/"+movingNode).position.x > 250:
+		get_tree().get_root().get_node_or_null("/root/world/"+movingNode).position.x = 250
+	startPositions[movingNode] = get_tree().get_root().get_node_or_null("/root/world/"+movingNode).position
+	movingNode = null
+
+
+
+func _on_Selection_mouse_entered(nodeName):
+	if hoveredElements.has(nodeName) == false:
+		hoveredElements.append(nodeName)
+
+
+func _on_Selection_mouse_exited(nodeName):
+	if hoveredElements.has(nodeName) == true:
+		hoveredElements.erase(nodeName)
+
+
+func _on_Start_pressed():
+	if $Taskbar/OptionsMenu.visible == true:
+		$Taskbar/OptionsMenu.visible = false
+	else:
+		$Taskbar/OptionsMenu.visible = true
+
+
+func _on_OptionButton_pressed(optionpressed):
+	$Taskbar/OptionsMenu.visible = false
+	if optionpressed == "Mouse":
+		if $cursor.cursorDisabled == false:
+			$Taskbar/OptionsMenu/MouseOn/Label.text = UniversalFunctions.dialogueJson["MouseOff"]
+			$cursor.cursorDisabled = true
+			$cursor.visible = false
+		else:
+			$Taskbar/OptionsMenu/MouseOn/Label.text = UniversalFunctions.dialogueJson["MouseOn"]
+			$cursor.cursorDisabled = false
+			$cursor.visible = true
+			
+	elif optionpressed == "Fullscreen":
+		if OS.window_fullscreen == false:
+			$Taskbar/OptionsMenu/Fullscreen/Label.text = UniversalFunctions.dialogueJson["Fullscreen"]
+			OS.window_fullscreen = true
+		else:
+			$Taskbar/OptionsMenu/Fullscreen/Label.text = UniversalFunctions.dialogueJson["Windowed"]
+			OS.window_fullscreen = false
+	elif optionpressed == "Mobile":
+		if $Taskbar/OptionsMenu/Mobile/Label.text == UniversalFunctions.dialogueJson["ForMobile"]:
+			OS.window_fullscreen = true
+			$Taskbar/OptionsMenu/Fullscreen/Label.text = UniversalFunctions.dialogueJson["Windowed"]
+			$Taskbar/OptionsMenu/MouseOn/Label.text = UniversalFunctions.dialogueJson["MouseOff"]
+			$Taskbar/OptionsMenu/Mobile/Label.text = UniversalFunctions.dialogueJson["ForDesk"]
+			$cursor.cursorDisabled = true
+			$cursor.visible = false
+		else:
+			$Taskbar/OptionsMenu/Fullscreen/Label.text = UniversalFunctions.dialogueJson["Fullscreen"]
+			$Taskbar/OptionsMenu/MouseOn/Label.text = UniversalFunctions.dialogueJson["MouseOn"]
+			$Taskbar/OptionsMenu/Mobile/Label.text = UniversalFunctions.dialogueJson["ForMobile"]
+			$cursor.cursorDisabled = false
+			OS.window_fullscreen = false
+			$cursor.visible = true
+	elif optionpressed == "Audio":
+		if $AudioStreamPlayer.volume_db == 0:
+			$Taskbar/OptionsMenu/Audio/Label.text = UniversalFunctions.dialogueJson["AudioOff"]
+			$AudioStreamPlayer.volume_db = -80
+		else:
+			$Taskbar/OptionsMenu/Audio/Label.text = UniversalFunctions.dialogueJson["AudioOn"]
+			$AudioStreamPlayer.volume_db = 0

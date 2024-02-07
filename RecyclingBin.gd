@@ -22,7 +22,14 @@ var validPositions = [Vector2(0,0),Vector2(0,30),Vector2(0,60),Vector2(00,90),
 					Vector2(240,0),Vector2(240,30),Vector2(240,60),Vector2(240,90),
 					Vector2(270,0),Vector2(270,30),Vector2(270,60),Vector2(270,90)]
 
+func _unhandled_input(event):
+	if event is InputEventMouseButton and event.is_pressed():
+		if current != null:
+			position_settling(get_tree().get_root().get_node_or_null("/root/world/Icons/"+current))
+
 func _process(_delta):
+	if UniversalFunctions.locked == true:
+		return
 	if process == true:
 		if currentPos != null:
 			if get_global_mouse_position().distance_to(currentPos) < 15:
@@ -32,12 +39,18 @@ func _process(_delta):
 		Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 
 func _on_button_down(node):
+	if get_tree().get_root().get_node_or_null("/root/world/").hoveredElements != []:
+		return
+	if UniversalFunctions.locked == true:
+		return
 	currentPos = get_global_mouse_position()
 	get_tree().get_root().get_node_or_null("/root/world/Icons/"+node).z_index = 4
 	current = get_tree().get_root().get_node_or_null("/root/world/Icons/"+node)
 	process = true 
 	
 func _on_button_up(node):
+	if UniversalFunctions.locked == true:
+		return
 	if currentPos == null:
 		position_settling(get_tree().get_root().get_node_or_null("/root/world/Icons/"+node))
 	else:
@@ -59,6 +72,10 @@ func _on_button_up(node):
 	
 
 func _on_RecyclingButton_button_down():
+	if get_tree().get_root().get_node_or_null("/root/world/").hoveredElements != []:
+		return
+	if UniversalFunctions.locked == true:
+		return
 	currentPos = get_global_mouse_position()
 	$RecyclingBin.z_index = 4
 	current = $RecyclingBin
@@ -66,6 +83,8 @@ func _on_RecyclingButton_button_down():
 
 
 func _on_RecyclingButton_button_up():
+	if UniversalFunctions.locked == true:
+		return
 	position_settling($RecyclingBin)
 	$RecyclingBin.z_index = 0
 	process = false 
@@ -73,6 +92,8 @@ func _on_RecyclingButton_button_up():
 
 
 func new_file(nodeName):
+	if UniversalFunctions.locked == true:
+		return
 	var newFile = child.instance()
 	get_tree().get_root().get_node_or_null("/root/world/Icons/").add_child(newFile)
 	newFile.name = nodeName
@@ -91,6 +112,8 @@ func new_file(nodeName):
 	
 	
 func position_settling(node):
+	if UniversalFunctions.locked == true:
+		return
 	node.position = Vector2(stepify(node.position.x,30),stepify(node.position.y,30))
 	if node.position.y < 0:
 		node.position.y = 0

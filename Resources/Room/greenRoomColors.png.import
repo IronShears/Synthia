@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/greenRoomColors.png-fbbba05845df6bb3821b8edc8d34a85f.stex"
+path="res://.import/GreenRoomColors.png-316e76cae37efef8f08e4550d33008fd.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Room/greenRoomColors.png"
-dest_files=[ "res://.import/greenRoomColors.png-fbbba05845df6bb3821b8edc8d34a85f.stex" ]
+source_file="res://Resources/Room/GreenRoomColors.png"
+dest_files=[ "res://.import/GreenRoomColors.png-316e76cae37efef8f08e4550d33008fd.stex" ]
 
 [params]
 

@@ -29,7 +29,7 @@ margin_bottom = 8.0
 theme = ExtResource( 4 )
 custom_colors/font_color = Color( 0.372549, 0.12549, 0.32549, 1 )
 custom_fonts/font = ExtResource( 1 )
-text = "Tstn
+text = "APLY
 .txt"
 align = 1
 autowrap = true

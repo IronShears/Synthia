@@ -3,6 +3,7 @@ onready var stage = UniversalFunctions.dialogueJson["FirstName"]
 onready var passwordFull = UniversalFunctions.dialogueJson["Password"]+"************"+"|"
 var passwordCounter = "*"
 var obscene = false
+var scenechanging = false
 
 func _ready():
 	$Name.text = UniversalFunctions.dialogueJson["FirstName"]+ "|"
@@ -18,13 +19,18 @@ func _on_Blinker_timeout():
 			yield($loading/loading,"animation_finished")
 			check_obscene(UniversalFunctions.firstName+UniversalFunctions.lastName)
 			if obscene == false:
+				if scenechanging == true:
+					return
+				scenechanging = true
 				UniversalFunctions.change_scenes_reload("res://main.tscn")
 			else:
+				$Blinker.wait_time = 0.5
 				$loading.visible = false
 				$Name.text = UniversalFunctions.dialogueJson["Obscene"]
 				stage = "Obscene"
 				$SLURTIMER.start()
 		else:
+			$Blinker.wait_time = 0.1
 			$Name.text = UniversalFunctions.dialogueJson["Password"]+passwordCounter+"|"
 			passwordCounter = passwordCounter+"*"
 			$Name.set_visible_characters(-1)
@@ -41,13 +47,15 @@ func _on_Blinker_timeout():
 func _on_Backspace_pressed():
 	if stage == UniversalFunctions.dialogueJson["Password"]:
 		return
-	if $Name.text.length() >= stage.length():
+	if $Name.text.length() >= stage.length()+2:
 		$Name.text = $Name.text.substr(0,$Name.text.length()-2)
 		$Name.text = $Name.text+"|"
 
 func _on_Keyboard_key_entered(key):
 	if stage == UniversalFunctions.dialogueJson["Password"]:
 		return
+	if $"Keyboard/1/Label".text == "a":
+		$Keyboard._on_case_pressed()
 	if $Name.text.length() <= stage.length()+15:
 		$Name.text = $Name.text.replace("|",key+"|")
 
@@ -67,7 +75,6 @@ func _on_SubmitName_pressed():
 				setName.erase(setName.length()-1,1)
 			else:
 				break
-		print(setName.replace(" ","."))
 		if setName.length() <= 0:
 			return
 		check_funny(setName)
@@ -92,7 +99,6 @@ func _on_SubmitName_pressed():
 				setName.erase(setName.length()-1,1)
 			else:
 				break
-		print(setName)
 		if setName.length() <= 0:
 			return
 		check_obscene(setName)
@@ -100,8 +106,6 @@ func _on_SubmitName_pressed():
 		UniversalFunctions.lastName = setName
 		$Name.text = UniversalFunctions.dialogueJson["Password"]
 		stage = UniversalFunctions.dialogueJson["Password"]
-	else:
-		var text = $Name.text
 		
 
 func check_funny(setName):
@@ -109,6 +113,8 @@ func check_funny(setName):
 		var funnyChecker = setName.to_lower()
 		if i in funnyChecker:
 			UniversalFunctions.nameReaction = "nameFunny"
+	if setName == "Ada" or setName == "Synthia" or setName == "Cynthia" or setName == "Jean Paul" or setName == "JeanPaul": 
+		UniversalFunctions.nameReaction = "nameSame"
 
 func check_obscene(setName):
 	for i in ["rapist", "pedophile","nigger", "nigga", "nigguh", "niggar", "niggur", "faggot", "fagot","fag", "wetback", "wet back", "beaner", "kike", "raghead",  "rag head", "towelhead", "towel head", "dyke","chink", "racist", "sexist","homophobe","transphobe", "white power"]:
