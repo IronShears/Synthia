@@ -54,7 +54,7 @@ func _on_Backspace_pressed():
 func _on_Keyboard_key_entered(key):
 	if stage == UniversalFunctions.dialogueJson["Password"]:
 		return
-	if $"Keyboard/1/Label".text == "a":
+	if $"Keyboard/1/Label".text == "A":
 		$Keyboard._on_case_pressed()
 	if $Name.text.length() <= stage.length()+15:
 		$Name.text = $Name.text.replace("|",key+"|")
@@ -76,6 +76,7 @@ func _on_SubmitName_pressed():
 			else:
 				break
 		if setName.length() <= 0:
+			$SoundEffects.play()
 			return
 		check_funny(setName)
 		check_obscene(setName)

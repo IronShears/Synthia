@@ -5,11 +5,11 @@ onready var synthia : Node2D = get_tree().get_root().get_node_or_null("/root/wor
 onready var world : Node2D = get_tree().get_root().get_node_or_null("/root/world/")
 onready var nervousTimer : Timer = get_tree().get_root().get_node_or_null("/root/world/NervousTimer")
 var dialogueJson
-var dialoguePlaying = false
 var dialogueEnded = false
 var loneliness = 44
 var disgust = 15
 var locked = false
+var interest
 var firstName = "null"
 var lastName = "null"
 var variableOptions = "AdaSurprise"
@@ -17,9 +17,17 @@ var emptyFilled = "stillEmpty"
 var nameReaction = "nameNormal"
 var TalkAbout = {"SpendTime":false,
 				"WhatWereYouLike":false,
-				"ElfTalk":false}
+				"ElfTalk":false,
+				"AdaSurpriseUgly":false,
+				"AdaNonSurpriseUgly":true,
+				"Oscilator":true,
+				"OscilatorNon":true,
+				"CultDirect":true,
+				"CultNonDirect":true,
+				"DungeonsAndDragonsCont":true}
 var adaOrYou = "you"
-var ending = "followedOrders"
+var foundationSnippet = "noFoundation"
+var ending = "firedBest"
 var generating = false
 
 func reset():
@@ -35,11 +43,8 @@ func _ready():
 	dialogueJson = parse_json(file.get_as_text())
 
 func play_dialogue_JSON(dialogue : String):
-	if dialoguePlaying == true:
-		return
 	if nervousTimer != null:
 		nervousTimer.stop()
-	dialoguePlaying = true
 	get_tree().get_root().get_node_or_null("/root/world/Commandprompt/Options/Option1").visible = false
 	get_tree().get_root().get_node_or_null("/root/world/Commandprompt/Options/Option2").visible = false
 	get_tree().get_root().get_node_or_null("/root/world/Commandprompt/Options/Option3").visible = false
@@ -76,10 +81,6 @@ func play_dialogue_JSON(dialogue : String):
 	
 	if nervousTimer != null:
 		nervousTimer.start()
-		if synthia.z_index == 3 and locked == false:
-			if dialogueBox.optionsVisible == true:
-				get_tree().get_root().get_node_or_null("/root/world/Commandprompt/Options").visible = true
-	dialoguePlaying = false
 	
 
 func change_scenes_reload(scene):
@@ -87,7 +88,6 @@ func change_scenes_reload(scene):
 	
 func change_scenes_reset(scene):
 	get_tree().change_scene(scene)
-	dialoguePlaying = false
 	dialogueEnded = false
 	loneliness = 44
 	disgust = 15

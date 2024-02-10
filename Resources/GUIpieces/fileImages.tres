@@ -1,4 +1,4 @@
-[gd_resource type="SpriteFrames" load_steps=9 format=2]
+[gd_resource type="SpriteFrames" load_steps=10 format=2]
 
 [ext_resource path="res://Resources/GUIpieces/images/cat1.png" type="Texture" id=1]
 [ext_resource path="res://Resources/GUIpieces/images/KOT.png" type="Texture" id=2]
@@ -8,9 +8,15 @@
 [ext_resource path="res://Resources/GUIpieces/images/DIRECTIVES.png" type="Texture" id=6]
 [ext_resource path="res://Resources/GUIpieces/images/AND.png" type="Texture" id=7]
 [ext_resource path="res://Resources/GUIpieces/images/ImSorrySynthia.png" type="Texture" id=8]
+[ext_resource path="res://Resources/GUIpieces/images/NOSTALGIA.png" type="Texture" id=9]
 
 [resource]
 animations = [ {
+"frames": [ ExtResource( 9 ) ],
+"loop": true,
+"name": "NOSTALGIAjpg",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 1 ) ],
 "loop": true,
 "name": "mycat1jpg",
@@ -21,14 +27,14 @@ animations = [ {
 "name": "ANDjpg",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 2 ) ],
-"loop": true,
-"name": "mykot3jpg",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 6 ) ],
 "loop": true,
 "name": "DIRECTIVESjpg",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "mykot3jpg",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 5 ) ],

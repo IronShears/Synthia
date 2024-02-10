@@ -12,12 +12,13 @@ var minute = 00
 var frozen = false
 var tempData = null
 var split = null
-var counter = 3
+var counter = 2
 var prepper = null
 var randomHints = ["randomAltHint1","randomAltHint2"]
 var sadTrigger = false
 var movingNode
 var mousePos
+var oscillatorToggle = false
 var hoveredElements = []
 var selectedElement
 var intersectingNodes = []
@@ -55,6 +56,13 @@ func _ready():
 	$Taskbar/OptionsMenu/Fullscreen/Label.text = UniversalFunctions.dialogueJson["Fullscreen"]
 	$Taskbar/OptionsMenu/Mobile/Label.text = UniversalFunctions.dialogueJson["ForMobile"]
 	
+
+func _unhandled_input(event):
+	if UniversalFunctions.locked == true:
+		if event is InputEventMouseButton and event.is_pressed():
+			get_tree().get_root().get_node_or_null("/root/world/SoundEffects").play()
+
+
 func _input(event):
 	if intro == "null":
 		if event is InputEventMouseButton and event.is_pressed():
@@ -78,6 +86,8 @@ func _input(event):
 				leftMouseClick()
 	
 func leftMouseClick():
+	if UniversalFunctions.locked == true:
+		return
 	if hoveredElements.has(order[3]):
 		selectedElement = order[3]
 	elif hoveredElements.has(order[2]):
@@ -128,6 +138,20 @@ func _on_Commandprompt_option_pressed(optionName:String):
 		UniversalFunctions.loneliness +=2
 	elif optionName == "SpendTime" or optionName == "WhatWereYouLike" or optionName == "ElfTalk":
 		UniversalFunctions.TalkAbout[optionName] = true
+		if optionName == "ElfTalk":
+			UniversalFunctions.TalkAbout["ShakenFaithUgly"] = false
+		UniversalFunctions.play_dialogue_JSON(optionName)
+	elif optionName == "Cook" or optionName == "Computers" or optionName == "Relax":
+		UniversalFunctions.interest = optionName
+		UniversalFunctions.play_dialogue_JSON(optionName)
+	elif optionName == "CultBad":
+		UniversalFunctions.TalkAbout["CultDirect"] = false
+		UniversalFunctions.play_dialogue_JSON(optionName)
+	elif optionName == "CultLeaderJeanPaulUgly":
+		UniversalFunctions.TalkAbout["CultNonDirect"] = false
+		UniversalFunctions.play_dialogue_JSON(optionName)
+	elif optionName == "DungeonsAndDragonsGood":
+		UniversalFunctions.TalkAbout["DungeonsAndDragonsCont"] = false
 		UniversalFunctions.play_dialogue_JSON(optionName)
 	elif optionName == "AdaSurpriseUgly":
 		UniversalFunctions.variableOptions = "ContinueForwardHuh"
@@ -138,15 +162,24 @@ func _on_Commandprompt_option_pressed(optionName:String):
 	elif optionName == "ICanExplainUgly":
 		if UniversalFunctions.disgust >= 20:
 			UniversalFunctions.dialogueEnded = true
-		UniversalFunctions.play_dialogue_JSON(optionName)
-	elif optionName == "ICanExplainUgly":
-		if UniversalFunctions.disgust >= 20:
-			UniversalFunctions.dialogueEnded = true
+			UniversalFunctions.foundationSnippet = "yesFoundation"
 		UniversalFunctions.play_dialogue_JSON(optionName)
 	elif optionName == "NotTrueUgly":
+		UniversalFunctions.foundationSnippet = "yesFoundation"
 		UniversalFunctions.dialogueEnded = true
 		UniversalFunctions.play_dialogue_JSON(optionName)
 	elif optionName == "TrustHerUgly":
+		UniversalFunctions.foundationSnippet = "yesFoundation"
+		UniversalFunctions.dialogueEnded = true
+		UniversalFunctions.play_dialogue_JSON(optionName)
+	elif optionName == "CultProdBad":
+		UniversalFunctions.dialogueEnded = true
+		UniversalFunctions.play_dialogue_JSON(optionName)
+	elif optionName == "InterestsTalk":
+		UniversalFunctions.play_dialogue_JSON(UniversalFunctions.interest+optionName)
+		$CurrentTime.wait_time= 0.1
+	elif optionName == "AdaToldYes":
+		UniversalFunctions.foundationSnippet = "noFoundationJeanPaul"
 		UniversalFunctions.dialogueEnded = true
 		UniversalFunctions.play_dialogue_JSON(optionName)
 	else:
@@ -182,15 +215,14 @@ func _on_CurrentTime_timeout():
 	if $Taskbar/time.text == "17:00":
 		if frozen == false:
 			UniversalFunctions.dialogueEnded = true
-			UniversalFunctions.dialoguePlaying = false
 			time_ending()
 			frozen = true
 		
 		
 func time_ending():
 	if distractions.size() == 4:
-		UniversalFunctions.play_dialogue_JSON("GoodEnd")
 		UniversalFunctions.ending = "firedBest"
+		UniversalFunctions.play_dialogue_JSON("GoodEnd")
 		yield($Commandprompt,"option_pressed")
 		UniversalFunctions.play_dialogue_JSON("GoodEnding2")
 		yield($Commandprompt,"option_pressed")
@@ -210,8 +242,6 @@ func time_ending():
 	UniversalFunctions.change_scenes_reload("res://endingAndCredits.tscn")
 
 func _on_NervousTimer_timeout():
-	if UniversalFunctions.dialoguePlaying == true:
-		return
 	if UniversalFunctions.dialogueEnded == true:
 		return
 	
@@ -230,6 +260,7 @@ func _on_NervousTimer_timeout():
 			rng.randomize()
 			var roll = rng.randf_range(0, 250.0)
 			if roll <= i["value"]:
+				$Commandprompt.objectName = i["object"]
 				UniversalFunctions.play_dialogue_JSON("distraction"+i["style"]+i["object"])
 				return
 		if UniversalFunctions.loneliness <= 88:
@@ -456,6 +487,7 @@ func _on_FileViewer_Close_pressed():
 	if prepper == "THANKYOUrtf":
 		if $Taskbar/time.text != "17:00":
 			return
+	$FileViewer/Text.scroll_to_line(0)
 	$FileViewer.visible = false
 	UniversalFunctions.locked = false
 	
@@ -474,14 +506,15 @@ func Warning_React():
 	if warning == "synthia":
 		if UniversalFunctions.loneliness == 90:
 			$Commandprompt/AutoCloseTimer.stop()
-			UniversalFunctions.dialoguePlaying = false
 			UniversalFunctions.play_dialogue_JSON("synthiaClosed")
 			$Virtualhell.visible = false
 			resetLayers(false, "Virtualhell")
 		else:
 			$Commandprompt/AutoCloseTimer.stop()
-			UniversalFunctions.dialoguePlaying = false
-			UniversalFunctions.play_dialogue_JSON("invalidCode")
+			if UniversalFunctions.dialogueEnded == false: 
+				UniversalFunctions.play_dialogue_JSON("invalidCode")
+			else: 
+				UniversalFunctions.play_dialogue_JSON("invalidCode")
 	elif warning == "trash":
 		if warningNode == "IDE" or warningNode == "File":
 			get_tree().get_root().get_node_or_null("/root/world/Taskbar/Icons/"+warningNode).visible = false
@@ -489,7 +522,6 @@ func Warning_React():
 			UniversalFunctions.locked = true
 			get_tree().get_root().get_node_or_null("/root/world/Taskbar/Icons/"+warningNode).visible = false
 			$Commandprompt/AutoCloseTimer.stop()
-			UniversalFunctions.dialoguePlaying = false
 			UniversalFunctions.play_dialogue_JSON("fileDeletedSynthia")
 			yield($Commandprompt, "done")
 			$NervousTimer.stop()
@@ -505,14 +537,12 @@ func Warning_React():
 			if prepper == null:
 				if UniversalFunctions.dialogueJson.has("fileDeleted"+str(filesDeleted)):
 					$Commandprompt/AutoCloseTimer.stop()
-					UniversalFunctions.dialoguePlaying = false
 					if UniversalFunctions.dialogueEnded == false:
 						UniversalFunctions.play_dialogue_JSON("fileDeleted"+str(filesDeleted))
 					else:
 						UniversalFunctions.play_dialogue_JSON("fileDeletedSynthia")
 				else:
 					$Commandprompt/AutoCloseTimer.stop()
-					UniversalFunctions.dialoguePlaying = false
 					UniversalFunctions.play_dialogue_JSON("fileDeletedLater")
 				filesDeleted += 1
 				return
@@ -530,16 +560,13 @@ func Warning_React():
 				else:
 					if UniversalFunctions.dialogueJson.has("fileDeleted"+str(filesDeleted)):
 						$Commandprompt/AutoCloseTimer.stop()
-						UniversalFunctions.dialoguePlaying = false
 						UniversalFunctions.play_dialogue_JSON("fileDeleted"+str(filesDeleted))
 					else:
 						$Commandprompt/AutoCloseTimer.stop()
-						UniversalFunctions.dialoguePlaying = false
 						UniversalFunctions.play_dialogue_JSON("fileDeletedLater")
 					return
 			$FileSystem.set_up()
 			$Commandprompt/AutoCloseTimer.stop()
-			UniversalFunctions.dialoguePlaying = false
 			
 			if UniversalFunctions.dialogueEnded == false:
 				UniversalFunctions.play_dialogue_JSON("fileDeleted"+warningNode)
@@ -548,14 +575,12 @@ func Warning_React():
 		else:
 			if UniversalFunctions.dialogueJson.has("fileDeleted"+str(filesDeleted)):
 				$Commandprompt/AutoCloseTimer.stop()
-				UniversalFunctions.dialoguePlaying = false
 				if UniversalFunctions.dialogueEnded == false:
 					UniversalFunctions.play_dialogue_JSON("fileDeleted"+str(filesDeleted))
 				else:
 					UniversalFunctions.play_dialogue_JSON("fileDeletedSynthia")
 			else:
 				$Commandprompt/AutoCloseTimer.stop()
-				UniversalFunctions.dialoguePlaying = false
 				UniversalFunctions.play_dialogue_JSON("fileDeletedLater")
 	elif warning == "generate":
 		generate_Object()
@@ -570,7 +595,6 @@ func generate_Object():
 	UniversalFunctions.locked = true
 	$cursor.play("loading")
 	$AnimationPlayer.play("load")
-	UniversalFunctions.dialoguePlaying = true
 	yield($AnimationPlayer,"animation_finished")
 	#Finishing generation
 	$IDE/loading.visible = true
@@ -581,7 +605,6 @@ func generate_Object():
 	yield($IDE/loading/loading,"animation_finished")
 	#everything goes back to normal
 	$IDE.reset()
-	UniversalFunctions.dialoguePlaying = false
 	$cursor.play("default")
 	$Commandprompt.objectName = tempData["object"]
 	$Commandprompt.colorName = tempData["color"]
@@ -618,8 +641,6 @@ func generate_Object():
 	for i in distractions:
 		if tempData["object"] == i["object"]:
 			removed = i
-			print("currentObject: "+str(i))
-			print("removed: " +str(distractions[genCounter]))
 			genLocked = true
 		if genLocked == false:
 			genCounter+=1
@@ -634,6 +655,8 @@ func generate_Object():
 			$FileSystem.visibleFolders.append("atPeace")
 			$FileSystem.allItems["system"].append("atPeace")
 			$FileSystem.set_up()
+		UniversalFunctions.play_dialogue_JSON("successfullyGeneratedEnded")
+		yield($Commandprompt,"done")
 		return
 	
 	
@@ -727,10 +750,11 @@ func _on_IDE_generated(data):
 
 func _on_Icons_openFile(nodeName):
 	if nodeName == "BLOW_A_WISHzip":
+		UniversalFunctions.TalkAbout["AdaSurpriseUgly"] = true
+		UniversalFunctions.TalkAbout["AdaNonSurpriseUgly"] = false
 		$FileSystem.visibleFolders.append("imSorry")
 		$FileSystem.allItems["system"].append("imSorry")
 		$FileSystem.set_up()
-		UniversalFunctions.dialoguePlaying = false
 		$AnimationPlayer.play_backwards("IDEMinimize")
 		resetLayers(true, "IDE")
 		$Taskbar/Icons/IDE.visible = true
@@ -759,6 +783,11 @@ func _on_Icons_openFile(nodeName):
 			prepper = nodeName
 			if nodeName == "THANKYOUrtf":
 				$CurrentTime.wait_time = 0.05
+			if nodeName == "LOVErtf":
+				if oscillatorToggle == false:
+					UniversalFunctions.TalkAbout["OscilatorNon"] = false
+					UniversalFunctions.TalkAbout["Oscilator"] = false
+					oscillatorToggle = true
 	else:
 		$FileViewer/Text.visible = false
 		$FileViewer/ImageFile.visible = true

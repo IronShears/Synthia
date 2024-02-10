@@ -5,10 +5,10 @@ signal openFile
 var allItems={
 	"system":["images","documents"],
 	"images":["mycat1jpg","mycat2jpg","mykot3jpg"],
-	"documents":["clickMe"],
+	"documents":["clickMe", "groceriestxt"],
 	"clickMe":["IGNOREjpg","YOURjpg","DIRECTIVESjpg","ANDjpg","READTHISrtf"],
 	"why":["AN_EXPLAINATIONrtf"],
-	"cynthia":["LOVErtf"],
+	"cynthia":["LOVErtf", "NOSTALGIAjpg"],
 	"myWish":["BLOW_A_WISHzip","WISHINGrtf"],
 	"imSorry":["apologyrtf"],
 	"atPeace":["THANKYOUrtf","ONEDAYjpg"]

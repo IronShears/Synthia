@@ -12,4 +12,4 @@ func _on_mouse_exited():
 		cursor.play("default")
 
 func _on_TextureButton_pressed():
-	pass # Replace with function body.
+	get_tree().get_root().get_node_or_null("/root/world/SoundEffects").play()

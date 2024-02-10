@@ -32,6 +32,8 @@ margin_left = -42.0
 margin_top = -49.0
 margin_right = 268.0
 margin_bottom = 13.0
+focus_mode = 0
+enabled_focus_mode = 0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -42,6 +44,7 @@ margin_left = -45.0
 margin_top = -60.0
 margin_right = 270.0
 margin_bottom = 16.0
+mouse_filter = 2
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -126,4 +129,3 @@ one_shot = true
 [connection signal="pressed" from="Options/Option1" to="." method="_on_Option3_pressed" binds= [ "Option1" ]]
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
 [connection signal="timeout" from="AutoCloseTimer" to="." method="_on_AutoCloseTimer_timeout"]
-[connection signal="finished" from="Voice" to="." method="_on_Voice_finished"]
