@@ -56,10 +56,10 @@ One individual(Currently Junior Researcher {firstName} {lastName}. Formerly Dr. 
 
 SCP-8000 was originally envisioned as a complex and powerful simulation able to sustain up to one thousand individuals’ digitized consciousness and processing power to support an additional ten thousand non-digitized individuals accessing the system externally through proprietary virtual reality equipment. Initial plans were made to slowly increase the capacity over the years and create a \"digital paradise\". Over time the project suffered multiple downsizes due to technical and financial struggles until it was eventually assumed by its creators to be technologically impossible following the first Whole Brain Upload.
 
-This incident led to the creation of SCP-8000-1, SCP-8000’s only resident. SCP-8000-1, is a direct copy of the brain of PoI-8000-1(\"Cynthia Powell), a former follower of GoI-004C-8000, as she was in 1995. Due to the non-anomalous methods of data transfer used, SCP-8000 was unable to perform a true transfer of consciousness, only copying the given information. SCP-8000-1 has been active inside SCP-8000 for the two years since its conception in 1995.
+This incident led to the creation of SCP-8000-1, SCP-8000’s only resident. SCP-8000-1, is a direct copy of the brain of PoI-8000-1(\"Cynthia Wren\"), a former follower of GoI-004C-8000, as she was in 1995. Due to the non-anomalous methods of data transfer used, SCP-8000 was unable to perform a true transfer of consciousness, only copying the given information. SCP-8000-1 has been active inside SCP-8000 for the two years since its conception in 1995.
 
 The device containing SCP-8000 was recovered during a Foundation raid of an e-payment startup \"e-xchange.com\"’s Bay Area office after connections to GoI-004C became apparent. The object was located in the office of PoI-8000-2(\"Jean-Paul Myrrh\"), former leader of GoI-004C-8000 and CEO of \"e-xchange.com\". Along with SCP-8000, numerous forms of anomalous technology were recovered. All employees were amnescitized and returned to their daily lives.",
-"SCPTextImage":"Cynthia Powell circa 1997, 2 years after the creation of SCP-8000-1.",
+"SCPTextImage":"Cynthia Wren circa 1997, 2 years after the creation of SCP-8000-1.",
 "PARADISE": "PARADISE.exe",
 "SHELL": "SHELL",
 "WISH": "BLOW-A-WISH.exe",
@@ -183,7 +183,7 @@ Delete this file and another folder will open.",
 .rtf",
 "LOVErtfText":"I was already a well-respected figure in the Foundation when SCP-8000 landed on my desk. It's an easy assignment. Nothing new to learn. Nothing real can go wrong. It's just about upkeep. Great for training. I was about to toss it in one of the piles I'd been using to sort assignments out to my assistants before I saw the name.
 
-Cynthia Powell.
+Cynthia Wren.
 
 I knew Cynthia. She doesn't remember it because the Foundation wiped her memory of me once I was hired... but I knew her. She's a beautiful, intelligent woman with a toothy wrinkled-nose smile that makes my heart melt.
 
@@ -979,7 +979,7 @@ WARNING: New folder detected at path SYSTEM>IM_SORRY containing 1 file.","tickSp
 ],
 
 "WhatsYourNameGood":[
-{"color":"Pink", "sprite":"camera1Smile","text":"My name is Synthia Powell.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false,"continue":"WhatsYourNameContinue"}
+{"color":"Pink", "sprite":"camera1Smile","text":"My name is Synthia Wren.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false,"continue":"WhatsYourNameContinue"}
 ],
 "WhatsYourNameBad":[
 {"color":"Pink", "sprite":"camera2Sad","text":"Great.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false,"continue":"WhatsYourNameContinue"}
@@ -2254,12 +2254,17 @@ Hitsune Kumi English Voice bank by Cubialpha, Free for commercial use, creator w
 
 Computer startup by MrAuralization CC-BY 3.0
 
+Error (Disaparaging Chimes) by SilverIllusionist CC-BY 4.0
+
 
 
 
 PROGRAMS USED
+
 Aseprite
+
 Godot, MIT license
+
 PicoCAD(For the \"3D models\"), Commercial use of models created with software allowed, creator was contacted to ensure it fit with CC-BY-SA
 OpenUTAU, MIT licensed
 
@@ -2282,6 +2287,13 @@ CODE
 Palette Swap: Palette Swap using two textures by afk, CC0
 
 All other code by IronShears, CC-BY-SA 3.0.
+
+CRITIQUE
+
+Thank you to JackalRelated, SynthiaPanda, and AnkleSwallower for critque.
+
+Additional thank you so much JackalRelated for throwing the game in a blender over and over again during playtesting. This would not be nearly as stable if it weren't for you.
+
 [/center]
 "
 
