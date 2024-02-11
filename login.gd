@@ -55,7 +55,8 @@ func _on_Keyboard_key_entered(key):
 	if stage == UniversalFunctions.dialogueJson["Password"]:
 		return
 	if $"Keyboard/1/Label".text == "A":
-		$Keyboard._on_case_pressed()
+		if key != " ":
+			$Keyboard._on_case_pressed()
 	if $Name.text.length() <= stage.length()+15:
 		$Name.text = $Name.text.replace("|",key+"|")
 

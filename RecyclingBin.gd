@@ -25,7 +25,8 @@ var validPositions = [Vector2(0,0),Vector2(0,30),Vector2(0,60),Vector2(00,90),
 func _unhandled_input(event):
 	if event is InputEventMouseButton and event.is_pressed():
 		if current != null:
-			position_settling(get_tree().get_root().get_node_or_null("/root/world/Icons/"+current))
+			for i in currentNodes:
+				position_settling(i)
 
 func _process(_delta):
 	if UniversalFunctions.locked == true:

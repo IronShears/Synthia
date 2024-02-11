@@ -331,7 +331,7 @@ Thank you.",
 {"color":"Pink", "sprite":"camera1Nervous","text":"Why are you deleting things? I don't get it.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
 ],
 "fileDeletedLater":[
-{"color":"Teal", "sprite":"null","text":"File Recycled.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"WhatWereYouSaying"}
+{"color":"Teal", "sprite":"null","text":"File Recycled.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
 ],
 "fileDeletedREADTHISrtf":[{"color":"Teal", "sprite":"camera1Nervous","text":"File Recycled.
 WARNING: New folder detected at path SYSTEM>WHY containing 1 file.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
@@ -375,7 +375,7 @@ WARNING: New folder detected at path SYSTEM>IM_SORRY containing 1 file.","tickSp
 {"name":"GenerationFinishforgotten", "text":"There's a new program for modeling. Blow-A-Wish."}
 ],
 "GenerationFinishforgotten": [
-{"color":"Pink", "sprite":"camera1Smile","text":"So that's what she was working on all these days...","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"WhatWereYouSaying"}
+{"color":"Pink", "sprite":"camera1Smile","text":"So that's what she was working on all these days...","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
 ],
 
 
@@ -602,11 +602,10 @@ WARNING: New folder detected at path SYSTEM>IM_SORRY containing 1 file.","tickSp
 
 
 "lonelyIntro23":[
-{"color":"Pink", "sprite":"camera1Angry","text":"\"Log in successful\"","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
-{"color":"Pink", "sprite":"camera2Nervous","text":"That means you're there. I saw it.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"fineGreeting"}
+{"color":"Pink", "sprite":"camera1Nervous","text":"\"Log in successful\ That means you're there. I saw it.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"fineGreeting"}
 ],
 "lonelyIntro24":[
-{"color":"Pink", "sprite":"camera2Angry","text":"Ada? This isn't going to be like yesterday, is it?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"fineGreeting"}
+{"color":"Pink", "sprite":"camera2Nervous","text":"Ada? This isn't going to be like yesterday, is it?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"fineGreeting"}
 ],
 "lonelyIntro25":[
 {"color":"Pink", "sprite":"camera1Nervous","text":"Are you going to respond to me?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"fineGreeting"}
@@ -849,6 +848,13 @@ WARNING: New folder detected at path SYSTEM>IM_SORRY containing 1 file.","tickSp
 ],
 
 
+"fineGreetingRude":[
+{"color":"Pink", "sprite":"camera1Smile","text":"So you CAN hear me! Why were you ignoring me?!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"I was so worried! Why do you keep ignoring me?!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"You've been ignoring me since yesterday!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Introductions"}
+],
+
+
 
 
 "sadGreeting": [
@@ -865,6 +871,11 @@ WARNING: New folder detected at path SYSTEM>IM_SORRY containing 1 file.","tickSp
 "sadGreetingUgly":[
 {"color":"Pink", "sprite":"camera1Nervous","text":"You're here now? Ada, please don't ignore me anymore; not after you did yesterday.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Introductions"}
 ],
+"sadGreetingRude":[
+{"color":"Pink", "sprite":"camera1Smile","text":"You can hear me? Please don't leave me alone again.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"I can't take another day like yesterday.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Introductions"}
+],
+
 
 
 
@@ -1341,7 +1352,7 @@ WARNING: New folder detected at path SYSTEM>IM_SORRY containing 1 file.","tickSp
 "FalseDiscoveredIDEInsert":"You know it’s kind of funny!",
 "TrueDiscoveredIDEInsert":"But... I guess we know what it was NOW, haha.... But like I was saying earlier",
 
-"AdaSurpriseUgly":[
+"AdaNonSurpriseUgly":[
 {"color":"Pink", "sprite":"camera1Smile","text":"It's more than anything I could have asked for...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
 {"color":"Pink", "sprite":"camera1Nervous","text":"Ada and I... or... Ada and CYNTHIA... both went to Stanford for the same major at the same time...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
 {"color":"Pink", "sprite":"camera2Smile","text":"But we never actually met each other... I think it would have been nice to have gotten to know her back then.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},

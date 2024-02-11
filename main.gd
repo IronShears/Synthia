@@ -109,7 +109,9 @@ func _on_Commandprompt_option_pressed(optionName:String):
 			UniversalFunctions.play_dialogue_JSON(split)
 			return
 		if $Commandprompt.pastDialogue[-1]["name"] == "start":
-			UniversalFunctions.play_dialogue_JSON("GreetingGood")
+			UniversalFunctions.play_dialogue_JSON("GreetingRude")
+			$NervousTimer.wait_time = 12
+			intro = ""
 			return
 		if UniversalFunctions.disgust < 20:
 			if UniversalFunctions.loneliness < 60:
@@ -597,6 +599,7 @@ func Warning_React():
 
 
 func generate_Object():
+	$NervousTimer.stop()
 	UniversalFunctions.generating = true
 	UniversalFunctions.emptyFilled = "lessEmpty"
 	#Locking things down, loading it in
@@ -606,7 +609,6 @@ func generate_Object():
 	yield($AnimationPlayer,"animation_finished")
 	#Finishing generation
 	$IDE/loading.visible = true
-	$NervousTimer.stop()
 	$Commandprompt/AutoCloseTimer.stop()
 	$IDE/loading/loading.play("default")
 	$IDE/loading/loading.frame = 0
@@ -758,6 +760,7 @@ func _on_IDE_generated(data):
 
 func _on_Icons_openFile(nodeName):
 	if nodeName == "BLOW_A_WISHzip":
+		UniversalFunctions.TalkAbout["RequiresBlowAWish"] = false
 		UniversalFunctions.TalkAbout["AdaSurpriseUgly"] = true
 		UniversalFunctions.TalkAbout["AdaNonSurpriseUgly"] = false
 		$FileSystem.visibleFolders.append("imSorry")

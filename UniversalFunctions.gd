@@ -18,6 +18,7 @@ var nameReaction = "nameNormal"
 var TalkAbout = {"SpendTime":false,
 				"WhatWereYouLike":false,
 				"ElfTalk":false,
+				"RequiresBlowAWish": true,
 				"AdaSurpriseUgly":false,
 				"AdaNonSurpriseUgly":true,
 				"Oscilator":true,
