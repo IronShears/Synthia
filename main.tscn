@@ -1,4 +1,4 @@
-[gd_scene load_steps=1096 format=2]
+[gd_scene load_steps=1099 format=2]
 
 [ext_resource path="res://Resources/GUIpieces/bg.png" type="Texture" id=1]
 [ext_resource path="res://Resources/Room/room.png" type="Texture" id=2]
@@ -122,6 +122,9 @@
 [ext_resource path="res://Resources/Sprites/floorChair.png" type="Texture" id=120]
 [ext_resource path="res://Resources/Sprites/floorStaticChair.png" type="Texture" id=121]
 [ext_resource path="res://Resources/Sounds/error.wav" type="AudioStream" id=122]
+[ext_resource path="res://Resources/GUIpieces/giantfilewindow.png" type="Texture" id=123]
+[ext_resource path="res://Resources/GUIpieces/minimizewindow.png" type="Texture" id=124]
+[ext_resource path="res://Resources/GUIpieces/minimizewindowPressed.png" type="Texture" id=125]
 
 [sub_resource type="RectangleShape2D" id=1042]
 extents = Vector2( 158, 71 )
@@ -5065,7 +5068,7 @@ __meta__ = {
 }
 
 [node name="VBoxContainer" type="VBoxContainer" parent="File/ScrollContainer"]
-margin_right = 308.0
+margin_right = 303.0
 margin_bottom = 915.0
 size_flags_horizontal = 3
 theme = ExtResource( 12 )
@@ -6047,7 +6050,7 @@ material = SubResource( 6 )
 position = Vector2( 3, 7 )
 frames = SubResource( 336 )
 animation = "CoolRoom"
-frame = 25
+frame = 10
 playing = true
 centered = false
 
@@ -6058,7 +6061,7 @@ material = SubResource( 6 )
 position = Vector2( 3, 7 )
 frames = SubResource( 457 )
 animation = "CoolRoom"
-frame = 25
+frame = 10
 playing = true
 centered = false
 
@@ -6498,6 +6501,143 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="windowadjustor" type="TextureButton" parent="FileViewer"]
+margin_left = 172.0
+margin_top = 2.0
+margin_right = 181.0
+margin_bottom = 11.0
+texture_normal = ExtResource( 124 )
+texture_pressed = ExtResource( 125 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BigFileViewer" type="Sprite" parent="."]
+visible = false
+position = Vector2( 160, 111 )
+z_index = 5
+texture = ExtResource( 123 )
+
+[node name="ColorRect" type="ColorRect" parent="BigFileViewer"]
+margin_left = 116.0
+margin_top = -94.0
+margin_right = 156.0
+margin_bottom = 107.0
+color = Color( 0.898039, 0.929412, 0.933333, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="BigFileViewer/ColorRect"]
+margin_top = -1.0
+margin_right = 40.0
+color = Color( 0.396078, 0.4, 0.419608, 1 )
+
+[node name="ColorRect2" type="ColorRect" parent="BigFileViewer/ColorRect"]
+margin_left = 1.0
+margin_top = 201.0
+margin_right = 41.0
+margin_bottom = 202.0
+color = Color( 0.611765, 0.682353, 0.690196, 1 )
+
+[node name="Label" type="Label" parent="BigFileViewer"]
+margin_left = -146.0
+margin_top = -110.0
+margin_right = 24.0
+margin_bottom = -98.0
+theme = ExtResource( 12 )
+text = "HELLO WORLD "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="windowadjustor" type="TextureButton" parent="BigFileViewer"]
+margin_left = 138.0
+margin_top = -108.0
+margin_right = 147.0
+margin_bottom = -99.0
+texture_normal = ExtResource( 124 )
+texture_pressed = ExtResource( 125 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="block" type="TextureButton" parent="BigFileViewer"]
+margin_left = -310.0
+margin_top = -149.0
+margin_right = -159.0
+margin_bottom = 161.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="block2" type="TextureButton" parent="BigFileViewer"]
+margin_left = 159.0
+margin_top = -114.0
+margin_right = 310.0
+margin_bottom = 196.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="block3" type="TextureButton" parent="BigFileViewer"]
+margin_top = -56.0
+margin_right = 193.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="block4" type="TextureButton" parent="BigFileViewer"]
+margin_left = -165.0
+margin_top = 110.0
+margin_right = 195.0
+margin_bottom = 206.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Close" type="TextureButton" parent="BigFileViewer"]
+margin_left = 148.0
+margin_top = -108.0
+margin_right = 157.0
+margin_bottom = -99.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Icon" type="AnimatedSprite" parent="BigFileViewer"]
+position = Vector2( -156, -108 )
+frames = SubResource( 470 )
+animation = "image"
+centered = false
+
+[node name="ScrollContainer" type="ScrollContainer" parent="BigFileViewer"]
+margin_left = -156.0
+margin_top = -94.0
+margin_right = 156.0
+margin_bottom = 107.0
+theme = ExtResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Text" type="RichTextLabel" parent="BigFileViewer/ScrollContainer"]
+margin_right = 312.0
+margin_bottom = 156.0
+size_flags_horizontal = 3
+theme = ExtResource( 12 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode_enabled = true
+text = "	Because you're still reading I assume you are at least a little interested in helping Synthia.
+
+	The zipped folder above this file contains a program that I have created. If you choose to run it, it will be directly disobeying your orders. But, it will improve the quality of life for the woman you have been hopefully speaking to today in a way the Foundation can never hope to destroy. Click on it. I will leave more instructions after you do so.
+
+	She will appreciate it, and so will I."
+fit_content_height = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="popup" type="Sprite" parent="."]
 visible = false
 position = Vector2( 166, 88 )
@@ -6779,6 +6919,21 @@ stream = ExtResource( 122 )
 [connection signal="mouse_exited" from="FileViewer/block4" to="popup" method="_on_mouse_exited"]
 [connection signal="pressed" from="FileViewer/block4" to="popup" method="_on_TextureButton_pressed"]
 [connection signal="pressed" from="FileViewer/Close" to="." method="_on_FileViewer_Close_pressed"]
+[connection signal="pressed" from="FileViewer/windowadjustor" to="." method="_on_windowadjustor_pressed"]
+[connection signal="pressed" from="BigFileViewer/windowadjustor" to="." method="_on_windowadjustor_pressed"]
+[connection signal="mouse_entered" from="BigFileViewer/block" to="popup" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="BigFileViewer/block" to="popup" method="_on_mouse_exited"]
+[connection signal="pressed" from="BigFileViewer/block" to="popup" method="_on_TextureButton_pressed"]
+[connection signal="mouse_entered" from="BigFileViewer/block2" to="popup" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="BigFileViewer/block2" to="popup" method="_on_mouse_exited"]
+[connection signal="pressed" from="BigFileViewer/block2" to="popup" method="_on_TextureButton_pressed"]
+[connection signal="mouse_entered" from="BigFileViewer/block3" to="popup" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="BigFileViewer/block3" to="popup" method="_on_mouse_exited"]
+[connection signal="pressed" from="BigFileViewer/block3" to="popup" method="_on_TextureButton_pressed"]
+[connection signal="mouse_entered" from="BigFileViewer/block4" to="popup" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="BigFileViewer/block4" to="popup" method="_on_mouse_exited"]
+[connection signal="pressed" from="BigFileViewer/block4" to="popup" method="_on_TextureButton_pressed"]
+[connection signal="pressed" from="BigFileViewer/Close" to="." method="_on_FileViewer_Close_pressed"]
 [connection signal="mouse_entered" from="popup/block" to="popup" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="popup/block" to="popup" method="_on_mouse_exited"]
 [connection signal="pressed" from="popup/block" to="popup" method="_on_TextureButton_pressed"]

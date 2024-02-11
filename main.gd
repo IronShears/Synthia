@@ -22,6 +22,7 @@ var oscillatorToggle = false
 var hoveredElements = []
 var selectedElement
 var intersectingNodes = []
+onready var windowToggled = $FileViewer
 onready var startPositions = {"File":$File.position,
 							"FileSystem":$FileSystem.position,
 							"IDE":$IDE.position,
@@ -493,6 +494,7 @@ func _on_FileViewer_Close_pressed():
 			return
 	$FileViewer/Text.scroll_to_line(0)
 	$FileViewer.visible = false
+	$BigFileViewer.visible = false
 	UniversalFunctions.locked = false
 	
 	
@@ -780,16 +782,25 @@ func _on_Icons_openFile(nodeName):
 		generate_Object()
 		return
 	UniversalFunctions.locked = true
-	$FileViewer.visible = true
+	if nodeName.ends_with("rtf"):
+		windowToggled.visible = true
+	else:
+		$FileViewer.visible = true
 	if nodeName.ends_with("txt") or nodeName.ends_with("rtf"):
 		$FileViewer/ImageFile.visible = false
 		if nodeName.ends_with("rtf"):
+			$FileViewer/windowadjustor.visible = true
 			$FileViewer/TextScroll.visible = true
 		else:
+			$FileViewer/windowadjustor.visible = false
 			$FileViewer/TextScroll.visible = false
 		$FileViewer/Text.visible = true
-		$FileViewer/Text.set_bbcode("")
 		$FileViewer/Text.set_bbcode(UniversalFunctions.dialogueJson[nodeName+"Text"])
+		$BigFileViewer/ScrollContainer/Text.set_bbcode(UniversalFunctions.dialogueJson[nodeName+"Text"])
+		if nodeName == "apologyrtf":
+			$BigFileViewer/ColorRect.visible = true
+		else:
+			$BigFileViewer/ColorRect.visible = false
 		if nodeName == "READTHISrtf" or nodeName == "AN_EXPLAINATIONrtf" or nodeName == "LOVErtf" or nodeName == "THANKYOUrtf":
 			prepper = nodeName
 			if nodeName == "THANKYOUrtf":
@@ -800,11 +811,26 @@ func _on_Icons_openFile(nodeName):
 					UniversalFunctions.TalkAbout["Oscilator"] = false
 					oscillatorToggle = true
 	else:
+		$FileViewer/windowadjustor.visible = false
 		$FileViewer/Text.visible = false
 		$FileViewer/ImageFile.visible = true
 		$FileViewer/ImageFile.play(nodeName)
 		$FileViewer/TextScroll.visible = false
 	$FileViewer/Label.text = UniversalFunctions.dialogueJson[nodeName]
+
+
+
+func _on_windowadjustor_pressed():
+	if windowToggled != $BigFileViewer:
+		$FileViewer.visible = false
+		$BigFileViewer.visible = true
+		windowToggled = $BigFileViewer
+	else:
+		$FileViewer.visible = true
+		$BigFileViewer.visible = false
+		windowToggled = $FileViewer
+
+
 
 
 func _process(_delta):
@@ -914,3 +940,4 @@ func _on_OptionButton_pressed(optionpressed):
 		else:
 			$Taskbar/OptionsMenu/Audio/Label.text = UniversalFunctions.dialogueJson["AudioOn"]
 			$AudioStreamPlayer.volume_db = 0
+
