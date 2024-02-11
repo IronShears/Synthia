@@ -12,7 +12,7 @@ var minute = 00
 var frozen = false
 var tempData = null
 var split = null
-var counter = 2
+var counter = 4
 var prepper = null
 var randomHints = ["randomAltHint1","randomAltHint2"]
 var sadTrigger = false
@@ -66,6 +66,8 @@ func _unhandled_input(event):
 func _input(event):
 	if intro == "null":
 		if event is InputEventMouseButton and event.is_pressed():
+			if event.button_index != BUTTON_LEFT:
+				return
 			if counter > 0:
 				counter -=1
 				return
@@ -246,7 +248,7 @@ func _on_NervousTimer_timeout():
 		return
 	
 	if intro == "Intro":
-		var wait_time = 0.003*pow(UniversalFunctions.loneliness,2)+((-0.27)*UniversalFunctions.loneliness)+12.075
+		var wait_time = 0.003*pow(UniversalFunctions.loneliness,2)+((-0.27)*UniversalFunctions.loneliness)+20
 		$NervousTimer.wait_time = wait_time
 		if UniversalFunctions.loneliness < 90:
 			UniversalFunctions.loneliness += 2
@@ -572,6 +574,7 @@ func Warning_React():
 				UniversalFunctions.play_dialogue_JSON("fileDeleted"+warningNode)
 			else:
 				UniversalFunctions.play_dialogue_JSON("fileDeleted"+warningNode+"Ended")
+			var counter = 0
 		else:
 			if UniversalFunctions.dialogueJson.has("fileDeleted"+str(filesDeleted)):
 				$Commandprompt/AutoCloseTimer.stop()
@@ -582,6 +585,11 @@ func Warning_React():
 			else:
 				$Commandprompt/AutoCloseTimer.stop()
 				UniversalFunctions.play_dialogue_JSON("fileDeletedLater")
+		for i in $Icons.currentNodes:
+			if i.name == warningNode:
+				$Icons.currentNodes.erase(counter)
+			counter+=1
+		print($Icons.currentNodes)
 	elif warning == "generate":
 		generate_Object()
 	warning = null

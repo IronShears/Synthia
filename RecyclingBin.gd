@@ -99,7 +99,7 @@ func new_file(nodeName):
 	newFile.name = nodeName
 	newFile.position = get_global_mouse_position()
 	currentNodes.append(newFile)
-	position_settling(newFile)
+	newFile.position = Vector2(stepify(newFile.position.x,30),stepify(newFile.position.y,30))
 	if nodeName.ends_with("jpg") or nodeName.ends_with("gif"):
 		get_tree().get_root().get_node_or_null("/root/world/Icons/"+nodeName+"/ImageFile").visible = true
 		get_tree().get_root().get_node_or_null("/root/world/Icons/"+nodeName+"/ImageFile").play(nodeName)
@@ -108,7 +108,11 @@ func new_file(nodeName):
 		get_tree().get_root().get_node_or_null("/root/world/Icons/"+nodeName+"/TextFile").text = UniversalFunctions.dialogueJson[nodeName+"Mini"]
 	newFile.connect("button_down", self,"_on_button_down")
 	newFile.connect("button_up", self,"_on_button_up")
-	
+	if newFile.position == $RecyclingBin.position:
+		emit_signal("trashed", newFile.name)
+	else:
+		position_settling(newFile)
+		
 	
 	
 func position_settling(node):
@@ -124,13 +128,14 @@ func position_settling(node):
 	if node.position.x > 270:
 		node.position.x = 270
 	var counter = 0
+	var trashed = false
 	while counter < 3:
 		counter = 0
 		for i in currentNodes:
 			if i.position == node.position:
 				counter+=1
 				if i == $RecyclingBin and node != $RecyclingBin:
-					emit_signal("trashed", node.name)
+					trashed = true
 		if counter == 2:
 			if node.position != Vector2(270,90):
 				node.position = validPositions[validPositions.find(node.position)+1]
@@ -141,6 +146,9 @@ func position_settling(node):
 					node.position = validPositions[1]
 		else:
 			counter = 3
+			
+	if trashed == true:
+		emit_signal("trashed", node.name)
 
 
 

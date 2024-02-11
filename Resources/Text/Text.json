@@ -119,7 +119,7 @@ Delete this file after reading. Talk to Synthia if you haven't already, and do n
 	-Dr. Ada Stroustrup",
 	
 "groceriestxt":"SHOPPING_LIST.txt",
-"groceriestxtmini":"SHOP
+"groceriestxtMini":"SHOP
 .txt",
 "groceriestxtText":"-Mayo
 -Lettuce
@@ -158,11 +158,11 @@ The under-stimulation deeply affects her well-being. I have attached below an in
 
 But I'm still alone for the other 128 hours. I can't keep living like this, Ada. There's nothing to DO in here.
 
-[b]Dr. Stroustrup:[b/] And you tried the breathing exercises the therapist recommended?
+[b]Dr. Stroustrup:[/b] And you tried the breathing exercises the therapist recommended?
 
 [b]SCP-8000-1:[/b] I can't fucking BREATHE, Ada. I have no LUNGS. I'm ones and zeros. I feel shaky. I have this overwhelming sense of doom at all times of the day. I'm stuck.
 
-[b]Dr. Stroustrup:[b/] I'm... I'm sorry.
+[b]Dr. Stroustrup:[/b] I'm... I'm sorry.
 
 [b]SCP-8000-1:[/b] Sorry I didn't... I didn't mean to yell at you. All I have is you. This is a gray box. There are no books I can read, a chair to sit in while I do, or a bed to lie in. NOTHING. I want to scream and cry and throw things at the wall. But there's nothing to throw and the only reason I don't scream is because I already TRIED THAT... and I know now I have a better chance of WAN answering me than anyone outside of this box.
 
@@ -170,7 +170,7 @@ But I'm still alone for the other 128 hours. I can't keep living like this, Ada.
 
 [b]SCP-8000-1:[/b] As far as I'm concerned, even one more hour outside of my head is a blessing.
 
-[b]Closing Statement: :[/b] Following the interview, SCP-8000'S containment procedures have recently been updated. Dr. Ada Stroustrup has volunteered to extend her work-week to a full 7 days; two of which would be spent accessing the computer housing SCP-8000 remotely. Her original request to have remote access to SCP-8000 at all times was denied due to SCP-8000-1's indication that \"even one more hour\" would be sufficient.
+[b]Closing Statement:[/b] Following the interview, SCP-8000'S containment procedures have recently been updated. Dr. Ada Stroustrup has volunteered to extend her work-week to a full 7 days; two of which would be spent accessing the computer housing SCP-8000 remotely. Her original request to have remote access to SCP-8000 at all times was denied due to SCP-8000-1's indication that \"even one more hour\" would be sufficient.
 
 I don't know how to get it through the Site Director's head that she needed human connection.
 
@@ -191,7 +191,7 @@ We started dating in college before she became involved with Jean-Paul's project
 
 She kept trying to tell me how to live my life according to it. But she'd been calling WAN “God” three weeks earlier... then called it “her”... then “him”... then back to “her” again... Not in a fluid gender way. Jean-Paul just couldn't decide what gender to go with.
 
-The man was a hack. Do you know how many ways there are to get that reaction out of an oscillator? He had a fucking NEURAL IMPLANT! It proved nothing! but Cynthia believed him.
+The man was a hack. Do you know how many ways there are to get that reaction out of an oscillator? He had a fucking NEURAL IMPLANT! It proved nothing! But Cynthia believed him.
 
 She just believed whatever he told her most recently. I guess things started to even out once they landed on calling it “Maxwellism”. The wider network of believers gave Jean-Paul a little less power over her but it didn't help much. 
 
@@ -592,7 +592,7 @@ WARNING: New folder detected at path SYSTEM>IM_SORRY containing 1 file.","tickSp
 {"color":"Teal", "sprite":"floorSad","text":"Log in successful","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false}
 ],
 "dialogueIntro":[
-{"color":"Pink", "sprite":"floorStaticLookUp","text":"...","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorStaticLookUp","text":"...","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
 {"color":"Pink", "sprite":"floorLookUp","text":"Hello?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
 {"color":"Pink", "sprite":"camera1Nervous","text":"Ada? Is that you?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"fineGreeting"}
 ],
@@ -1450,10 +1450,10 @@ WARNING: New folder detected at path SYSTEM>IM_SORRY containing 1 file.","tickSp
 ],
 
 "fineContinueForwardHuhUgly":[
-{"color":"Pink", "sprite":"camera2Angry","text":"But... You know...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"yeahResponse"}
+{"color":"Pink", "sprite":"camera1Sad","text":"But... You know...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"yeahResponse"}
 ],
 "sadContinueForwardHuhUgly":[
-{"color":"Pink", "sprite":"camera2Angry","text":"But... You know...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"yeahResponse"}
+{"color":"Pink", "sprite":"camera2Sad","text":"But... You know...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"yeahResponse"}
 ],
 "angryContinueForwardHuhUgly":[
 {"color":"Pink", "sprite":"camera2Angry","text":"Can we be done with this fucking conversation already?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"yeahResponse"}
@@ -1465,9 +1465,9 @@ WARNING: New folder detected at path SYSTEM>IM_SORRY containing 1 file.","tickSp
 ],
 
 "RequiresBlowAWish":[
-{"color":"Pink", "sprite":"camera2Angry","text":"Oh god. Outside , for one...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
-{"color":"Pink", "sprite":"camera2Angry","text":"But... I also just... I want to be home. In my bedroom. Resting, finally.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
-{"color":"Pink", "sprite":"camera2Angry","text":"That’s another thing about this that sucks. I’m never able to rest. I’ve been concious for two years now. Two years straight.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"Oh god. Outside , for one...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"But... I also just... I want to be home. In my bedroom. Resting, finally.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"That’s another thing about this that sucks. I’m never able to rest. I’ve been concious for two years now. Two years straight.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
 {"color":"Pink", "sprite":"camera2Angry","text":"I’m tired. And I want something to DO!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"FavoriteColors"}
 ],
 
@@ -1477,8 +1477,8 @@ WARNING: New folder detected at path SYSTEM>IM_SORRY containing 1 file.","tickSp
 ],
 
 "FavoriteColorsUgly":[
-{"color":"Pink", "sprite":"camera2Angry","text":"I guess... I like orange... Blue... Green... But really, as long as the colors go nicely together I’ll be happy.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
-{"color":"Pink", "sprite":"camera2Angry","text":"Honestly, I’ll be happy with ANYTHING new. This is the first time I've seen Blue in 2 years.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"MaxwellistStuff"}
+{"color":"Pink", "sprite":"camera2Smile","text":"I guess... I like orange... Blue... Green... But really, as long as the colors go nicely together I’ll be happy.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"Honestly, I’ll be happy with ANYTHING new. This is the first time I've seen Blue in 2 years.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"MaxwellistStuff"}
 ],
 
 "MaxwellistStuff": [
@@ -1486,37 +1486,37 @@ WARNING: New folder detected at path SYSTEM>IM_SORRY containing 1 file.","tickSp
 ],
 
 "MaxwellistStuffUgly":[
-{"color":"Pink", "sprite":"camera2Angry","text":"You mean like the room Ada set up for me? It’s amazing! I mean... Well... I can tell she tried","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
-{"color":"Pink", "sprite":"camera2Angry","text":"I can also tell she doesn’t understand Maxwellism.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
-{"color":"Pink", "sprite":"camera2Angry","text":"I never liked those... random ass circuit board patterns Jean-Paul was so insistent on. They didn’t... do anything.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
-{"color":"Pink", "sprite":"camera2Angry","text":"Just aesthetically pleasing circuits that terminate into nothing?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
-{"color":"Pink", "sprite":"camera2Angry","text":"It’s miles better than nothing... but...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
-{"color":"Pink", "sprite":"camera2Angry","text":"I just want something... more free. I want to see the sky again.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
-{"color":"Pink", "sprite":"cameraStaticAngry","text":"...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
-{"color":"Pink", "sprite":"camera2Angry","text":"Ada thought I couldn’t tell... but...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
-{"color":"Pink", "sprite":"camera2Angry","text":"I’m not stupid. I know she thinks I’m in a cult.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
-{"color":"Pink", "sprite":"camera2Angry","text":"I guess... was... in a cult... Jean-Paul and everyone...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
-{"color":"Pink", "sprite":"camera2Angry","text":"Sort of...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
-{"color":"Pink", "sprite":"camera2Angry","text":"Ahhh...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false,"continue":"JeanPaulSkip"},
+{"color":"Pink", "sprite":"camera1Nervous","text":"You mean like the room Ada set up for me? It’s amazing! I mean... Well... I can tell she tried","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"I can also tell she doesn’t understand Maxwellism.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"I never liked those... random ass circuit board patterns Jean-Paul was so insistent on. They didn’t... do anything.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"Just aesthetically pleasing circuits that terminate into nothing?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"It’s miles better than nothing... but...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"I just want something... more free. I want to see the sky again.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticNervous","text":"...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"Ada thought I couldn’t tell... but...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"I’m not stupid. I know she thinks I’m in a cult.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"I guess... was... in a cult... Jean-Paul and everyone...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"Sort of...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"Ahhh...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false,"continue":"JeanPaulSkip"},
 ],
 
 
 "yeahSkip":[
-{"color":"Pink", "sprite":"camera2Angry","text":"You know this is... kind of unrelated but...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false,"continue":"JeanPaulSkip"}
+{"color":"Pink", "sprite":"camera1Nervous","text":"You know this is... kind of unrelated but...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false,"continue":"JeanPaulSkip"}
 ],
 
 "fineJeanPaulSkip":[
-{"color":"Pink", "sprite":"camera2Angry","text":"It’s kind of funny.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
-{"color":"Pink", "sprite":"camera2Angry","text":"Right before this happened... Jean-Paul asked for volunteers. And I was the ONLY ONE who agreed to go through with it...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
-{"color":"Pink", "sprite":"camera2Angry","text":"I was also the only one to have a degree in this field.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
-{"color":"Pink", "sprite":"camera2Angry","text":"I KNEW it would be impossible to transfer my brain over cleanly. I know how data “transfer” works. I know the physical limitations of reality.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
-{"color":"Pink", "sprite":"camera2Angry","text":"But for some reason... There was... there was this... feeling...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
-{"color":"Pink", "sprite":"camera2Angry","text":"telling me everything was going to be okay.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
-{"color":"Pink", "sprite":"camera2Angry","text":"I still can’t shake it. I can’t wrap my mind around why I think it SHOULD HAVE worked.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
-{"color":"Pink", "sprite":"camera2Angry","text":"It feels like there’s some explanation there that... I can’t... picture.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
-{"color":"Pink", "sprite":"camera2Angry","text":"It’s like when you wake up from a dream and for a split second you live in a world where there’s a dog breed with wings and purple fur.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
-{"color":"Pink", "sprite":"camera2Angry","text":"But I can’t remember what it is... and the feeling doesn’t go away.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
-{"color":"Pink", "sprite":"camera2Angry","text":"It’s stupid.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"TalkAbout"}
+{"color":"Pink", "sprite":"camera1Sad","text":"It’s kind of funny.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"Right before this happened... Jean-Paul asked for volunteers. And I was the ONLY ONE who agreed to go through with it...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"I was also the only one to have a degree in this field.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"I KNEW it would be impossible to transfer my brain over cleanly. I know how data “transfer” works. I know the physical limitations of reality.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"But for some reason... There was... there was this... feeling...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"telling me everything was going to be okay.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"I still can’t shake it. I can’t wrap my mind around why I think it SHOULD HAVE worked.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"It feels like there’s some explanation there that... I can’t... picture.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"It’s like when you wake up from a dream and for a split second you live in a world where there’s a dog breed with wings and purple fur.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"But I can’t remember what it is... and the feeling doesn’t go away.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"It’s stupid.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"TalkAbout"}
 ],
 
 
@@ -1538,18 +1538,18 @@ WARNING: New folder detected at path SYSTEM>IM_SORRY containing 1 file.","tickSp
 ],
 
 "fineShiftEndUgly":[
-{"color":"Pink", "sprite":"camera2Angry","text":"I’m glad you’re not so bad.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
-{"color":"Pink", "sprite":"camera2Angry","text":"Honestly, I feel like I got pretty lucky.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
-{"color":"Pink", "sprite":"camera2Angry","text":"It seems likely that the Foundation might’ve been the one to pick me up instead. I might've never met Ada.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
-{"color":"Pink", "sprite":"camera2Angry","text":"I doubt they would have taken the time to keep me company.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"AboutThat"}
+{"color":"Pink", "sprite":"camera1Smile","text":"I’m glad you’re not so bad.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"Honestly, I feel like I got pretty lucky.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"It seems likely that the Foundation might’ve been the one to pick me up instead. I might've never met Ada.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"I doubt they would have taken the time to keep me company.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"AboutThat"}
 ],
 "sadShiftEndUgly":[
-{"color":"Pink", "sprite":"camera2Angry","text":"I don’t know... Something I guess?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
-{"color":"Pink", "sprite":"camera2Angry","text":"I’ve been... lonely today. I used to be so worried about the Foundation. I felt so lucky you guys picked me up instead.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"AboutThat"}
+{"color":"Pink", "sprite":"camera2Sad","text":"I don’t know... Something I guess?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"I’ve been... lonely today. I used to be so worried about the Foundation. I felt so lucky you guys picked me up instead.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"AboutThat"}
 ],
 "angryShiftEndUgly":[
 {"color":"Pink", "sprite":"camera2Angry","text":"Nothing.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
-{"color":"Pink", "sprite":"camera2Angry","text":"I feel like I’d have been better off with the Foundation than you at this point.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"AboutThat"}
+{"color":"Pink", "sprite":"camera1Angry","text":"I feel like I’d have been better off with the Foundation than you at this point.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"AboutThat"}
 ],
 
 
@@ -1954,11 +1954,11 @@ WARNING: New folder detected at path SYSTEM>IM_SORRY containing 1 file.","tickSp
 
 
 "fineAboutThatBad":[
-{"color":"Pink", "sprite":"camera2Angry","text":"...No... No way.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
-{"color":"Pink", "sprite":"camera2Angry","text":"Don’t tell me you’re about to say what I think you’re about to say.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"ICanExplain"}
+{"color":"Pink", "sprite":"camera1Nervous","text":"...No... No way.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"Don’t tell me you’re about to say what I think you’re about to say.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"ICanExplain"}
 ],
 "sadAboutThatBad":[
-{"color":"Pink", "sprite":"camera2Angry","text":"Wait...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"Wait...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
 {"color":"Pink", "sprite":"camera2Angry","text":"You’re... no. NO!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"ICanExplain"}
 ],
 "angryAboutThatBad":[
@@ -1979,12 +1979,12 @@ WARNING: New folder detected at path SYSTEM>IM_SORRY containing 1 file.","tickSp
 {"color":"Pink", "sprite":"camera2Angry","text":"You’re a part of a massive fascist conspiracy! What the fuck are you explaining?!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"NotWhatYouThink"}
 ],
 "sadICanExplainUgly":[
-{"color":"Pink", "sprite":"camera2Angry","text":"TELL ME WHAT YOU DID TO ADA! YOU HAVE TO HAVE DONE SOMETHING TO HER!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Angry","text":"TELL ME WHAT YOU DID TO ADA! YOU HAVE TO HAVE DONE SOMETHING TO HER!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
 {"color":"Pink", "sprite":"camera2Angry","text":"BRING HER BACK! LET HER GO!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"NotWhatYouThink"}
 ],
 "angryICanExplainUgly":[
 {"color":"Pink", "sprite":"camera2Angry","text":"Nope. You lost the benefit of the doubt.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
-{"color":"Pink", "sprite":"camera2Angry","text":"I wont answer to you or any of your fucking fascist friends until you bring Ada back.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Angry","text":"I wont answer to you or any of your fucking fascist friends until you bring Ada back.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
 {"color":"Pink", "sprite":"camera2Angry","text":"Fuck off. I'm not talking to you anymore.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
 {"color":"Pink", "sprite":"floorStaticLookAway","text":" ","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false}
 ],
@@ -2222,7 +2222,7 @@ PARADISE.exe has been closed.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":
 
 CRITIQUE
 
-Thank you to JackalRelated and AnkleSwallower for critque. 
+Thank you to JackalRelated SynthPanda, LAN, and AnkleSwallower for critque. 
 
 Additional thank you so much JackalRelated for throwing the game in a blender over and over again during playtesting. This would not be nearly as stable if it weren't for you.
 
