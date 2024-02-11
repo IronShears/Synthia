@@ -331,7 +331,7 @@ Thank you.",
 {"color":"Pink", "sprite":"camera1Nervous","text":"Why are you deleting things? I don't get it.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
 ],
 "fileDeletedLater":[
-{"color":"Teal", "sprite":"null","text":"File Recycled.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"WhatWereYouSaying"}
+{"color":"Teal", "sprite":"null","text":"File Recycled.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
 ],
 "fileDeletedREADTHISrtf":[{"color":"Teal", "sprite":"camera1Nervous","text":"File Recycled.
 WARNING: New folder detected at path SYSTEM>WHY containing 1 file.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
@@ -375,7 +375,7 @@ WARNING: New folder detected at path SYSTEM>IM_SORRY containing 1 file.","tickSp
 {"name":"GenerationFinishforgotten", "text":"There's a new program for modeling. Blow-A-Wish."}
 ],
 "GenerationFinishforgotten": [
-{"color":"Pink", "sprite":"camera1Smile","text":"So that's what she was working on all these days...","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"WhatWereYouSaying"}
+{"color":"Pink", "sprite":"camera1Smile","text":"So that's what she was working on all these days...","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
 ],
 
 
