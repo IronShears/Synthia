@@ -147,7 +147,7 @@ func _on_Commandprompt_option_pressed(optionName:String):
 			UniversalFunctions.TalkAbout["ShakenFaithUgly"] = false
 		UniversalFunctions.play_dialogue_JSON(optionName)
 	elif optionName == "Cook" or optionName == "Computers" or optionName == "Relax":
-		optionName = UniversalFunctions.interest
+		UniversalFunctions.interest = optionName
 		UniversalFunctions.play_dialogue_JSON(optionName)
 	elif optionName == "CultBad":
 		UniversalFunctions.TalkAbout["CultDirect"] = false

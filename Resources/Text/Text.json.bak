@@ -1870,7 +1870,7 @@ WARNING: New folder detected at path SYSTEM>AT_PEACE.","tickSpeed":0.04,"closeSp
 ],
 
 
-"CoolInterestsTalk":[
+"CookInterestsTalk":[
 {"color":"Pink", "sprite":"camera1Smile","text":"Have you cooked anything interesting today?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Breakfast"}
 ],
 "Breakfast": [
