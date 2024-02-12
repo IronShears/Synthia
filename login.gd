@@ -15,7 +15,6 @@ func _on_Blinker_timeout():
 		if $Name.text == passwordFull:
 			$loading.visible = true
 			$loading/loading.play("default")
-			$SubmitName.visible = false
 			yield($loading/loading,"animation_finished")
 			check_obscene(UniversalFunctions.firstName+UniversalFunctions.lastName)
 			if obscene == false:
@@ -34,10 +33,9 @@ func _on_Blinker_timeout():
 				$SubmitName.visible = false
 		else:
 			$Blinker.wait_time = 0.1
-			if $Blinker.wait_time == 0.1:
-				$Name.text = UniversalFunctions.dialogueJson["Password"]+passwordCounter+"|"
-				passwordCounter = passwordCounter+"*"
-				$Name.set_visible_characters(-1)
+			$Name.text = UniversalFunctions.dialogueJson["Password"]+passwordCounter+"|"
+			passwordCounter = passwordCounter+"*"
+			$Name.set_visible_characters(-1)
 	elif stage =="Obscene" or stage == "Instructions":
 		pass
 	else:
@@ -112,7 +110,7 @@ func _on_SubmitName_pressed():
 		UniversalFunctions.lastName = setName
 		$Name.text = UniversalFunctions.dialogueJson["Password"]
 		stage = UniversalFunctions.dialogueJson["Password"]
-	elif stage == UniversalFunctions.dialogueJson["Instructions"]:
+	elif stage == "Instructions":
 		UniversalFunctions.change_scenes_reload("res://main.tscn")
 		
 
