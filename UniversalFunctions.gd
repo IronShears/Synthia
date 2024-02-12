@@ -30,6 +30,7 @@ var adaOrYou = "you"
 var foundationSnippet = "noFoundation"
 var ending = "firedBest"
 var generating = false
+var whatsYourNameContinue = ""
 
 func reset():
 	dialogueBox = get_tree().get_root().get_node_or_null("/root/world/Commandprompt")
@@ -49,6 +50,7 @@ func play_dialogue_JSON(dialogue : String):
 	get_tree().get_root().get_node_or_null("/root/world/Commandprompt/Options/Option1").visible = false
 	get_tree().get_root().get_node_or_null("/root/world/Commandprompt/Options/Option2").visible = false
 	get_tree().get_root().get_node_or_null("/root/world/Commandprompt/Options/Option3").visible = false
+	dialogue = dialogue.replace("{Var}", UniversalFunctions.whatsYourNameContinue)
 	if dialogueJson.has(dialogue) == false:
 		dialogueBox.dialogue = dialogueJson["dialogueError"]
 		dialogueBox.currentTree = dialogue
@@ -89,10 +91,12 @@ func change_scenes_reload(scene):
 	
 func change_scenes_reset(scene):
 	get_tree().change_scene(scene)
+	dialogueJson
 	dialogueEnded = false
 	loneliness = 44
 	disgust = 15
 	locked = false
+	interest
 	firstName = "null"
 	lastName = "null"
 	variableOptions = "AdaSurprise"
@@ -100,6 +104,17 @@ func change_scenes_reset(scene):
 	nameReaction = "nameNormal"
 	TalkAbout = {"SpendTime":false,
 				"WhatWereYouLike":false,
-				"ElfTalk":false}
+				"ElfTalk":false,
+				"RequiresBlowAWish": true,
+				"AdaSurpriseUgly":false,
+				"AdaNonSurpriseUgly":true,
+				"Oscilator":true,
+				"OscilatorNon":true,
+				"CultDirect":true,
+				"CultNonDirect":true,
+				"DungeonsAndDragonsCont":true}
 	adaOrYou = "you"
+	foundationSnippet = "noFoundation"
 	ending = "firedBest"
+	generating = false
+	whatsYourNameContinue = ""

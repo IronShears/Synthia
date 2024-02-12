@@ -79,7 +79,8 @@ func _on_SkipInput_pressed():
 
 func skip_input():
 	if page < endpoint:
-		UniversalFunctions.nervousTimer.stop()
+		if get_tree().get_root().get_node_or_null("/root/world/Virtualhell/") != null:
+			UniversalFunctions.nervousTimer.stop()
 		_play_dialog()
 	else:
 		emit_signal("done")
@@ -157,23 +158,26 @@ func set_up():
 				options = UniversalFunctions.dialogueJson["optionsError"]
 			if dialogue[page]["options"] == "{variableOption}":
 				options = UniversalFunctions.dialogueJson[UniversalFunctions.variableOptions]
-
-
+		randomize()
+		options.shuffle()
+		print(options)
+		var counter = 1
 		var AlreadyUsed = []
-		var counter = options.size()
 		for i in options:
 			if UniversalFunctions.TalkAbout.has(i["name"]): 
 				if UniversalFunctions.TalkAbout[i["name"]] == true:
 					AlreadyUsed.append(i)
 			if not AlreadyUsed.has(i):
+				if counter >3:
+					break
 				var optText = ">"+i["text"]
 				optText = optText.replace("{missingOptions}",dialogue[page]["options"])
 				optText = optText.replace("{name}",UniversalFunctions.firstName)
 				get_tree().get_root().get_node_or_null("/root/world/Commandprompt/Options/Option"+str(counter)).visible = true
 				get_tree().get_root().get_node_or_null("/root/world/Commandprompt/Options/Option"+str(counter)).text = optText
 				get_tree().get_root().get_node_or_null("/root/world/Commandprompt/Options/Option"+str(counter)).currentTopic = i
-			
-				counter-=1
+				
+				counter+=1
 	color = dialogue[page]["color"]
 	time = dialogue[page]["tickSpeed"]
 	closetime = dialogue[page]["closeSpeed"]
@@ -259,7 +263,8 @@ func _on_Timer_timeout():
 									$Voice.stream = o
 								elif currentChar in ["v","w","x","y","z"]:
 									$Voice.stream = u
-					if currentChar != " " or "." or "?" or "!":
+					if currentChar != " " and  currentChar !="." and  currentChar !="?" and  currentChar !="!":
+						print(currentChar)
 						$Voice.play()
 						
 							
@@ -293,7 +298,8 @@ func _on_AutoCloseTimer_timeout():
 	if closetime == 0.05 or closetime == 1.1:
 		skip_input()
 	else:
-		UniversalFunctions.nervousTimer.start()
+		if get_tree().get_root().get_node_or_null("/root/world/Virtualhell/") != null:
+			UniversalFunctions.nervousTimer.start()
 	
 
 

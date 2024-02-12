@@ -181,31 +181,31 @@ Delete this file and another folder will open.",
 "LOVErtf":"MY_LOVE.rtf",
 "LOVErtfMini":"LOVE
 .rtf",
-"LOVErtfText":"I was already a well-respected figure in the Foundation when SCP-8000 landed on my desk. It's an easy assignment. Nothing new to learn. Nothing real can go wrong. It's just about upkeep. Great for training. I was about to toss it in one of the piles I'd been using to sort assignments out to my assistants before I saw the name.
+"LOVErtfText":"	I was already a well-respected figure in the Foundation when SCP-8000 landed on my desk. It's an easy assignment. Nothing new to learn. Nothing real can go wrong. It's just about upkeep. Great for training. I was about to toss it in one of the piles I'd been using to sort assignments out to my assistants before I saw the name.
 
-Cynthia Wren.
+	Cynthia Wren.
 
-I knew Cynthia. She doesn't remember it because the Foundation wiped her memory of me once I was hired... but I knew her. She's a beautiful, intelligent woman with a toothy wrinkled-nose smile that makes my heart melt.
+	I knew Cynthia. She doesn't remember it because the Foundation wiped her memory of me once I was hired... but I knew her. She's a beautiful, intelligent woman with a toothy wrinkled-nose smile that makes my heart melt.
 
-We started dating in college before she became involved with Jean-Paul's project; the thing that would become SCP-8000. As soon as he told her about “WAN” it was a source of conflict between us. I thought it was a cult. I still sort of do.
+	We started dating in college before she became involved with Jean-Paul's project; the thing that would become SCP-8000. As soon as he told her about “WAN” it was a source of conflict between us. I thought it was a cult. I still sort of do.
 
-She kept trying to tell me how to live my life according to it. But she'd been calling WAN “God” three weeks earlier... then called it “her”... then “him”... then back to “her” again... Not in a fluid gender way. Jean-Paul just couldn't decide what gender to go with.
+	She kept trying to tell me how to live my life according to it. But she'd been calling WAN “God” three weeks earlier... then called it “her”... then “him”... then back to “her” again... Not in a fluid gender way. Jean-Paul just couldn't decide what gender to go with.
 
-The man was a hack. Do you know how many ways there are to get that reaction out of an oscillator? He had a fucking NEURAL IMPLANT! It proved nothing! But Cynthia believed him.
+	The man was a hack. Do you know how many ways there are to get that reaction out of an oscillator? He had a fucking NEURAL IMPLANT! It proved nothing! But Cynthia believed him.
 
-She just believed whatever he told her most recently. I guess things started to even out once they landed on calling it “Maxwellism”. The wider network of believers gave Jean-Paul a little less power over her but it didn't help much. 
+	She just believed whatever he told her most recently. I guess things started to even out once they landed on calling it “Maxwellism”. The wider network of believers gave Jean-Paul a little less power over her but it didn't help much. 
 
-I wasn't around to see that anyway. That very name shift was the final straw in our last huge argument.
+	I wasn't around to see that anyway. That very name shift was the final straw in our last huge argument.
 
-I broke up with her that night. I didn't want to hear it anymore. It was all conveniently ever-changing bullshit to me.  I was concerned about her but I didn't know how to cope with the stress of seeing her like that and help her get out of it at the same time. Jean-Paul got what he wanted. Cynthia, alone and isolated from the outside world.
+	I broke up with her that night. I didn't want to hear it anymore. It was all conveniently ever-changing bullshit to me.  I was concerned about her but I didn't know how to cope with the stress of seeing her like that and help her get out of it at the same time. Jean-Paul got what he wanted. Cynthia, alone and isolated from the outside world.
 
-Last I heard Cynthia was still in the Bay Area, amnescitized, happy, and enjoying life with a new puppy and a long-term partner. No memory of WAN or Jean-Paul's god or whatever she was calling it when the Foundation got their hands on SCP-8000.
+	Last I heard Cynthia was still in the Bay Area, amnescitized, happy, and enjoying life with a new puppy and a long-term partner. No memory of WAN or Jean-Paul's god or whatever she was calling it when the Foundation got their hands on SCP-8000.
 
-But Synthia was real too. She was in the anomalous object server farm a short walk and two ID scans away from me at that very moment I was looking down at her file. Alone and isolated from the outside world.
+	But Synthia was real too. She was in the anomalous object server farm a short walk and two ID scans away from me at that very moment I was looking down at her file. Alone and isolated from the outside world.
 
-I made my first trip to her that day.
+	I made my first trip to her that day.
 
-If you haven't already, I need you to talk to Synthia. The next folder will not be released after deleting this file unless you already have spoken with her. I can't risk leaving her alone for nothing.
+	If you haven't already, I need you to talk to Synthia. The next folder will not be released after deleting this file unless you already have spoken with her. I can't risk leaving her alone for nothing.
 ",
 
 
@@ -274,7 +274,7 @@ If you haven't already, I need you to talk to Synthia. The next folder will not 
 
 	Thank you.",
 
-"dialogueError":[{"color":"Teal", "sprite":"cameraSmile","text":"DIALOGUE MISSING. Close game and report that the \"{missingDialogue}\" dialogue key is missing.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"dialogueErrorOptions"}],
+"dialogueError":[{"color":"Teal", "sprite":"cameraStaticNervous","text":"DIALOGUE MISSING. Close game and report that the \"{missingDialogue}\" dialogue key is missing.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"dialogueErrorOptions"}],
 
 "dialogueErrorOptions": [
 {"name":"fineGreetingUgly", "text":"Okay."}
@@ -318,49 +318,49 @@ If you haven't already, I need you to talk to Synthia. The next folder will not 
 
 
 
-"invalidCode":[{"color":"Teal", "sprite":"camera1Nervous","text":"Invalid code entered.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+"invalidCode":[{"color":"Teal", "sprite":"cameraStaticNervous","text":"Invalid code entered.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
 {"color":"Pink", "sprite":"camera1Nervous","text":"What kind of code were you trying to enter?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"nothingWhatWereYouSaying"}
 ],
-"invalidCodeEnded":[{"color":"floorStaticLookUp", "sprite":"camera1Nervous","text":"Invalid code entered.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+"invalidCodeEnded":[{"color":"Teal", "sprite":"cameraStaticNervous","text":"Invalid code entered.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
 {"color":"Pink", "sprite":"floorStaticLookAway","text":" ","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false}
 ],
-"fileDeleted0":[{"color":"Teal", "sprite":"camera1Nervous","text":"File Recycled.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+"fileDeleted0":[{"color":"Teal", "sprite":"cameraStaticNervous","text":"File Recycled.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
 {"color":"Pink", "sprite":"camera2Nervous","text":"What are you deleting?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"nothingWhatWereYouSaying"}
 ],
-"fileDeleted1":[{"color":"Teal", "sprite":"camera1Nervous","text":"File Recycled.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+"fileDeleted1":[{"color":"Teal", "sprite":"cameraStaticNervous","text":"File Recycled.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
 {"color":"Pink", "sprite":"camera1Nervous","text":"Why are you deleting things? I don't get it.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
 ],
 "fileDeletedLater":[
 {"color":"Teal", "sprite":"null","text":"File Recycled.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
 ],
-"fileDeletedREADTHISrtf":[{"color":"Teal", "sprite":"camera1Nervous","text":"File Recycled.
-WARNING: New folder detected at path SYSTEM>WHY containing 1 file.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+"fileDeletedREADTHISrtf":[{"color":"Teal", "sprite":"cameraStaticNervous","text":"File Recycled.
+WARNING: New folder detected at path SYSTEM>WHY.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
 {"color":"Pink", "sprite":"camera1Nervous","text":"That sounds bad. What's going on?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"doesntMatterWhatWereYouSaying"}
 ],
-"fileDeletedAN_EXPLAINATIONrtf":[{"color":"Teal", "sprite":"camera1Nervous","text":"File Recycled.
-WARNING: New folder detected at path SYSTEM>CYNTHIA containing 1 file.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+"fileDeletedAN_EXPLAINATIONrtf":[{"color":"Teal", "sprite":"cameraStaticNervous","text":"File Recycled.
+WARNING: New folder detected at path SYSTEM>CYNTHIA.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
 {"color":"Pink", "sprite":"camera2Nervous","text":"...Cynthia?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"doesntMatterWhatWereYouSaying"}
 ],
-"fileDeletedLOVErtf":[{"color":"Teal", "sprite":"camera1Nervous","text":"File Recycled.
-WARNING: New folder detected at path SYSTEM>MY_WISH containing 2 files.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+"fileDeletedLOVErtf":[{"color":"Teal", "sprite":"cameraStaticNervous","text":"File Recycled.
+WARNING: New folder detected at path SYSTEM>MY_WISH.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
 {"color":"Pink", "sprite":"camera1Nervous","text":"What are all these new folders for?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"doesntMatterWhatWereYouSaying"}
 ],
-"fileDeletedREADTHISrtfEnded":[{"color":"Teal", "sprite":"camera1Nervous","text":"File Recycled.
-WARNING: New folder detected at path SYSTEM>WHY containing 1 file.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false}
+"fileDeletedREADTHISrtfEnded":[{"color":"Teal", "sprite":"null","text":"File Recycled.
+WARNING: New folder detected at path SYSTEM>WHY.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false}
 ],
-"fileDeletedAN_EXPLAINATIONrtfEnded":[{"color":"Teal", "sprite":"camera1Nervous","text":"File Recycled.
-WARNING: New folder detected at path SYSTEM>CYNTHIA containing 1 file.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false}
+"fileDeletedAN_EXPLAINATIONrtfEnded":[{"color":"Teal", "sprite":"null","text":"File Recycled.
+WARNING: New folder detected at path SYSTEM>CYNTHIA.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false}
 ],
-"fileDeletedLOVErtfEnded":[{"color":"Teal", "sprite":"camera1Nervous","text":"File Recycled.
-WARNING: New folder detected at path SYSTEM>MY_WISH containing 2 files.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false}
+"fileDeletedLOVErtfEnded":[{"color":"Teal", "sprite":"null","text":"File Recycled.
+WARNING: New folder detected at path SYSTEM>MY_WISH.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false}
 ],
 
 
 
 
 
-"successfullyGeneratedIntro":[{"color":"Teal", "sprite":"camera1Nervous","text":"Successfully Generated.
-WARNING: New folder detected at path SYSTEM>IM_SORRY containing 1 file.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+"successfullyGeneratedIntro":[{"color":"Teal", "sprite":"cameraStaticNervous","text":"Successfully Generated.
+WARNING: New folder detected at path SYSTEM>IM_SORRY.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
 {"color":"Pink", "sprite":"camera2Nervous","text":"{name} come here something just happened!","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
 {"color":"Pink", "sprite":"floorRoom","text":"Wow this is... NICE. I was going crazy seeing that same missing texture forever...","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
 {"color":"Pink", "sprite":"floorRoom","text":"It looks so... tech-y.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
@@ -379,7 +379,8 @@ WARNING: New folder detected at path SYSTEM>IM_SORRY containing 1 file.","tickSp
 ],
 
 
-"angrysuccessfullyGeneratedIntroEnded":[{"color":"Teal", "sprite":"floorStaticLookUp","text":"Successfully Generated.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+"angrysuccessfullyGeneratedIntroEnded":[{"color":"Teal", "sprite":"floorStaticLookUp","text":"Successfully Generated.
+WARNING: New folder detected at path SYSTEM>IM_SORRY.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
 {"color":"Pink", "sprite":"floorLookUp","text":"...what?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
 {"color":"Pink", "sprite":"floorLookAway","text":" ","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false}
 ],
@@ -395,17 +396,25 @@ WARNING: New folder detected at path SYSTEM>IM_SORRY containing 1 file.","tickSp
 
 
 
-"successfullyGeneratedBetter":[{"color":"Teal", "sprite":"camera1Nervous","text":"Successfully Generated.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+"successfullyGeneratedBetter":[{"color":"Teal", "sprite":"cameraStaticNervous","text":"Successfully Generated.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
 {"color":"Pink", "sprite":"floorObject","text":"Oh WOW. This is better than the last {object}!","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false}
 ],
-"successfullyGeneratedWorse":[{"color":"Teal", "sprite":"camera1Nervous","text":"Successfully Generated.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+"successfullyGeneratedWorse":[{"color":"Teal", "sprite":"cameraStaticNervous","text":"Successfully Generated.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
 {"color":"Pink", "sprite":"floorObject","text":"I kinda liked the old {object} better... Is it too late to change it back?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false}
 ],
-"successfullyGeneratedNeutral":[{"color":"Teal", "sprite":"camera1Nervous","text":"Successfully Generated.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+"successfullyGeneratedNeutral":[{"color":"Teal", "sprite":"cameraStaticNervous","text":"Successfully Generated.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
 {"color":"Pink", "sprite":"floorObject","text":"Huh. That's a new {object}.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false}
 ],
-"successfullyGeneratedEnded":[{"color":"Teal", "sprite":"floorStaticObject","text":"Successfully Generated.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+"successfullyGeneratedEnded":[{"color":"Teal", "sprite":"floorLookUp","text":"Successfully Generated.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
 {"color":"Pink", "sprite":"floorLookAway","text":" ","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false}
+],
+"successfullyGeneratedLastEnded":[{"color":"Teal", "sprite":"floorLookUp","text":"Successfully Generated.
+WARNING: New folder detected at path SYSTEM>AT_PEACE.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorLookAway","text":" ","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false}
+],
+"successfullyGeneratedLast":[{"color":"Teal", "sprite":"floorObject","text":"Successfully Generated.
+WARNING: New folder detected at path SYSTEM>AT_PEACE.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorObject","text":"Something new! I guess for both of us...?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false}
 ],
 
 
@@ -589,7 +598,7 @@ WARNING: New folder detected at path SYSTEM>IM_SORRY containing 1 file.","tickSp
 
 
 "logInSuccessful":[
-{"color":"Teal", "sprite":"floorSad","text":"Log in successful","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false}
+{"color":"Teal", "sprite":"floorStaticSad","text":"Log in successful","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false}
 ],
 "dialogueIntro":[
 {"color":"Pink", "sprite":"floorStaticLookUp","text":"...","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
@@ -988,10 +997,10 @@ WARNING: New folder detected at path SYSTEM>IM_SORRY containing 1 file.","tickSp
 ],
 
 "WhatsYourNameGood":[
-{"color":"Pink", "sprite":"camera1Smile","text":"My name is Synthia Wren.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false,"continue":"WhatsYourNameContinue"}
+{"color":"Pink", "sprite":"camera1Smile","text":"My name is Synthia Wren.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false,"continue":"WhatsYourNameContinue{Var}"}
 ],
 "WhatsYourNameBad":[
-{"color":"Pink", "sprite":"camera2Sad","text":"Great.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false,"continue":"WhatsYourNameContinue"}
+{"color":"Pink", "sprite":"camera2Sad","text":"Great.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false,"continue":"WhatsYourNameContinue{Var}"}
 ],
 "fineWhatsYourNameContinue":[
 {"color":"Pink", "sprite":"camera2Smile","text":"So, was Ada able to convince her boss to show me whatever she was cooking up yet?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"NoSurprise"}
@@ -999,6 +1008,15 @@ WARNING: New folder detected at path SYSTEM>IM_SORRY containing 1 file.","tickSp
 "sadWhatsYourNameContinue":[
 {"color":"Pink", "sprite":"camera2Sad","text":"Did Ada at least get permission to give me my surprise yet?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"NoSurprise"}
 ],
+"fineWhatsYourNameContinueWish":[
+{"color":"Pink", "sprite":"camera2Smile","text":"So I guess Ada got permission to give me my gift....","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"I just wish I could still talk to her.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"TalkToMe"}
+],
+"sadWhatsYourNameContinueWish":[
+{"color":"Pink", "sprite":"camera2Smile","text":"I assume Ada got persmission to give me my gift...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"The reassignment wasn't... permanent was it? I want to talk to her again...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"TalkToMe"}
+],
+
 
 
 
@@ -2207,7 +2225,7 @@ WARNING: New folder detected at path SYSTEM>IM_SORRY containing 1 file.","tickSp
 
 
 "synthiaClosed":[
-{"color":"Teal", "sprite":"camera2Angry","text":"Password Accepted.
+{"color":"Teal", "sprite":"cameraStaticNervous","text":"Password Accepted.
 PARADISE.exe has been closed.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false}
 ],
 

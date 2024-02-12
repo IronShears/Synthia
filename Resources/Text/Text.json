@@ -274,7 +274,7 @@ Delete this file and another folder will open.",
 
 	Thank you.",
 
-"dialogueError":[{"color":"Teal", "sprite":"cameraSmile","text":"DIALOGUE MISSING. Close game and report that the \"{missingDialogue}\" dialogue key is missing.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"dialogueErrorOptions"}],
+"dialogueError":[{"color":"Teal", "sprite":"cameraStaticNervous","text":"DIALOGUE MISSING. Close game and report that the \"{missingDialogue}\" dialogue key is missing.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"dialogueErrorOptions"}],
 
 "dialogueErrorOptions": [
 {"name":"fineGreetingUgly", "text":"Okay."}
@@ -318,49 +318,49 @@ Delete this file and another folder will open.",
 
 
 
-"invalidCode":[{"color":"Teal", "sprite":"camera1Nervous","text":"Invalid code entered.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+"invalidCode":[{"color":"Teal", "sprite":"cameraStaticNervous","text":"Invalid code entered.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
 {"color":"Pink", "sprite":"camera1Nervous","text":"What kind of code were you trying to enter?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"nothingWhatWereYouSaying"}
 ],
-"invalidCodeEnded":[{"color":"floorStaticLookUp", "sprite":"camera1Nervous","text":"Invalid code entered.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+"invalidCodeEnded":[{"color":"Teal", "sprite":"cameraStaticNervous","text":"Invalid code entered.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
 {"color":"Pink", "sprite":"floorStaticLookAway","text":" ","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false}
 ],
-"fileDeleted0":[{"color":"Teal", "sprite":"camera1Nervous","text":"File Recycled.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+"fileDeleted0":[{"color":"Teal", "sprite":"cameraStaticNervous","text":"File Recycled.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
 {"color":"Pink", "sprite":"camera2Nervous","text":"What are you deleting?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"nothingWhatWereYouSaying"}
 ],
-"fileDeleted1":[{"color":"Teal", "sprite":"camera1Nervous","text":"File Recycled.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+"fileDeleted1":[{"color":"Teal", "sprite":"cameraStaticNervous","text":"File Recycled.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
 {"color":"Pink", "sprite":"camera1Nervous","text":"Why are you deleting things? I don't get it.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
 ],
 "fileDeletedLater":[
 {"color":"Teal", "sprite":"null","text":"File Recycled.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
 ],
-"fileDeletedREADTHISrtf":[{"color":"Teal", "sprite":"camera1Nervous","text":"File Recycled.
-WARNING: New folder detected at path SYSTEM>WHY containing 1 file.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+"fileDeletedREADTHISrtf":[{"color":"Teal", "sprite":"cameraStaticNervous","text":"File Recycled.
+WARNING: New folder detected at path SYSTEM>WHY.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
 {"color":"Pink", "sprite":"camera1Nervous","text":"That sounds bad. What's going on?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"doesntMatterWhatWereYouSaying"}
 ],
-"fileDeletedAN_EXPLAINATIONrtf":[{"color":"Teal", "sprite":"camera1Nervous","text":"File Recycled.
-WARNING: New folder detected at path SYSTEM>CYNTHIA containing 1 file.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+"fileDeletedAN_EXPLAINATIONrtf":[{"color":"Teal", "sprite":"cameraStaticNervous","text":"File Recycled.
+WARNING: New folder detected at path SYSTEM>CYNTHIA.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
 {"color":"Pink", "sprite":"camera2Nervous","text":"...Cynthia?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"doesntMatterWhatWereYouSaying"}
 ],
-"fileDeletedLOVErtf":[{"color":"Teal", "sprite":"camera1Nervous","text":"File Recycled.
-WARNING: New folder detected at path SYSTEM>MY_WISH containing 2 files.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+"fileDeletedLOVErtf":[{"color":"Teal", "sprite":"cameraStaticNervous","text":"File Recycled.
+WARNING: New folder detected at path SYSTEM>MY_WISH.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
 {"color":"Pink", "sprite":"camera1Nervous","text":"What are all these new folders for?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"doesntMatterWhatWereYouSaying"}
 ],
-"fileDeletedREADTHISrtfEnded":[{"color":"Teal", "sprite":"camera1Nervous","text":"File Recycled.
-WARNING: New folder detected at path SYSTEM>WHY containing 1 file.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false}
+"fileDeletedREADTHISrtfEnded":[{"color":"Teal", "sprite":"null","text":"File Recycled.
+WARNING: New folder detected at path SYSTEM>WHY.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false}
 ],
-"fileDeletedAN_EXPLAINATIONrtfEnded":[{"color":"Teal", "sprite":"camera1Nervous","text":"File Recycled.
-WARNING: New folder detected at path SYSTEM>CYNTHIA containing 1 file.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false}
+"fileDeletedAN_EXPLAINATIONrtfEnded":[{"color":"Teal", "sprite":"null","text":"File Recycled.
+WARNING: New folder detected at path SYSTEM>CYNTHIA.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false}
 ],
-"fileDeletedLOVErtfEnded":[{"color":"Teal", "sprite":"camera1Nervous","text":"File Recycled.
-WARNING: New folder detected at path SYSTEM>MY_WISH containing 2 files.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false}
+"fileDeletedLOVErtfEnded":[{"color":"Teal", "sprite":"null","text":"File Recycled.
+WARNING: New folder detected at path SYSTEM>MY_WISH.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false}
 ],
 
 
 
 
 
-"successfullyGeneratedIntro":[{"color":"Teal", "sprite":"camera1Nervous","text":"Successfully Generated.
-WARNING: New folder detected at path SYSTEM>IM_SORRY containing 1 file.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+"successfullyGeneratedIntro":[{"color":"Teal", "sprite":"cameraStaticNervous","text":"Successfully Generated.
+WARNING: New folder detected at path SYSTEM>IM_SORRY.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
 {"color":"Pink", "sprite":"camera2Nervous","text":"{name} come here something just happened!","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
 {"color":"Pink", "sprite":"floorRoom","text":"Wow this is... NICE. I was going crazy seeing that same missing texture forever...","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
 {"color":"Pink", "sprite":"floorRoom","text":"It looks so... tech-y.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
@@ -379,7 +379,8 @@ WARNING: New folder detected at path SYSTEM>IM_SORRY containing 1 file.","tickSp
 ],
 
 
-"angrysuccessfullyGeneratedIntroEnded":[{"color":"Teal", "sprite":"floorStaticLookUp","text":"Successfully Generated.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+"angrysuccessfullyGeneratedIntroEnded":[{"color":"Teal", "sprite":"floorStaticLookUp","text":"Successfully Generated.
+WARNING: New folder detected at path SYSTEM>IM_SORRY.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
 {"color":"Pink", "sprite":"floorLookUp","text":"...what?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
 {"color":"Pink", "sprite":"floorLookAway","text":" ","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false}
 ],
@@ -395,17 +396,25 @@ WARNING: New folder detected at path SYSTEM>IM_SORRY containing 1 file.","tickSp
 
 
 
-"successfullyGeneratedBetter":[{"color":"Teal", "sprite":"camera1Nervous","text":"Successfully Generated.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+"successfullyGeneratedBetter":[{"color":"Teal", "sprite":"cameraStaticNervous","text":"Successfully Generated.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
 {"color":"Pink", "sprite":"floorObject","text":"Oh WOW. This is better than the last {object}!","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false}
 ],
-"successfullyGeneratedWorse":[{"color":"Teal", "sprite":"camera1Nervous","text":"Successfully Generated.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+"successfullyGeneratedWorse":[{"color":"Teal", "sprite":"cameraStaticNervous","text":"Successfully Generated.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
 {"color":"Pink", "sprite":"floorObject","text":"I kinda liked the old {object} better... Is it too late to change it back?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false}
 ],
-"successfullyGeneratedNeutral":[{"color":"Teal", "sprite":"camera1Nervous","text":"Successfully Generated.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+"successfullyGeneratedNeutral":[{"color":"Teal", "sprite":"cameraStaticNervous","text":"Successfully Generated.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
 {"color":"Pink", "sprite":"floorObject","text":"Huh. That's a new {object}.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false}
 ],
-"successfullyGeneratedEnded":[{"color":"Teal", "sprite":"floorStaticObject","text":"Successfully Generated.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+"successfullyGeneratedEnded":[{"color":"Teal", "sprite":"floorLookUp","text":"Successfully Generated.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
 {"color":"Pink", "sprite":"floorLookAway","text":" ","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false}
+],
+"successfullyGeneratedLastEnded":[{"color":"Teal", "sprite":"floorLookUp","text":"Successfully Generated.
+WARNING: New folder detected at path SYSTEM>AT_PEACE.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorLookAway","text":" ","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false}
+],
+"successfullyGeneratedLast":[{"color":"Teal", "sprite":"floorObject","text":"Successfully Generated.
+WARNING: New folder detected at path SYSTEM>AT_PEACE.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorObject","text":"Something new! I guess for both of us...?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false}
 ],
 
 
@@ -589,7 +598,7 @@ WARNING: New folder detected at path SYSTEM>IM_SORRY containing 1 file.","tickSp
 
 
 "logInSuccessful":[
-{"color":"Teal", "sprite":"floorSad","text":"Log in successful","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false}
+{"color":"Teal", "sprite":"floorStaticSad","text":"Log in successful","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false}
 ],
 "dialogueIntro":[
 {"color":"Pink", "sprite":"floorStaticLookUp","text":"...","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
@@ -961,7 +970,7 @@ WARNING: New folder detected at path SYSTEM>IM_SORRY containing 1 file.","tickSp
 "nameSame":"So... your name is also {name}?",
 
 "fineGiveNameGood":[
-{"color":"Pink", "sprite":"camera1Smile","text":"{nameReaction}","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"WhatsYourName"},
+{"color":"Pink", "sprite":"camera1Smile","text":"{nameReaction}","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
 {"color":"Pink", "sprite":"camera2Smile","text":"It's nice to meet you, too {name}.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"WhatsYourName"}
 ],
 "fineGiveNameBad":[
@@ -988,10 +997,10 @@ WARNING: New folder detected at path SYSTEM>IM_SORRY containing 1 file.","tickSp
 ],
 
 "WhatsYourNameGood":[
-{"color":"Pink", "sprite":"camera1Smile","text":"My name is Synthia Wren.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false,"continue":"WhatsYourNameContinue"}
+{"color":"Pink", "sprite":"camera1Smile","text":"My name is Synthia Wren.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false,"continue":"WhatsYourNameContinue{Var}"}
 ],
 "WhatsYourNameBad":[
-{"color":"Pink", "sprite":"camera2Sad","text":"Great.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false,"continue":"WhatsYourNameContinue"}
+{"color":"Pink", "sprite":"camera2Sad","text":"Great.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false,"continue":"WhatsYourNameContinue{Var}"}
 ],
 "fineWhatsYourNameContinue":[
 {"color":"Pink", "sprite":"camera2Smile","text":"So, was Ada able to convince her boss to show me whatever she was cooking up yet?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"NoSurprise"}
@@ -999,6 +1008,15 @@ WARNING: New folder detected at path SYSTEM>IM_SORRY containing 1 file.","tickSp
 "sadWhatsYourNameContinue":[
 {"color":"Pink", "sprite":"camera2Sad","text":"Did Ada at least get permission to give me my surprise yet?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"NoSurprise"}
 ],
+"fineWhatsYourNameContinueWish":[
+{"color":"Pink", "sprite":"camera2Smile","text":"So I guess Ada got permission to give me my gift....","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"I just wish I could still talk to her.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"TalkToMe"}
+],
+"sadWhatsYourNameContinueWish":[
+{"color":"Pink", "sprite":"camera2Smile","text":"I assume Ada got persmission to give me my gift...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"The reassignment wasn't... permanent was it? I want to talk to her again...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"TalkToMe"}
+],
+
 
 
 
@@ -2207,7 +2225,7 @@ WARNING: New folder detected at path SYSTEM>IM_SORRY containing 1 file.","tickSp
 
 
 "synthiaClosed":[
-{"color":"Teal", "sprite":"camera2Angry","text":"Password Accepted.
+{"color":"Teal", "sprite":"cameraStaticNervous","text":"Password Accepted.
 PARADISE.exe has been closed.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false}
 ],
 

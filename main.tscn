@@ -6050,7 +6050,7 @@ material = SubResource( 6 )
 position = Vector2( 3, 7 )
 frames = SubResource( 336 )
 animation = "CoolRoom"
-frame = 10
+frame = 17
 playing = true
 centered = false
 
@@ -6061,7 +6061,7 @@ material = SubResource( 6 )
 position = Vector2( 3, 7 )
 frames = SubResource( 457 )
 animation = "CoolRoom"
-frame = 10
+frame = 17
 playing = true
 centered = false
 

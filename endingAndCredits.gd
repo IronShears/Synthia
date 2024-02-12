@@ -49,7 +49,8 @@ func _on_Close_pressed():
 		UniversalFunctions.play_dialogue_JSON("firedBest")
 		yield($Commandprompt,"done")
 		$Commandprompt/Options.visible = true
-		yield($Commandprompt,"option_pressed")
+		yield($Commandprompt/Options/Option1,"pressed")
+		print("ran")
 		$Commandprompt.visible = false
 	$AnimationPlayer.play("Credits")
 	yield($AnimationPlayer,"animation_finished")

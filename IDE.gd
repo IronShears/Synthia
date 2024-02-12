@@ -28,8 +28,6 @@ func reset():
 	$loading.visible = false
 
 func _on_Color_pressed(colorName, palette):
-	if UniversalFunctions.dialogueEnded == true:
-		return
 	if UniversalFunctions.generating == true:
 		return
 	if UniversalFunctions.locked == true:
@@ -52,8 +50,6 @@ func _on_Color_pressed(colorName, palette):
 	change_model($Screen.frame)
 
 func _on_Style_pressed(nodeName):
-	if UniversalFunctions.dialogueEnded == true:
-		return
 	if UniversalFunctions.generating == true:
 		return
 	if UniversalFunctions.locked == true:
@@ -66,8 +62,6 @@ func _on_Style_pressed(nodeName):
 	change_model($Screen.frame)
 	
 func _on_Object_pressed(nodeName):
-	if UniversalFunctions.dialogueEnded == true:
-		return
 	if UniversalFunctions.generating == true:
 		return
 	if UniversalFunctions.locked == true:
@@ -89,8 +83,6 @@ func change_model(screenFrame):
 
 
 func _on_Generate_pressed():
-	if UniversalFunctions.dialogueEnded == true:
-		return
 	if UniversalFunctions.generating == true:
 		return
 	if UniversalFunctions.locked == true:

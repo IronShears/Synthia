@@ -520,7 +520,7 @@ func Warning_React():
 			if UniversalFunctions.dialogueEnded == false: 
 				UniversalFunctions.play_dialogue_JSON("invalidCode")
 			else: 
-				UniversalFunctions.play_dialogue_JSON("invalidCode")
+				UniversalFunctions.play_dialogue_JSON("invalidCodeEnded")
 	elif warning == "trash":
 		if warningNode == "IDE" or warningNode == "File":
 			get_tree().get_root().get_node_or_null("/root/world/Taskbar/Icons/"+warningNode).visible = false
@@ -664,11 +664,18 @@ func generate_Object():
 	if UniversalFunctions.dialogueEnded == true:
 		UniversalFunctions.generating = false
 		if distractions.size() == 4:
-			$FileSystem.visibleFolders.append("atPeace")
-			$FileSystem.allItems["system"].append("atPeace")
-			$FileSystem.set_up()
-		UniversalFunctions.play_dialogue_JSON("successfullyGeneratedEnded")
-		yield($Commandprompt,"done")
+			if $FileSystem.allItems["system"].has("atPeace"):
+				$FileSystem.visibleFolders.append("atPeace")
+				$FileSystem.allItems["system"].append("atPeace")
+				$FileSystem.set_up()
+				UniversalFunctions.play_dialogue_JSON("successfullyGeneratedLastEnded")
+				yield($Commandprompt,"done")
+			else:
+				UniversalFunctions.play_dialogue_JSON("successfullyGeneratedEnded")
+				yield($Commandprompt,"done")
+		else:
+			UniversalFunctions.play_dialogue_JSON("successfullyGeneratedEnded")
+			yield($Commandprompt,"done")
 		return
 	
 	
@@ -677,15 +684,24 @@ func generate_Object():
 		if removed["object"] == tempData["object"] and removed["style"] == tempData["style"] and removed["color"] == tempData["color"]:
 			removedSame = true
 		else:
-			if removed["value"] < tempData["value"]:
-				UniversalFunctions.play_dialogue_JSON("successfullyGeneratedBetter")
+			
+			if distractions.size() == 4:
+	#if you've given Synthia one of everything, Ada gives you one last goodbye
+				$FileSystem.visibleFolders.append("atPeace")
+				$FileSystem.allItems["system"].append("atPeace")
+				$FileSystem.set_up()
+				UniversalFunctions.play_dialogue_JSON("successfullyGeneratedLast")
 				yield($Commandprompt,"done")
-			elif removed["value"] > tempData["value"]:
-				UniversalFunctions.play_dialogue_JSON("successfullyGeneratedWorse")
-				yield($Commandprompt,"done")
-			elif removed["value"] == tempData["value"]:
-				UniversalFunctions.play_dialogue_JSON("successfullyGeneratedNeutral")
-				yield($Commandprompt,"done")
+			else:
+				if removed["value"] < tempData["value"]:
+					UniversalFunctions.play_dialogue_JSON("successfullyGeneratedBetter")
+					yield($Commandprompt,"done")
+				elif removed["value"] > tempData["value"]:
+					UniversalFunctions.play_dialogue_JSON("successfullyGeneratedWorse")
+					yield($Commandprompt,"done")
+				elif removed["value"] == tempData["value"]:
+					UniversalFunctions.play_dialogue_JSON("successfullyGeneratedNeutral")
+					yield($Commandprompt,"done")
 				
 	if removedSame == false:
 		if UniversalFunctions.dialogueJson.has("full"+tempData["color"]+tempData["style"]+tempData["object"]):
@@ -702,11 +718,6 @@ func generate_Object():
 				yield($Commandprompt,"done")
 
 
-	#if you've given her one of everything, Ada gives you one last goodbye
-	if distractions.size() == 4:
-		$FileSystem.visibleFolders.append("atPeace")
-		$FileSystem.allItems["system"].append("atPeace")
-		$FileSystem.set_up()
 		
 	UniversalFunctions.generating = false
 	
@@ -764,6 +775,7 @@ func _on_Icons_openFile(nodeName):
 	if nodeName == "BLOW_A_WISHzip":
 		UniversalFunctions.TalkAbout["RequiresBlowAWish"] = false
 		UniversalFunctions.TalkAbout["AdaSurpriseUgly"] = true
+		UniversalFunctions.whatsYourNameContinue = "Wish"
 		UniversalFunctions.TalkAbout["AdaNonSurpriseUgly"] = false
 		$FileSystem.visibleFolders.append("imSorry")
 		$FileSystem.allItems["system"].append("imSorry")
