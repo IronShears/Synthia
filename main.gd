@@ -247,6 +247,8 @@ func time_ending():
 	UniversalFunctions.change_scenes_reload("res://endingAndCredits.tscn")
 
 func _on_NervousTimer_timeout():
+	if $Taskbar/time.text == "17:00":
+		return
 	if UniversalFunctions.dialogueEnded == true:
 		return
 	
@@ -455,6 +457,8 @@ func _on_Synthia_pressed():
 
 
 func _on_File_pressed():
+	if $Taskbar/time.text == "17:00":
+		return
 	if UniversalFunctions.locked == true:
 		return
 	if $File.visible == false:
@@ -463,6 +467,8 @@ func _on_File_pressed():
 	resetLayers(true, "File")
 
 func _on_FileSystem_pressed():
+	if $Taskbar/time.text == "17:00":
+		return
 	if UniversalFunctions.locked == true:
 		return
 	if $FileSystem.visible == false:
@@ -471,6 +477,8 @@ func _on_FileSystem_pressed():
 	resetLayers(true, "FileSystem")
 	
 func _on_IDE_pressed():
+	if $Taskbar/time.text == "17:00":
+		return
 	if UniversalFunctions.locked == true:
 		return
 	if $IDE.visible == false:
@@ -601,6 +609,8 @@ func Warning_React():
 
 
 func generate_Object():
+	if $Taskbar/time.text == "17:00":
+		return
 	$NervousTimer.stop()
 	UniversalFunctions.generating = true
 	UniversalFunctions.emptyFilled = "lessEmpty"
@@ -723,6 +733,8 @@ func generate_Object():
 	
 
 func _on_Icons_trashed(node):
+	if $Taskbar/time.text == "17:00":
+		return
 	if get_tree().get_root().get_node_or_null("/root/world/"+node) != null:
 		if node != "FileSystem":
 			if get_tree().get_root().get_node_or_null("/root/world/"+node).visible == false and get_tree().get_root().get_node_or_null("/root/world/"+node).scale.x ==1:
@@ -756,6 +768,8 @@ func _on_Icons_trashed(node):
 
 
 func _on_IDE_generated(data):
+	if $Taskbar/time.text == "17:00":
+		return
 	tempData = data
 	UniversalFunctions.locked = true
 	$popup.visible = true
@@ -772,6 +786,8 @@ func _on_IDE_generated(data):
 
 
 func _on_Icons_openFile(nodeName):
+	if $Taskbar/time.text == "17:00":
+		return
 	if nodeName == "BLOW_A_WISHzip":
 		UniversalFunctions.TalkAbout["RequiresBlowAWish"] = false
 		UniversalFunctions.TalkAbout["AdaSurpriseUgly"] = true

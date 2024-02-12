@@ -40,6 +40,8 @@ func _process(_delta):
 		Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 
 func _on_button_down(node):
+	if get_tree().get_root().get_node_or_null("/root/world/Taskbar/time").text == "17:00":
+		return
 	if get_tree().get_root().get_node_or_null("/root/world/").hoveredElements != []:
 		return
 	if UniversalFunctions.locked == true:
@@ -136,7 +138,9 @@ func position_settling(node):
 			if i.position == node.position:
 				counter+=1
 				if i == $RecyclingBin and node != $RecyclingBin:
-					trashed = true
+					
+					if get_tree().get_root().get_node_or_null("/root/world/Taskbar/time").text != "17:00":
+						trashed = true
 		if counter == 2:
 			if node.position != Vector2(270,90):
 				node.position = validPositions[validPositions.find(node.position)+1]

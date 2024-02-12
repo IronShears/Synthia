@@ -60,6 +60,8 @@ func _process(_delta):
 		Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 
 func _on_StorageFile_button_down(nodeNum,nodeName):
+	if get_tree().get_root().get_node_or_null("/root/world/Taskbar/time").text == "17:00":
+		return
 	if z_index != 3:
 		return
 	if nodeName.ends_with("jpg") or nodeName.ends_with("gif") or nodeName.ends_with("txt") or nodeName.ends_with("rtf"):
@@ -98,6 +100,8 @@ func _on_StorageFile_button_up(nodeNum,nodeName):
 		_on_system_pressed(nodeName)
 
 func empty_folders():
+	if get_tree().get_root().get_node_or_null("/root/world/Taskbar/time").text == "17:00":
+		return
 	if currentFolder == "clickMe":
 		visibleFolders.erase(currentFolder)
 		allItems["documents"].erase("clickMe")
@@ -112,6 +116,8 @@ func empty_folders():
 
 
 func _on_system_pressed(nodeName):
+	if get_tree().get_root().get_node_or_null("/root/world/Taskbar/time").text == "17:00":
+		return
 	currentFolder = nodeName
 	if nodeName == "documents" and allItems["clickMe"]!=[]:
 		if visibleFolders.has("clickMe") ==false:

@@ -21,20 +21,24 @@ func _on_Blinker_timeout():
 			if obscene == false:
 				if scenechanging == true:
 					return
-				scenechanging = true
-				UniversalFunctions.change_scenes_reload("res://main.tscn")
+				stage = "Instructions"
+				$Blinker.wait_time = 0.05
+				$loading.visible = false
+				$Name.text = UniversalFunctions.dialogueJson["Instructions"]
 			else:
-				$Blinker.wait_time = 0.5
+				$Blinker.wait_time = 0.05
 				$loading.visible = false
 				$Name.text = UniversalFunctions.dialogueJson["Obscene"]
 				stage = "Obscene"
 				$SLURTIMER.start()
+				$SubmitName.visible = false
 		else:
 			$Blinker.wait_time = 0.1
-			$Name.text = UniversalFunctions.dialogueJson["Password"]+passwordCounter+"|"
-			passwordCounter = passwordCounter+"*"
-			$Name.set_visible_characters(-1)
-	elif stage =="Obscene":
+			if $Blinker.wait_time == 0.1:
+				$Name.text = UniversalFunctions.dialogueJson["Password"]+passwordCounter+"|"
+				passwordCounter = passwordCounter+"*"
+				$Name.set_visible_characters(-1)
+	elif stage =="Obscene" or stage == "Instructions":
 		pass
 	else:
 		if $Name.get_visible_characters() == -1:
@@ -108,6 +112,8 @@ func _on_SubmitName_pressed():
 		UniversalFunctions.lastName = setName
 		$Name.text = UniversalFunctions.dialogueJson["Password"]
 		stage = UniversalFunctions.dialogueJson["Password"]
+	elif stage == UniversalFunctions.dialogueJson["Instructions"]:
+		UniversalFunctions.change_scenes_reload("res://main.tscn")
 		
 
 func check_funny(setName):
