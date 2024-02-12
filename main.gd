@@ -181,6 +181,7 @@ func _on_Commandprompt_option_pressed(optionName:String):
 		UniversalFunctions.dialogueEnded = true
 		UniversalFunctions.play_dialogue_JSON(optionName)
 	elif optionName == "InterestsTalk":
+		print(UniversalFunctions.interest+optionName)
 		UniversalFunctions.play_dialogue_JSON(UniversalFunctions.interest+optionName)
 		$CurrentTime.wait_time= 0.1
 	elif optionName == "AdaToldYes":

@@ -9,7 +9,7 @@ var dialogueEnded = false
 var loneliness = 44
 var disgust = 15
 var locked = false
-var interest
+var interest = ""
 var firstName = "null"
 var lastName = "null"
 var variableOptions = "AdaSurprise"
