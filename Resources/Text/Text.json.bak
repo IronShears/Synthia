@@ -28,7 +28,7 @@
 "Password": "Password: ",
 "Obscene": "Your credentials could not be verified. This terminal has been deactivated. Please remain still while security arrives to confirm your identity.",
 "Instructions": "Your credentials have been verified. Please refer to the SCP-8000 FILE for a description of your duties upon log in.",
-"ObsceneDisclaimer":"If you still don't know why you got this error, please leave a comment with the name you were trying to enter. In the meantime enter a different name and continue.",
+"ObsceneDisclaimer":"If you don't know why you got this error, please leave a comment with the name you were trying to enter. In the meantime enter a different name and continue.",
 "SCP-XXXX": "SCP-8000.html",
 "SCPText":"[color=#5b6ee1][b]Item #:[/b][/color] SCP-8000
 
@@ -1880,7 +1880,7 @@ WARNING: New folder detected at path SYSTEM>AT_PEACE.","tickSpeed":0.04,"closeSp
 {"color":"Pink", "sprite":"camera1Nervous","text":"Oh well...  That sucks... What did it taste like?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Invested"}
 ],
 "Invested": [
-{"name":"InvestedBad", "text":"You seem too invested on this"},
+{"name":"InvestedUgly", "text":"You seem too invested on this"},
 {"name":"SweetGood", "text":"There was a sweet aftertaste."}
 ],
 "InvestedUgly":[
