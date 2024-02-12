@@ -1870,7 +1870,7 @@ WARNING: New folder detected at path SYSTEM>AT_PEACE.","tickSpeed":0.04,"closeSp
 ],
 
 
-"CookInterestsTalk":[
+"CoolInterestsTalk":[
 {"color":"Pink", "sprite":"camera1Smile","text":"Have you cooked anything interesting today?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Breakfast"}
 ],
 "Breakfast": [
@@ -2093,6 +2093,7 @@ WARNING: New folder detected at path SYSTEM>AT_PEACE.","tickSpeed":0.04,"closeSp
 "NotTrueUgly":[
 {"color":"Pink", "sprite":"camera2Angry","text":"Was?! WAS???","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
 {"color":"Pink", "sprite":"camera2Angry","text":"SHUT UP! JUST SHUT UP! I’M NOT LISTENING TO YOU ANYMORE. STOP TALKING TO ME!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"LEAVE ME ALONE!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
 {"color":"Pink", "sprite":"floorStaticSad","text":" ","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false}
 ],
 
