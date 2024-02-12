@@ -2013,7 +2013,7 @@ WARNING: New folder detected at path SYSTEM>AT_PEACE.","tickSpeed":0.04,"closeSp
 "angryICanExplainUgly":[
 {"color":"Pink", "sprite":"camera2Angry","text":"Nope. You lost the benefit of the doubt.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
 {"color":"Pink", "sprite":"camera1Angry","text":"I wont answer to you or any of your fucking fascist friends until you bring Ada back.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
-{"color":"Pink", "sprite":"camera2Angry","text":"Fuck off. I'm not talking to you anymore.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"Fuck off. Have fun with the rest of your day. I'm not talking to you anymore.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
 {"color":"Pink", "sprite":"floorStaticLookAway","text":" ","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false}
 ],
 
@@ -2080,6 +2080,7 @@ WARNING: New folder detected at path SYSTEM>AT_PEACE.","tickSpeed":0.04,"closeSp
 {"color":"Pink", "sprite":"camera2Angry","text":"I... I  don’t know if I trust YOU.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
 {"color":"Pink", "sprite":"camera2Angry","text":"You seem nice enough but...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
 {"color":"Pink", "sprite":"camera2Angry","text":"I... I need some time to think. Leave me alone for a little while.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"I'll... talk to you when I'm ready to. Maybe when your shift is over...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
 {"color":"Pink", "sprite":"floorStaticLookAway","text":" ","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false}
 ],
 
@@ -2092,6 +2093,7 @@ WARNING: New folder detected at path SYSTEM>AT_PEACE.","tickSpeed":0.04,"closeSp
 "NotTrueUgly":[
 {"color":"Pink", "sprite":"camera2Angry","text":"Was?! WAS???","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
 {"color":"Pink", "sprite":"camera2Angry","text":"SHUT UP! JUST SHUT UP! I’M NOT LISTENING TO YOU ANYMORE. STOP TALKING TO ME!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"LEAVE ME ALONE!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
 {"color":"Pink", "sprite":"floorStaticSad","text":" ","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false}
 ],
 
