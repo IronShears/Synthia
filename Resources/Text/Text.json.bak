@@ -1887,7 +1887,7 @@ WARNING: New folder detected at path SYSTEM>AT_PEACE.","tickSpeed":0.04,"closeSp
 {"color":"Pink", "sprite":"camera1Sad","text":"I miss food...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"LoopingOptions"}
 ],
 "SweetGood":[
-{"color":"Pink", "sprite":"camera1Smile","text":"I can already imagine it...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"LoopingOptions"},
+{"color":"Pink", "sprite":"camera1Smile","text":"I can already imagine it...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
 {"color":"Pink", "sprite":"camera2Smile","text":"The good thing about this body is that good memories never go away.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
 {"color":"Pink", "sprite":"camera1Smile","text":"I can perfectly recall the ice-cream Cynthia ate before the upload...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
 {"color":"Pink", "sprite":"camera2Sad","text":"Of course, the bad ones don’t disappear either.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"LoopingOptions"}
@@ -2285,6 +2285,8 @@ Hitsune Kumi English Voice bank by Cubialpha, Free for commercial use, creator w
 Computer startup by MrAuralization CC-BY 3.0
 
 Error (Disaparaging Chimes) by SilverIllusionist CC-BY 4.0
+
+Thank you to Raddagher for fixing my looping audio for me!
 
 
 

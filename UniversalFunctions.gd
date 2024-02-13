@@ -4,6 +4,9 @@ onready var dialogueBox : Node2D = get_tree().get_root().get_node_or_null("/root
 onready var synthia : Node2D = get_tree().get_root().get_node_or_null("/root/world/Virtualhell")
 onready var world : Node2D = get_tree().get_root().get_node_or_null("/root/world/")
 onready var nervousTimer : Timer = get_tree().get_root().get_node_or_null("/root/world/NervousTimer")
+onready var shellFontNodes = [get_tree().get_root().get_node_or_null("/root/world/Commandprompt/Dialogue"),get_tree().get_root().get_node_or_null("/root/world/Commandprompt/Option3"),get_tree().get_root().get_node_or_null("/root/world/Commandprompt/Option2"),get_tree().get_root().get_node_or_null("/root/world/Commandprompt/Option1")]
+onready var persephoneFontNodes = [get_tree().get_root().get_node_or_null("/root/world/File/ScrollContainer/VBoxContainer/SCPText")]
+onready var MiniFontNodes = [get_tree().get_root().get_node_or_null("/root/world/File/ScrollContainer/VBoxContainer/SCPText")]
 var dialogueJson
 var dialogueEnded = false
 var loneliness = 44
@@ -31,17 +34,32 @@ var foundationSnippet = "noFoundation"
 var ending = "firedBest"
 var generating = false
 var whatsYourNameContinue = ""
+var language = ""
 
 func reset():
 	dialogueBox = get_tree().get_root().get_node_or_null("/root/world/Commandprompt")
 	synthia = get_tree().get_root().get_node_or_null("/root/world/Virtualhell")
 	nervousTimer = get_tree().get_root().get_node_or_null("/root/world/NervousTimer")
 	world = get_tree().get_root().get_node_or_null("/root/world/")
+	shellFontNodes = [get_tree().get_root().get_node_or_null("/root/world/Commandprompt/Dialogue"),get_tree().get_root().get_node_or_null("/root/world/Commandprompt/Option3"),get_tree().get_root().get_node_or_null("/root/world/Commandprompt/Option2"),get_tree().get_root().get_node_or_null("/root/world/Commandprompt/Option1")]
+	persephoneFontNodes = [get_tree().get_root().get_node_or_null("/root/world/File/ScrollContainer/VBoxContainer/SCPText")]
+	MiniFontNodes = [get_tree().get_root().get_node_or_null("/root/world/File/ScrollContainer/VBoxContainer/SCPText")]
+
+	var file = File.new()
+	assert(file.file_exists("res://Resources/Text/Text"+language+".json"))
+	file.open("res://Resources/Text/Text"+language+".json", file.READ)
+	dialogueJson = parse_json(file.get_as_text())
+	if language != "":
+		for i in persephoneFontNodes:
+			if i != null:
+				i.set_theme(load("res://Resources/GUIpieces/AltFonts/PersephoneOS"+language+".tres"))
+				print(i.theme)
+				print("ran")
 
 func _ready():
 	var file = File.new()
-	assert(file.file_exists("res://Resources/Text/Text.json"))
-	file.open("res://Resources/Text/Text.json", file.READ)
+	assert(file.file_exists("res://Resources/Text/Text"+language+".json"))
+	file.open("res://Resources/Text/Text"+language+".json", file.READ)
 	dialogueJson = parse_json(file.get_as_text())
 
 func play_dialogue_JSON(dialogue : String):

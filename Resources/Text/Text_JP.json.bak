@@ -22,31 +22,24 @@
 
 
 
-"FirstName": "First Name:",
-"LastName": "Last Name:",
-"Enter": ">Enter",
-"Password": "Password: ",
-"Obscene": "Your credentials could not be verified. This terminal has been deactivated. Please remain still while security arrives to confirm your identity.",
-"Instructions": "Your credentials have been verified. Please refer to the SCP-8000 FILE for a description of your duties upon log in.",
-"ObsceneDisclaimer":"If you don't know why you got this error, please leave a comment with the name you were trying to enter. In the meantime enter a different name and continue.",
+"FirstName": "名:",
+"LastName": "氏:",
+"Enter": ">決定",
+"Password": "パスワード: ",
+"Obscene": "あなたのログイン資格の検証ができませんでした。本ターミナルは終了します。あなたの身分を確認するために保安要員が到着するまでその場で待機してください。",
+"Instructions": "あなたのログイン資格が検証されました。ログイン後の職務についてはSCP-8000ファイルを参照してください。",
+"ObsceneDisclaimer":"もしこのエラーが発生している理由が不明な場合、あなたが入力した名前をディスカッションに残してください。そして、違う名前を入力し、そのまま実行してください。",
 "SCP-XXXX": "SCP-8000.html",
-"SCPText":"[color=#5b6ee1][b]Item #:[/b][/color] SCP-8000
+"SCPText":"[color=#5b6ee1][b]アイテム番号:[/b][/color] SCP-8000
 
-[color=#5b6ee1][b]Object Class:[/b][/color] Safe
+[color=#5b6ee1][b]オブジェクトクラス:
+[/b][/color] Safe
 
-[color=#5b6ee1][b]Special Containment
-Procedures:[/b][/color] All files on
-the computer
-hosting SCP-8000, apart
-from SCP-8000
-(\"PARADISE.exe\") and the
-SCP-8000 instructional
-file(\"SCP-8000.html\") are 
-to be manually
-DRAGGED to the desktop
-from the storage system
-and DELETED with the RECYCLING BIN.
-
+[color=#5b6ee1][b]特別収容プロトコル:[/b][/color]
+ SCP-8000をホストし
+ ているコンピューターにお
+ いて、SCP-8000で
+ ある(\"PARADISE.exe\")およびSCP-8000についての指示ファイルである(\"SCP-8000.html\")以外のすべてのファイルについては、手動でストレージシステムよりデスクトップへドラッグし、ゴミ箱で削除してください。
 Any adjustments to SCP-8000’s coding are strictly forbidden. None of the files discovered on the device are to be inspected before deletion.
 
 The computer containing SCP-8000 is to be kept in  Site-15’s server farm. SCP-8000 is to be kept running in its original file path at all times. It should not be copied, pasted, or transferred in any way whatsoever.
@@ -1003,10 +996,17 @@ WARNING: New folder detected at path SYSTEM>AT_PEACE.","tickSpeed":0.04,"closeSp
 "WhatsYourNameBad":[
 {"color":"Pink", "sprite":"camera2Sad","text":"Great.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false,"continue":"WhatsYourNameContinue{Var}"}
 ],
-"WhatsYourNameContinue":[
-{"color":"Pink", "sprite":"camera2Smile","text":"Did Ada at least get permission to give me my surprise yet?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"NoSurprise"}
+"fineWhatsYourNameContinue":[
+{"color":"Pink", "sprite":"camera2Smile","text":"So, was Ada able to convince her boss to show me whatever she was cooking up yet?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"NoSurprise"}
 ],
-"WhatsYourNameContinueWish":[
+"sadWhatsYourNameContinue":[
+{"color":"Pink", "sprite":"camera2Sad","text":"Did Ada at least get permission to give me my surprise yet?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"NoSurprise"}
+],
+"fineWhatsYourNameContinueWish":[
+{"color":"Pink", "sprite":"camera2Smile","text":"So I guess Ada got permission to give me my gift....","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"I just wish I could still talk to her.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"TalkToMe"}
+],
+"sadWhatsYourNameContinueWish":[
 {"color":"Pink", "sprite":"camera2Smile","text":"I assume Ada got persmission to give me my gift...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
 {"color":"Pink", "sprite":"camera2Sad","text":"The reassignment wasn't... permanent was it? I want to talk to her again...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"TalkToMe"}
 ],
@@ -1880,7 +1880,7 @@ WARNING: New folder detected at path SYSTEM>AT_PEACE.","tickSpeed":0.04,"closeSp
 {"color":"Pink", "sprite":"camera1Sad","text":"I miss food...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"LoopingOptions"}
 ],
 "SweetGood":[
-{"color":"Pink", "sprite":"camera1Smile","text":"I can already imagine it...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"I can already imagine it...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"LoopingOptions"},
 {"color":"Pink", "sprite":"camera2Smile","text":"The good thing about this body is that good memories never go away.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
 {"color":"Pink", "sprite":"camera1Smile","text":"I can perfectly recall the ice-cream Cynthia ate before the upload...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
 {"color":"Pink", "sprite":"camera2Sad","text":"Of course, the bad ones don’t disappear either.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"LoopingOptions"}
@@ -2278,8 +2278,6 @@ Hitsune Kumi English Voice bank by Cubialpha, Free for commercial use, creator w
 Computer startup by MrAuralization CC-BY 3.0
 
 Error (Disaparaging Chimes) by SilverIllusionist CC-BY 4.0
-
-Thank you to Raddagher for fixing my looping audio for me!
 
 
 
