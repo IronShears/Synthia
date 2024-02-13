@@ -1914,7 +1914,7 @@ WARNING: New folder detected at path SYSTEM>AT_PEACE.","tickSpeed":0.04,"closeSp
 ],
 "SurprisedUgly":[
 {"color":"Pink", "sprite":"camera1Smile","text":"I... Wait... really?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
-{"color":"Pink", "sprite":"cameraStaticNervous","text":"...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Surprised"},
+{"color":"Pink", "sprite":"cameraStaticNervous","text":"...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
 {"color":"Pink", "sprite":"cameraStaticNervous","text":"I've missed a lot more than I thought...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"LoopingOptions"}
 ],
 
