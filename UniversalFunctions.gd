@@ -53,8 +53,6 @@ func reset():
 		for i in persephoneFontNodes:
 			if i != null:
 				i.set_theme(load("res://Resources/GUIpieces/AltFonts/PersephoneOS"+language+".tres"))
-				print(i.theme)
-				print("ran")
 
 func _ready():
 	var file = File.new()
@@ -92,7 +90,6 @@ func play_dialogue_JSON(dialogue : String):
 	#makes sure the past dialogue plays the right dialogue
 	if dialogueBox.dialogue != dialogueJson["dialogueError"]:
 		if dialogueBox.pastDialogue[-1]["name"] == dialogue:
-			print("SET PAST DIALOGUE HERE")
 			dialogueBox.pastDialogue[-1]["name"] = dialogueBox.currentTree
 	dialogueBox.page = 0
 	dialogueBox.endpoint = dialogueBox.dialogue.size() - 1

@@ -181,7 +181,6 @@ func _on_Commandprompt_option_pressed(optionName:String):
 		UniversalFunctions.dialogueEnded = true
 		UniversalFunctions.play_dialogue_JSON(optionName)
 	elif optionName == "InterestsTalk":
-		print(UniversalFunctions.interest+optionName)
 		UniversalFunctions.play_dialogue_JSON(UniversalFunctions.interest+optionName)
 		$CurrentTime.wait_time= 0.1
 	elif optionName == "AdaToldYes":
@@ -251,6 +250,7 @@ func _on_NervousTimer_timeout():
 	if $Taskbar/time.text == "17:00":
 		return
 	if UniversalFunctions.dialogueEnded == true:
+		$CurrentTime.wait_time = 0.1
 		return
 	
 	if intro == "Intro":
@@ -441,7 +441,6 @@ func _on_FileSystem_Close_pressed():
 	resetLayers(false, "FileSystem")
 
 func _on_IDE_Close_pressed():
-	print(UniversalFunctions.locked)
 	if UniversalFunctions.locked == true:
 		return
 	$IDE.visible = false
@@ -602,7 +601,6 @@ func Warning_React():
 			if i.name == warningNode:
 				$Icons.currentNodes.erase(counter)
 			counter+=1
-		print($Icons.currentNodes)
 	elif warning == "generate":
 		generate_Object()
 	warning = null
@@ -670,7 +668,6 @@ func generate_Object():
 	if genLocked == true:
 		distractions.erase(distractions[genCounter])
 	distractions.append(tempData)
-	print(distractions)
 	
 	if UniversalFunctions.dialogueEnded == true:
 		UniversalFunctions.generating = false
@@ -689,44 +686,44 @@ func generate_Object():
 			yield($Commandprompt,"done")
 		return
 	
-	
-	#Starts playing dialogue
-	if removed != null:
-		if removed["object"] == tempData["object"] and removed["style"] == tempData["style"] and removed["color"] == tempData["color"]:
-			removedSame = true
-		else:
-			
-			if distractions.size() == 4:
-	#if you've given Synthia one of everything, Ada gives you one last goodbye
-				$FileSystem.visibleFolders.append("atPeace")
-				$FileSystem.allItems["system"].append("atPeace")
-				$FileSystem.set_up()
-				UniversalFunctions.play_dialogue_JSON("successfullyGeneratedLast")
-				yield($Commandprompt,"done")
+	if distractions.size() == 4:
+#if you've given Synthia one of everything, Ada gives you one last goodbye
+		$FileSystem.visibleFolders.append("atPeace")
+		$FileSystem.allItems["system"].append("atPeace")
+		$FileSystem.set_up()
+		UniversalFunctions.play_dialogue_JSON("successfullyGeneratedLast")
+		yield($Commandprompt,"done")
+	else:
+
+		#Starts playing dialogue
+		if removed != null:
+			if removed["object"] == tempData["object"] and removed["style"] == tempData["style"] and removed["color"] == tempData["color"]:
+				removedSame = true
 			else:
-				if removed["value"] < tempData["value"]:
-					UniversalFunctions.play_dialogue_JSON("successfullyGeneratedBetter")
-					yield($Commandprompt,"done")
-				elif removed["value"] > tempData["value"]:
-					UniversalFunctions.play_dialogue_JSON("successfullyGeneratedWorse")
-					yield($Commandprompt,"done")
-				elif removed["value"] == tempData["value"]:
-					UniversalFunctions.play_dialogue_JSON("successfullyGeneratedNeutral")
-					yield($Commandprompt,"done")
 				
-	if removedSame == false:
-		if UniversalFunctions.dialogueJson.has("full"+tempData["color"]+tempData["style"]+tempData["object"]):
-			UniversalFunctions.play_dialogue_JSON("full"+tempData["color"]+tempData["style"]+tempData["object"])
-		else:
-			if tempData["value"] > 18:
-				UniversalFunctions.play_dialogue_JSON("newObjectGood")
-				yield($Commandprompt,"done")
-			elif tempData["value"] > 10 and tempData["value"] <= 18:
-				UniversalFunctions.play_dialogue_JSON("newObjectNeutral")
-				yield($Commandprompt,"done")
-			elif tempData["value"] <= 10:
-				UniversalFunctions.play_dialogue_JSON("newObjectBad")
-				yield($Commandprompt,"done")
+					if removed["value"] < tempData["value"]:
+						UniversalFunctions.play_dialogue_JSON("successfullyGeneratedBetter")
+						yield($Commandprompt,"done")
+					elif removed["value"] > tempData["value"]:
+						UniversalFunctions.play_dialogue_JSON("successfullyGeneratedWorse")
+						yield($Commandprompt,"done")
+					elif removed["value"] == tempData["value"]:
+						UniversalFunctions.play_dialogue_JSON("successfullyGeneratedNeutral")
+						yield($Commandprompt,"done")
+					
+		if removedSame == false:
+			if UniversalFunctions.dialogueJson.has("full"+tempData["color"]+tempData["style"]+tempData["object"]):
+				UniversalFunctions.play_dialogue_JSON("full"+tempData["color"]+tempData["style"]+tempData["object"])
+			else:
+				if tempData["value"] > 18:
+					UniversalFunctions.play_dialogue_JSON("newObjectGood")
+					yield($Commandprompt,"done")
+				elif tempData["value"] > 10 and tempData["value"] <= 18:
+					UniversalFunctions.play_dialogue_JSON("newObjectNeutral")
+					yield($Commandprompt,"done")
+				elif tempData["value"] <= 10:
+					UniversalFunctions.play_dialogue_JSON("newObjectBad")
+					yield($Commandprompt,"done")
 
 
 		
@@ -891,8 +888,7 @@ func _on_mover_button_down(nodeName):
 	movingNode = nodeName
 	mousePos.x = mousePos.x-get_tree().get_root().get_node_or_null("/root/world/"+movingNode).position.x
 	mousePos.y = mousePos.y-get_tree().get_root().get_node_or_null("/root/world/"+movingNode).position.y
-	print(mousePos)
-	print(get_tree().get_root().get_node_or_null("/root/world/"+movingNode).position)
+
 
 
 

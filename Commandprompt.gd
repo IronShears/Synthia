@@ -160,7 +160,6 @@ func set_up():
 				options = UniversalFunctions.dialogueJson[UniversalFunctions.variableOptions]
 		randomize()
 		options.shuffle()
-		print(options)
 		var counter = 1
 		var AlreadyUsed = []
 		for i in options:
@@ -264,7 +263,6 @@ func _on_Timer_timeout():
 								elif currentChar in ["v","w","x","y","z"]:
 									$Voice.stream = u
 					if currentChar != " " and  currentChar !="." and  currentChar !="?" and  currentChar !="!":
-						print(currentChar)
 						$Voice.play()
 						
 							

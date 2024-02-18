@@ -415,7 +415,7 @@ WARNING: New folder detected at path SYSTEM>AT_PEACE.","tickSpeed":0.04,"closeSp
 ],
 "successfullyGeneratedLast":[{"color":"Teal", "sprite":"floorObject","text":"Successfully Generated.
 WARNING: New folder detected at path SYSTEM>AT_PEACE.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
-{"color":"Pink", "sprite":"floorObject","text":"Something new! I guess for both of us...?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false}
+{"color":"Pink", "sprite":"floorObject","text":"Something new! I guess for both of us...?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible"::true,"options":"whatWereYouSaying"}
 ],
 
 
@@ -1003,21 +1003,13 @@ WARNING: New folder detected at path SYSTEM>AT_PEACE.","tickSpeed":0.04,"closeSp
 "WhatsYourNameBad":[
 {"color":"Pink", "sprite":"camera2Sad","text":"Great.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false,"continue":"WhatsYourNameContinue{Var}"}
 ],
-"fineWhatsYourNameContinue":[
-{"color":"Pink", "sprite":"camera2Smile","text":"So, was Ada able to convince her boss to show me whatever she was cooking up yet?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"NoSurprise"}
-],
-"sadWhatsYourNameContinue":[
-{"color":"Pink", "sprite":"camera2Sad","text":"Did Ada at least get permission to give me my surprise yet?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"NoSurprise"}
+"WhatsYourNameContinue":[
+{"color":"Pink", "sprite":"camera2Smile","text":"Did Ada at least get permission to give me my surprise yet?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"NoSurprise"}
 ],
 "fineWhatsYourNameContinueWish":[
-{"color":"Pink", "sprite":"camera2Smile","text":"So I guess Ada got permission to give me my gift....","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
-{"color":"Pink", "sprite":"camera2Smile","text":"I just wish I could still talk to her.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"TalkToMe"}
-],
-"sadWhatsYourNameContinueWish":[
 {"color":"Pink", "sprite":"camera2Smile","text":"I assume Ada got persmission to give me my gift...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
 {"color":"Pink", "sprite":"camera2Sad","text":"The reassignment wasn't... permanent was it? I want to talk to her again...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"TalkToMe"}
 ],
-
 
 
 
