@@ -42,6 +42,7 @@ func _ready():
 	scpText = scpText.replace("{lastName}", UniversalFunctions.lastName)
 	$File/ScrollContainer/VBoxContainer/SCPText.set_bbcode(scpText)
 	$Virtualhell/Paradise.text = UniversalFunctions.dialogueJson["PARADISE"]
+	$"File/SCP-8000".text = UniversalFunctions.dialogueJson["SCP-XXXX"]
 	$Commandprompt/shell.text = UniversalFunctions.dialogueJson["SHELL"]
 	$FileSystem/FileSystem.text = UniversalFunctions.dialogueJson["FILESYSTEM"]
 	$IDE/WISH.text = UniversalFunctions.dialogueJson["WISH"]

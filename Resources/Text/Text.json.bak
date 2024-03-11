@@ -415,7 +415,7 @@ WARNING: New folder detected at path SYSTEM>AT_PEACE.","tickSpeed":0.04,"closeSp
 ],
 "successfullyGeneratedLast":[{"color":"Teal", "sprite":"floorObject","text":"Successfully Generated.
 WARNING: New folder detected at path SYSTEM>AT_PEACE.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
-{"color":"Pink", "sprite":"floorObject","text":"Something new! I guess for both of us...?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible"::true,"options":"whatWereYouSaying"}
+{"color":"Pink", "sprite":"floorObject","text":"Something new! I guess for both of us...?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
 ],
 
 
