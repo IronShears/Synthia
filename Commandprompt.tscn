@@ -39,7 +39,6 @@ __meta__ = {
 }
 
 [node name="Options" type="Control" parent="."]
-visible = false
 margin_left = -45.0
 margin_top = -60.0
 margin_right = 270.0
@@ -50,7 +49,6 @@ __meta__ = {
 }
 
 [node name="Option3" type="Button" parent="Options"]
-visible = false
 margin_left = 7.0
 margin_top = 40.0
 margin_right = 33.0
@@ -66,7 +64,6 @@ __meta__ = {
 }
 
 [node name="Option2" type="Button" parent="Options"]
-visible = false
 margin_left = 7.0
 margin_top = 50.0
 margin_right = 33.0
@@ -82,7 +79,6 @@ __meta__ = {
 }
 
 [node name="Option1" type="Button" parent="Options"]
-visible = false
 margin_left = 7.0
 margin_top = 59.0
 margin_right = 33.0

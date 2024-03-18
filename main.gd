@@ -53,10 +53,60 @@ func _ready():
 	$IDE/BedLabel.text = UniversalFunctions.dialogueJson["Bed"]
 	$IDE/ChairLabel.text = UniversalFunctions.dialogueJson["Chair"]
 	$IDE/DecorLabel.text = UniversalFunctions.dialogueJson["Decor"]
+	$IDE/Style.text = UniversalFunctions.dialogueJson["Style"]
+	$IDE/Object.text = UniversalFunctions.dialogueJson["Object"]
+	$IDE/GenerateLabel.text = UniversalFunctions.dialogueJson["generateLabel"]
 	$IDE/select.text = UniversalFunctions.dialogueJson["select"]
+	$popup/Label.text = UniversalFunctions.dialogueJson["warning"]
 	$Taskbar/OptionsMenu/MouseOn/Label.text = UniversalFunctions.dialogueJson["MouseOn"]
 	$Taskbar/OptionsMenu/Fullscreen/Label.text = UniversalFunctions.dialogueJson["Fullscreen"]
 	$Taskbar/OptionsMenu/Mobile/Label.text = UniversalFunctions.dialogueJson["ForMobile"]
+	$Taskbar/OptionsMenu/Audio/Label.text = UniversalFunctions.dialogueJson["AudioOn"]
+	if UniversalFunctions.language != "":
+		#boldFont
+		for i in [$popup/Label]:
+			i.add_font_override("font", load("res://Resources/GUIpieces/AltFonts/BoldFont"+UniversalFunctions.language+".tres"))
+		#shell font for rich text
+		for i in [$Commandprompt/Dialogue]:
+			i.add_font_override("normal_font", load("res://Resources/GUIpieces/AltFonts/ShellFont"+UniversalFunctions.language+".tres"))
+		#shell font for other
+		for i in [$IDE/CoolLabel,
+				$IDE/CozyLabel,
+				$IDE/CuteLabel,
+				$IDE/RoomLabel,
+				$IDE/BedLabel,
+				$IDE/ChairLabel,
+				$IDE/DecorLabel,
+				$IDE/select,
+				$Commandprompt/Options/Option3,
+				$Commandprompt/Options/Option2,
+				$Commandprompt/Options/Option1,
+				$FileSystem/FilePath,
+				$Taskbar/OptionsMenu/Audio/Label,
+				$Taskbar/OptionsMenu/Mobile/Label,
+				$Taskbar/OptionsMenu/Fullscreen/Label,
+				$Taskbar/OptionsMenu/MouseOn/Label]:
+				i.add_font_override("font", load("res://Resources/GUIpieces/AltFonts/ShellFont"+UniversalFunctions.language+".tres"))
+		#theme setter
+		for i in [$File/ScrollContainer/VBoxContainer/Cynthia/description,
+				$File/ScrollContainer/VBoxContainer/SCPText,
+				$Virtualhell/Paradise,
+				$"File/SCP-8000",
+				$Commandprompt/shell,
+				$FileSystem/FileSystem,
+				$IDE/WISH,
+				$FileViewer/Label,
+				$popup/RichTextLabel,
+				$FileViewer/Text,
+				$BigFileViewer/Label,
+				$BigFileViewer/ScrollContainer/Text,
+				$IDE/GenerateLabel,
+				$IDE/Style,
+				$IDE/Object
+				]:
+			i.set_theme(load("res://Resources/GUIpieces/AltFonts/PersephoneOS"+UniversalFunctions.language+".tres"))
+
+	
 	
 
 func _unhandled_input(event):
@@ -540,7 +590,7 @@ func Warning_React():
 			UniversalFunctions.play_dialogue_JSON("fileDeletedSynthia")
 			yield($Commandprompt, "done")
 			$NervousTimer.stop()
-			$NervousTimer.start()
+			UniversalFunctions.dialogueEnded = true
 			UniversalFunctions.ending = "demoted"
 			yield($NervousTimer,"timeout")
 			$ClosingComputer.visible = true

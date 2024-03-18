@@ -9,7 +9,21 @@ func _ready():
 	$Name.text = UniversalFunctions.dialogueJson["FirstName"]+ "|"
 	$SubmitName.text = UniversalFunctions.dialogueJson["Enter"]
 	$SLURTIMEOUT/Label.text = UniversalFunctions.dialogueJson["ObsceneDisclaimer"]
-
+	$Background/LogIn.text = UniversalFunctions.dialogueJson["logInBefore"]
+	$Background/SecureContainProtect.text = UniversalFunctions.dialogueJson["SecureContainProtect"]
+	if UniversalFunctions.language != "":
+		#boldFont
+		for i in [$Background/LogIn, $Background/SecureContainProtect]:
+			i.add_font_override("font", load("res://Resources/GUIpieces/AltFonts/BoldFont"+UniversalFunctions.language+".tres"))
+		#shell font for rich text
+		for i in [$Name]:
+			i.add_font_override("normal_font", load("res://Resources/GUIpieces/AltFonts/ShellFont"+UniversalFunctions.language+".tres"))
+		#shell font for buttons
+		for i in [$SubmitName]:
+				i.add_font_override("font", load("res://Resources/GUIpieces/AltFonts/ShellFont"+UniversalFunctions.language+".tres"))
+		#theme setter
+		for i in [$SLURTIMEOUT/Label]:
+			i.set_theme(load("res://Resources/GUIpieces/AltFonts/PersephoneOS"+UniversalFunctions.language+".tres"))
 func _on_Blinker_timeout():
 	if stage == UniversalFunctions.dialogueJson["Password"]:
 		if $Name.text == passwordFull:

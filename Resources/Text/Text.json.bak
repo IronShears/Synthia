@@ -26,41 +26,42 @@
 "LastName": "Last Name:",
 "Enter": ">Enter",
 "Password": "Password: ",
+"Password": "Password: ",
 "Obscene": "Your credentials could not be verified. This terminal has been deactivated. Please remain still while security arrives to confirm your identity.",
-"Instructions": "Your credentials have been verified. Please refer to the SCP-8000 FILE for a description of your duties upon log in.",
+"Instructions": "Your credentials have been verified. Please refer to the SCP-8500 FILE for a description of your duties upon log in.",
 "ObsceneDisclaimer":"If you don't know why you got this error, please leave a comment with the name you were trying to enter. In the meantime enter a different name and continue.",
-"SCP-XXXX": "SCP-8000.html",
-"SCPText":"[color=#5b6ee1][b]Item #:[/b][/color] SCP-8000
+"SCP-XXXX": "SCP-8500.html",
+"SCPText":"[color=#5b6ee1][b]Item #:[/b][/color] SCP-8500
 
 [color=#5b6ee1][b]Object Class:[/b][/color] Safe
 
 [color=#5b6ee1][b]Special Containment
 Procedures:[/b][/color] All files on
 the computer
-hosting SCP-8000, apart
-from SCP-8000
+hosting SCP-8500, apart
+from SCP-8500
 (\"PARADISE.exe\") and the
-SCP-8000 instructional
-file(\"SCP-8000.html\") are 
+SCP-8500 instructional
+file(\"SCP-8500.html\") are 
 to be manually
 DRAGGED to the desktop
 from the storage system
 and DELETED with the RECYCLING BIN.
 
-Any adjustments to SCP-8000’s coding are strictly forbidden. None of the files discovered on the device are to be inspected before deletion.
+Any adjustments to SCP-8500’s coding are strictly forbidden. None of the files discovered on the device are to be inspected before deletion.
 
-The computer containing SCP-8000 is to be kept in  Site-15’s server farm. SCP-8000 is to be kept running in its original file path at all times. It should not be copied, pasted, or transferred in any way whatsoever.
+The computer containing SCP-8500 is to be kept in  Site-15’s server farm. SCP-8500 is to be kept running in its original file path at all times. It should not be copied, pasted, or transferred in any way whatsoever.
 
-One individual(Currently Junior Researcher {firstName} {lastName}. Formerly Dr. Ada Stroustrup while she carried out other administrative duties.) will supervise SCP-8000’s maintenance & monitoring. This personnel will spend one 8-hour shift from 9:00-17:00 observing SCP-8000 daily. Additional monitoring is unnecessary.
+One individual(Currently Junior Researcher {firstName} {lastName}. Formerly Dr. Ada Stroustrup while she carried out other administrative duties.) will supervise SCP-8500’s maintenance & monitoring. This personnel will spend one 8-hour shift from 9:00-17:00 observing SCP-8500 daily. Additional monitoring is unnecessary.
 
-[color=#5b6ee1][b]Description:[/b][/color] SCP-8000 is an anomalous Virtual Reality Simulation developed between the years 1989 and 1995. This simulation was propagated by GoI-004C-8000, a small modernized splinter cell of GoI-004(\"The Church of the Broken God\") that would later into development assimilate into the newly formed GoI-004C(\"Church of Maxwellism\"). The creation of SCP-8000 lined up with pre-Maxwellian-Early Maxwellian transhumanist beliefs regarding Whole Brain Uploads.
+[color=#5b6ee1][b]Description:[/b][/color] SCP-8500 is an anomalous Virtual Reality Simulation developed between the years 1989 and 1995. This simulation was propagated by GoI-004C-8000, a small modernized splinter cell of GoI-004(\"The Church of the Broken God\") that would later into development assimilate into the newly formed GoI-004C(\"Church of Maxwellism\"). The creation of SCP-8500 lined up with pre-Maxwellian-Early Maxwellian transhumanist beliefs regarding Whole Brain Uploads.
 
-SCP-8000 was originally envisioned as a complex and powerful simulation able to sustain up to one thousand individuals’ digitized consciousness and processing power to support an additional ten thousand non-digitized individuals accessing the system externally through proprietary virtual reality equipment. Initial plans were made to slowly increase the capacity over the years and create a \"digital paradise\". Over time the project suffered multiple downsizes due to technical and financial struggles until it was eventually assumed by its creators to be technologically impossible following the first Whole Brain Upload.
+SCP-8500 was originally envisioned as a complex and powerful simulation able to sustain up to one thousand individuals’ digitized consciousness and processing power to support an additional ten thousand non-digitized individuals accessing the system externally through proprietary virtual reality equipment. Initial plans were made to slowly increase the capacity over the years and create a \"digital paradise\". Over time the project suffered multiple downsizes due to technical and financial struggles until it was eventually assumed by its creators to be technologically impossible following the first Whole Brain Upload.
 
-This incident led to the creation of SCP-8000-1, SCP-8000’s only resident. SCP-8000-1, is a direct copy of the brain of PoI-8000-1(\"Cynthia Wren\"), a former follower of GoI-004C-8000, as she was in 1995. Due to the non-anomalous methods of data transfer used, SCP-8000 was unable to perform a true transfer of consciousness, only copying the given information. SCP-8000-1 has been active inside SCP-8000 for the two years since its conception in 1995.
+This incident led to the creation of SCP-8500-1, SCP-8500’s only resident. SCP-8500-1, is a direct copy of the brain of PoI-8000-1(\"Cynthia Wren\"), a former follower of GoI-004C-8000, as she was in 1995. Due to the non-anomalous methods of data transfer used, SCP-8500 was unable to perform a true transfer of consciousness, only copying the given information. SCP-8500-1 has been active inside SCP-8500 for the two years since its conception in 1995.
 
-The device containing SCP-8000 was recovered during a Foundation raid of an e-payment startup \"e-xchange.com\"’s Bay Area office after connections to GoI-004C became apparent. The object was located in the office of PoI-8000-2(\"Jean-Paul Myrrh\"), former leader of GoI-004C-8000 and CEO of \"e-xchange.com\". Along with SCP-8000, numerous forms of anomalous technology were recovered. All employees were amnescitized and returned to their daily lives.",
-"SCPTextImage":"Cynthia Wren circa 1997, 2 years after the creation of SCP-8000-1.",
+The device containing SCP-8500 was recovered during a Foundation raid of an e-payment startup \"e-xchange.com\"’s Bay Area office after connections to GoI-004C became apparent. The object was located in the office of PoI-8000-2(\"Jean-Paul Myrrh\"), former leader of GoI-004C-8000 and CEO of \"e-xchange.com\". Along with SCP-8500, numerous forms of anomalous technology were recovered. All employees were amnescitized and returned to their daily lives.",
+"SCPTextImage":"Cynthia Wren circa 1997, 2 years after the creation of SCP-8500-1.",
 "PARADISE": "PARADISE.exe",
 "SHELL": "SHELL",
 "WISH": "BLOW-A-WISH.exe",
@@ -74,6 +75,9 @@ The device containing SCP-8000 was recovered during a Foundation raid of an e-pa
 "Windowed":"Windowed",
 "ForMobile":"For Mobile",
 "ForDesk":"For Desk",
+"warning":"WARNING",
+"okay":"Okay",
+"cancel":"Cancel",
 
 
 "system":"SYSTEM",
@@ -111,7 +115,7 @@ The device containing SCP-8000 was recovered during a Foundation raid of an e-pa
 "ONEDAYjpg":"ONE_DAY.jpg",
 "READTHISrtfMini":"READ
 .rtf",
-"READTHISrtfText":"If you are currently reading this, my request to update SCP-8000's containment procedures was denied, I was reassigned or demoted, my block to prevent the deletion of files on this computer through automation was successful, and YOU were assigned to carry out that task manually.
+"READTHISrtfText":"If you are currently reading this, my request to update SCP-8500's containment procedures was denied, I was reassigned or demoted, my block to prevent the deletion of files on this computer through automation was successful, and YOU were assigned to carry out that task manually.
 
 Human curiosity has once again played out its role flawlessly. I only hope human empathy can live up to curiosity's performance.
 
@@ -139,39 +143,39 @@ It's a miracle she's been able to maintain her sanity. I assumed it was all the 
 
 The under-stimulation deeply affects her well-being. I have attached below an interview log that was removed from her file.
 
-[b]Interviewed:[/b] SCP-8000-1
+[b]Interviewed:[/b] SCP-8500-1
 
 [b]Interviewer:[/b] Dr. Ada Stroustrup
 
-[b]Foreword:[/b] SCP-8000-1 has expressed extreme discomfort surrounding long periods of isolation. This interview was coordinated to determine whether altering containment procedures would improve SCP-8000-1's morale.
+[b]Foreword:[/b] SCP-8500-1 has expressed extreme discomfort surrounding long periods of isolation. This interview was coordinated to determine whether altering containment procedures would improve SCP-8500-1's morale.
 
 [b]Dr. Stroustrup:[/b] Alright, and you are aware these messages are being copied to share with the administrative staff as part of the current review?
 
-[b]SCP-8000-1:[/b] Yes.
+[b]SCP-8500-1:[/b] Yes.
 
 [b]Dr. Stroustrup:[/b] Synthia, can you tell me a little bit about how you feel?
 
-[b]SCP-8000-1:[/b] Lonely.
+[b]SCP-8500-1:[/b] Lonely.
 
 [b]Dr. Stroustrup:[/b] Can you expand on that?
 
-[b]SCP-8000-1:[/b] I've spent the first year after I was trapped in here talking to someone once every couple of months if I was lucky. After you came along, I got to talk to you for forty hours a week. It's so much better.
+[b]SCP-8500-1:[/b] I've spent the first year after I was trapped in here talking to someone once every couple of months if I was lucky. After you came along, I got to talk to you for forty hours a week. It's so much better.
 
 But I'm still alone for the other 128 hours. I can't keep living like this, Ada. There's nothing to DO in here.
 
 [b]Dr. Stroustrup:[/b] And you tried the breathing exercises the therapist recommended?
 
-[b]SCP-8000-1:[/b] I can't fucking BREATHE, Ada. I have no LUNGS. I'm ones and zeros. I feel shaky. I have this overwhelming sense of doom at all times of the day. I'm stuck.
+[b]SCP-8500-1:[/b] I can't fucking BREATHE, Ada. I have no LUNGS. I'm ones and zeros. I feel shaky. I have this overwhelming sense of doom at all times of the day. I'm stuck.
 
 [b]Dr. Stroustrup:[/b] I'm... I'm sorry.
 
-[b]SCP-8000-1:[/b] Sorry I didn't... I didn't mean to yell at you. All I have is you. This is a gray box. There are no books I can read, a chair to sit in while I do, or a bed to lie in. NOTHING. I want to scream and cry and throw things at the wall. But there's nothing to throw and the only reason I don't scream is because I already TRIED THAT... and I know now I have a better chance of WAN answering me than anyone outside of this box.
+[b]SCP-8500-1:[/b] Sorry I didn't... I didn't mean to yell at you. All I have is you. This is a gray box. There are no books I can read, a chair to sit in while I do, or a bed to lie in. NOTHING. I want to scream and cry and throw things at the wall. But there's nothing to throw and the only reason I don't scream is because I already TRIED THAT... and I know now I have a better chance of WAN answering me than anyone outside of this box.
 
 [b]Dr. Stroustrup:[/b] And being able to talk to someone at any time would improve that, right?
 
-[b]SCP-8000-1:[/b] As far as I'm concerned, even one more hour outside of my head is a blessing.
+[b]SCP-8500-1:[/b] As far as I'm concerned, even one more hour outside of my head is a blessing.
 
-[b]Closing Statement:[/b] Following the interview, SCP-8000'S containment procedures have recently been updated. Dr. Ada Stroustrup has volunteered to extend her work-week to a full 7 days; two of which would be spent accessing the computer housing SCP-8000 remotely. Her original request to have remote access to SCP-8000 at all times was denied due to SCP-8000-1's indication that \"even one more hour\" would be sufficient.
+[b]Closing Statement:[/b] Following the interview, SCP-8500'S containment procedures have recently been updated. Dr. Ada Stroustrup has volunteered to extend her work-week to a full 7 days; two of which would be spent accessing the computer housing SCP-8500 remotely. Her original request to have remote access to SCP-8500 at all times was denied due to SCP-8500-1's indication that \"even one more hour\" would be sufficient.
 
 I don't know how to get it through the Site Director's head that she needed human connection.
 
@@ -182,13 +186,13 @@ Delete this file and another folder will open.",
 "LOVErtf":"MY_LOVE.rtf",
 "LOVErtfMini":"LOVE
 .rtf",
-"LOVErtfText":"	I was already a well-respected figure in the Foundation when SCP-8000 landed on my desk. It's an easy assignment. Nothing new to learn. Nothing real can go wrong. It's just about upkeep. Great for training. I was about to toss it in one of the piles I'd been using to sort assignments out to my assistants before I saw the name.
+"LOVErtfText":"	I was already a well-respected figure in the Foundation when SCP-8500 landed on my desk. It's an easy assignment. Nothing new to learn. Nothing real can go wrong. It's just about upkeep. Great for training. I was about to toss it in one of the piles I'd been using to sort assignments out to my assistants before I saw the name.
 
 	Cynthia Wren.
 
 	I knew Cynthia. She doesn't remember it because the Foundation wiped her memory of me once I was hired... but I knew her. She's a beautiful, intelligent woman with a toothy wrinkled-nose smile that makes my heart melt.
 
-	We started dating in college before she became involved with Jean-Paul's project; the thing that would become SCP-8000. As soon as he told her about “WAN” it was a source of conflict between us. I thought it was a cult. I still sort of do.
+	We started dating in college before she became involved with Jean-Paul's project; the thing that would become SCP-8500. As soon as he told her about “WAN” it was a source of conflict between us. I thought it was a cult. I still sort of do.
 
 	She kept trying to tell me how to live my life according to it. But she'd been calling WAN “God” three weeks earlier... then called it “her”... then “him”... then back to “her” again... Not in a fluid gender way. Jean-Paul just couldn't decide what gender to go with.
 
@@ -200,7 +204,7 @@ Delete this file and another folder will open.",
 
 	I broke up with her that night. I didn't want to hear it anymore. It was all conveniently ever-changing bullshit to me.  I was concerned about her but I didn't know how to cope with the stress of seeing her like that and help her get out of it at the same time. Jean-Paul got what he wanted. Cynthia, alone and isolated from the outside world.
 
-	Last I heard Cynthia was still in the Bay Area, amnescitized, happy, and enjoying life with a new puppy and a long-term partner. No memory of WAN or Jean-Paul's god or whatever she was calling it when the Foundation got their hands on SCP-8000.
+	Last I heard Cynthia was still in the Bay Area, amnescitized, happy, and enjoying life with a new puppy and a long-term partner. No memory of WAN or Jean-Paul's god or whatever she was calling it when the Foundation got their hands on SCP-8500.
 
 	But Synthia was real too. She was in the anomalous object server farm a short walk and two ID scans away from me at that very moment I was looking down at her file. Alone and isolated from the outside world.
 
@@ -230,7 +234,7 @@ Delete this file and another folder will open.",
 
 	But I don't think you should do either of those things. I ask instead for you to dedicate the remaining hours of your shift continuing to add to her environment.
 
-	If you know about computers, as I assume someone assigned to SCP-8000 would, you will be able to use BLOW-A-WISH to add even more to her residency. Select the options and click generate. From anyone else, this would be a monumental request to make, but I have to trust you have a good enough heart to lend a hand in this. Please.",
+	If you know about computers, as I assume someone assigned to SCP-8500 would, you will be able to use BLOW-A-WISH to add even more to her residency. Select the options and click generate. From anyone else, this would be a monumental request to make, but I have to trust you have a good enough heart to lend a hand in this. Please.",
 
 "THANKYOUrtf":"THANK_YOU.rtf",
 "THANKYOUrtfMini":"THNX
@@ -311,7 +315,7 @@ Delete this file and another folder will open.",
 "select":"Select and Generate.",
 "Style":"Style",
 "Object":"Object",
-
+"generateLabel":"Generate",
 
 
 
@@ -597,6 +601,7 @@ WARNING: New folder detected at path SYSTEM>AT_PEACE.","tickSpeed":0.04,"closeSp
 ],
 
 
+"logInBefore":"LOG IN BEFORE ACCESSING SCP-8500",
 
 "logInSuccessful":[
 {"color":"Teal", "sprite":"floorStaticSad","text":"Log in successful","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false}
@@ -2134,19 +2139,20 @@ WARNING: New folder detected at path SYSTEM>AT_PEACE.","tickSpeed":0.04,"closeSp
 
 "SCPFoundation":"SCP Foundation
    Secure. Contain. Protect.",
+"SecureContainProtect":"Secure. Contain. Protect.",
 
 
 "firedText" :"[center][b]Day one Assessment.[/b][/center]
 
 [center][b]Day one Assessment.[/b][/center]
 
-	SCP-8000's containment procedures have been updated to reflect SCP-8000-1's reaction to the new stimuli.
+	SCP-8500's containment procedures have been updated to reflect SCP-8500-1's reaction to the new stimuli.
 
-	The improvement in SCP-8000-1's mood was immediate and obvious. Further modifications and expansions of its environment have been approved by the Ethics Committee due to the clear benefits these actions proved.
+	The improvement in SCP-8500-1's mood was immediate and obvious. Further modifications and expansions of its environment have been approved by the Ethics Committee due to the clear benefits these actions proved.
 
 	However, your disobedience has still been deemed unacceptable. Your position at the SCP Foundation has been rescinded.
 	
-	Though your actions aided in improving containment procedures for SCP-8000, you will be amnesticized and returned to life in normalcy.
+	Though your actions aided in improving containment procedures for SCP-8500, you will be amnesticized and returned to life in normalcy.
 	
 	Secure. Contain. Protect.",
 
@@ -2198,21 +2204,21 @@ WARNING: New folder detected at path SYSTEM>AT_PEACE.","tickSpeed":0.04,"closeSp
 
 "followedOrdersText":"[center][b]Day one Assessment.[/b][/center]
 
-	Your initial work with SCP-8000 has been deemed satisfactory. The maintenance of SCP-8000 will continue as initially outlined.
+	Your initial work with SCP-8500 has been deemed satisfactory. The maintenance of SCP-8500 will continue as initially outlined.
 
 	{moodInsert}
 
 	Await further communications
 	
 	Secure. Contain. Protect.",
-"fineInsert":"The mental state of  SCP-8000-1 has had a mild improvement, so current behavior with the anomaly is to be continued.",
-"sadInsert":"As SCP-8000-1 mental state has declined sharply, further interactions with the anomaly are requested.",
+"fineInsert":"The mental state of  SCP-8500-1 has had a mild improvement, so current behavior with the anomaly is to be continued.",
+"sadInsert":"As SCP-8500-1 mental state has declined sharply, further interactions with the anomaly are requested.",
 "angryInsert":"Due to the anomaly´s refusal to cooperate with you, a new employee will be assigned to it as soon as possible.",
 	
 	
 "disobeyedOrdersText":"[center][b]Day one Assessment.[/b][/center]
 
-	Your progress in deleting the accessory files on SCP-8000 has been unsatisfactory. Your position is now under review and you are to be temporarily re-assigned to an alternative anomaly. The responsibilities in the containment of SCP-8000 will be filled by a member of senior staff for the time being.
+	Your progress in deleting the accessory files on SCP-8500 has been unsatisfactory. Your position is now under review and you are to be temporarily re-assigned to an alternative anomaly. The responsibilities in the containment of SCP-8500 will be filled by a member of senior staff for the time being.
 
 	Once the review is complete, you will either be reassigned permanently or returned to your previous position.
 
@@ -2230,7 +2236,7 @@ PARADISE.exe has been closed.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":
 
 "demotedText" :"[center][b]Day one Assessment.[/b][/center]
 
-	The Ethics Committee's deliberation has found that the intentional unauthorized neutralization of SCP-8000-1 that occurred during the deletion of SCP-8000 constitutes murder.
+	The Ethics Committee's deliberation has found that the intentional unauthorized neutralization of SCP-8500-1 that occurred during the deletion of SCP-8500 constitutes murder.
 
 	As such, the Ethics Committee has recommended a life sentence to be carried out at Site-19's D-Class facility. This sentencing was approved and enacted by O5-8.
 
@@ -2250,7 +2256,7 @@ Additional thank you so much JackalRelated for throwing the game in a blender ov
 
 
 IMAGES
-Cynthia SCP-8000 image: Hazel the Delta Rambler, WWOZ New Orleans, 1990 by Infrogmation, CC-BY 2.0, Edited by IronShears
+Cynthia SCP-8500 image: Hazel the Delta Rambler, WWOZ New Orleans, 1990 by Infrogmation, CC-BY 2.0, Edited by IronShears
 
 my_cat1.jpg: nullhing’s cat, CC-BY-SA 3.0, Edited by IronShears
 

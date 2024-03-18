@@ -1,0 +1,170 @@
+[gd_scene load_steps=28 format=2]
+
+[ext_resource path="res://Resources/GUIpieces/PersephoneOS.tres" type="Theme" id=1]
+[ext_resource path="res://Resources/GUIpieces/generatebuttonunpressed.png" type="Texture" id=2]
+[ext_resource path="res://Resources/GUIpieces/ShellFont.tres" type="DynamicFont" id=3]
+[ext_resource path="res://Resources/GUIpieces/AltFonts/ShellFont_CN.tres" type="DynamicFont" id=4]
+[ext_resource path="res://Resources/GUIpieces/generatebutton.png" type="Texture" id=5]
+[ext_resource path="res://Languages.gd" type="Script" id=6]
+[ext_resource path="res://Resources/GUIpieces/LoginBG.png" type="Texture" id=7]
+[ext_resource path="res://cursor.gd" type="Script" id=8]
+[ext_resource path="res://Resources/GUIpieces/cursoribar.png" type="Texture" id=9]
+[ext_resource path="res://Resources/GUIpieces/cursorload.png" type="Texture" id=10]
+[ext_resource path="res://Resources/GUIpieces/cursorLocked.png" type="Texture" id=11]
+[ext_resource path="res://Resources/GUIpieces/cursor.png" type="Texture" id=12]
+
+[sub_resource type="AtlasTexture" id=47]
+atlas = ExtResource( 10 )
+region = Rect2( 0, 0, 7, 9 )
+
+[sub_resource type="AtlasTexture" id=48]
+atlas = ExtResource( 10 )
+region = Rect2( 7, 0, 7, 9 )
+
+[sub_resource type="AtlasTexture" id=49]
+atlas = ExtResource( 10 )
+region = Rect2( 0, 9, 7, 9 )
+
+[sub_resource type="AtlasTexture" id=50]
+atlas = ExtResource( 10 )
+region = Rect2( 7, 9, 7, 9 )
+
+[sub_resource type="AtlasTexture" id=51]
+atlas = ExtResource( 10 )
+region = Rect2( 0, 18, 7, 9 )
+
+[sub_resource type="AtlasTexture" id=52]
+atlas = ExtResource( 10 )
+region = Rect2( 7, 18, 7, 9 )
+
+[sub_resource type="AtlasTexture" id=53]
+atlas = ExtResource( 10 )
+region = Rect2( 0, 27, 7, 9 )
+
+[sub_resource type="AtlasTexture" id=54]
+atlas = ExtResource( 10 )
+region = Rect2( 7, 27, 7, 9 )
+
+[sub_resource type="AtlasTexture" id=55]
+atlas = ExtResource( 10 )
+region = Rect2( 0, 36, 7, 9 )
+
+[sub_resource type="AtlasTexture" id=56]
+atlas = ExtResource( 10 )
+region = Rect2( 7, 36, 7, 9 )
+
+[sub_resource type="AtlasTexture" id=57]
+atlas = ExtResource( 10 )
+region = Rect2( 0, 45, 7, 9 )
+
+[sub_resource type="AtlasTexture" id=58]
+atlas = ExtResource( 10 )
+region = Rect2( 7, 45, 7, 9 )
+
+[sub_resource type="AtlasTexture" id=59]
+atlas = ExtResource( 10 )
+region = Rect2( 0, 54, 7, 9 )
+
+[sub_resource type="AtlasTexture" id=60]
+atlas = ExtResource( 10 )
+region = Rect2( 7, 54, 7, 9 )
+
+[sub_resource type="SpriteFrames" id=61]
+animations = [ {
+"frames": [ ExtResource( 12 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 47 ), SubResource( 48 ), SubResource( 49 ), SubResource( 50 ), SubResource( 51 ), SubResource( 52 ), SubResource( 53 ), SubResource( 54 ), SubResource( 55 ), SubResource( 56 ), SubResource( 57 ), SubResource( 58 ), SubResource( 59 ), SubResource( 60 ) ],
+"loop": true,
+"name": "loading",
+"speed": 8.0
+}, {
+"frames": [ ExtResource( 11 ) ],
+"loop": true,
+"name": "locked",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 9 ) ],
+"loop": true,
+"name": "ibar",
+"speed": 5.0
+} ]
+
+[node name="world" type="Node2D"]
+script = ExtResource( 6 )
+
+[node name="Background" type="Sprite" parent="."]
+texture = ExtResource( 7 )
+centered = false
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = 121.0
+margin_top = 106.0
+margin_right = 196.0
+margin_bottom = 135.0
+color = Color( 0.517647, 0.541176, 0.592157, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="English" type="TextureButton" parent="."]
+margin_left = 122.0
+margin_top = 107.0
+margin_right = 195.0
+margin_bottom = 120.0
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="English"]
+margin_left = 3.0
+margin_top = -1.0
+margin_right = 71.0
+margin_bottom = 11.0
+theme = ExtResource( 1 )
+custom_fonts/font = ExtResource( 3 )
+text = "English"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Chinese" type="TextureButton" parent="."]
+margin_left = 122.0
+margin_top = 121.0
+margin_right = 195.0
+margin_bottom = 134.0
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Chinese"]
+margin_left = 3.0
+margin_right = 71.0
+margin_bottom = 14.0
+theme = ExtResource( 1 )
+custom_fonts/font = ExtResource( 4 )
+text = "中文"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="cursor" type="AnimatedSprite" parent="."]
+position = Vector2( 226, 144 )
+z_index = 6
+frames = SubResource( 61 )
+playing = true
+centered = false
+script = ExtResource( 8 )
+
+[connection signal="pressed" from="English" to="." method="_on_English_pressed"]
+[connection signal="pressed" from="Chinese" to="." method="_on_Chinese_pressed"]

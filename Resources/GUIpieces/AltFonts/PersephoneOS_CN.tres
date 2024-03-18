@@ -1,0 +1,81 @@
+[gd_resource type="Theme" load_steps=17 format=2]
+
+[ext_resource path="res://Resources/GUIpieces/fusion-pixel-10px-proportional-zh_hant.otf" type="DynamicFontData" id=1]
+[ext_resource path="res://Resources/GUIpieces/scrollbar.png" type="Texture" id=2]
+[ext_resource path="res://Resources/GUIpieces/scrollbarhover.png" type="Texture" id=3]
+[ext_resource path="res://Resources/GUIpieces/scrollbargrab.png" type="Texture" id=4]
+
+[sub_resource type="StyleBoxEmpty" id=5]
+
+[sub_resource type="StyleBoxEmpty" id=6]
+
+[sub_resource type="StyleBoxEmpty" id=7]
+
+[sub_resource type="StyleBoxEmpty" id=12]
+
+[sub_resource type="StyleBoxEmpty" id=13]
+
+[sub_resource type="StyleBoxEmpty" id=14]
+
+[sub_resource type="StyleBoxEmpty" id=15]
+
+[sub_resource type="StyleBoxTexture" id=8]
+texture = ExtResource( 2 )
+region_rect = Rect2( 0, 0, 5, 18 )
+margin_left = 5.0
+margin_top = 2.0
+margin_bottom = 3.0
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+
+[sub_resource type="StyleBoxTexture" id=10]
+texture = ExtResource( 3 )
+region_rect = Rect2( 0, 0, 5, 18 )
+margin_left = 5.0
+margin_top = 2.0
+margin_bottom = 3.0
+
+[sub_resource type="StyleBoxTexture" id=11]
+texture = ExtResource( 4 )
+region_rect = Rect2( 0, 0, 5, 18 )
+margin_left = 5.0
+margin_top = 2.0
+margin_bottom = 3.0
+
+[sub_resource type="StyleBoxFlat" id=9]
+bg_color = Color( 0.517647, 0.541176, 0.592157, 1 )
+border_width_left = 5
+border_color = Color( 0.517647, 0.541176, 0.592157, 1 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 10
+extra_spacing_top = -2
+extra_spacing_bottom = -3
+extra_spacing_char = 1
+font_data = ExtResource( 1 )
+
+[resource]
+default_font = SubResource( 4 )
+Button/colors/font_color = Color( 0.188235, 0.376471, 0.509804, 1 )
+Button/colors/font_color_hover = Color( 0.388235, 0.607843, 1, 1 )
+Button/colors/font_color_pressed = Color( 0.356863, 0.431373, 0.882353, 1 )
+Button/styles/hover = SubResource( 5 )
+Button/styles/normal = SubResource( 6 )
+Button/styles/pressed = SubResource( 7 )
+Label/colors/font_color = Color( 0.0509804, 0, 0.101961, 1 )
+RichTextLabel/colors/default_color = Color( 0.898039, 0.454902, 0.709804, 1 )
+RichTextLabel/colors/selection_color = Color( 0.1, 0.1, 1, 0.8 )
+TextEdit/colors/font_color = Color( 0.2, 0.376471, 0.513726, 1 )
+TextEdit/icons/fold = null
+TextEdit/icons/folded = null
+TextEdit/icons/space = null
+TextEdit/icons/tab = null
+TextEdit/styles/completion = SubResource( 12 )
+TextEdit/styles/focus = SubResource( 13 )
+TextEdit/styles/normal = SubResource( 14 )
+TextEdit/styles/read_only = SubResource( 15 )
+VBoxContainer/constants/separation = 0
+VScrollBar/styles/grabber = SubResource( 8 )
+VScrollBar/styles/grabber_highlight = SubResource( 10 )
+VScrollBar/styles/grabber_pressed = SubResource( 11 )
+VScrollBar/styles/scroll = SubResource( 9 )

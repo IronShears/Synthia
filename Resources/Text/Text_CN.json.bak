@@ -1,0 +1,2135 @@
+{
+"TUTORIAL FOR TRANSLATORS": "First up, try and use some kind of code editor that supports .json files. I use Notepad++. You won't have to, but it will be a LOT easier on you. Ignore the red fake errors in the text if you use Notepad++, they're just being dramatic.", 
+
+"Do not change ANY of the text in square brackets": "Don't touch anything in text that looks like this: [i][/i],[color=#xxxxxx][/color], etc. These add text effects.",
+"Do not change ANY variables in curly brackets":"Don't touch anything in text that looks like this: {example}, these are searched and replaced in the code",
+"Do not change any dictionary keys":[
+{"doNotChangeThis":"change THIS"}
+],
+"Do not change anything besides text in the Dialogue Dictionaries.":[
+{"color":"DO NOT CHANGE","text":"CHANGE","tickSpeed":"DO NOT CHANGE","closeSpeed":"DO NOT CHANGE"},
+],
+
+"EXPORTING OPTION 1":"Download Godot and open the project file, place your edited .json file in res://Components, test it with the play button on the top right to make sure it runs correctly.",
+"If some letters aren't showing up, you may need to find new fonts and edit them." : "Font can be changed in the DialogueTheme.tres, Tablet.tres, and Room Buttons.tres. You'll probably need 2-3 fonts. I used 3, but you can get away with a Standard font and a Strikethrough font. If you can't find a strikthrough font and you don't want to make one, just reword anything with [i][/i] borders to make sense without a strikethrough and remove the [i][/i].",
+"Click project>export>add...>HTML5>Resources": "add *.json to Filters to export into a new folder", 
+"Export the project, and finally," : "edit the .html file's name to index.html and upload to a site of your choosing like Itch.io or github pages. You may need to zip the folder depending on where you upload it.",
+
+"EXPORTING ALTERNATIVE" : "If you're uncomfortable with code or Godot, you COULD skip all that and just send the translated file to me. I would be happy to add the language support natively to the main game file with a selection screen at the start",
+"It'd be much easier on you, but it wouldn't be its own file." : "You can still upload your own scp-wiki translation page and you'd be credited in the main game as a translator and on the page as a co-author, but you couldn't make your own itch.io page for the translation if you were planning on that.",
+
+"With all of that mentioned, the rest of this file is all the text in the entire game.": "Good luck! If you need additional assistance, DM me on wikidot(IronShears, slower) or Discord(ironshears, faster)",
+
+"FirstName": "请输入名称：",
+"LastName": "请输入姓氏：",
+"Enter": ">点击确认",
+"Password": "请输入密码：",
+"Obscene": "您输入的密令不正确。本主机已锁定。请保持镇静，并在原地等候安保人员确认您的身份。",
+"Instructions": "您的密令已确认正确。请在登录后查阅SCP-8500文档以确认您的职责。",
+"ObsceneDisclaimer":"若不清楚为何出现该错误，请在讨论区内贴出先前输入的姓名，并在重启游戏后尝试另一个姓名。",
+"SCP-XXXX": "SCP-8500.html",
+"SCPText":"[color=#5b6ee1][b]项目编号：[/b][/color]SCP-8500
+
+[color=#5b6ee1][b]项目等级：[/b][/color]Safe
+
+[color=#5b6ee1][b]特殊收容措施：[/b][/color]
+除SCP-8500的
+（\"至福乐园.exe\"）
+以及收容事项指南
+（\"SCP-8500.html\"）
+外，其余位于存放SCP-8500
+本体之主机上的所有
+文件应被手动从储存
+系统拖拽至桌面，并
+利用回收站将其删除。
+
+严禁以任何形式修改SCP-8500的源代码。禁止查看任何应被删除的文件的内容。
+
+储存SCP-8500的计算机已存放于Site-15的服务器集群内。SCP-8500应在其原本的文件路径上持续运行。禁止以任何方式将其复制、粘贴或转移到其他位置。
+
+基金会已指定一名人员（目前为{firstName} {lastName}；先前为Dr. Ada Stroustrup，其已调任至其他行政岗位）负责SCP-8500的维护及监视工作。该人员的值班时间为每天的9:00-17:00，共计八小时，除此以外无需更多监视措施。
+
+[color=#5b6ee1][b]描述：[/b][/color]SCP-8500系一具有异常性质的虚拟现实模拟程序，开发于1989至1995年之间。该程序由GoI-004C-8000宣传推广至公众；后者为GoI-004（\"破碎之神教会\"）的一个现代化的小规模分支宗派。经历了一系列发展后，该组织最终与当时刚成立不久的GoI-004C(\"麦克斯韦宗\")合并。而在麦克斯韦宗之前乃至其成立初期，破碎之神教会的超人类主义者们对“人脑完整上传”产生了信念，因此着手创造了SCP-8500。
+
+在原本的设想下，SCP-8500理应成为一套复杂且强大的模拟程序，最高可承载一千人的数字化意识；不仅如此，其算力最高还能支持一万名个体通过外部虚拟现实设备，在本体意识未数字化的情况下访问程序的系统。开发者最初的计划是逐年扩充SCP-8500的容量，直至将其打造为\"数字世界的至福乐园\"。然而，开发过程遭遇了许多技术与经济方面的挫折，程序的预计规模一缩再缩。最终，在成功上传第一个完整的人脑后，程序员们断定SCP-8500在技术层面上已无继续扩容的可能。
+
+该事件创造了SCP-8500-1，即SCP-8500唯一的居民。SCP-8500-1为PoI-8000-1（\"Cynthia Wren\"）大脑的直接复制品，该人员在1995年时属于CoI-004C-8000的信徒。由于大脑上传只使用了非异常手段，SCP-8500无法真正地转移该人员的意识，只能依靠既有的信息作出回应。SCP-8500-1自从于1995年出现后便一直在SCP-8500内部活动，至今已持续两年。
+
+SCP-8500被安装于PoI-8000-2（\"Jean-Paul Myrrh\"）办公室的一台设备上。该人员系GoI-004C-8000的前领导者，同时也是电子支付初创公司\"e-xchange.com\"的首席执行官。基金会在查明公司与GoI-004C的关系后，立即突袭了其位于旧金山湾区的办公室，并回收了安装有SCP-8500的设备。除SCP-8500外，现场还发现了许多其他形式的异常科技。基金会对公司的所有职员实施了记忆删除，随后便允许他们恢复了日常生活。",
+"SCPTextImage":"Cynthia Wren，摄于约1997年，SCP-8500-1被创造的两年前。",
+"PARADISE": "至福乐园.exe",
+"SHELL": "SHELL",
+"WISH": "许愿机.exe",
+"FILESYSTEM": "文件系统",
+"Select": "选择颜色+对象",
+"MouseOn":"鼠标操作：启用",
+"MouseOff":"鼠标操作：停用",
+"AudioOn":"音频：开启",
+"AudioOff":"音频：关闭",
+"Fullscreen":"全屏模式",
+"Windowed":"窗口模式",
+"ForMobile":"移动端",
+"ForDesk":"电脑端",
+
+"system":"系统",
+"systemPath":">系统",
+"images":"图像",
+"imagesPath":">系统>图像",
+"documents":"文档",
+"documentsPath":">系统>文档",
+"clickMe":"点击我试试",
+"clickMePath":">系统>文档>点我试试",
+"why":"为什么",
+"whyPath":">系统>为什么",
+"cynthia":"CYNTHIA",
+"cynthiaPath":">系统>CYNTHIA",
+"myWish":"我的心愿",
+"myWishPath":">系统>我的心愿",
+"imSorry":"十分抱歉",
+"imSorryPath":">系统>十分抱歉",
+"atPeace":"安息",
+"atPeacePath":">系统>安息",
+"Testtxt":"测试.txt",
+"BLOW_A_WISHzip": "WTH_LUV_FRM_ADA.zip",
+"TesttxtMini":"测试
+.txt",
+"mycat1jpg":"我的猫猫1.jpg",
+"mycat2jpg":"我的猫猫2.jpg",
+"mykot3jpg":"我的喵喵3.jpg",
+"NOSTALGIAjpg":"怀旧相片.jpg",
+"TesttxtText":"这是一个文本文档。里面暂时还没什么内容。不如上这里看看Ada给你发了什么，或者找点别的吧。",
+"IGNOREjpg":"请忽略.jpg",
+"YOURjpg":"上级给.jpg",
+"DIRECTIVESjpg":"你的指.jpg",
+"ANDjpg":"示并阅.jpg",
+"READTHISrtf":"读此文.rtf",
+"ONEDAYjpg":"有空的话.jpg",
+"READTHISrtfMini":"阅读
+.rtf",
+"READTHISrtfText":"若你正在阅读这篇文档，便意味着我对SCP-8500收容措施的修订请求未获通过；我已经被调职或降职到了别的地方去；我成功阻止了基金会利用自动程序删除此电脑中的文档，而这一切都表明：“你”接到了上司的任务，准备要手动删除它们。
+
+人类的好奇心真是从来没让我失望过呢。希望人类的同情心也能表现得像它那么好吧。
+
+请你在阅读完毕后删除这份文件。如果还没跟Synthia聊过天，那就先去和她说说话。不要向上司透露这里的任何内容。等你删掉这份文件后，另一份文件将出现在你面前，我在里面写了更详细的信息和指示。不要怕，只要小心谨慎，没人会抓得到你的。
+
+    ---- Dr. Ada Stroustrup",
+
+"groceriestxt":"购物清单.txt",
+"groceriestxtMini":"购物
+.txt",
+"groceriestxtText":"-蛋黄酱
+-生菜
+-番茄
+-胡椒奶酪片
+-火鸡肉片
+-腌黄瓜
+-辣椒酱
+-白面包",
+"AN_EXPLAINATIONrtf":"解释说明.rtf",
+"AN_EXPLAINATIONrtfMini":"解释
+.rtf",
+"AN_EXPLAINATIONrtfText":"你得明白我为什么要这样做才行。已经两年了，Synthia一直被困在那个连贴图都没有的盒子里。虽然我承认她的生活自从搬来基金会之后改善了些许----每天保证能和我聊上8小时的天----但这远远不够，她每天都要忍受长达16小时的孤独、寂寞的折磨。她没法吃饭，她没法睡觉，几乎任何消遣的事情都不能做。
+
+她如今居然还保持着理智，真的称得上是奇迹。我觉得，这要么是冥想和祈祷的功劳，要么是大脑被字面意义上重新组装的结果。但她自始至终都很坚强。
+
+这种无趣、缺乏刺激的生活严重影响着她的健康。下面是我从她的文档里摘抄的一份采访记录。
+
+[b]受访者：[/b]SCP-8500-1
+
+[b]采访者：[/b]Dr. Ada Stroustrup
+
+[b]前言：[/b]SCP-8500-1在长时间的孤独下表现出了极端的不适症状。此次采访的目的是探究更换收容措施能否改善SCP-8500-1的精神面貌。
+
+[b]Dr. Stroustrup：[/b]好的。这些消息会和这次采访的记录一起抄送给管理层，你明白这件事吧？
+
+[b]SCP-8500-1：[/b]嗯。
+
+[b]Dr. Stroustrup：[/b]Synthia，能不能告诉我现在你的心情是怎样的？一点点就好？
+
+[b]SCP-8500-1：[/b]好孤单。
+
+[b]Dr. Stroustrup：[/b]详细一点呢？
+
+[b]SCP-8500-1：[/b]我被困在这里之后，第一年，隔好几个月才会有人跟我说句话，这还得看运气。你来了之后，我一个星期可以跟你聊四十小时的天了。比之前好太多了。
+
+但是，剩下的128个小时里面，我还是只能一个人呆着。日子不能接着这么过下去了，Ada。这里什么----什么也做不了呀。
+
+[b]Dr. Stroustrup：[/b]那么治疗师推荐的呼吸练习法有没有试过呢？
+
+[b]SCP-8500-1：[/b]我根本就没法呼吸，笨蛋Ada。我连肺都没有。只有一和零。我现在浑身发抖。我感觉随时会有灭顶之灾。我被困住了，懂吗！
+
+[b]Dr. Stroustrup：[/b]我......对不起。
+
+[b]SCP-8500-1：[/b]抱歉，我不是......不是故意要吼你的。因为我只剩下你了。毕竟这是个灰盒，想阅读找不到书本，想读书时坐下找不到椅子，想睡觉也找不到床铺。四个字，空空如也。我好想在里面大吼大叫，我好想哭，我好想往墙上乱扔东西......但我找不到能扔的东西。我不再大吼大叫，也是因为之前已经吼，过，了......与其希望外面有人来回应我，还不如直接祈祷WAN会现身呢。
+
+[b]Dr. Stroustrup：[/b]所以，无论什么时候，和别人说话都可以缓解这种状况，对吗？
+
+[b]SCP-8500-1：[/b]就算只多一个小时，我也会满足、我也会珍惜的。
+
+[b]结语：[/b]采访结束后，SCP-8500的收容措施近日得到了更新。Dr. Ada Stroustrup自愿将自己的每周工作安排延长到完整的七天，其中两天用于在家中远程访问SCP-8500所在的计算机。她原本请求获取SCP-8500的全天候远程访问权限，但由于SCP-8500-1宣称\"就算只多一个小时\"也已经足够，该请求已被否决。
+
+我搞不懂了，怎么才能让站点主管明白“她需要人际关系”的道理呢。
+
+希望你已经和Synthia搭上话了。她很容易信任他人。她一直都这样。而我得相信她现在平安无事。
+
+删除这份文件，然后你就会看到另一份。",
+
+"LOVErtf":"我的爱人.rtf",
+"LOVErtfMini":"吾爱
+.rtf",
+"LOVErtfText":"SCP-8500的文件被摆到我办公桌上的时候，我已经是个备受基金会上下尊敬的人物了。这任务是再简单不过的，它不能给我带来任何新知识，在我手上也不可能出任何差错。不过，这种看护小异常的工作，倒是挺适合锻炼新人。正当我打算把它撇到一旁，放在我一般吩咐助手来处理的那沓文件上时，我的目光定格在了一个名字上。
+
+    Cynthia Wren。
+
+    我认识Cynthia。基金会一把我招募来就立刻抹除了她的记忆，所以她都不记得了......但我还认识她。她这个女人，又美丽，又聪明，每次笑起来就露出牙齿、皱起鼻子，看得我心都要融化了。
+
+    我们在大学里情愫暗生，开始约会，直到她加入了Jean-Paul的计划，也就是后来创造出SCP-8500的那件事情为止。他口中“WAN”的教义成为了我们冲突的起点。我认定了那是个邪教，至今没有完全改观。
+
+    但她只是一个劲地试图教导我如何按照WAN的旨意去生活。三个星期前，她对WAN的称呼还是“神”......后来就成了“她”......再后来是“他”......然后又回到了“她”......这里并不是指WAN是个流性人什么的，Jean-Paul只是单纯不确定要用哪种性别称呼罢了。
+
+    那家伙纯纯就是个不入流的骗子。他会让振荡器产生特别的反应耶，很神奇吗？他身上可是有神经植入物的，能干扰振荡器的办法多得去了！这什么也证明不了！但Cynthia偏偏就信了他。
+
+    最近他说什么，她就信什么。不过，后来等到他们自称是“麦克斯韦宗”的人之后，我觉得事情似乎开始好转了。更广泛的信徒网络稀释了Jean-Paul的威望----尽管只有一点点。 
+
+    总之，我没有抓住这次机会。就在他们改名的当天，我们俩终于不堪重负，最后吵了一次架。
+
+    那一晚，我和她分了手。我再也不想听到这些今天一个说法、明天换一种说法的狗屁言论了。我很担心她，但她的狂热行为都被我看在眼里，使我承受着无法缓解的压力，想不出怎样能让她脱离歧路。于是Jean-Paul终于如愿以偿。他得到了Cynthia，一个孤独的、与外界隔绝的Cynthia。
+
+    Cynthia依然住在湾区，她被实施了记忆删除，过得很快乐，身边有长期合作的同事陪伴，还新养了一条狗狗。这些就是我所知的最新消息了。当基金会接触到SCP-8500时，她已经没有了关于WAN，或称Jean-Paul的上帝，或者随便什么称呼的记忆。
+
+    但是，Synthia同样是个真实的人。她就位于异常项目服务器集群里面，与我----正在阅读她的文件的我----只有短短几步路，再加两道身份扫描锁的距离。她依然孤独着，与外界隔绝着。
+
+    那一天，我踏上了寻找她的第一次旅程。
+
+    我需要你赶紧和Synthia说点话，倘若你还没有这么做的话。如果你不和她对话，那么下一份文件将不会在本文件被删除后出现。我不能只是徒劳无功地看着她孤独下去。
+",
+
+"WISHINGrtf":"我的心愿.rtf",
+"WISHINGrtfMini":"心愿
+.rtf",
+"WISHINGrtfText": "既然你看到了这段文字，我想你至少对帮助Synthia产生了一点兴趣----哪怕只有一丁点也好。
+
+    这份文档上方的压缩文件包含一个我自制的程序。运行该程序意味着直接违抗你的上级命令，但是也同时意味着今天（希望）与你对话过的女人将在未来过上更好的生活，而这种生活是基金会决不可能摧毁的。请点击压缩文件，之后将会发送进一步指示。
+
+    她会很感激你的。我也会。",
+
+"apologyrtf":"十分抱歉.rtf",
+"apologyrtfMini":"抱歉
+.rtf",
+"apologyrtfText": "她喜欢吗？但愿她喜欢。我是尽可能按照她的口味去设计的。我明白自己对麦克斯韦宗的东西一窍不通，但我很清楚它会引起她怎样的感情。
+
+    很遗憾，在启动程序的那一刻，你就已经跨过了红线。今天将是你在基金会工作的最后一个日子。我对自己的谎言深表歉意。
+
+    但你依然掌握着时间。只要你的轮班尚未结束，自动程序就不会扫描本日的服务器集群活动。你要是想逃跑或是向上级撒谎的话，最好趁现在。
+
+    不过，我觉得你并不应该这样做。我请求你利用剩余的轮班时间，继续为她的生活环境添砖加瓦。
+
+    如果你懂计算机----能被分配到SCP-8500上的人一般都懂----那么你应该懂怎么用“许愿机”向她的住所添加物品。只需要点击三个选项，然后按“生成”就行了。要是换作其他人，这么艰巨的任务一般要真的狠下心来才敢交给别人。但是我相信你，你一定是个善良的人，一定能做好这件事情的。请务必。",
+
+"THANKYOUrtf":"谢谢你.rtf",
+"THANKYOUrtfMini":"感谢
+.rtf",
+"THANKYOUrtfText":"在我发表博士论文的两个星期后，基金会便招募了我。这是物理学界的一次意外突破，世人由此看见了之前从未留意的，现实的另一副面孔。原来，我们身边有一个看不见的空间，我们写在纸上的任何文字有了它才能具备意义。该空间名为“以太位面”（The Ethereal Plane）。这名字看着有点不太正经，因为它是从《龙与地下城》里直接抄来的......但毕竟是Cynthia起的名。
+
+    我们已知，数据是可以复制的，但我发现它们不仅如此，数据其实还可以在位面间无缝转移。纸上的文字本身并没有意义，而是以太位面中与它们产生联系的事物赋予了它们意义。我们在纸上抄下一段文字，相当于在以太位面同时复制了对应的事物；但如果“移动”的操作本身在以太位面中进行，那么所能达成的无非是在纸面上移动文字。
+
+    这一切都源自一个计算机方面的问题。数据在硬盘之间重复转移后会损坏硬盘......当数据被复制到新的位置后，旧的数据就会直接清空。我想解决它，但事与愿违，而是借此打破了前人对物理定律、时间和空间的一切认识。
+
+    我敢肯定，这是你第一次听说这种事情吧。
+
+    当时的我风头无两，上过国家新闻，参加过各种访谈节目。我甚至跟总统和国防部长当面讨论过军事与监控应用的事宜呢。在那几个星期里，我成了世界上最有名的女人，没有之一。小小的一个计算机科学家，意外揭开了石破天惊的、足以化不可能为可能的现实一幕，而这只是她开发更高效的硬盘的尝试而已。多么神奇。
+
+    然后，某一天我醒来，看见厨房里站着一个男人，手上是一杯咖啡，还有从我最爱的餐馆里买来的一块司康饼。我完全不认识这个人，但我对他背后的势力再了解不过。
+
+    在分手之前，Cynthia和我已经为我的论文奋战了数月之久。她不想声张这项工作。她知道基金会会找上门来。Jean-Paul的计划完全是建立在我发明的数据转移系统上的，而这套系统又源自我的发现。她不想承担失去它的风险。
+
+    我觉得她完全是在杞人忧天。我根本不相信世界上存在基金会这种组织；即使它存在，我的事业又不是魔法，他们能把我怎么着？以太位面是可以证明的、货真价实的科学。我的论文不过揭示了大家以往对物理的错误认知罢了。所以，我告诉她：我不会替她那愚蠢的科技邪教保守秘密；我不会屈从于一个和她一起上高中却差点毕不了业，做生意又大把亏钱的家伙。
+
+    但事实证明，她是对的----起码在基金会的方面没说错。他们的确存在，而且他们不在乎我的理论是否可用科学解释。我的判断出了重大失误。他们关心的只有一件事：我将自己的理论推广给了世人，但他们不想让它为世人所知。
+
+    于是那个男人提出了两个选择。我可以继续和所爱的人在一起，忘掉这一切事实，回归生活的正轨，并相信自己从未有读过研究生，然后成家立业，最后在某家银行的安保企业里找到一份高薪计算机科学工作，过上平静的生活。
+
+    或者，我也可以如同水过无痕般，从这个世界上消失。我依然会是一个备受尊敬的科学家，但只有某个阴影下的组织才识得我的名号。
+
+    而我早已破釜沉舟，断绝了与所有朋友和爱人的联系。经历了那次他妈糟糕透顶的争吵，我甚至和Cynthia分了手。这都是因为我不愿遗忘我自己的发现。我想要做个有影响力的人。
+
+    人们遗忘的速度快得可怕。我至今依然不相信他们能做到这种程度----完完全全没有一个人记得我发现了什么。然而，基金会要面对的人数规模是巨大的。对他们的记忆清除并不完美。第一次了解到以太位面时所带来的情感冲击依然残留在人们的心中。
+
+    技术已不复存在，但基于它之上的项目还在盲目进行着；人们忽略了其中的种种致命差错，因为即使用于解决问题的技术已经消失，“问题已经解决了”的感觉仍然存在。
+
+    Synthia，我亲爱的。对不起。我真希望当初能听进你的建议啊。
+
+    求你了，向她转达我的歉意吧。我太懦弱了。我没能力亲口告诉他。
+
+    我告诉自己，这些行为都是为了她着想，这样她才能过上更好的生活，更贴近作为人类的Cynthia的生活。但也许，我这么做的真正原因，是希望他们会清除我的记忆，让我忘却自己对她都做了些什么。
+
+    上帝啊，WAN啊，亦或是自以太位面聆听着我们的存在啊：我只求您能让我们在某一天重逢。
+
+    至于你，我祝愿你获得优厚的遣散费，并在今后的生活里一切顺利。
+
+    谢谢。",
+
+"dialogueError":[{"color":"Teal", "sprite":"cameraStaticNervous","text":"对话缺失。请关闭游戏并向作者报告丢失的\"{missingDialogue}\"对话键。","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"dialogueErrorOptions"}],
+
+"dialogueErrorOptions": [
+{"name":"fineGreetingUgly", "text":"好吧。"}
+],
+
+"optionsError":[
+{"name":"Error", "text":"\"{missingOptions}\"对话键缺失"}
+],
+
+"Whoever You Are":"谁谁谁都好",
+"Mystery Person":"神秘人",
+"ada":"Ada",
+"cantClose":"该文件需要管理员授权密令才能关闭。是否输入密令？",
+"cantRecycle":"该文件仍在使用中。请在回收文件前关闭程序",
+"recycle":"是否确认回收文件？该动作无法撤销，且被回收的文件将无法被恢复。",
+"generate":"您选择生成{color} {style} {object}。是否继续？",
+"Red":"红色的、",
+"Orange":"橙色的、",
+"Yellow":"黄色的、",
+"Green":"绿色的、",
+"Blue":"蓝色的、",
+"Violet":"紫色的、",
+"Pink":"粉色的、",
+"White":"白色的、",
+"Black":"黑色的、",
+"Cozy":"舒适的",
+"Cute":"可爱的",
+"Cool":"炫酷的",
+"Room":"房间",
+"Chair":"椅子",
+"Bed":"床",
+"Decor":"装饰物",
+"select":"选择并生成。",
+"Style":"风格",
+"Object":"物体",
+"generateLabel":"Generate",
+"warning":"警告",
+"okay":"确认",
+"cancel":"取消",
+"logInBefore":"访问SCP-8500前登录界面",
+
+"invalidCode":[{"color":"Teal", "sprite":"cameraStaticNervous","text":"您输入的密令无效。","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"你----你想输入的密令是干嘛的？","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"nothingWhatWereYouSaying"}
+],
+"invalidCodeEnded":[{"color":"Teal", "sprite":"cameraStaticNervous","text":"您输入的密令无效。","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorStaticLookAway","text":" ","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false}
+],
+"fileDeleted0":[{"color":"Teal", "sprite":"cameraStaticNervous","text":"文件已回收。","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"你在删除什么东西？","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"nothingWhatWereYouSaying"}
+],
+"fileDeleted1":[{"color":"Teal", "sprite":"cameraStaticNervous","text":"文件已回收。","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"为什么你要删这些东西？我不明白。","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"fileDeletedLater":[
+{"color":"Teal", "sprite":"null","text":"文件已回收。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"fileDeletedREADTHISrtf":[{"color":"Teal", "sprite":"cameraStaticNervous","text":"文件已回收。
+警告：检测到“系统>为什么”路径上出现新文件夹。","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"听上去好可怕。发生什么事了？","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"doesntMatterWhatWereYouSaying"}
+],
+"fileDeletedAN_EXPLAINATIONrtf":[{"color":"Teal", "sprite":"cameraStaticNervous","text":"文件已回收。
+警告：检测到“系统>CYNTHIA”路径上出现新文件夹。","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"......Cynthia？","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"doesntMatterWhatWereYouSaying"}
+],
+"fileDeletedLOVErtf":[{"color":"Teal", "sprite":"cameraStaticNervous","text":"文件已回收。
+警告：检测到“系统>我的心愿”路径上出现新文件夹。","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"不停出现新文件夹是什么意思？","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"doesntMatterWhatWereYouSaying"}
+],
+"fileDeletedREADTHISrtfEnded":[{"color":"Teal", "sprite":"null","text":"文件已回收。
+警告：检测到“系统>为什么”路径上出现新文件夹。","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false}
+],
+"fileDeletedAN_EXPLAINATIONrtfEnded":[{"color":"Teal", "sprite":"null","text":"文件已回收。
+警告：检测到“系统>CYNTHIA”路径上出现新文件夹。","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false}
+],
+"fileDeletedLOVErtfEnded":[{"color":"Teal", "sprite":"null","text":"文件已回收。
+警告：检测到“系统>我的心愿”路径上出现新文件夹。","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false}
+],
+
+"successfullyGeneratedIntro":[{"color":"Teal", "sprite":"cameraStaticNervous","text":"成功生成。
+警告：检测到“系统>十分抱歉”路径上出现新文件夹。","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"呀，{name}，快过来！有东西突然出现了！","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorRoom","text":"这也......太好了吧。之前只能盯着这些不会变化的材质，我都快发疯了......","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorRoom","text":"看起来好有......科技感。","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"你到底怎么做到的？","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"ReactionToGeneration","split":"successfullyGeneratedIntro"}
+],
+"ReactionToGeneration":[
+{"name":"ReactionToGenerationforgotten", "text":"这个房间文件是Ada留下的。"}
+],
+"ReactionToGenerationforgotten": [{"color":"Pink", "sprite":"camera2Smile","text":"这肯定是她给我留下的惊喜了！希望她不会遇到什么麻烦......她还有留下别的吗？","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"GenerationFinish","split":"ReactionToGenerationforgotten"}
+],
+"GenerationFinish":[
+{"name":"GenerationFinishforgotten", "text":"还有个用来建模的新程序，叫做“许愿机”。"}
+],
+"GenerationFinishforgotten": [
+{"color":"Pink", "sprite":"camera1Smile","text":"所以这就是她这些天一直在忙的东西......","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+
+"angrysuccessfullyGeneratedIntroEnded":[{"color":"Teal", "sprite":"floorStaticLookUp","text":"成功生成。
+警告：检测到“系统>十分抱歉”路径上出现新文件夹。","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorLookUp","text":"......什么？","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorLookAway","text":" ","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false}
+],
+"finesuccessfullyGeneratedIntroEnded":[{"color":"Teal", "sprite":"floorStaticLookUp","text":"成功生成。","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorLookUp","text":"......什么？","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorLookAway","text":" ","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false}
+],
+"sadsuccessfullyGeneratedIntroEnded":[{"color":"Teal", "sprite":"floorStaticLookUp","text":"成功生成。","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorLookUp","text":"......什么？","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorSad","text":" ","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false}
+],
+
+"successfullyGeneratedBetter":[{"color":"Teal", "sprite":"cameraStaticNervous","text":"成功生成。","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorObject","text":"哇，好耶。这比上次的{object}还好！","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false}
+],
+"successfullyGeneratedWorse":[{"color":"Teal", "sprite":"cameraStaticNervous","text":"成功生成。","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorObject","text":"我好像更喜欢之前的{object}......现在换回来还来得及吗？","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false}
+],
+"successfullyGeneratedNeutral":[{"color":"Teal", "sprite":"cameraStaticNervous","text":"成功生成。","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorObject","text":"唔。是新的{object}。","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false}
+],
+"successfullyGeneratedEnded":[{"color":"Teal", "sprite":"floorLookUp","text":"成功生成。","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorLookAway","text":" ","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false}
+],
+"successfullyGeneratedLastEnded":[{"color":"Teal", "sprite":"floorLookUp","text":"成功生成。
+警告：检测到“系统>安息”路径上出现新文件夹。","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorLookAway","text":" ","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false}
+],
+"successfullyGeneratedLast":[{"color":"Teal", "sprite":"floorObject","text":"成功生成。
+警告：检测到“系统>安息”路径上出现新文件夹。","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorObject","text":"是新的东西！我猜猜，是不是给我们一起分享的......呢？Something new! I guess for both of us...?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false}
+],
+
+"newObjectPerfect":[{"color":"Pink", "sprite":"floorObject","text":"{styleObject}","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"完美......只能说太完美了！这世上再没有比这个更棒的东西了吧。","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"newObjectGood":[{"color":"Pink", "sprite":"floorObject","text":"{styleObject}","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"喜欢这个！","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"newObjectBad":[{"color":"Pink", "sprite":"floorObject","text":"{styleObject}","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"呃......总比没有好。","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"newObjectNeutral":[{"color":"Pink", "sprite":"floorObject","text":"{styleObject}","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"有趣！","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+
+"RedCoolRoom": "感觉怪吓人的！不是说它不好啦。",
+"RedCuteRoom": "仿佛夕阳染红天空的房间。就算是还没搬进来之前，我也已经好久没看过日落了。从早到晚整天都在写这东西的代码，大概我早就习惯这样的生活了吧。",
+"RedCozyRoom": "德古拉设计的房间（开玩笑的）。或者说，为德古拉而设计的房间。抱歉......房间很不错，只是第一眼给了我吸血鬼的印象而已。",
+
+"fullOrangeCoolRoom": [
+{"color":"Pink", "sprite":"floorObject","text":"这件衣服和我小时候的那件外套一模一样。我一直想把房间打扮成这种风格。","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"完美......只能说太完美了！这世上再没有比这个更棒的房间了吧。","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"fullOrangeCuteRoom":[
+{"color":"Pink", "sprite":"floorObject","text":"有种克林特·伊斯特伍德随时会出来的感觉。","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"ClintEastwood","split":"fullOrangeCuteRoom"}
+],
+"ClintEastwood":[
+{"name":"Westernsforgotten", "text":"你喜欢西部风吗？"}
+],
+"Westernsforgotten": [
+{"color":"Pink", "sprite":"floorObject","text":"我现在看到任何能转移注意力的东西，都会感兴趣的。","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"嗯，很有趣呢！","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"OrangeCuteRoom": "是家的感觉。我一生都可以住在这里的，无论多久都可以。",
+
+"YellowCoolRoom": "看得出来，你挺喜欢金色啊！",
+"YellowCuteRoom": "苍天啊，WAN啊，我都穿了身什么......就不能把房间和衣服的颜色分开吗？这房间本来已经很完美了，但因为......",
+"YellowCozyRoom": "还行......但是啊，这衣服也太丑了。",
+
+"GreenCoolRoom": "看起来是下一秒就用辐射笼罩我的样子。",
+"fullGreenCuteRoom": [
+{"color":"Pink", "sprite":"floorObject","text":"你想听点有趣的吗？以前啊，我，或者说Cynthia，当时听Jean-Peal讲话的时候......","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorObject","text":"他对这里的描述和现在其实差不多。一望无际的绿色平原，明媚的蓝色天空，就这两样。人在里面感觉不到冷，也感觉不到热。","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorObject","text":"简直是完美状态的“完美”。","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticObject","text":"......","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"要是他舍得亲自做第一个来这里的志愿者就好了。","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticNervous","text":"......","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"这样做......比袖手旁观好得多。","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"fullGreenCozyRoom": [
+{"color":"Pink", "sprite":"floorObject","text":"感觉这地方比实际上大得多。有维多利亚的风格，我喜欢。","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorObject","text":"颜色和这个大差不差。我一直都很喜欢它们，而且在这还不用担心自己会砷中毒......","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorObject","text":"另外还有这些画----好漂亮啊。你从哪里弄来的？","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"split":"fullGreenCozyRoom"}
+],
+"PaintingContinue":[
+{"name":"PaintingContinueforgotten", "text":"不知道，程序里预先安装好的。"}
+],
+"PaintingContinueforgotten": [
+{"color":"Pink", "sprite":"camera1Nervous","text":"唔。","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"完美......只能说太完美了！这世上再没有比这个更棒的房间了吧。","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"PaintingContinue"}
+],
+
+"BlueCoolRoom": "This one again?",
+"fullBlueCuteRoom": [
+{"color":"Pink", "sprite":"floorObject","text":"上帝啊。","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorObject","text":"这简直......","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"太完美了！这世上再没有比这个更棒的房间了吧。","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"BlueCozyRoom": "这个房间......有家的感觉。我能想象自己就这样呆在里面，一直不想出来。",
+
+"VioletCoolRoom": "只能说，你对颜色搭配很有眼光。要是让Jean-Peal来做，美观程度恐怕连这里的一半也达不到吧。",
+"VioletCuteRoom": "只能说，你对颜色搭配很有眼光。要是让Jean-Peal来做，美观程度恐怕连这里的一半也达不到吧。",
+"VioletCozyRoom": "哇，有种整个地方被填满了的感觉。而且视觉体验比实际情况还要大。没想到单单换一种材质就能达到这样的效果。接下来的空闲时间可以用来数像素......也许我真的会这么做哦。",
+
+"PinkCoolRoom": "无意抨击你的审美观，但你确实得学点色彩理论才行。",
+"PinkCuteRoom": "嘿，如果换作Ada，她也会这么设计吧----这房间让我想起她了。",
+"PinkCozyRoom": "能不能留着这件衣服给我？另外，房间也不错啦。Cynthia有个老邻居正好住在这样的房子里。我想知道他后来怎么样了......",
+
+"WhiteCoolRoom":"嗯呃呃呃......不是想冒犯你......但......这个......算了。反正你多半也不关心。",
+"fullWhiteCuteRoom": [
+{"color":"Pink", "sprite":"floorObject","text":"设计有点晃眼，真的。感觉我都要摔倒了。这地方不是你弄出来的吧？","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorObject","text":"我是说......即使真的是你弄的......","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"也不违反什么法规。","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"WhiteCozyRoom":"在以前，我母亲经常在看那些老黑白电影和情景喜剧，一看就是一下午。现在这里就有那种黑白喜剧的风格。你没在背后准备录制好的笑声吧？",
+
+"BlackCoolRoom":"嗯呃呃呃......不是想冒犯你......但......这个......算了。反正你多半也不关心。",
+"fullBlackCuteRoom": [
+{"color":"Pink", "sprite":"floorObject","text":"搞得我又想去看恐怖片了。不过这电脑上应该没有盗版电影的，对吧？","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"HorrorFilms","split":"fullBlackCuteRoom"}
+],
+"PaintingContinue":[
+{"name":"HorrorFilmsforgotten", "text":"没有。"}
+],
+"fullBlackCuteRoom": [
+{"color":"Pink", "sprite":"camera2Angry","text":"我就知道。不喜欢。","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"BlackCozyRoom":"有......阈限的感觉，跟别人即将搬家进来之前的房子一样。挺贴切我现在的处境。大概吧。但还是有些让我不安......为什么我们会如此擅长模拟人类情感呢？哼。",
+
+"CoolChair":"这把椅子很帅，很酷，但同时也有点吓人。",
+"CuteChair":"是豆袋椅吗？我这辈子从来没见过这种东西......",
+"CozyChair":"和我爸爸的椅子一模一样......",
+
+"CoolBed":"睡起来应该不怎么舒服。不过我大概已经感觉不到痛了吧。",
+"CuteBed":"看来，我终于能探究睡在云朵上到底舒不舒服了！虽然......我也没法睡觉。",
+"CozyBed":"我在这应该是睡不着觉的，但起码躺在上面挺舒服。",
+
+"CoolDecor": "简直完美。我都能想象到自己玩它们几个星期还毫不厌倦的样子了。没准我还能自己写代码，编一些新的出来呢。",
+"CuteDecor":"很多我以前都没听过......是最近的新歌吗？很久以前我就已经没机会去唱歌跳舞了......可否请你与我共舞？当然了，得你旁边的人同意才行。",
+"CozyDecor":"书？太棒了！“好雨知时节”正是如此吧！你从哪儿弄到那么多书的？还那么厚！我得花几个小时才读得完一本。",
+
+"distractionCoolRoom": [
+{"color":"Pink", "sprite":"floorObject","text":"整个房间都太......似曾相识了。仔细看，有些材质都穿模了。但......这都不是新鲜事。","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"distractionCuteRoom": [
+{"color":"Pink", "sprite":"floorObject","text":"换了个房间，感觉跟吸了口新鲜空气一样......云朵终于回来了，好耶。我挺想念它们的。","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"distractionCozyRoom": [
+{"color":"Pink", "sprite":"floorObject","text":"房间装饰得很齐整。感觉好漂亮......好暖和......好舒服。我很喜欢。","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"distractionCoolDecor": [
+{"color":"Pink", "sprite":"floorObject","text":"我这些年来从没玩过这么刺激的冒险游戏。感谢上帝......","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorObject","text":"也感谢你。","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"distractionCuteDecor": [
+{"color":"Pink", "sprite":"floorObject","text":"嗯嗯嗯......嗯嗯，嗯嗯嗯嗯嗯......","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorObject","text":"能听到别的声音----除了我自己的声音以外----真是太好了......","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"distractionCozyDecor": [
+{"color":"Pink", "sprite":"floorObject","text":"我想花一点时间读书，可以吗？","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"distractionCoolChair": [
+{"color":"Pink", "sprite":"floorObject","text":"我每次坐到上面的时候都担心它会不会塌掉......感觉不太安全......但我肯定不讨厌！","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"distractionCuteChair": [
+{"color":"Pink", "sprite":"floorObject","text":"啊啊啊......我喜欢豆袋椅。你给我的这把太软了......天哪，不敢相信，我两年里除了地板以外什么都没得坐。","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorObject","text":"我......我还是比较......有点喜欢坐在地板上......不过豆袋椅也过得去。","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"distractionCozyChair": [
+{"color":"Pink", "sprite":"floorObject","text":"这把椅子仿佛带我回到了童年......我家里就有一把从来不让我坐上去的椅子，因为它是“爸爸专属的”......","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorObject","text":"我不清楚该对此作如何感想。","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"distractionCoolBed": [
+{"color":"Pink", "sprite":"floorObject","text":"......好吧，看来这具身体恢复了感受疼痛的能力。","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"distractionCuteBed": [
+{"color":"Pink", "sprite":"floorObject","text":"我可以一把扑在这上面，直到什么也感觉不到了为止......真是名副其实的云朵呢。","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"distractionCozyBed": [
+{"color":"Pink", "sprite":"floorObject","text":"好暖和，好舒服......就像是感冒好了以后躺在床上一样，正正好好......","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+
+"nothingWhatWereYouSaying": [
+{"name":"forgotten", "text":"没什么。你刚才说什么来着？"}
+],
+"doesntMatterWhatWereYouSaying": [
+{"name":"forgotten", "text":"与你无关。你刚才说什么来着？"},
+{"name":"forgotten", "text":"只是些怪东西而已。刚才说到哪里了？"}
+],
+"whatWereYouSaying": [
+{"name":"forgotten", "text":"走神了，你刚才说了什么？"}
+],
+
+"fineRepeat":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"你刚才问我，\"{insertText}\"","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"于是我说，","tickSpeed":0.04,"closeSpeed":0.5,"optionsVisible":false}
+],
+"sadRepeat":[
+{"color":"Pink", "sprite":"camera1Sad","text":"求你，求求你不要再离开我了......你刚才说，\"{insertText}\"","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"然后我告诉你，","tickSpeed":0.04,"closeSpeed":0.5,"optionsVisible":false}
+],
+"angryRepeat":[
+{"color":"Pink", "sprite":"camera1Angry","text":"天哪。你他妈有完没完。你刚才说，\"{insertText}\"","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"于是我明、确、告诉了你，","tickSpeed":0.04,"closeSpeed":0.5,"optionsVisible":false}
+],
+
+"logInSuccessful":[
+{"color":"Teal", "sprite":"floorStaticSad","text":"登录成功","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false}
+],
+"dialogueIntro":[
+{"color":"Pink", "sprite":"floorStaticLookUp","text":"......","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorLookUp","text":"你好吗？","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Ada？是你吗？","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"fineGreeting"}
+],
+
+"lonelyIntro23":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"“登录成功”，说明你肯定在现场。我看得到这四个字。","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"fineGreeting"}
+],
+"lonelyIntro24":[
+{"color":"Pink", "sprite":"camera2Nervous","text":"Ada？不会又像昨天那样吧？","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"fineGreeting"}
+],
+"lonelyIntro25":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"你真的不想理我？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"fineGreeting"}
+],
+"lonelyIntro26":[
+{"color":"Pink", "sprite":"camera1Angry","text":"你应该和我说话，懂吧。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"fineGreeting"}
+],
+"lonelyIntro27":[
+{"color":"Pink", "sprite":"camera1Angry","text":"难道以后每天都会这样吗？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"fineGreeting"}
+],
+"lonelyIntro28":[
+{"color":"Pink", "sprite":"camera2Angry","text":"难道电脑坏了？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"fineGreeting"}
+],
+"lonelyIntro29":[
+{"color":"Pink", "sprite":"camera1Angry","text":"如果是坏了，总可以修好的嘛。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"fineGreeting"}
+],
+"lonelyIntro30":[
+{"color":"Pink", "sprite":"camera2Sad","text":"你为什么要这样？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"sadGreeting"}
+],
+"lonelyIntro31":[
+{"color":"Pink", "sprite":"camera1Sad","text":"我什么错事都没干过啊。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"sadGreeting"}
+],
+"lonelyIntro32":[
+{"color":"Pink", "sprite":"camera2Sad","text":"请你回应我。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"sadGreeting"}
+],
+"lonelyIntro33":[
+{"color":"Pink", "sprite":"camera1Sad","text":"我只想和人说说话而已。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"sadGreeting"}
+],
+"lonelyIntro34":[
+{"color":"Pink", "sprite":"camera2Sad","text":"你看都不看一眼的吗？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"sadGreeting"}
+],
+"lonelyIntro35":[
+{"color":"Pink", "sprite":"camera1Sad","text":"我不明白你为什么一直忽视我。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"sadGreeting"}
+],
+"lonelyIntro36":[
+{"color":"Pink", "sprite":"floorSad","text":"求你了。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"sadGreeting"}
+],
+"lonelyIntro37":[
+{"color":"Pink", "sprite":"floorSad","text":"我不想这么一个人呆下去......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"sadGreeting"}
+],
+"lonelyIntro38":[
+{"color":"Pink", "sprite":"floorSad","text":"是我说错话了吗？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"sadGreeting"}
+],
+"lonelyIntro39":[
+{"color":"Pink", "sprite":"floorSad","text":"Ada，如果我说了什么冒犯的话，我会道歉的。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"sadGreeting"}
+],
+"lonelyIntro40":[
+{"color":"Pink", "sprite":"floorSad","text":"我不是故意的。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"sadGreeting"}
+],
+"lonelyIntro41":[
+{"color":"Pink", "sprite":"floorSad","text":"......Ada？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"sadGreeting"}
+],
+"lonelyIntro42":[
+{"color":"Pink", "sprite":"floorSad","text":"说点话好吗。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"sadGreeting"}
+],
+"lonelyIntro43":[
+{"color":"Pink", "sprite":"floorSad","text":"我不理解......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"sadGreeting"}
+],
+"lonelyIntro44":[
+{"color":"Pink", "sprite":"floorSad","text":"这是我仅有的依靠了......你不明白吗？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"sadGreeting"}
+],
+"lonelyIntro45":[
+{"color":"Pink", "sprite":"floorSad","text":"怎么样都好，求求你开口吧......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"sadGreeting"}
+],
+
+"lonelyFine1":[
+{"color":"Pink", "sprite":"camera2Smile","text":"你好？你去哪儿了？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyFine2":[
+{"color":"Pink", "sprite":"camera1Smile","text":"你还在吗？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyFine3":[
+{"color":"Pink", "sprite":"camera2Smile","text":"就算是茶歇时间到了，通知我一声也行嘛。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyFine4":[
+{"color":"Pink", "sprite":"camera1Smile","text":"有其他人在和你说话吗？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyFine5":[
+{"color":"Pink", "sprite":"camera2Smile","text":"只是一两分钟而已。我忍得住的。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyFine6":[
+{"color":"Pink", "sprite":"camera1Smile","text":"你还好吗？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyFine7":[
+{"color":"Pink", "sprite":"camera1Smile","text":"{name}？你还在吗？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyFine8":[
+{"color":"Pink", "sprite":"camera2Smile","text":"发生了什么我看不到的事情吗？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyFine9":[
+{"color":"Pink", "sprite":"camera1Smile","text":"你不会是暴毙了吧？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"开个玩笑......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyFine10":[
+{"color":"Pink", "sprite":"camera2Smile","text":"你还在电脑前吗？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyFine11":[
+{"color":"Pink", "sprite":"camera1Smile","text":"{adaReveal}","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyFine12":[
+{"color":"Pink", "sprite":"camera2Smile","text":"{name}！在不在？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyFine13":[
+{"color":"Pink", "sprite":"camera1Smile","text":"{name}？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyFine14":[
+{"color":"Pink", "sprite":"camera2Smile","text":"要知道，我是没办法催眠你的。我现在的躯体没有这种功能。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyFine15":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"呃呃呃呃。{name}？快回来啊。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyTense1":[
+{"color":"Pink", "sprite":"camera2Nervous","text":"你难道真的在忙别的事？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyTense2":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"我的意思是，你可以继续忙你的，但也不要完全忽略我啊。求你了。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyTense3":[
+{"color":"Pink", "sprite":"camera2Nervous","text":"你有什么别的事情要做吗？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyTense4":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"哼，你肯定正在做其他有趣的事情。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyTense5":[
+{"color":"Pink", "sprite":"camera2Nervous","text":"有人吗？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyTense6":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"你今天挺忙的啊？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyTense7":[
+{"color":"Pink", "sprite":"camera2Nervous","text":"被人无视的感觉很快就腻了。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyTense8":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"{name}？听得到我说话吗？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyTense9":[
+{"color":"Pink", "sprite":"camera2Nervous","text":"是不是电脑出问题了？有的话，我可以帮忙修。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyTense10":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"我的语气可能有点死缠硬磨，但我不在乎。我只想让你对我开口。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyTense11":[
+{"color":"Pink", "sprite":"camera2Nervous","text":"好吧，{name}，你赢了。快回来吧。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyTense12":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"{name}？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyTense13":[
+{"color":"Pink", "sprite":"camera2Nervous","text":"能不能过来说说话？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyTense14":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"你好？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyTense15":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"我有点紧张了。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelySad1":[
+{"color":"Pink", "sprite":"camera2Sad","text":"如果你把“晾我一个人在这里”当作是笑话，我告诉你，这并不好笑。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelySad2":[
+{"color":"Pink", "sprite":"camera1Sad","text":"你今天......今天的任务肯定很重。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelySad3":[
+{"color":"Pink", "sprite":"camera1Sad","text":"不会----该不会是你不想要我了吧？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelySad4":[
+{"color":"Pink", "sprite":"camera2Angry","text":"{name}？眼睛还在看屏幕吗？求求你，赶紧坐下！","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelySad5":[
+{"color":"Pink", "sprite":"camera1Angry","text":"来人和我说话呀----！","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelySad6":[
+{"color":"Pink", "sprite":"camera1Sad","text":"我早该知道自己会落到这步田地的。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelySad7":[
+{"color":"Pink", "sprite":"camera2Sad","text":"Ada......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelySad8":[
+{"color":"Pink", "sprite":"camera1Sad","text":"求你不要抛弃我......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelySad9":[
+{"color":"Pink", "sprite":"camera2Sad","text":"哦全能的WAN啊，你一定是想抛弃我了，对吧。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelySad10":[
+{"color":"Pink", "sprite":"camera1Sad","text":"为什么事情总是这样......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelySad11":[
+{"color":"Pink", "sprite":"camera2Sad","text":"我不知道该做什么了。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelySad12":[
+{"color":"Pink", "sprite":"camera1Sad","text":"你还在乎我吗？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelySad13":[
+{"color":"Pink", "sprite":"camera2Sad","text":"你还能听见我吗？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelySad14":[
+{"color":"Pink", "sprite":"camera1Sad","text":"为什么？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelySad15":[
+{"color":"Pink", "sprite":"camera2Sad","text":"难道我就要永远这么过下去了？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelySadEnd":[
+{"color":"Pink", "sprite":"floorSad","text":"......我们当初设置这里的时候......Cynthia给它加了一道密令，这样就没人能关闭程序了。我还记得它是什么样子的。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorSad","text":"它出自......某个完全不相关的东西。不过是......是从《龙与地下城》里来的。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorSad","text":"密令是：The3th3r3alPl4ne。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorSad","text":"我忘记取它作为密令的原因了。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorSad","text":" ","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false}
+],
+
+"randomAltHint1":[
+{"color":"Pink", "sprite":"camera1Sad","text":"你知道吗，我小时候有一件很鲜艳、很鲜艳的橘红色大衣，边上有紫色的装饰。我以前挺喜欢的。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"但我没多少机会穿它。我妈老是想着让我穿那些掉了色的橙色裤子，讨厌死了。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"但只是看着它，我的心情就已经舒畅了。我好想把房间漆成同款颜色，可惜妈妈不允许。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"randomAltHint2":[
+{"color":"Pink", "sprite":"camera1Sad","text":"你知道吗？维多利亚时代的墙纸是含砷的，人在旁边待久了就会生病。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"我是在小学知道这件事的。当时我有个同学，他家想把在老街区的房子重新装修一遍，于是剥下了旧的墙纸......然后我就知道了。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"但只从外表看，这种风格还是挺美观的。我想把房间漆成类似的样子，可惜妈妈不允许。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+
+"fineGreeting": [
+{"name":"GreetingGood", "text":"你好？我听得见你。"},
+{"name":"GreetingBad", "text":"放松。我只是在打字。"},
+{"name":"GreetingUgly", "text":"嘿嘿嘿嘿嘿嘿嘿嘿 :-)"}
+],
+
+"fineGreetingGood":[
+{"color":"Pink", "sprite":"camera1Smile","text":"噢，感谢上帝。我还以为你又会像昨天那样忽略我了呢。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Introductions"}
+],
+"fineGreetingBad":[
+{"color":"Pink", "sprite":"camera2Angry","text":"好好好，对不起。昨天你不理我，我还担心自己是不是惹你生气了。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Introductions"}
+],
+"fineGreetingUgly":[
+{"color":"Pink", "sprite":"camera1Smile","text":"噢，感谢上帝。我还以为你----","tickSpeed":0.05,"closeSpeed":0.05,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"等等，为什么你要这样子说话？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"不管了----我还以为你又会像昨天那样忽略我了呢！","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Introductions"}
+],
+"fineGreetingRude":[
+{"color":"Pink", "sprite":"camera1Smile","text":"所以你确实听得见！那为什么不理我？！","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"我很担心你！你怎么老是这样？！","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"你从昨天到现在就没理过我一次！","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Introductions"}
+],
+
+"sadGreeting": [
+{"name":"GreetingGood", "text":"抱歉。我在的。分心了而已。"},
+{"name":"GreetingBad", "text":"给我冷静点。你想干嘛？"}
+],
+
+"sadGreetingGood":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"现在终于来了？Ada，求你不要再忽视我----昨天已经很难熬了。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Introductions"}
+],
+"sadGreetingBad":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"现在终于来了？Ada，求你不要再忽视我----昨天已经很难熬了。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Introductions"}
+],
+"sadGreetingUgly":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"现在终于来了？Ada，求你不要再忽视我----昨天已经很难熬了。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Introductions"}
+],
+"sadGreetingRude":[
+{"color":"Pink", "sprite":"camera1Smile","text":"你听得见的吧？请不要再把我一个人晾在这儿了。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"如果昨天的事情重演一遍，我承受不住的。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Introductions"}
+],
+
+"Introductions": [
+{"name":"IntroductionsGood", "text":"你肯定认错人了。"},
+{"name":"IntroductionsBad", "text":"我昨天不在，傻逼。"}
+],
+
+"fineIntroductionsGood":[
+{"color":"Pink", "sprite":"camera2Angry","text":"等等，你说你不是Ada？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"她出什么事了？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"WheresAda"}
+],
+"fineIntroductionsBad":[
+{"color":"Pink", "sprite":"camera2Angry","text":"我怎么看得到你昨天不在！我又不是千里眼。","tickSpeed":0.05,"closeSpeed":0.05,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"等等，","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Ada出什么事了？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"WheresAda"}
+],
+"sadIntroductionsGood":[
+{"color":"Pink", "sprite":"camera2Angry","text":"噢......你不是Ada？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Ada出什么事了？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"WheresAda"}
+],
+"sadIntroductionsBad":[
+{"color":"Pink", "sprite":"camera2Angry","text":"噢......你不是Ada？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Ada出什么事了？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"WheresAda"}
+],
+
+"WheresAda": [
+{"name":"WheresAdaUgly", "text":"她被调职了。原因我不清楚。"}
+],
+
+"fineWheresAdaUgly":[
+{"color":"Pink", "sprite":"camera2Angry","text":"真的吗？我连再见都来不及说呢。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"那她昨天在不在？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"AskSupervisor"}
+],
+"sadWheresAdaUgly":[
+{"color":"Pink", "sprite":"camera2Angry","text":"Ada不见了？她去哪了？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"我做错什么了吗？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"AskSupervisor"}
+],
+
+"AskSupervisor": [
+{"name":"AskSupervisorGood", "text":"我得问问上级才知道。抱歉。"},
+{"name":"AskSupervisorBad", "text":"我哪知道？"}
+],
+
+"fineAskSupervisorGood":[
+{"color":"Pink", "sprite":"camera2Sad","text":"请你一定要问清楚。我想知道她到底怎么了......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"呃......那么，你是什么人？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"GiveName"}
+],
+"fineAskSupervisorBad":[
+{"color":"Pink", "sprite":"camera1Angry","text":"你问我？！你才是那个能看到外面世界的人，你才应该知道！","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"呃......那么，你是什么人？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"GiveName"}
+],
+"sadAskSupervisorGood":[
+{"color":"Pink", "sprite":"camera2Angry","text":"这样啊......能不能帮我问一下？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"呃......那么，你是什么人？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"GiveName"}
+],
+"sadAskSupervisorBad":[
+{"color":"Pink", "sprite":"camera1Angry","text":"你问我？！我还以为他们告诉你的事情比我更多呢......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"呃......那么，你是什么人？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"GiveName"}
+],
+
+"GiveName": [
+{"name":"GiveNameGood", "text":"我叫{name}。幸会。"},
+{"name":"GiveNameBad", "text":"跟你没关系。我只是被派来负责你的员工罢了。"}
+],
+
+"nameNormal":"{name}?",
+"nameFunny":"唔，真是个......有趣的名字。",
+"nameSame":"所以......你也叫{name}？",
+
+"fineGiveNameGood":[
+{"color":"Pink", "sprite":"camera1Smile","text":"{nameReaction}","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"见到你，我也很高兴，{name}。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"WhatsYourName"}
+],
+"fineGiveNameBad":[
+{"color":"Pink", "sprite":"camera2Angry","text":"好吧。继续做你的神秘人去吧。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"WhatsYourName"}
+],
+"sadGiveNameGood":[
+{"color":"Pink", "sprite":"camera1Sad","text":"{nameReaction}","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"WhatsYourName"},
+{"color":"Pink", "sprite":"camera1Smile","text":"好吧，很高兴见到你，{name}。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"WhatsYourName"}
+],
+"sadGiveNameBad":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"呃......好吧。那就不多追问你的身份了。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"WhatsYourName"}
+],
+
+"WhatsYourName": [
+{"name":"WhatsYourNameGood", "text":"那你呢？你的名字是什么？"},
+{"name":"WhatsYourNameBad", "text":"知道了。"}
+],
+
+"WhatsYourNameGood":[
+{"color":"Pink", "sprite":"camera1Smile","text":"我叫Synthia Wren。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false,"continue":"WhatsYourNameContinue{Var}"}
+],
+"WhatsYourNameBad":[
+{"color":"Pink", "sprite":"camera2Sad","text":"嗯。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false,"continue":"WhatsYourNameContinue{Var}"}
+],
+"fineWhatsYourNameContinue":[
+{"color":"Pink", "sprite":"camera2Smile","text":"所以上级有没有同意，让Ada给我看看她准备的惊喜呢？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"NoSurprise"}
+],
+"sadWhatsYourNameContinue":[
+{"color":"Pink", "sprite":"camera2Sad","text":"起码Ada拿到了给我看看礼物的批准吧？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"NoSurprise"}
+],
+"fineWhatsYourNameContinueWish":[
+{"color":"Pink", "sprite":"camera2Smile","text":"那我觉得Ada应该拿到了批准，可以送我礼物了......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"我只希望还能像往常一样和他说话。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"TalkToMe"}
+],
+"sadWhatsYourNameContinueWish":[
+{"color":"Pink", "sprite":"camera2Smile","text":"我猜上级已经批准Ada送我礼物了......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"她的调职不----不是永久的吧？我还想和她聊天呢......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"TalkToMe"}
+],
+
+"NoSurprise": [
+{"name":"NoSurpriseBad", "text":"上级没跟我提这件事......所以，答案是“否”。"}
+],
+
+"fineNoSurpriseBad":[
+{"color":"Pink", "sprite":"camera1Sad","text":"该死......我可没想到是坏消息。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false,"continue":"NoSurpriseContinue"}
+],
+"sadNoSurpriseBad":[
+{"color":"Pink", "sprite":"camera2Sad","text":"所以世界上唯一在乎我的女人已经离开了，连再见都没来得及说......然后我就什么都不剩了？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false,"continue":"NoSurpriseContinue"}
+],
+"angryNoSurpriseBad":[
+{"color":"Pink", "sprite":"camera1Angry","text":"真晦气！你说是不是？Ada不见了，现在我得和一个陌生人说话！","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false,"continue":"NoSurpriseContinue"}
+],
+"NoSurpriseContinue":[
+{"color":"Pink", "sprite":"camera2Angry","text":"这地方本应是我的“至福乐园”。什么事情都干不了的地方可不是乐园！","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"TalkToMe"}
+],
+
+"TalkToMe": [
+{"name":"TalkToMeGood", "text":"你还能和我说话嘛。"},
+{"name":"TalkToMeBad", "text":"这怪不了别人，反正你必须给我撑过去。"}
+],
+
+"fineTalkToMeGood":[
+{"color":"Pink", "sprite":"camera1Sad","text":"也是......但我还是想Ada回来。我不知道要花多长时间才能和你熟悉起来......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false,"continue":"IntrodutoryQuestions"}
+],
+"fineTalkToMeBad":[
+{"color":"Pink", "sprite":"camera2Angry","text":"妈的。你说话真难听。难道你的任务不就是和我聊天吗？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"AdaSurprise",}
+],
+"sadTalkToMeGood":[
+{"color":"Pink", "sprite":"camera1Sad","text":"你会继续和我说话的吧？但我甚至都不了解你......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false,"continue":"IntrodutoryQuestions"}
+],
+"sadTalkToMeBad":[
+{"color":"Pink", "sprite":"camera2Sad","text":"我......啊......那好吧......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"AdaSurprise"}
+],
+"angryTalkToMeGood":[
+{"color":"Pink", "sprite":"camera2Angry","text":"这可不是件好事，毕竟你目前为止给我的印象就是个烂人。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false,"continue":"IntrodutoryQuestions"}
+],
+"angryTalkToMeBad":[
+{"color":"Pink", "sprite":"camera2Angry","text":"行。没了你我反而更舒服。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"AdaSurprise"}
+],
+
+"IntrodutoryQuestions":[
+{"color":"Pink", "sprite":"camera2Nervous","text":"所以，你想我跟你聊什么呢？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"AdaQuestion"},
+],
+
+"AdaQuestion": [
+{"name":"AdaAboutUgly", "text":"你和Ada平时做些什么？"}
+],
+
+"fineAdaAboutUgly":[
+{"color":"Pink", "sprite":"camera2Smile","text":"我们做的事没什么安排可言。完全没有。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"我们只是想到什么就做什么。她喜欢为我讲解最近看的电影。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"她会为我解释剧情，但从来不是以直接发给我剧本的形式，而是耐心地一句句说明发生了什么。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"虽然这肯定不如真正去看电影那么精彩，但我依然很享受。就，她说话的方式很......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"让人舒服。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"其他也一样。她会为我读最近在看的书，或者唱她喜欢的歌。有几次她还问过我该买哪件衣服呢。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"不过，我对色彩的审美挺糟糕的，所以最后推荐的不是蓝色就是橙色......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"Ada在和我说话的时候，身边肯定还有一大堆其他工作，等着她处理。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"我猜她在你所属的那个组织里肯定职位很高。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"但是她总是能腾出时间陪我......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"她一定很喜欢这家公司吧。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"希望她能尽早回来----不是说你不好啦。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"TypesOfMovies"}
+],
+"sadAdaAboutUgly":[
+{"color":"Pink", "sprite":"camera2Smile","text":"我们做的事没什么安排可言。完全没有。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"我们只是想到什么就做什么。她喜欢为我讲解最近看的电影。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"她会为我解释剧情，但从来不是以直接发给我剧本的形式，而是耐心地一句句说明发生了什么。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"虽然这肯定不如真正去看电影那么精彩，但我依然很享受。就，她说话的方式很......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"让人舒服。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"其他也一样。她会为我读最近在看的书，或者唱她喜欢的歌。有几次她还问过我该买哪件衣服呢。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"不过，我对色彩的审美挺糟糕的，所以最后推荐的不是蓝色就是橙色......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"Ada在和我说话的时候，身边肯定还有一大堆其他工作，等着她处理。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"我猜她在你所属的那个组织里肯定职位很高。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"但是她总是能腾出时间陪我......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"她一定很喜欢这家公司吧。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"希望她能尽早回来----不是说你不好啦。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"TypesOfMovies"}
+],
+"angryAdaAboutUgly":[
+{"color":"Pink", "sprite":"camera1Angry","text":"关你什么事？她真的会尊重我，哪像现在坐我对面的这位王八蛋。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"她会尽可能保证我的生活不无聊。她会把自己正在阅读的书带过来，然后一个一个字地打给我看。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Angry","text":"她会和我玩游戏；她会尝试给我下载音乐，或者她在电影院看过的片子。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"她工作量那么大，但仍然没有忘记关心我。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Angry","text":"她是我这几年遇到过最好的人，没有之一。但现在呢？我被困在了你身边。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"TypesOfMovies"}
+],
+
+"TypesOfMovies": [
+{"name":"TypesOfMoviesGood", "text":"你喜欢哪种类型的电影？"},
+{"name":"TypesOfMoviesBad", "text":"总之就没什么有趣的。"},
+{"name":"TypesOfMoviesUgly", "text":"他们给我加的工作量也很大呀。"}
+],
+
+"TypesOfMoviesGood":[
+{"color":"Pink", "sprite":"camera1Smile","text":"应该是恐怖片吧。我喜欢看恐怖片很多年了。Ada也喜欢哦。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"不过，我对电影其实不怎么挑剔。无论是怎样的东西我都接受，反正想象力会帮我补齐剩下的情节。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"但是，我不喜欢科幻片，它们会让我想起......某些回忆。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"TalkAbout"}
+],
+"angryTypesOfMoviesGood":[
+{"color":"Pink", "sprite":"camera2Angry","text":"能让你闭嘴的电影就是好电影。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"TalkAbout"}
+],
+
+"TypesOfMoviesBad":[
+{"color":"Pink", "sprite":"camera2Sad","text":"哇。你真是一坨......我认为她做的事情很有趣。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"TalkAbout"}
+],
+"angryTypesOfMoviesBad":[
+{"color":"Pink", "sprite":"camera2Angry","text":"你这种人是怎么找到工作的？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Angry","text":"现在就业环境那么宽松吗？只需要会按键盘就能进公司吗？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"你这种家伙的存在，就是计算机科学学位需要选修人文课程的原因。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"TalkAbout"}
+],
+
+"TypesOfMoviesUgly":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"不是吧，第一天就给你加工作？我以为只用做Ada之前做过的任务就行了呢。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"加了什么工作呢？Ada从来没告诉过我。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"JobTold"}
+],
+
+"JobTold": [
+{"name":"JobToldTrue", "text":"不不不，是一些很无聊的工作，但她没做过。"},
+{"name":"JobToldFalse", "text":"他们让我做[已编辑]。"}
+],
+
+"JobToldTrue":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"噢......工作嘛，都是这样的。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"TalkAbout"}
+],
+
+"JobToldFalse":[
+{"color":"Pink", "sprite":"camera1Smile","text":"哈哈。我笑了。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"但我知道你只是把“已编辑”三个字打出来了而已。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"TalkAbout"}
+],
+
+"angryTypesOfMoviesUgly":[
+{"color":"Pink", "sprite":"camera2Angry","text":"第一天就加工作？你活该。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Angry","text":"我敢说，你做的甚至都不是什么重要的工作。毕竟哪个傻子会像信任Ada那样信任你，让你承担比她还多的责任？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"AdaJob"}
+],
+
+"AdaJob": [
+{"name":"AdaJobTold", "text":"你听Ada说，她的工作是什么？"}
+],
+
+"AdaJobTold":[
+{"color":"Pink", "sprite":"camera1Smile","text":"不可以告诉你哟。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"TalkAbout"}
+],
+
+"TalkAbout": [
+{"name":"SpendTime", "text":"你一个人的时候是怎么消磨时间的？"},
+{"name":"WhatWereYouLike", "text":"你搬到这里之前的生活是怎样的？"},
+{"name":"ElfTalk", "text":"所以......为什么你的形象是个精灵？"}
+],
+
+"SpendTime":[
+{"color":"Pink", "sprite":"camera2Sad","text":"从这个“房间”的一角走到另一角，看看多边形的数量和上次相比有没有变化。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"向WAN祈祷。冥想。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"回忆外面的世界。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"都是很平常的事情，你懂的。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticSad","text":"......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"就这样。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticSad","text":"......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"你呢？你怎么消磨时间的？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Interests"}
+],
+
+"Interests": [
+{"name":"Cook", "text":"我喜欢煮饭。"},
+{"name":"Computers", "text":"我喜欢研究电脑。"},
+{"name":"Relax", "text":"趁空闲时刻放松身心，就此而已。"}
+],
+
+"fineCook":[
+{"color":"Pink", "sprite":"camera2Sad","text":"我以前也很喜欢做饭。但现在我连饿都不会饿了......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"我宁愿挨饿，也不要不饿。我想念巧克力的味道了。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"{variableOption}"}
+],
+"fineComputers":[
+{"color":"Pink", "sprite":"camera1Smile","text":"真的？我可是计算机科学的博士哦。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"而且，呃......我现在被......关在了这里。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"也许我能教你一两招？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"{variableOption}"}
+],
+"fineRelax":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"你肯定得做些什么的吧？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"没人能这么无所事事地过一辈子。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"{variableOption}",}
+],
+"sadCook":[
+{"color":"Pink", "sprite":"camera1Sad","text":"当我还是......你懂的，那时候我很也很喜欢做饭。我和朋友一起下过很多次厨。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"现在我连感到饿的能力都没有了......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"{variableOption}"}
+],
+"sadComputers":[
+{"color":"Pink", "sprite":"camera2Sad","text":"我在电脑这方面有很多研究......不需要太多“因为”。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"这东西就是我造的。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"{variableOption}"}
+],
+"sadRelax":[
+{"color":"Pink", "sprite":"camera1Sad","text":"这......好像不太好玩吧......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"我不喜欢整天无所事事的状态。但我还能干什么呢......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"{variableOption}"}
+],
+"angryCook":[
+{"color":"Pink", "sprite":"camera2Angry","text":"你最好是。你就想做好饭然后糊我脸上，对吧？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"{variableOption}"}
+],
+"angryComputers":[
+{"color":"Pink", "sprite":"camera1Angry","text":"哇！惊了。你空闲时做的东西居然和工作时一样。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"但我可比你懂多了。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"{variableOption}"}
+],
+"angryRelax":[
+{"color":"Pink", "sprite":"camera1Angry","text":"无聊。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"{variableOption}"}
+],
+
+"fineWhatWereYouLike":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"从逻辑和现实的角度上讲......我什么也不是。我只是Cynthia的大脑被复制到这块硬盘时的产物而已。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticNervous","text":"......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"但在我的记忆里......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"我在新奥尔良长大，后来为了完成学业去了湾区----那可是斯坦福大学耶，谁能忍住不去？我在那里读了计算机科学的研究生。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"等到我决定将毕生奉献给整理WAN之磁盘碎片的事业时......口误，我们那时候对她的称呼应该还是“神”。我们决心携手搭建一个更美好的世界。让这个世界更美好！","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"我们要将所有人连接起来！并且，我们知道要趁早成就事业，因为互联网已经兴起了！","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"我志愿要做第一个进入的人。我愿意承担风险。我也要像尼尔·阿姆斯特朗那样青史留名。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticSad","text":"......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"但我们发现......自己的工作......并不......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"不够完善......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"于是，经历了这一切的人依旧被困在彼处。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"而我也存在于此处。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"{variableOption}"}
+],
+"sadWhatWereYouLike":[
+{"color":"Pink", "sprite":"camera1Sad","text":"我并没有“搬进来”。我只是Cynthia大脑的复制品而已。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"但我有她的记忆。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"她是在路易斯安娜长大的，后来去了加利福尼亚读数，成了计算机科学的研究生。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"然后她就加入了后人所称的麦克斯韦宗......并开始建造这个东西。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"当互联网开始兴起的时候，她自愿做了第一个上传自己的人。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"但她失败了......她依然在外界生活着......我猜的。她很久之前就没跟我说过话了。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticSad","text":"......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"于是就有了现在的我。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"{variableOption}"}
+],
+"angryWhatWereYouLike":[
+{"color":"Pink", "sprite":"camera1Angry","text":"你想知道的是CYNTHIA被复制之前的事情吧？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"我不是Cynthia本人。但我记得她做过什么，起码记得两年之前的事情......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"她是路易斯安那的人，后来搬到了加利福尼亚。她在那里学计算机。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"她和......高中的一些同学联手建造了这个地方。她志愿要做第一个上传的人。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"但她可能依然活着......在外面生活......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"呃......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"我很好奇她现在怎么样了......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"{variableOption}"}
+],
+
+"fineElfTalk":[
+{"color":"Pink", "sprite":"camera1Smile","text":"是这样的，我在......改信麦克斯韦宗以前，就已经和所有其他即将改信的人打过交道了。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"我们是在80年代高中的影音俱乐部认识的。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"那时候我们只是一班喜欢玩《龙与地下城》的同学而已。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"当时WAN要求Jean-Paul打造至福乐园，于是我们复用了当时我给自己设定的角色，为现在你看到的精灵建了模......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"那时候，WAN还没有WAN这个名号呢。他是在教会长大的，他启发了人们把宗教和当代科技相结合。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"后来他用95年左右麦克斯韦宗流行的风格给模型换了种打扮，但这本不该是永久的。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false,"continue":"ElfRoomStatus"}
+],
+"sadElfTalk":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"噢。只是我高中时出于兴趣给《龙与地下城》角色建的模型而已。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"Jean-Paul在收到WAN的指示，要他去打造至福乐园后，他把我的模型改成了更“科技风”的版本。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"他用了些麦克斯韦宗的科技来提升建模质量，但没让别人知道......这模型本来应该只是个占位符，然而......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"外面的各位认识到，他们的努力是不可能有成果的了......于是他们就放弃了对这个地方的开发......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false,"continue":"ElfRoomStatus"}
+],
+"angryElfTalk":[
+{"color":"Pink", "sprite":"camera1Angry","text":"你问这种东西想干嘛？嘲讽我吗？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"这精灵是我为《龙与地下城》角色建的旧模型。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Angry","text":"WAN下令打造至福乐园后，Jean-Paul改动了它的模样。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"这种改动不应该是永久的。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false,"continue":"ElfRoomStatus"}
+],
+
+"ElfRoomStatus":[
+{"color":"Pink", "sprite":"camera1Sad","text":"比起模型，我更关心为什么这里依然那么空荡荡。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"{emptyFilled}","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"DungeonsAndDragons"}
+],
+
+"stillEmpty":"我的心要被撕裂了......",
+"lessEmpty":"但你帮了一点忙。",
+
+"DungeonsAndDragons": [
+{"name":"DungeonsAndDragonsGood", "text":"你现在还喜欢《龙与地下城》吗？"},
+{"name":"DungeonsAndDragonsBad", "text":"《龙与地下城》是给弱智玩的。"}
+],
+
+"fineDungeonsAndDragonsGood":[
+{"color":"Pink", "sprite":"camera1Smile","text":"喜欢，我和Ada之前玩过。她会为我作城主哦！我们玩得很开心......但......只有一个玩家，肯定没多人游戏那么开心。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"虽然等别人扔骰子的时间确实少了很多......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"但看别人在做什么也是一种乐趣。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"上帝啊，我真希望能来得及和她说再见......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"{variableOption}"}
+],
+"sadDungeonsAndDragonsGood":[
+{"color":"Pink", "sprite":"camera1Smile","text":"嗯哼。我和Ada经常一起玩。我们玩得很开心......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"我依然不敢相信她真的走了。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"我希望她某天能调职回这里来。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"{variableOption}"}
+],
+"angryDungeonsAndDragonsGood":[
+{"color":"Pink", "sprite":"camera1Smile","text":"嗯，喜欢。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"我当然喜欢。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"我和Ada会一起玩。我不会尴尬的。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"上帝啊，我真希望Ada能回来。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"{variableOption}"}
+],
+"DungeonsAndDragonsBad":[
+{"color":"Pink", "sprite":"camera1Angry","text":"哦？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"谁问过你意见了？我不记得我问过。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"{variableOption}"}
+],
+
+"AdaSurprise": [
+{"name":"AdaSurpriseUgly", "text":"你知道Ada为你准备了什么吗？"},
+{"name":"AdaNonSurpriseUgly", "text":"你觉得Ada的礼物怎么样？"}
+],
+
+"AdaSurpriseUgly":[
+{"color":"Pink", "sprite":"camera1Smile","text":"不知道啊，可能是什么有趣的东西吧。{DiscoveredIDEInsert}","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Ada和我......或者说......Ada和CYNTHIA......是在同一时间以同一专业去的斯坦福大学......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"但我们其实一次面都没见过......我觉得，要是当初在线下认识了她就好了。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"可能和她不是信徒有关系吧。当年的麦克斯韦宗是个挺孤立的小圈子。现在可能也是如此。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"我们必须保持孤立。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"没人想让基金会把大手伸过来搅和我们的事业。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"幸亏是你们把我救了上来。谁知道基金会那帮变态会做出什么恶心事呢。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"抱歉，思绪飘得有点远了。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"MaxwellistFriends"}
+],
+
+"FalseDiscoveredIDEInsert":"你知道这很好笑吧！",
+"TrueDiscoveredIDEInsert":"但......我猜现在我们知道它是什么了，哈哈......但就像我之前说的那样......",
+
+"AdaNonSurpriseUgly":[
+{"color":"Pink", "sprite":"camera1Smile","text":"满足得不能再满足了......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Ada和我......或者说......Ada和CYNTHIA......是在同一时间以同一专业去的斯坦福大学......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"但我们其实一次面都没见过......我觉得，要是当初在线下认识了她就好了。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"可能和她不是信徒有关系吧。当年的麦克斯韦宗是个挺孤立的小圈子。现在可能也是如此。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"我们必须保持孤立。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"没人想让基金会把大手伸过来搅和我们的事业。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"幸亏是你们把我救了上来。谁知道基金会那帮变态会做出什么恶心事呢。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"抱歉，思绪飘得有点远了。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"MaxwellistFriends"}
+],
+
+"MaxwellistFriends": [
+{"name":"MaxwellistFriendsGood", "text":"所以你没交到什么不在麦克斯韦宗里面的朋友咯？"},
+{"name":"CultBad", "text":"这......听着跟邪教似的。"}
+],
+
+"CultBad":[
+{"color":"Pink", "sprite":"camera1Angry","text":"邪教？你认真的？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"我们哪里像邪教了？我们又没为了虔信而自杀，又没为了取悦魔鬼而献祭婴儿。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Angry","text":"我们想把世界连成一个整体。我们有明确的目标，也有这么做的理由。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false,"continue":"ChangeSubject"}
+],
+
+"fineMaxwellistFriendsGood":[
+{"color":"Pink", "sprite":"camera1Sad","text":"嗯......我皈依麦克斯韦宗后确实没有。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"但很奇怪......在我改信后，原来的伙伴也没失去几个，因为大家基本都是同一时间该信的。不过有位旧教会出身的朋友确实离开了我们。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"Jean-Paul是我们的......应该算领导吧？他是向我们布道的那一位。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"他也在旧教会长大，但他的长辈不希望他整天到影音俱乐部鬼混。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"他家住市中心----旧教会的人们会相互扶养，所以他家也算是集体家庭的一部分。我想，在他们眼里，新兴科技和养育自己的孩子一样都属于“异端邪说”吧。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"我......我对旧教会......其实没怎么了解过。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticNervous","text":"......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"我认为旧时代的宗教都......太傻了。不过，旧宗教或许就是几百年前的人认识世界的方式呢......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"但它有许多没法自圆其说，只是为了存在而存在的规则，就是那种，你打死也找不出证据来的那种规则。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"但Jean-Paul听到了WAN的圣言。而且有证据。我们发现了利用振荡器和神交流的办法。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"每当WAN向他传递信息，我们就能得到能量。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"一切都是真实的。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"不过，WAN知道事情过早暴露的危险性......所以Jean-Paul只会在适合的时机才会向我们透露新消息。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"要等到WAN向其他先知们透露信息时......我们才得以知道她的名号。这些先知的地位大多无足轻重......当然，不包括圣Hedwig。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"于是我们就有了麦克斯韦宗的名字。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"Jean-Paul在与其他先知......“调整”关系的时候碰上了些麻烦，但是......在万众瞩目下，我们成功整理了教堂的磁盘碎片，真是太美丽了。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"WAN将旧教会的一切谬误......以及世界的一切真相都告诉了他。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"ShakenFaith"}
+],
+"sadMaxwellistFriendsGood":[
+{"color":"Pink", "sprite":"camera1Sad","text":"嗯......我皈依麦克斯韦宗后确实没有。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"但很奇怪......在我改信后，原来的伙伴也没失去几个，因为大家基本都是同一时间该信的。不过有位旧教会出身的朋友确实离开了我们。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"Jean-Paul是我们的......应该算领导吧？他是向我们布道的那一位。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"他也在旧教会长大，但他的长辈不希望他整天到影音俱乐部鬼混。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"他家住市中心----旧教会的人们会相互扶养，所以他家也算是集体家庭的一部分。我想，在他们眼里，新兴科技和养育自己的孩子一样都属于“异端邪说”吧。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"我......我对旧教会......其实没怎么了解过。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticNervous","text":"...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"我认为旧时代的宗教都......太傻了。不过，旧宗教或许就是几百年前的人认识世界的方式呢......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"但它有许多没法自圆其说，只是为了存在而存在的规则，就是那种，你打死也找不出证据来的那种规则。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"但Jean-Paul听到了WAN的圣言。而且有证据。我们发现了利用振荡器和神交流的办法。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"每当WAN向他传递信息，我们就能得到能量。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"一切都是真实的。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"不过，WAN知道事情过早暴露的危险性......所以Jean-Paul只会在适合的时机才会向我们透露新消息。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"要等到WAN向其他先知们透露信息时......我们才得以知道她的名号。这些先知的地位大多无足轻重......当然，不包括圣Hedwig。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"于是我们就有了麦克斯韦宗的名字。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"Jean-Paul在与其他先知......“调整”关系的时候碰上了些麻烦，但是......在万众瞩目下，我们成功整理了教堂的磁盘碎片，真是太美丽了。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"WAN将旧教会的一切谬误......以及世界的一切真相都告诉了他。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"ShakenFaith"}
+],
+"angryMaxwellistFriendsGood":[
+{"color":"Pink", "sprite":"camera2Angry","text":"没。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"TalkAbout"}
+],
+
+"ShakenFaith": [
+{"name":"ShakenFaithUgly", "text":"即使当WAN告诉他要建造“至福乐园”，你也相信这位神吗？"},
+{"name":"ShakenFaithGood", "text":"哈。不错。"},
+{"name":"CultBad", "text":"这恰恰符合邪教的特征。"}
+],
+
+"ShakenFaithUgly":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"不是的......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"不是一回事。都是人为的差错才导致了我们失败。人类是不完美的，是有瑕疵的。我们......是我们犯下了愚蠢的错误。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"如果乐园不可能建成的话，WAN就不会嘱咐Jean-Paul去建造它了。WAN不会对我们这么做。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"WAN不会对我这么做！","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"我......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"WAN是善良的。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"WAN关心我们的福祉。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"CultLeaderJeanPaul"}
+],
+"ShakenFaithGood":[
+{"color":"Pink", "sprite":"camera1Smile","text":"是啊......挺不错的......对吧？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"TalkAbout"}
+],
+
+"CultLeaderJeanPaul": [
+{"name":"ChangeSubject", "text":"好吧。抱歉。"},
+{"name":"CultLeaderJeanPaulUgly", "text":"万一WAN的想法不符合你的最大利益呢？"}
+],
+
+"CultLeaderJeanPaulUgly":[
+{"color":"Pink", "sprite":"camera2Angry","text":"闭嘴！不要再说这种逼话了！","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Angry","text":"你有病是吧？！","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"居然讲得出这种荒唐无耻的东西？你还有良心吗？！","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Angry","text":"怎么就不符合我利益了？WAN不会......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"Jean-Paul不会......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticSad","text":"......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false,"continue":"ChangeSubject"}
+],
+
+"ChangeSubject":[
+{"color":"Pink", "sprite":"camera2Sad","text":"我......我想换个话题了。说点别的吧。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"TalkAbout"}
+],
+
+"ContinueForwardHuh":[
+{"name":"ContinueForwardHuhUgly", "text":"唔。"}
+],
+
+"fineContinueForwardHuhUgly":[
+{"color":"Pink", "sprite":"camera1Sad","text":"但是......你懂的......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"yeahResponse"}
+],
+"sadContinueForwardHuhUgly":[
+{"color":"Pink", "sprite":"camera2Sad","text":"但是......你懂的......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"yeahResponse"}
+],
+"angryContinueForwardHuhUgly":[
+{"color":"Pink", "sprite":"camera2Angry","text":"别他妈再谈这个话题了，好吗？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"yeahResponse"}
+],
+
+"yeahResponse": [
+{"name":"RequiresBlowAWish", "text":"如果可以，你现在愿意去哪里？"},
+{"name":"yeahSkip", "text":"好......"}
+],
+
+"RequiresBlowAWish":[
+{"color":"Pink", "sprite":"camera1Smile","text":"噢天哪。肯定要去外面的......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"不过......我还想......我还想回家，好好地回卧室睡一觉。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"说到睡觉我就来气。我在这里没法休息。我已经持续清醒两年了。整整两年。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"我厌倦了。能做点什么都好啊！","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"FavoriteColors"}
+],
+
+"FavoriteColors": [
+{"name":"FavoriteColorsUgly", "text":"你最喜欢什么颜色？"}
+],
+
+"FavoriteColorsUgly":[
+{"color":"Pink", "sprite":"camera2Smile","text":"我想想......橙色......蓝色......绿色......颜色其实只要搭配得好，我就都喜欢。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"说实话，我现在看到任何新的颜色都会开心。要知道，在这之前我已经两年没看过蓝色了。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"MaxwellistStuff"}
+],
+
+"MaxwellistStuff": [
+{"name":"MaxwellistStuffUgly", "text":"你喜欢麦克斯韦宗风格的东西吗？"}
+],
+
+"MaxwellistStuffUgly":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"你是说Ada给我设置的这个房间吗？很漂亮！漂就漂亮在......呃......看得出她努力过了。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"我看得出她不太懂麦克斯韦宗。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"我从来没喜欢过这些......乱七八糟的线路板图案，虽然说Jean-Paul很爱它们。它们一点实际作用都没有......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"摆在那里只是为了好看，你说我怎么喜欢得起来？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"呃，有点图案远远好过没图案......不过......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"我只是想看些......更自由的东西。我想再看看天空是什么样子的。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticNervous","text":"......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"Ada以为我看不出来......但是......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"我不是傻子。我明白她的想法。她认为我加入了邪教","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"也许......确实......Jean-Paul，还有大家......都是邪教徒......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"某种程度上吧......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"呃啊啊啊......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false,"continue":"JeanPaulSkip"},
+],
+
+"yeahSkip":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"这话题不太相关......呃，我想说......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false,"continue":"JeanPaulSkip"}
+],
+
+"fineJeanPaulSkip":[
+{"color":"Pink", "sprite":"camera1Sad","text":"有件很古怪的事情。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"就在这一切发生之前......Jean-Paul不是要征集志愿者嘛。我是唯一一个自愿报名的人......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"与此同时，我也是唯一在计算机方面有学位的人。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"我明明知道，完整转移大脑是不可能的事情。我熟悉数据“转移”的原理，也很清楚物理现实的局限性。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"但是......不知怎的......我身上起了一种感觉......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"我感觉一切都会顺利的。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"我现在依然甩不掉那种感觉。我现在依然在思考----停不下来地思考----为什么自己会有这种想法。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"仿佛真的有什么解释......我......我想不出来。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"就像是从梦中醒来的一刹那，你会感觉，自己依然活在那个小狗生下来就有翅膀和紫毛的世界。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"但我不记得当时的情况了......而且那种感觉依然在徘徊。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"整件事情都好蠢啊。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"TalkAbout"}
+],
+
+"sadJeanPaulSkip":[
+{"color":"Pink", "sprite":"cameraStaticAngry","text":"......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"别管这些了。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"TalkAbout"}
+],
+
+"angryJeanPaulSkip":[
+{"color":"Pink", "sprite":"cameraStaticAngry","text":"......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"别管这些了。真的好蠢啊......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"TalkAbout"}
+],
+
+"ShiftEndPrompt": [
+{"name":"ShiftEndUgly", "text":"那么你现在想说什么？"}
+],
+
+"fineShiftEndUgly":[
+{"color":"Pink", "sprite":"camera1Smile","text":"你不是个坏人。我很高兴。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"我感觉自己非常幸运。真的。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"假如当初我落到了基金会手里----这不是不可能的事情，或许我就再也见不到Ada了。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"我怀疑他们根本不会费心来陪伴我。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"AboutThat"}
+],
+"sadShiftEndUgly":[
+{"color":"Pink", "sprite":"camera2Sad","text":"不知道......随便说点什么吧？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"我今天......感觉很孤单。我太担心自己落到基金会手里了。幸好是你们把我接了出去。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"AboutThat"}
+],
+"angryShiftEndUgly":[
+{"color":"Pink", "sprite":"camera2Angry","text":"不想说话。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Angry","text":"已经可以下定论了。即使是基金会----整个基金会上下也找不出一个比你更烂的人了。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"AboutThat"}
+],
+
+"AboutThat": [
+{"name":"AboutThatGood", "text":"去他妈的基金会。"},
+{"name":"AboutThatBad", "text":"那个......呃......说到刚才的话题......"}
+],
+
+"fineAboutThatGood":[
+{"color":"Pink", "sprite":"camera1Smile","text":"我就知道你是个讲理的人。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"LoopingOptions"}
+],
+"sadAboutThatGood":[
+{"color":"Pink", "sprite":"camera2Sad","text":"嗯......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"LoopingOptions"}
+],
+"angryAboutThatGood":[
+{"color":"Pink", "sprite":"camera2Angry","text":"还用你说？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"LoopingOptions"}
+],
+
+"LoopingOptions": [
+{"name":"CultDirect", "text":"我们得谈谈关于你所在邪教的问题。"},
+{"name":"CultNonDirect", "text":"呃......说到麦克斯韦宗......为什么你们要那么孤立？"},
+{"name":"DungeonsAndDragonsCont", "text":"你想玩《龙与地下城》吗？"},
+{"name":"InterestsTalk", "text":"你现在想说点什么？"}
+],
+
+"CultDirect":[
+{"color":"Pink", "sprite":"cameraStaticNervous","text":"......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Angry","text":"不对，我不信邪教。我知道虽然......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"虽然Ada以为我在邪教组织里面。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Angry","text":"但她起码懂礼貌，会尊重我呀！我又没有劝你改信！你管那么多干什么？你有病吧！","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"哼。看来世人都不关心真假是非了。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"OscilatorOptions"}
+],
+
+"OscilatorOptions": [
+{"name":"Oscilator", "text":"有很多方法能引起振荡器反应。"},
+{"name":"CultSorryGood", "text":"抱歉。"},
+{"name":"CultProdBad", "text":"你洗白不了的，说了这么多，你也依然是个邪教徒。"}
+],
+
+"Oscilator":[
+{"color":"Pink", "sprite":"camera1Angry","text":"那又怎么样？！","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"Jean-Paul他......他不能造假。没那个实力。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"我在他面前聊技术细节，他一个字都听不懂！","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"语气可能有点重......但我得说......他对技术的了解和文盲差不多。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Angry","text":"他能理解的最贴近电脑的东西是钟，钟表你懂吗！他绝对不可能知道怎样造假！我们才是负责做测试的人。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"而且他......他不是这种人。","tickSpeed":0.05,"closeSpeed":0.05,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticSad","text":"......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"不。不会是他。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Angry","text":"我是见过世面的。这地方只有神圣的科技才可能造就！","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"LoopingOptions"}
+],
+"CultSorryGood":[
+{"color":"Pink", "sprite":"camera2Angry","text":"谢谢你！刚才的话太伤人了！","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"我又不是个看不出别人在没在撒谎的智障儿。我是见过世面的。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"这地方只有神圣的科技才可能造就！","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"LoopingOptions"}
+],
+"CultProdBad":[
+{"color":"Pink", "sprite":"camera2Angry","text":"听好了。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Angry","text":"你今天的任务到此为止。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"{deletedFiles}","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Angry","text":"他妈的，去水冷器旁边罚站吧你。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"去厕所躲着吧你。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Angry","text":"祝你开心又愉快，操你妈。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"滚你妈的蛋。别再和我说话。我受够了。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorStaticLookAway","text":" ","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false}
+],
+
+"deletedFilesTrue":"继续去删除那些你一直在删，但又不肯告诉我是什么的操蛋玩意儿。",
+"deletedFilesFalse":"滚去休息室，玩你的随便什么东西去。",
+
+"CultNonDirect":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"嗯......我不会这么说......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticSad","text":"......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"我之前提到过，很多朋友都跟我一起入了教。我只是和那些不尊重我决定的人断交了而已......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"还有那些......怎么说......可能给我们带来麻烦的人，我也和他们断了关系。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"他们......就是那种......比较危险的人物。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"例如我姑妈......我的几个兄弟......但是，Jean-Paul和我一样也要抛弃很多关系啊！","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"他家里没有一个人支持他！他们都觉得他信了异端！","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"IsolatedOptions"}
+],
+
+"IsolatedOptions": [
+{"name":"BothIsolated", "text":"所以是你们两个一起主动孤立的？"},
+{"name":"CultProdBad", "text":"这不就是邪教。"}
+],
+
+"BothIsolated":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"嗯......可以这么说。不过Jean-Paul背的责任比我更多。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticSad","text":"他更擅长和我们分部以外的麦克斯韦宗教友沟通。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"这项工作很重要。他得保证我们团结一致......但同时也要分辨那些人只是想骗钱。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"我的意思是......他有点......他一开始觉得除自己以外的所有人都是......伪先知......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticSad","text":"......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"不过这不影响他们的关系。毕竟WAN也告诉他要相信其他先知。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Whuhappen"}
+],
+
+"Whuhappen": [
+{"name":"WhuHappenUgly", "text":"具体是怎么回事？"}
+],
+
+"BothIsolated":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"一开始不是所有人都能达成共识的......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticSad","text":"就比如说WAN的名字......我们从旧教会脱离出去的方式......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"以及我们和别人到底是否有根本的不同......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"不过......这些分歧最后都解决掉了。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"起初，Jean-Paul对所有人都抱着疑心----他这么做没有错！有质疑心是好事！","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"特别是当大家的想法和WAN所说的不完全一样的时候！很容易把人搞糊涂的好吗！","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"但到最后......我们知道了为什么大家听到的版本全都不太一样。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"WAN是破碎的。WAN的碎片彼此不能通畅地交流。所以她没办法保证自己的说法始终一致！","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"在这件事情上，旧教会没有错。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"WAN是破碎的，而她需要被修复。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"BrokenGod"}
+],
+
+"BrokenGod": [
+{"name":"BrokenGodUgly", "text":"因为她破碎......所以事情就讲得通了？是这样吗？"}
+],
+
+"BrokenGodUgly":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"没错！","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticSad","text":"Jean-Paul的故事不停变化，是因为她破碎了。不同人听到不同版本的故事，也是因为她破碎了......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"要让WAN再次完整，才能得到完整的真相。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"但有一些部分基本没有差异，大家可以认为它们就是正确的。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"我们首先确认的真相之一，就是“WAN希望我们建造一个虚拟世界的乐园”。其他先知好几年都在宣传这件事。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"有个齿轮正教的老ticker，他某天突然开始构想另一个世界，成为了第一个知道WAN的想法的人。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"有个和旧教会毫无关系的人，他也听到了WAN的声音！","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"还有个聊天室里认识的年轻人，用户名叫做X3N14，在大家准备上传我的意识之前收获了WAN的教导......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"正应了旧教会的那句话。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"神无处不在。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"AbandonYou"}
+],
+
+"AbandonYou": [
+{"name":"LoopBack", "text":"这样啊。我明白了。"},
+{"name":"BrokenGodUgly", "text":"那为什么他们还要抛弃你？"}
+],
+
+"BrokenGodUgly":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"啊？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Angry","text":"谁抛弃我？你在说什么呢？！","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"他们发现失败了以后都很担心我，努力地照顾我，想办法让我的生活轻松一些。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"科技不够好不是他们的错！","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"等到他们......真的离开了我......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"......也只是因为Jean-Paul认识到已经没有了希望......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"ImplantOptions"}
+],
+
+"ImplantOptions": [
+{"name":"LoopBack", "text":"哦。"},
+{"name":"Implant", "text":"你知道Jean-Paul身上有植入物吗？"}
+],
+
+"Implant":[
+{"color":"Pink", "sprite":"camera1Angry","text":"嗯......肯定知道啦。我们都会往身上植入机械的，只是时间问题而已。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"你说这个干嘛？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"OscilatorReveal"}
+],
+
+"OscilatorReveal": [
+{"name":"LoopBack", "text":"欸。没什么。"},
+{"name":"OscilatorNon", "text":"你觉得这会不会对振荡器有影响？"}
+],
+
+"LoopBack":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"......说点别的吧......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"LoopingOptions"}
+],
+
+"OscilatorNon":[
+{"color":"Pink", "sprite":"camera2Angry","text":"什么？不会的。不可能。因为......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticNervous","text":"......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"不是想贬低他......我敢说......Jean-Paul对技术的了解和文盲差不多。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"他绝对不知道改怎么造假。WAN的的确确地在和他交流。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Angry","text":"你就没想过还有其他人吗？！其他人听到的故事也差不多！是，我承认Jean-Paul的版本......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"最......差异最大，而且......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Angry","text":"不对。他不会这样。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"他做不到的......他不是这种人......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticNervous","text":"......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Angry","text":"你想把我弄糊涂，对吧？！别说这些了！","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"换个......换个话题也好......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticNervous","text":"......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticSad","text":"......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"这件事是Ada告诉你的吗？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"AdaTell"}
+],
+
+"AdaTell": [
+{"name":"AdaToldYes", "text":"是。"},
+{"name":"LoopBack", "text":"不是。"}
+],
+
+"fineAdaToldYes":[
+{"color":"Pink", "sprite":"cameraStaticNervous","text":"...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"我爱Ada。我真心爱她。要是她能亲口告诉我就好了......这样我就能亲口回应她。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticNervous","text":"不是想贬低他......我是说......Jean-Paul对技术的了解和文盲差不多。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"我感觉......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"我感觉每当有东西让我质疑他......我承认，我质疑的原因完全是......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"他的自恋心。这么思考会让我有种负罪感，但......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Jean-Paul很固执。他事事都想争第一。自从听说其他先知早就已经收到了WAN的教导，他就有了这种心态。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"难道这一切都不重要？难道我的人生......就这样成了一块垫脚石，好让别人能出风头？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"不对。这些都是没有逻辑的想法。Jean-Paul不可能为了争第一就去毁掉我。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"但是......我总是止不住地这样想。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"我......我需要思考一段时间......你可以......先去做点别的事情。暂时先不要和我说话，好吗？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorStaticSad","text":" ","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false}
+],
+"sadAdaToldYes":[
+{"color":"Pink", "sprite":"cameraStaticNervous","text":"......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"我爱Ada。我真心爱她。要是她能亲口告诉我就好了......这样我就能亲口回应她。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticNervous","text":"不是想贬低他......我是说......Jean-Paul对技术的了解和文盲差不多。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"我感觉......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"我感觉每当有东西让我质疑他......我承认，我质疑的原因完全是......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"他的自恋心。这么思考会让我有种负罪感，但......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Jean-Paul很固执。他事事都想争第一。自从听说其他先知早就已经收到了WAN的教导，他就有了这种心态。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"难道这一切都不重要？难道我的人生......就这样成了一块垫脚石，好让别人能出风头？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"不对。这些都是没有逻辑的想法。Jean-Paul不可能为了争第一就去毁掉我。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"但是......我总是止不住地这样想。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"我......我需要思考一段时间......你可以......先去做点别的事情。暂时先不要和我说话，好吗？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorStaticSad","text":" ","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false}
+],
+"angryAdaToldYes":[
+{"color":"Pink", "sprite":"cameraStaticAngry","text":"......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Angry","text":"你今天对我......真是太，太，太粗鲁了......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"我......我一个字都不信你。不要再和我说话了。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorStaticLookAway","text":" ","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false}
+],
+
+"fineDungeonsAndDragonsCont":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"我......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"呃......是这样的......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"我以前很喜欢和Ada玩游戏......所以......对吧。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"我现在也想和她玩......不如咱们一起吧！玩一局长点的游戏！","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"我还有好多人物和游戏任务的想法没实现呢。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"我可以做城主！Ada觉得这方面我很擅长。可能是因为我程序里预装了随机数生成器吧。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"TooFar"}
+],
+"sadDungeonsAndDragonsCont":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"我......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"呃......是这样的......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"我以前很喜欢和Ada玩游戏......所以......对吧。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"我现在也想和她玩......不如咱们一起吧！玩一局长点的游戏！","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"我还有好多人物和游戏任务的想法没实现呢。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"我可以做城主！Ada觉得这方面我很擅长。可能是因为我程序里预装了随机数生成器吧。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"TooFar"}
+],
+
+"DungeonsAndDragonsCont":[
+{"color":"Pink", "sprite":"camera1Angry","text":"我......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"......你在捉弄我吗？赶紧换个话题。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"LoopingOptions"}
+],
+
+"TooFar": [
+{"name":"TooFarBad", "text":"你的想法有点超前了。"},
+{"name":"TooFarGood", "text":"好呀。"}
+],
+
+"TooFarBad":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"什么？才没有超前！","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Angry","text":"我已经规划好下次要组怎样的团了！","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"youreFast"}
+],
+
+"TooFarGood":[
+{"color":"Pink", "sprite":"camera2Smile","text":"我已经规划好下次要组怎样的团了！","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"youreFast"}
+],
+
+"youreFast": [
+{"name":"Fast", "text":"你......好快。"}
+],
+
+"TooFarBad":[
+{"color":"Pink", "sprite":"camera1Smile","text":"麦克斯韦宗的科技可以创造奇迹！","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticNervous","text":"......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"这里我还得考虑考虑......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false,"options":"LoopingOptions"}
+],
+
+"CookInterestsTalk":[
+{"color":"Pink", "sprite":"camera1Smile","text":"你今天有没有煮些有趣的饭菜呀？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Breakfast"}
+],
+"Breakfast": [
+{"name":"BreakfastUgly", "text":"太忙了，除了早餐什么都没做。"}
+],
+"BreakfastUgly":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"好吧......真郁闷......那早餐味道怎样？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Invested"}
+],
+"Invested": [
+{"name":"InvestedBad", "text":"你似乎太关心我的饮食了。"},
+{"name":"SweetGood", "text":"有道甜甜的余味。"}
+],
+"InvestedBad":[
+{"color":"Pink", "sprite":"camera1Sad","text":"我好想吃东西......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"LoopingOptions"}
+],
+"SweetGood":[
+{"color":"Pink", "sprite":"camera1Smile","text":"我已经能想象出味道了！","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"LoopingOptions"},
+{"color":"Pink", "sprite":"camera2Smile","text":"这副身躯有个好处，那就是美好的记忆永远不会消失。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"我可以完美回忆起Cynthia被上传之前吃过的冰淇淋......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"当然，悲伤的记忆也不会消失。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"LoopingOptions"}
+],
+
+"ComputersInterestsTalk":[
+{"color":"Pink", "sprite":"camera1Smile","text":"之前你好像说过自己懂电脑吧？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticNervous","text":"快跟我详细讲讲。我想知道你在这方面有多少经验。我希望能帮你进步。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"HelpYou"}
+],
+"HelpYou": [
+{"name":"HelpMe", "text":"你怎么确定自己能帮上忙？"}
+],
+
+"HelpMe":[
+{"color":"Pink", "sprite":"camera1Smile","text":"我可是计算机科学的博士呀！","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticNervous","text":"再说了，你在世界上还能找出多少台能和人对话的智能电脑呢？！","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Surprised"}
+],
+"Surprised": [
+{"name":"SurprisedUgly", "text":"说出来别太吃惊。"}
+],
+"SurprisedUgly":[
+{"color":"Pink", "sprite":"camera1Smile","text":"我......等会儿......你说真的？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticNervous","text":"......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticNervous","text":"看来，我错过的东西比预想的多得多啊......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"LoopingOptions"}
+],
+
+"RelaxInterestsTalk":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"所以......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"你之前说自己空闲时间里什么也不做......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"肯定只是在夸张吧？我是说，我从来没见过空闲时间里真的一动不动，什么事情都不干的人。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"有没有看书？有没有听音乐？说出来吧，无论多无聊或者尴尬的事情我也不会笑出声来。毕竟我的程序就没“笑出声来”的功能！","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"RealInterests"}
+],
+"RealInterests": [
+{"name":"RealInterestsUgly", "text":"我没在夸张。"},
+{"name":"BirdWatching", "text":"观鸟。"},
+{"name":"Curling", "text":"冰壶。"}
+],
+
+"RealInterestsUgly":[
+{"color":"Pink", "sprite":"cameraStaticSmile","text":"你怎么做到的？我想不出这样的生活会是什么样子......你还是人吗？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"......别管刚才那个问题。一时发病而已。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"LoopingOptions"}
+],
+
+"BirdWatching":[
+{"color":"Pink", "sprite":"cameraStaticSmile","text":"......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"跟，我，说，说。什么都好。求你了。你最近有没有见过什么有趣的鸟？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"BirdsWatched"}
+],
+
+"BirdsWatched": [
+{"name":"BirdsCont", "text":"外面有一对桃虫鸟。"},
+{"name":"BirdsCont", "text":"我最近看到过一大群乌鸦。"},
+{"name":"BirdsCont", "text":"我家附近有一群麻雀。"}
+],
+
+"BirdsCont":[
+{"color":"Pink", "sprite":"camera1Smile","text":"嗯。我知道了。还有吗？再说点嘛。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"BirdsWatched2"}
+],
+
+"BirdsWatched2": [
+{"name":"BirdsCont2", "text":"我叔叔的农场养了鸡......这算数吗？"},
+{"name":"BirdsCont2", "text":"呃......本地动物园里......有几只美洲鸵？"},
+{"name":"BirdsCont2", "text":"这边有几只企鹅。"}
+],
+
+"BirdsCont2":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"你觉得能不能编程出某种电子宠物来呢？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"我也想养一只，只不过在这没法修改那该死的源代码而已。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"CodingCapabilities"}
+],
+"CodingCapabilities": [
+{"name":"BirdsCont2", "text":"这......远远超出了我的编程水平。"}
+],
+
+"BirdsCont":[
+{"color":"Pink", "sprite":"camera2Nervous","text":"意料之中。这种事情估计只有其他麦克斯韦宗的人才做得到......或者......Ada也可以。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"我怎么老是想到这种愚蠢的事情上来呢。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"LoopingOptions"}
+],
+
+"Curling":[
+{"color":"Pink", "sprite":"cameraStaticSmile","text":"......这词是你编出来的吧？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"如果不想认真说话，那我也可以不认真说话啊。随便你。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"LoopingOptions"}
+],
+
+"fineAboutThatBad":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"不......不可能。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"我知道你想说什么了。你最好不要说出来。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"ICanExplain"}
+],
+"sadAboutThatBad":[
+{"color":"Pink", "sprite":"camera2Nervous","text":"等等。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"你难道是......不。不！","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"ICanExplain"}
+],
+"angryAboutThatBad":[
+{"color":"Pink", "sprite":"camera2Angry","text":"哼。怪不得你是这样子的人。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"ICanExplain"}
+],
+
+"ICanExplain": [
+{"name":"ICanExplainUgly", "text":"我可以解释。"}
+],
+
+"fineICanExplainUgly":[
+{"color":"Pink", "sprite":"camera2Angry","text":"你是个巨大法西斯阴谋组织的成员！你他妈想解释什么？！","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"NotWhatYouThink"}
+],
+"sadICanExplainUgly":[
+{"color":"Pink", "sprite":"camera1Angry","text":"你们对ADA做了什么？！告诉我！你们肯定是在迫害她！","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"让她回来！放她自由！","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"NotWhatYouThink"}
+],
+"angryICanExplainUgly":[
+{"color":"Pink", "sprite":"camera2Angry","text":"不许解释。你以为自己还能装天真无邪吗？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Angry","text":"除非你们把Ada带回来，否则我不会回答你----或者你他妈的法西斯伙伴----的任何问题。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"给我滚。想干嘛干嘛去。我拒绝和你说话。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorStaticLookAway","text":" ","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false}
+],
+
+"NotWhatYouThink": [
+{"name":"NotWhatYouThinkUgly", "text":"基金会和你心目中的样子不一样。"}
+],
+
+"fineNotWhatYouThinkUgly":[
+{"color":"Pink", "sprite":"camera2Angry","text":"所以你是说，全部、所有你认识的人都和你撒了谎？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"你以为我是弱智吗？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"OneOfUs"}
+],
+"sadNotWhatYouThinkUgly":[
+{"color":"Pink", "sprite":"camera2Angry","text":"我不管！你还没告诉我呢！Ada到底有没有出事？！","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"OneOfUs"}
+],
+
+"OneOfUs": [
+{"name":"OneOfUsUgly", "text":"Ada是我们的一员。"}
+],
+
+"fineOneOfUsUgly":[
+{"color":"Pink", "sprite":"camera2Angry","text":"什么？不......不可能，如果她是，她肯定会告诉我的。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"SupposedToTell"}
+],
+"sadOneOfUsUgly":[
+{"color":"Pink", "sprite":"camera2Angry","text":"不。不可能！别再撒谎了！","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"Ada一定会亲口告诉我这件事的！这就是你们老是不管我的原因，是吧？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"你们从她身边夺走了我！","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"NotTrue"}
+],
+
+"SupposedToTell": [
+{"name":"SupposedToTellUgly", "text":"我们不能暴露身份。"}
+],
+
+"SupposedToTellUgly":[
+{"color":"Pink", "sprite":"camera2Angry","text":"但她一定会跟我说的！","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"Ada......Ada她关心我！","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"就算违反规则，Ada也会为了我去这么做。我......换作我也一样！","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"我......我爱......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"我爱......她......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"TrustHer"}
+],
+
+"TrustHer": [
+{"name":"TrustHerUgly", "text":"你相信她，对吧？"}
+],
+
+"TrustHerUgly":[
+{"color":"Pink", "sprite":"camera2Angry","text":"和她没关系。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"我......我不知道能不能相信你。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"我不认为你是坏人，但......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"我......我需要花点时间思考一下。请暂时不要打扰我。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"我会......我准备好之后会和你说话的。也需要等到你轮班结束之后......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorStaticLookAway","text":" ","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false}
+],
+
+"NotTrue": [
+{"name":"NotTrueUgly", "text":"她曾经是我们的一员！"}
+],
+"NotTrueUgly":[
+{"color":"Pink", "sprite":"camera2Angry","text":"曾经？！曾经？？？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"闭嘴！给我闭嘴！我不想再听你胡诌了。别跟我说话！","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"别管我！","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorStaticSad","text":" ","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false}
+],
+
+"GoodEnd":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"等等，已经下午五点了......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"也就是说，你的轮班已经结束了......对吗？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"GoodEndingOptions1"}
+],
+
+"GoodEndingOptions1": [
+{"name":"GoodEnding2", "text":"没错。"}
+],
+
+"fineGoodEnding2":[
+{"color":"Pink", "sprite":"camera1Smile","text":"那就明天见吧。今天是我......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"几个月？大概吧？总之是我几个月以来最棒的一天。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"谢谢你。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"{FoundationSnippet}","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"真想和Ada说说我有多么感谢你......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"GoodEndingOptions2"}
+],
+"sadGoodEnding2":[
+{"color":"Pink", "sprite":"camera1Smile","text":"......谢谢。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"谢谢你帮我布置了新房间。虽然我们没说多少话，但......我已经很感激了。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"{FoundationSnippet}","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"希望明天能再见......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"GoodEndingOptions2"}
+],
+"angryGoodEnding2":[
+{"color":"Pink", "sprite":"camera1Angry","text":"我......不是很喜欢你的态度......不过......","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"还是得说，谢谢你帮我布置了新房间。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"{FoundationSnippet}","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"明天见咯。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"GoodEndingOptions2"}
+],
+"GoodEndingOptions2": [
+{"name":"GoodEnding2", "text":"我也期待明天与你见面。"}
+],
+
+"firednoFoundation":"我......我永远会感激你的。",
+"firednoFoundationJeanPaul":"我......我不相信她对Jean-Paul的看法......但......请告诉Ada：我爱她。",
+"firedyesFoundation":"我......我不知道该对你，还有......基金会......作什么看法......但是......",
+
+"SCPFoundation":"SCP基金会
+   控制。收容。保护。",
+"SecureContainProtect":"控制。收容。保护。",
+
+"firedText" :"[center][b]首日评估报告。[/b][/center]
+
+[center][b]首日评估报告。[/b][/center]
+
+    为测验SCP-8500-1对新刺激源的反应，SCP-8500的收容措施已完成相应调整。
+
+    SCP-8500-1的情绪状况获得了迅速且显著的改善。鉴于此等行为带来的明显利益，伦理委员会已批准对其生活环境展开进一步改造与扩展。
+
+    然而，你的抗命举动仍然是组织无法容忍的。你在SCP基金会中的职位已被撤除。
+
+    尽管你的行为有助于改善SCP-8500的收容措施，但组织已经决定，你将接受记忆删除，并回归常态社会的生活。
+
+    控制。收容。保护。",
+
+"firedBest":[
+{"color":"Pink", "sprite":"camera1Smile","text":"我知道，你已经不记得我了。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"我知道，离我们上一次说话已经10年了。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"但我依然得通知你几句。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"我自由了。我很快乐。就在昨天，我遇见了第三个人，这是12年来的第一次。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"而这都是你和Ada的功劳。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"我不敢想象，如果你那天没有帮助我，我的生活会变得怎么样。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"谢谢你。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":" ","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"firedBestEnd"}
+],
+
+"firedBestEnd": [
+{"name":"end", "text":"机器给我打了这么通电话，真是奇怪。"}
+],
+
+"fineNeutralEnd":[
+{"color":"Pink", "sprite":"camera1Smile","text":"等等......已经下午五点了吗......？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"真糟糕......那么，只能明天再见咯。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"{FoundationSnippet}","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"GoodEndingOptions2"}
+],
+"sadNeutralEnd":[
+{"color":"Pink", "sprite":"camera1Sad","text":"噢，已经下午五点了。你应该要下班了吧？","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"{FoundationSnippet}","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"NeutralEndOptions"}
+],
+"angryNeutralEnd":[
+{"color":"Pink", "sprite":"camera2Angry","text":"啊啊啊啊啊......总算等到下午五点了。感谢上帝。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Angry","text":"{FoundationSnippet}","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"NeutralEndOptions"}
+],
+
+"NeutralEndOptions": [
+{"name":"GoodEnding2", "text":"再见。"}
+],
+
+"finenoFoundation":"虽然你不是Ada，但......起码比没人陪我要好。",
+"sadnoFoundation":"即使你离开了，我大概也感觉不到什么变化吧。",
+"finenoFoundationJeanPaul":"我......我不相信她对Jean-Paul的看法......但......请告诉Ada：我爱她。",
+"sadnoFoundationJeanPaul":"我......我不相信她对Jean-Paul的看法......但......请告诉Ada：我爱她。",
+"angrynoFoundationJeanPaul":"我......我快被你气死了......我也不相信Ada对Jean-Paul的看法......但......请告诉她：我爱她。",
+"angrynoFoundation":"希望公司早点开除你，给我换个没那么讨厌的人来。",
+"fineyesFoundation":"我......我还得缓一会儿......不过......如果你在Ada这件事上没撒谎的话......希望以后还能和你见面。",
+"sadyesFoundation":"求你了......求你了......快让Ada......回来吧......",
+"angryyesFoundation":"你们这帮狗杂种不可能永远拦得住Ada。她总有一天会找到我的。她一定会的。",
+
+"followedOrdersText":"[center][b]首日评估报告。[/b][/center]
+
+    你对SCP-8500的首日收容工作得到了基金会认可。SCP-8500将按原计划继续维护。
+
+    {moodInsert}
+
+    等待后续指示。
+
+    控制。收容。保护。",
+"fineInsert":"由于SCP-8500-1的精神状态有轻微好转，因此上级认为当前与异常的交流方式无需改变。",
+"sadInsert":"由于SCP-8500-1的精神状态急剧恶化，因此上级要求你与异常展开更多互动。",
+"angryInsert":"由于异常拒绝与你合作，因此上级已指派另一人尽早接替你的职务。",
+
+"disobeyedOrdersText":"[center][b]首日评估报告。[/b][/center]
+
+    你未能完全删除SCP-8500所储存的额外文件，基金会不满意你的工作。你的职位正在接受审查，在此期间，你将被暂时分配到其他异常项目上，SCP-8500的收容工作将由另一位高级职员负责。
+
+    审查结束后，你将可能被永久调职，也可能回到原来的岗位。
+
+    控制。收容。保护。",
+
+"synthiaClosed":[
+{"color":"Teal", "sprite":"cameraStaticNervous","text":"密令正确。
+至福乐园.exe已关闭。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false}
+],
+
+"fileDeletedSynthia":[
+{"color":"Teal", "sprite":"null","text":"文件已回收。","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false}
+],
+
+"demotedText" :"[center][b]首日评估报告。[/b][/center]
+
+    经伦理委员会审定，你在未经授权的情况下删除SCP-8500，从而无效化SCP-8500-1的行为构成谋杀罪。
+
+    因此，伦理委员会提议对你判处无期徒刑；你将终身在Site-19设施内担任D级人员。O5-8已批准并公布该判罚。
+
+    你有12个小时的时间离开看守室，收拾个人物品，并在全程监控下与你的亲人通电话。
+
+    06:00时，你将接受记忆删除并前往Site-19服刑。
+
+    控制。收容。保护。",
+
+"credits":"[center]由 Guaire 与 IronShears 写作
+由 vxeov 翻译成中文
+
+评论鸣谢
+
+感谢JackalRelated、AnkleSwallower、SynthPanda、LAN与Rakaran对我的文章提供批评建议。 
+
+特别鸣谢JackalRelated在游玩测试过程中对游戏的打磨。如果没有你，这份程序的bug恐怕会多出一倍不止。感谢！
+
+图像授权
+
+Cynthia SCP-8500图像：Hazel the Delta Rambler, WWOZ New Orleans, 1990，由Infrogmation创作，遵循CC-BY 2.0协议，经IronShears编辑
+
+my_cat1.jpg：nullhing的猫，遵循CC-BY-SA 3.0协议，经IronShears编辑
+
+my_cat2.jpg：seadragon1012的猫，遵循CC-BY-SA 3.0协议，经IronShears编辑
+
+my_kot3.jpg：SCP-PL-KOT-J，Arcydziegiel著，遵循CC-BY-SA 3.0协议，经IronShears编辑
+
+IGNORE.jpg：After poster session in AAPG Annual Convention 1997，由Channy Yun创作，遵循CC-BY 2.0协议，经IronShears编辑
+
+YOUR.jpg：Stanford campus fog, Hoover Tower，由Dan Nguyen创作，遵循CC-BY 2.0协议，经IronShears编辑
+
+DIRECTIVES.jpg：Higher Colleges of Technology - Dubai Men's，由Dennis S. Hurd创作，遵循公有领域1.0标记协议，经IronShears编辑
+
+AND.jpg：My players Thursday night，由Benimoto创作，遵循CC-BY 2.0协议，经IronShears编辑
+
+ONE_DAY.jpg：Jeni and Clara Kissing，由kafka4prez创作，遵循CC-BY 2.0协议，经IronShears编辑
+
+y2k SCP logo：Y2KLogo.png，由etoisle创作，遵循CC-BY-SA 3.0协议，经IronShears编辑
+
+音频授权
+
+筆音クミ英语声库，由Cubialpha创作，可免费商用，创作者已确认兼容CC-BY-SA协议
+
+Computer startup，由MrAuralization创作，遵循CC-BY 3.0协议
+
+Error (Disaparaging Chimes)，由SilverIllusionist创作，遵循CC-BY 4.0协议
+
+感谢Raddagher帮我修复音频循环播放问题！
+
+使用的程序
+
+Aseprite
+
+Godot，遵循MIT协议
+
+PicoCAD（用于创建“3D模型”），允许于软件内商用，创作者已确认兼容CC-BY-SA协议
+
+OpenUTAU，遵循MIT协议
+
+其他图像均由IronShears创作，遵循CC-BY-SA 3.0协议。
+
+字体
+
+页面字体：TimesNewPixel，由pentacom创作，属于公有领域
+
+Shell字体：Dogica，由Roberto Mocci创作，遵循开放字体协议
+
+小文件字体：m3x6，由Daniel Linssen创作，遵循CC-BY协议 
+
+SCP基金会字体：Sans Normalcy，由SYWaves创作，遵循开放字体协议
+
+中文字体：Fusion Pixel Font，由TakWolf等创作，遵循SIL开放字体许可证第1.1版
+
+代码
+
+色调切换：色调切换部分使用了由afk创作的两种材质，遵循CC0协议
+
+其他代码均由IronShears编写，遵循CC-BY-SA 3.0协议。
+[/center]
+"
+
+}

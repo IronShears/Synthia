@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=2]
+[gd_scene load_steps=33 format=2]
 
 [ext_resource path="res://Resources/GUIpieces/DitherEndingScreen.png" type="Texture" id=1]
 [ext_resource path="res://cursor.gd" type="Script" id=2]
@@ -30,6 +30,34 @@ tracks/0/keys = {
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 16, 243 ), Vector2( 16, -804 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Credits:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+
+[sub_resource type="Animation" id=64]
+resource_name = "Credits_CN"
+length = 50.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Credits:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.1, 50 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 16, 243 ), Vector2( 16, -1020 ) ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath("Credits:visible")
@@ -304,6 +332,7 @@ __meta__ = {
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/Credits = SubResource( 63 )
+anims/Credits_CN = SubResource( 64 )
 anims/RESET = SubResource( 2 )
 anims/loadIn = SubResource( 1 )
 
@@ -324,104 +353,150 @@ visible = false
 margin_left = 16.0
 margin_top = 243.0
 margin_right = 306.0
-margin_bottom = 1047.0
+margin_bottom = 1443.0
 theme = ExtResource( 3 )
 bbcode_enabled = true
-bbcode_text = "[center]Written by Guaire and IronShears
+bbcode_text = "[center]由 Guaire 与 IronShears 写作
+由 vxeov 翻译成中文
 
-CREDITS
+评论鸣谢
 
-IMAGES
-Cynthia SCP-8000 image: Hazel the Delta Rambler, WWOZ New Orleans, 1990 by Infrogmation, CC-BY 2.0, Edited by IronShears
+感谢JackalRelated、AnkleSwallower、SynthPanda、LAN与Rakaran对我的文章提供批评建议。 
 
-my_cat1.jpg: nullhing’s cat, CC-BY-SA 3.0, Edited by IronShears
+特别鸣谢JackalRelated在游玩测试过程中对游戏的打磨。如果没有你，这份程序的bug恐怕会多出一倍不止。感谢！
 
-my_cat2.jpg: seadragon1012’s cat, CC-BY-SA 3.0, Edited by IronShears
+图像授权
 
-my_kot3.jpg: SCP-PL-KOT-J by Arcydziegiel, CC-BY-SA 3.0, Edited by IronShears
+Cynthia SCP-8500图像：Hazel the Delta Rambler, WWOZ New Orleans, 1990，由Infrogmation创作，遵循CC-BY 2.0协议，经IronShears编辑
 
-IGNORE.jpg: After poster session in AAPG Annual Convention 1997 by Channy Yun, CC-BY 2.0, Edited by IronShears
+my_cat1.jpg：nullhing的猫，遵循CC-BY-SA 3.0协议，经IronShears编辑
 
-YOUR.jpg: Stanford campus fog, Hoover Tower by Dan Nguyen, CC-BY 2.0, Edited by IronShears
+my_cat2.jpg：seadragon1012的猫，遵循CC-BY-SA 3.0协议，经IronShears编辑
 
-DIRECTIVES.jpg:  Higher Colleges of Technology - Dubai Men's by Dennis S. Hurd, Public Domain Mark 1.0, Edited by IronShears
+my_kot3.jpg：SCP-PL-KOT-J，Arcydziegiel著，遵循CC-BY-SA 3.0协议，经IronShears编辑
 
-AND.jpg:  My players Thursday night by Benimoto, CC-BY 2.0, Edited by IronShears
+IGNORE.jpg：After poster session in AAPG Annual Convention 1997，由Channy Yun创作，遵循CC-BY 2.0协议，经IronShears编辑
 
-ONE_DAY.jpg: Jeni and Clara Kissing by kafka4prez, CC-BY 2.0, Edited by IronShears
+YOUR.jpg：Stanford campus fog, Hoover Tower，由Dan Nguyen创作，遵循CC-BY 2.0协议，经IronShears编辑
 
+DIRECTIVES.jpg：Higher Colleges of Technology - Dubai Men's，由Dennis S. Hurd创作，遵循公有领域1.0标记协议，经IronShears编辑
 
+AND.jpg：My players Thursday night，由Benimoto创作，遵循CC-BY 2.0协议，经IronShears编辑
 
+ONE_DAY.jpg：Jeni and Clara Kissing，由kafka4prez创作，遵循CC-BY 2.0协议，经IronShears编辑
 
-All other images by IronShears, CC-BY-SA 3.0.
+y2k SCP logo：Y2KLogo.png，由etoisle创作，遵循CC-BY-SA 3.0协议，经IronShears编辑
 
+音频授权
 
-FONTS
+筆音クミ英语声库，由Cubialpha创作，可免费商用，创作者已确认兼容CC-BY-SA协议
 
-Page Font: TimesNewPixel by pentacom, Public Domain. 
+Computer startup，由MrAuralization创作，遵循CC-BY 3.0协议
 
-Shell Font: Dogica by Roberto Mocci(Open Font License)
+Error (Disaparaging Chimes)，由SilverIllusionist创作，遵循CC-BY 4.0协议
 
+感谢Raddagher帮我修复音频循环播放问题！
 
+使用的程序
 
-Tiny File font: m3x6 by Daniel Linssen, CC-BY 
+Aseprite
 
-SCP Foundation Font: Sans Normalcy by SYWaves, Open Font license 
+Godot，遵循MIT协议
 
-CODE
+PicoCAD（用于创建“3D模型”），允许于软件内商用，创作者已确认兼容CC-BY-SA协议
 
-Palette Swap: Palette Swap using two textures by afk, CC0
+OpenUTAU，遵循MIT协议
 
-All other code by IronShears, CC-BY-SA 3.0.
-[/center]
-"
-text = "Written by Guaire and IronShears
+其他图像均由IronShears创作，遵循CC-BY-SA 3.0协议。
 
-CREDITS
+字体
 
-IMAGES
-Cynthia SCP-8000 image: Hazel the Delta Rambler, WWOZ New Orleans, 1990 by Infrogmation, CC-BY 2.0, Edited by IronShears
+页面字体：TimesNewPixel，由pentacom创作，属于公有领域
 
-my_cat1.jpg: nullhing’s cat, CC-BY-SA 3.0, Edited by IronShears
+Shell字体：Dogica，由Roberto Mocci创作，遵循开放字体协议
 
-my_cat2.jpg: seadragon1012’s cat, CC-BY-SA 3.0, Edited by IronShears
+小文件字体：m3x6，由Daniel Linssen创作，遵循CC-BY协议 
 
-my_kot3.jpg: SCP-PL-KOT-J by Arcydziegiel, CC-BY-SA 3.0, Edited by IronShears
+SCP基金会字体：Sans Normalcy，由SYWaves创作，遵循开放字体协议
 
-IGNORE.jpg: After poster session in AAPG Annual Convention 1997 by Channy Yun, CC-BY 2.0, Edited by IronShears
+中文字体：凤凰点阵体（VonwaonBitmap-12px, -16px），由Haoyu Qiu创作，遵循CC0协议
 
-YOUR.jpg: Stanford campus fog, Hoover Tower by Dan Nguyen, CC-BY 2.0, Edited by IronShears
+代码
 
-DIRECTIVES.jpg:  Higher Colleges of Technology - Dubai Men's by Dennis S. Hurd, Public Domain Mark 1.0, Edited by IronShears
+色调切换：色调切换部分使用了由afk创作的两种材质，遵循CC0协议
 
-AND.jpg:  My players Thursday night by Benimoto, CC-BY 2.0, Edited by IronShears
+其他代码均由IronShears编写，遵循CC-BY-SA 3.0协议。
+[/center]"
+text = "由 Guaire 与 IronShears 写作
+由 vxeov 翻译成中文
 
-ONE_DAY.jpg: Jeni and Clara Kissing by kafka4prez, CC-BY 2.0, Edited by IronShears
+评论鸣谢
 
+感谢JackalRelated、AnkleSwallower、SynthPanda、LAN与Rakaran对我的文章提供批评建议。 
 
+特别鸣谢JackalRelated在游玩测试过程中对游戏的打磨。如果没有你，这份程序的bug恐怕会多出一倍不止。感谢！
 
+图像授权
 
-All other images by IronShears, CC-BY-SA 3.0.
+Cynthia SCP-8500图像：Hazel the Delta Rambler, WWOZ New Orleans, 1990，由Infrogmation创作，遵循CC-BY 2.0协议，经IronShears编辑
 
+my_cat1.jpg：nullhing的猫，遵循CC-BY-SA 3.0协议，经IronShears编辑
 
-FONTS
+my_cat2.jpg：seadragon1012的猫，遵循CC-BY-SA 3.0协议，经IronShears编辑
 
-Page Font: TimesNewPixel by pentacom, Public Domain. 
+my_kot3.jpg：SCP-PL-KOT-J，Arcydziegiel著，遵循CC-BY-SA 3.0协议，经IronShears编辑
 
-Shell Font: Dogica by Roberto Mocci(Open Font License)
+IGNORE.jpg：After poster session in AAPG Annual Convention 1997，由Channy Yun创作，遵循CC-BY 2.0协议，经IronShears编辑
 
+YOUR.jpg：Stanford campus fog, Hoover Tower，由Dan Nguyen创作，遵循CC-BY 2.0协议，经IronShears编辑
 
+DIRECTIVES.jpg：Higher Colleges of Technology - Dubai Men's，由Dennis S. Hurd创作，遵循公有领域1.0标记协议，经IronShears编辑
 
-Tiny File font: m3x6 by Daniel Linssen, CC-BY 
+AND.jpg：My players Thursday night，由Benimoto创作，遵循CC-BY 2.0协议，经IronShears编辑
 
-SCP Foundation Font: Sans Normalcy by SYWaves, Open Font license 
+ONE_DAY.jpg：Jeni and Clara Kissing，由kafka4prez创作，遵循CC-BY 2.0协议，经IronShears编辑
 
-CODE
+y2k SCP logo：Y2KLogo.png，由etoisle创作，遵循CC-BY-SA 3.0协议，经IronShears编辑
 
-Palette Swap: Palette Swap using two textures by afk, CC0
+音频授权
 
-All other code by IronShears, CC-BY-SA 3.0.
+筆音クミ英语声库，由Cubialpha创作，可免费商用，创作者已确认兼容CC-BY-SA协议
 
+Computer startup，由MrAuralization创作，遵循CC-BY 3.0协议
+
+Error (Disaparaging Chimes)，由SilverIllusionist创作，遵循CC-BY 4.0协议
+
+感谢Raddagher帮我修复音频循环播放问题！
+
+使用的程序
+
+Aseprite
+
+Godot，遵循MIT协议
+
+PicoCAD（用于创建“3D模型”），允许于软件内商用，创作者已确认兼容CC-BY-SA协议
+
+OpenUTAU，遵循MIT协议
+
+其他图像均由IronShears创作，遵循CC-BY-SA 3.0协议。
+
+字体
+
+页面字体：TimesNewPixel，由pentacom创作，属于公有领域
+
+Shell字体：Dogica，由Roberto Mocci创作，遵循开放字体协议
+
+小文件字体：m3x6，由Daniel Linssen创作，遵循CC-BY协议 
+
+SCP基金会字体：Sans Normalcy，由SYWaves创作，遵循开放字体协议
+
+中文字体：凤凰点阵体（VonwaonBitmap-12px, -16px），由Haoyu Qiu创作，遵循CC0协议
+
+代码
+
+色调切换：色调切换部分使用了由afk创作的两种材质，遵循CC0协议
+
+其他代码均由IronShears编写，遵循CC-BY-SA 3.0协议。
 "
 fit_content_height = true
 __meta__ = {
@@ -431,3 +506,4 @@ __meta__ = {
 [connection signal="button_down" from="Paper/PaperScroller" to="." method="_on_PaperScroller_button_down"]
 [connection signal="button_up" from="Paper/PaperScroller" to="." method="_on_PaperScroller_button_up"]
 [connection signal="pressed" from="Paper/PaperScroller/TextureButton" to="." method="_on_Close_pressed"]
+[connection signal="option_pressed" from="Commandprompt" to="." method="_on_Commandprompt_option_pressed"]

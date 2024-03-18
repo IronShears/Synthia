@@ -10,8 +10,8 @@ config_version=4
 
 [application]
 
-config/name="SCP-8000"
-run/main_scene="res://login.tscn"
+config/name="SCP-8500"
+run/main_scene="res://Languages.tscn"
 config/icon="res://icon.png"
 
 [autoload]
@@ -31,6 +31,10 @@ window/per_pixel_transparency/enabled=true
 window/handheld/orientation="portrait"
 window/stretch/mode="viewport"
 window/stretch/aspect="keep"
+
+[global]
+
+window=false
 
 [physics]
 

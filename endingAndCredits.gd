@@ -5,6 +5,7 @@ var setMousePos
 var split
 
 func _ready():
+	$Credits.set_bbcode(UniversalFunctions.dialogueJson["credits"])
 	UniversalFunctions.reset()
 	if UniversalFunctions.ending == "firedBest":
 		$Paper/RichTextLabel.set_bbcode(UniversalFunctions.dialogueJson["firedText"])
@@ -19,6 +20,16 @@ func _ready():
 			text = text.replace("{moodInsert}", UniversalFunctions.dialogueJson["angryInsert"])
 		$Paper/RichTextLabel.set_bbcode(text)
 	$Paper/Label.text = UniversalFunctions.dialogueJson["SCPFoundation"]
+	for i in [$Paper/RichTextLabel, $Credits]:
+		i.set_theme(load("res://Resources/GUIpieces/AltFonts/PersephoneOS"+UniversalFunctions.language+".tres"))
+	$Paper/Label.add_font_override("font", load("res://Resources/GUIpieces/AltFonts/BoldFont"+UniversalFunctions.language+".tres"))
+	for i in [$Commandprompt/Options/Option3,
+				$Commandprompt/Options/Option2,
+				$Commandprompt/Options/Option1]:
+				i.add_font_override("font", load("res://Resources/GUIpieces/AltFonts/ShellFont"+UniversalFunctions.language+".tres"))
+	$Commandprompt/Dialogue.add_font_override("normal_font", load("res://Resources/GUIpieces/AltFonts/ShellFont"+UniversalFunctions.language+".tres"))
+	
+	
 	$Commandprompt/shell.visible = false
 	$AnimationPlayer.play("loadIn")
 	yield($AnimationPlayer,"animation_finished")
@@ -49,12 +60,11 @@ func _on_Close_pressed():
 		UniversalFunctions.play_dialogue_JSON("firedBest")
 		yield($Commandprompt,"done")
 		$Commandprompt/Options.visible = true
-		yield($Commandprompt/Options/Option1,"pressed")
-		print("ran")
-		$Commandprompt.visible = false
-	$AnimationPlayer.play("Credits")
-	yield($AnimationPlayer,"animation_finished")
-	UniversalFunctions.change_scenes_reset("res://login.tscn")
+	else:
+		$AnimationPlayer.play("Credits"+UniversalFunctions.language)
+		yield($AnimationPlayer,"animation_finished")
+		UniversalFunctions.change_scenes_reset("res://login.tscn")
+
 
 
 func _on_PaperScroller_button_down():
@@ -64,3 +74,11 @@ func _on_PaperScroller_button_down():
 
 func _on_PaperScroller_button_up():
 	process = false
+
+
+func _on_Commandprompt_option_pressed(end):
+	print("ran")
+	$Commandprompt.visible = false
+	$AnimationPlayer.play("Credits"+UniversalFunctions.language)
+	yield($AnimationPlayer,"animation_finished")
+	UniversalFunctions.change_scenes_reset("res://login.tscn")

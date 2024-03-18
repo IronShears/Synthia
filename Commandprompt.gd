@@ -35,6 +35,13 @@ var objectName = "Room"
 var colorName = "Blue"
 var styleName = "Cool"
 
+func _ready():
+	if UniversalFunctions.language !="":
+		var counter = 1
+		for i in UniversalFunctions.languageOptionPosition[UniversalFunctions.language]:
+			get_tree().get_root().get_node_or_null("/root/world/Commandprompt/Options/Option"+str(counter)).rect_position.y = i
+			counter +=1
+
 
 func _play_dialog():
 	$Options.visible = false
@@ -219,49 +226,62 @@ func _on_Timer_timeout():
 					else:
 						pitch = rng.randf_range(1.00, 1.10)
 					$Voice.pitch_scale = pitch
-					if currentChar == "a":
-						$Voice.stream = a
-					elif currentChar == "e":
-						$Voice.stream = e
-					elif currentChar == "i":
-						$Voice.stream = i
-					elif currentChar == "o":
-						$Voice.stream = o
-					elif currentChar == "u":
-						$Voice.stream = u
-					else:
-						if nextChar == "a":
+					if UniversalFunctions.language != "_CN":
+						if currentChar == "a":
 							$Voice.stream = a
-						elif nextChar == "e":
+						elif currentChar == "e":
 							$Voice.stream = e
-						elif nextChar == "i":
+						elif currentChar == "i":
 							$Voice.stream = i
-						elif nextChar == "o":
+						elif currentChar == "o":
 							$Voice.stream = o
-						elif nextChar == "u":
+						elif currentChar == "u":
 							$Voice.stream = u
 						else:
-							if thirdChar == "a":
+							if nextChar == "a":
 								$Voice.stream = a
-							elif thirdChar == "e":
+							elif nextChar == "e":
 								$Voice.stream = e
-							elif thirdChar == "i":
+							elif nextChar == "i":
 								$Voice.stream = i
-							elif thirdChar == "o":
+							elif nextChar == "o":
 								$Voice.stream = o
-							elif thirdChar == "u":
+							elif nextChar == "u":
 								$Voice.stream = u
 							else:
-								if currentChar in ["b","c","d","f"]:
+								if thirdChar == "a":
 									$Voice.stream = a
-								elif currentChar in ["g","h","j","k"]:
+								elif thirdChar == "e":
 									$Voice.stream = e
-								elif currentChar in ["l","m","n","p",]:
+								elif thirdChar == "i":
 									$Voice.stream = i
-								elif currentChar in ["q","r","s","t"]:
+								elif thirdChar == "o":
 									$Voice.stream = o
-								elif currentChar in ["v","w","x","y","z"]:
+								elif thirdChar == "u":
 									$Voice.stream = u
+								else:
+									if currentChar in ["b","c","d","f"]:
+										$Voice.stream = a
+									elif currentChar in ["g","h","j","k"]:
+										$Voice.stream = e
+									elif currentChar in ["l","m","n","p",]:
+										$Voice.stream = i
+									elif currentChar in ["q","r","s","t"]:
+										$Voice.stream = o
+									elif currentChar in ["v","w","x","y","z"]:
+										$Voice.stream = u
+					else:
+						var randomNum = rng.randi_range(1, 5)
+						if randomNum == 1:
+							$Voice.stream = a
+						elif randomNum == 2:
+							$Voice.stream = e
+						elif randomNum == 3:
+							$Voice.stream = i
+						elif randomNum == 4:
+							$Voice.stream = o
+						elif randomNum == 5:
+							$Voice.stream = u
 					if currentChar != " " and  currentChar !="." and  currentChar !="?" and  currentChar !="!":
 						$Voice.play()
 						

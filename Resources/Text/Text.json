@@ -26,6 +26,7 @@
 "LastName": "Last Name:",
 "Enter": ">Enter",
 "Password": "Password: ",
+"Password": "Password: ",
 "Obscene": "Your credentials could not be verified. This terminal has been deactivated. Please remain still while security arrives to confirm your identity.",
 "Instructions": "Your credentials have been verified. Please refer to the SCP-8500 FILE for a description of your duties upon log in.",
 "ObsceneDisclaimer":"If you don't know why you got this error, please leave a comment with the name you were trying to enter. In the meantime enter a different name and continue.",
@@ -74,6 +75,9 @@ The device containing SCP-8500 was recovered during a Foundation raid of an e-pa
 "Windowed":"Windowed",
 "ForMobile":"For Mobile",
 "ForDesk":"For Desk",
+"warning":"WARNING",
+"okay":"Okay",
+"cancel":"Cancel",
 
 
 "system":"SYSTEM",
@@ -311,7 +315,7 @@ Delete this file and another folder will open.",
 "select":"Select and Generate.",
 "Style":"Style",
 "Object":"Object",
-
+"generateLabel":"Generate",
 
 
 
@@ -597,6 +601,7 @@ WARNING: New folder detected at path SYSTEM>AT_PEACE.","tickSpeed":0.04,"closeSp
 ],
 
 
+"logInBefore":"LOG IN BEFORE ACCESSING SCP-8500",
 
 "logInSuccessful":[
 {"color":"Teal", "sprite":"floorStaticSad","text":"Log in successful","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false}
@@ -2134,6 +2139,7 @@ WARNING: New folder detected at path SYSTEM>AT_PEACE.","tickSpeed":0.04,"closeSp
 
 "SCPFoundation":"SCP Foundation
    Secure. Contain. Protect.",
+"SecureContainProtect":"Secure. Contain. Protect.",
 
 
 "firedText" :"[center][b]Day one Assessment.[/b][/center]
@@ -2240,7 +2246,7 @@ PARADISE.exe has been closed.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":
 	
 	Secure. Contain. Protect.",
 	
-"credits":"[center]Written by Guaire and IronShears
+"credits":"[center]Written by Guaire and IronShears. Chinese translation by vxeov.
 
 CRITIQUE
 
