@@ -62,7 +62,7 @@ func _ready():
 	$Taskbar/OptionsMenu/Fullscreen/Label.text = UniversalFunctions.dialogueJson["Fullscreen"]
 	$Taskbar/OptionsMenu/Mobile/Label.text = UniversalFunctions.dialogueJson["ForMobile"]
 	$Taskbar/OptionsMenu/Audio/Label.text = UniversalFunctions.dialogueJson["AudioOn"]
-	if UniversalFunctions.language != "":
+	if UniversalFunctions.language != "" and UniversalFunctions.language != "_DE":
 		#boldFont
 		for i in [$popup/Label]:
 			i.add_font_override("font", load("res://Resources/GUIpieces/AltFonts/BoldFont"+UniversalFunctions.language+".tres"))

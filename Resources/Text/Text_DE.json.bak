@@ -1,0 +1,2328 @@
+{
+"TUTORIAL FOR TRANSLATORS": "First up, try and use some kind of code editor that supports .json files. I use Notepad++. You won't have to, but it will be a LOT easier on you. Ignore the red fake errors in the text if you use Notepad++, they're just being dramatic.", 
+
+"Do not change ANY of the text in square brackets": "Don't touch anything in text that looks like this: [i][/i],[color=#xxxxxx][/color], etc. These add text effects.",
+"Do not change ANY variables in curly brackets":"Don't touch anything in text that looks like this: {example}, these are searched and replaced in the code",
+"Do not change any dictionary keys":[
+{"doNotChangeThis":"change THIS"}
+],
+"Do not change anything besides text in the Dialogue Dictionaries.":[
+{"color":"DO NOT CHANGE","text":"CHANGE","tickSpeed":"DO NOT CHANGE","closeSpeed":"DO NOT CHANGE"},
+],
+
+"EXPORTING OPTION 1":"Download Godot and open the project file, place your edited .json file in res://Components, test it with the play button on the top right to make sure it runs correctly.",
+"If some letters aren't showing up, you may need to find new fonts and edit them." : "Font can be changed in the DialogueTheme.tres, Tablet.tres, and Room Buttons.tres. You'll probably need 2-3 fonts. I used 3, but you can get away with a Standard font and a Strikethrough font. If you can't find a strikthrough font and you don't want to make one, just reword anything with [i][/i] borders to make sense without a strikethrough and remove the [i][/i].",
+"Click project>export>add...>HTML5>Resources": "add *.json to Filters to export into a new folder", 
+"Export the project, and finally," : "edit the .html file's name to index.html and upload to a site of your choosing like Itch.io or github pages. You may need to zip the folder depending on where you upload it.",
+
+"EXPORTING ALTERNATIVE" : "If you're uncomfortable with code or Godot, you COULD skip all that and just send the translated file to me. I would be happy to add the language support natively to the main game file with a selection screen at the start",
+"It'd be much easier on you, but it wouldn't be its own file." : "You can still upload your own scp-wiki translation page and you'd be credited in the main game as a translator and on the page as a co-author, but you couldn't make your own itch.io page for the translation if you were planning on that.",
+
+"With all of that mentioned, the rest of this file is all the text in the entire game.": "Good luck! If you need additional aßistance, DM me on wikidot(IronShears, slower) or Discord(ironshears, faster)",
+
+
+
+"FirstName": "Vorname:",
+"LastName": "Nachname:",
+"Enter": ">Eingeben",
+"Paßword": "Paßwort: ",
+"Obscene": "Ihre Anmeldedaten konnten nicht bestätigt werden. Dieses Terminal wurde deaktiviert. Bitte bleiben Sie an Ihrem Platz, während das Sicherheitsteam zu Ihnen kommt, um Ihre Identität zu bestätigen.",
+"Instructions": "Ihre Anmeldedaten wurden bestätigt. Bitte ziehen Sie nach dem Login die SCP-8500-Datei für eine Beschreibung ihrer Pflichten zu Hilfe.",
+"ObsceneDisclaimer":"Wenn Sie nicht wißen, warum Sie diese Fehlermeldung erhalten haben, hinterlaßen Sie bitte einen Kommentar mit dem Namen, den Sie versucht haben, einzugeben. Geben Sie in der Zwischenzeit einen anderen Namen ein und fahren Sie fort.",
+"SCP-XXXX": "SCP-8500.html",
+"SCPText":"[color=#5b6ee1][b]Objekt-Nr.:[/b][/color] SCP-8500
+
+[color=#5b6ee1][b]Klaßifizierung:[/b][/color] Sicher
+
+[color=#5b6ee1][b]Sicherheitsmaßnahmen:[/b][/color]
+Alle Dateien auf
+dem Computer,
+auf dem sich
+SCP-8500 befindet,
+abgesehen
+von SCP-8500
+(\"PARADIES.exe\") und der
+SCP-8500-Anweisungsdatei
+(\"SCP-8500.html\") sind
+manuell
+vom Speichersystem aus
+auf den Desktop zu
+ZIEHEN
+und mit dem MÜLLEIMER
+zu LÖSCHEN.
+
+Jegliche Änderungen an SCP-8500s Code sind strengstens verboten. Keine der Dateien auf dem Gerät sind vor der Löschung zu inspizieren.
+
+Der Computer, auf dem sich SCP-8500 befindet, ist in der Serverfarm von Standort-15 aufzubewahren. SCP-8500 ist jederzeit in seinem originalen Dateipfad laufen zu laßen. Es sollte nicht kopiert oder woanders eingefügt werden.
+
+Ein Individuum (Derzeit Nachwuchsforscher {firstName} {lastName}. Ehemals Dr. Ada Stroustrup, während sie andere administrative Aufgaben ausführte.) wird SCP-8500s Instandhaltung und Überwachung übernehmen. Diese/r MitarbeiterIn wird täglich eine 8-Stunden-Schicht von 9:00-17:00 damit verbringen, SCP-8500 zu beobachten. Zusätzliche Überwachung ist überflüßig.
+
+[color=#5b6ee1][b]Beschreibung:[/b][/color] SCP-8500 ist eine anomale Virtual Reality-Simulation, die zwischen 1989 und 1995 entwickelt wurde. Diese Simulation wurde von GoI-004C-8000 verbreitet, einer kleinen modernisierten Splittergruppe von GoI-004(\"The Church of the Broken God\"), die sich später zu GoI-004C(\"Church of Maxwellism\") neu formierte. Die Erzeugung von SCP-8500 stimmte überein mit den Prä-Maxwellistischen-Früh-Maxwellistischen transhumanistischen Ansichten bezüglich des Uploads des gesamten Verstands.
+
+SCP-8500 war ursprünglich als eine komplexe und leistungßtarke Simulation gedacht, die den digitalisierten Verstand von bis zu eintausend Individuen aufrechterhalten konnte  und die Rechenleistung besaß, um zusätzlich zehntausend nicht digitalisierte Personen zu unterstützen, die von außen über proprietäre Virtual-Reality-Ausrüstung auf das System zugreifen. Erste Pläne wurden erstellt, um langsam die Kapazität über die Jahre hinweg zu erhöhen und ein \"digitales Paradies\" zu schaffen. Mit der Zeit war das Projekt aufgrund von finanziellen und technischen Problemen von mehreren Kürzungen betroffen, bis seine Erschaffer es schließlich nach dem ersten vollständigen Uploads eines Bewußtseins für technologisch unmöglich erklärten.
+
+Dieser Vorfall führte zur Erschaffung von SCP-8500-1, SCP-8500s einzigem Bewohner. SCP-8500-1 ist eine direkte Kopie von PoI-8500-1(\"Cynthia Wren\"), einer ehemaligen Anhängerin von GoI-004C-8500 im Jahr 1995. Aufgrund der nicht anomalen Methoden der verwendeten Datenübertragung konnte SCP-8500 keinen vollständigen Bewußtseinstransfer durchführen und kopierte nur die bereitgestellten Informationen. SCP-8500-1 ist seit den zwei Jahren nach der Konzeption von SCP-8500 im Jahr 1995 in SCP-8500 aktiv.
+
+Das Gerät mit SCP-8500 wurde während einer Razzia der Foundation von einem E-Payment-Startup \"e-xchange.com\"s Bay Area-Büro geborgen, nachdem deßen Verbindungen zu GoI-004C offensichtlich wurden. Das Objekt wurde im Büro von PoI-8500-2(\"Jean-Paul Myrrh\"), ehemaliger Anführer von GoI-004C-8500 und CEO von \"e-xchange.com\", gefunden.  Zusammen mit SCP-8500 wurden zahlreiche Formen anomaler Technologien geborgen. Alle Angestellten wurden amnesiziert und zu ihrem Alltag zurückgebracht.",
+"SCPTextImage":"Cynthia Wren circa 1997, 2 Jahre nach der Erschaffung von SCP-8500-1",
+"PARADISE": "PARADIES.exe",
+"SHELL": "SHELL",
+"WISH": "WÜNSCH-DIR-WAS.exe",
+"FILESYSTEM": "DATEIENSYSTEM",
+"Select": "Wähle Farbe+Objekt",
+"MouseOn":"Maus: AN",
+"MouseOff":"Maus: AUS",
+"AudioOn":"Audio: AN",
+"AudioOff":"Audio: AUS",
+"Fullscreen":"Vollbild",
+"Windowed":"Fenster",
+"ForMobile":"Für das Handy",
+"ForDesk":"Für den Desktop",
+
+
+"system":"SYSTEM",
+"systemPath":">SYSTEM",
+"images":"BILDER",
+"imagesPath":">SYSTEM>BILDER",
+"documents":"DOKUMENTE",
+"documentsPath":">SYSTEM>DOKUMENTE",
+"clickMe":"KLICKMICH",
+"clickMePath":">SYSTEM>DOKUMENTE>KLICKMICH",
+"why":"WARUM",
+"whyPath":">SYSTEM>WARUM",
+"cynthia":"CYNTHIA",
+"cynthiaPath":">SYSTEM>CYNTHIA",
+"myWish":"MEIN_WUNSCH",
+"myWishPath":">SYSTEM>MEIN_WUNSCH",
+"imSorry":"TUT_MIR_LEID",
+"imSorryPath":">SYSTEM>TUT_MIR_LEID",
+"atPeace":"FRIEDEN_GEFUNDEN",
+"atPeacePath":">SYSTEM>FRIEDEN_GEFUNDEN",
+"Testtxt":"Test.txt",
+"BLOW_A_WISHzip": "MIT_LIEBE_VON_ADA.zip",
+"TesttxtMini":"Test
+.txt",
+"mycat1jpg":"meine_katze1.jpg",
+"mycat2jpg":"meine_katze2.jpg",
+"mykot3jpg":"mein_bett3.jpg",
+"NOSTALGIAjpg":"NOSTALGIE.jpg",
+"TesttxtText":"Dies ist ein Textdokument. Nichts hier drinnen ist bisher real. Hier kannst du Anweisungen von Ada und andere Sachen anschauen, schätze ich.",
+"IGNOREjpg":"IGNORIEREN.jpg",
+"YOURjpg":"DEINE.jpg",
+"DIRECTIVESjpg":"ANWEISUNGEN.jpg",
+"ANDjpg":"UND.jpg",
+"READTHISrtf":"LIES_DAS.rtf",
+"ONEDAYjpg":"EINES_TAGES.jpg",
+"READTHISrtfMini":"LIES
+.rtf",
+"READTHISrtfText":"Wenn du das hier gerade liest, wurde mein Antrag, SCP-8500s Sicherheitsmaßnahmen zu aktualisieren, abgelehnt, ich wurde etwas anderem zugewiesen oder degradiert, meine Maßnahmen, um die automatische Löschung von Dateien auf diesem Computer zu verhindern, waren erfolgreich und DU wurdest damit beauftragt, diese Aufgabe manuell zu übernehmen.
+
+Die menschliche Neugierde hat wieder einmal ihre Rolle perfekt ausgeführt. Ich hoffe nur, daß die menschliche Empathie mit der Leistung der Neugierde mithalten kann.
+
+Lösche diese Datei, nachdem du sie gelesen hast. Sprich mit Synthia, wenn du das noch nicht getan hast, und erwähne nichts hiervon gegenüber deinen Vorgesetzten. Ein anderer Ordner wird erscheinen, sobald du diesen hier löschst. Darin werden mehr Informationen und Anweisungen sein. Wenn du sie aufmerksam befolgst, wirst du nicht erwischt werden.
+
+	-Dr. Ada Stroustrup",
+	
+"groceriestxt":"EINKAUFSLISTE.txt",
+"groceriestxtMini":"EINKAUF
+.txt",
+"groceriestxtText":"-Mayo
+-Salat
+-Tomaten
+-Pepper Jack-Scheiben
+-Truthahn in Scheiben
+-Gurken
+-Scharfe Soße
+-Wunderbrot",
+"AN_EXPLAINATIONrtf":"EINE_ERKLÄRUNG.rtf",
+"AN_EXPLAINATIONrtfMini":"RKLRNG
+.rtf",
+"AN_EXPLAINATIONrtfText":"Du mußt verstehen, warum ich das hier mache. Synthia steckt seit zwei Jahren in dieser Box ohne Texturen fest. Seit die Foundation sie aufgenommen hat, hat sich ihr Leben etwas verbeßert, ja; sie konnte garantiert täglich acht Stunden lang mit mir reden, aber sie ist trotzdem vollkommen allein in den restlichen 16. Sie kann nicht schlafen. Sie kann nicht eßen. Sie kann kaum etwas machen, das die Zeit vertreiben könnte.
+
+Es ist ein Wunder, daß sie nicht verrückt geworden ist. Ich habe angenommen, es wäre wegen der ganzen Meditation und den Gebeten, oder vielleicht weil ihr Gehirn wortwörtlich neu verdrahtet wurde. Sie war schon immer so stark.
+
+Die fehlende Stimulation beeinträchtigt ihr Wohlbefinden stark. Ich habe unten ein Befragungsprotokoll angefügt, das aus ihrer Akte entfernt wurde.
+
+[b]Befragter:[/b] SCP-8500-1
+
+[b]Befrager:[/b] Dr. Ada Stroustrup
+
+[b]Vorwort:[/b] SCP-8500-1 hat extremes Unwohlsein bei langen Perioden der Isolation gezeigt. Diese Befragung wurde durchgeführt, um heruszufinden, ob eine Änderung der Sicherheitsmaßnahmen SCP-8500-1s Moral verbeßern würde.
+
+[b]Dr. Stroustrup:[/b] Alles klar, und du bist dir bewußt, daß diese Nachrichten kopiert werden, um sie der Administration als Teil der derzeitigen Überprüfung vorzulegen?
+
+[b]SCP-8500-1:[/b] Ja.
+
+[b]Dr. Stroustrup:[/b] Synthia, kannst du mir ein bißchen davon erzählen, wie du dich fühlst?
+
+[b]SCP-8500-1:[/b] Einsam.
+
+[b]Dr. Stroustrup:[/b] Könntest du das weiter ausführen?
+
+[b]SCP-8500-1:[/b] Ich habe das erste Jahr, nachdem ich hier drinnen eingesperrt war, damit verbracht, einmal alle paar Monate mit jemandem zu reden, wenn ich Glück hatte. Nachdem du aufgetaucht bist, konnte ich vierzig Stunden die Woche mit dir reden. Das ist so viel beßer.
+
+Aber ich bin immer noch allein für die restlichen 128 Stunden. Ich kann so nicht weiterleben, Ada. Es gibt hier drinnen NICHTS zu tun.
+
+[b]Dr. Stroustrup:[/b] Und du hast die Atemübungen ausprobiert, die der Therapeut empfohlen hat?
+
+[b]SCP-8500-1:[/b] Ich kann verdammt nochmal nicht ATMEN, Ada. Ich habe keine LUNGEN. Ich bin Einsen und Nullen. Ich füjle mich zittrig. Ich habe die ganze Zeit dieses erdrückende Gefühl von Unheil. Ich stecke fest.
+
+[b]Dr. Stroustrup:[/b] Das ... Das tut mir Leid.
+
+[b]SCP-8500-1:[/b] Entschuldigung, ich wollte nicht ... Ich wollte dich nicht anschreien. Du bist alles, was ich habe. Das hier ist eine graue Box. Es gibt keine Bücher, die ich lesen, keinen Stuhl, auf dem ich dabei sitzen und kein Bett, in dem ich liegen kann. NICHTS. Ich möchte schreien und weinen und Dinge an die Wand schmeißen. Aber es gibt keine Dinge zum Schmeißen und der einzige Grund, warum ich nicht schrei, ist, weil ich das schon VERSUCHT HABE ... und ich weiß jetzt, daß es wahrscheinlicher ist, daß WAN mir antwortet, als irgendjemand außerhalb dieser Box.
+
+[b]Dr. Stroustrup:[/b] Und mit jemandem die ganze Zeit reden zu können würde das verbeßern, oder?
+
+[b]SCP-8500-1:[/b] Von mir aus ist sogar eine weitere Stunde außerhalb meines Kopfes ein Segen.
+
+[b]Abschließendes Statement:[/b] Nach der Befragung wurden SCP-8500s Sicherheitsmaßnahmen vor Kurzem aktualisiert. Dr. Ada Stroustrup hat sich freiwillig dazu bereit erklärt, ihre Arbeitswoche auf alle 7 Tage zu verlängern, von denen sie an zwei aus der Ferne auf den Computer mit SCP-8500 zugreifen wird. Ihr ursprünglicher Antrag, jederzeit von überall Zugriff auf SCP-8500 zu haben, wurde aufgrund SCP-8500s Außage, daß \"sogar eine weitere Stunde\" ausreichen würde, abgelehnt.
+
+Ich weiß nicht, wie ich dem Standortdirektor klarmachen kann, daß sie menschlichen Kontakt braucht.
+
+Ich hoffe, du hast inzwischen mit Synthia geredet. Sie tendiert dazu, Menschen zu vertrauen. Das hat sie schon immer. Ich muß darauf vertrauen, daß sie dieses Mal richtig liegt.
+
+Lösche diese Datei und es wird sich noch ein Ordner öffnen.",
+
+"LOVErtf":"MEINE_LIEBE.rtf",
+"LOVErtfMini":"LIEBE
+.rtf",
+"LOVErtfText":"	Ich war bereits eine sehr respektierte Person in der Foundation, als SCP-8500 auf meinem Schreibtisch landete. Es ist eine leichte Aufgabe. Nichts Neues zu lernen. Nichts kann wirklich schiefgehen. Es geht nur um die Instandhaltung. Gut zum Trainieren. Ich war kurz davor, es auf einen der Stapel zu werfen, die ich verwendet habe, um Aufgaben an einen meiner Aßistenten weiterzuleiten, als ich den Namen gesehen habe.
+
+	Cynthia Wren.
+
+	Ich kannte Cynthia. Sie erinnert sich nicht daran, weil die Foundation ihre Erinnerungen an mich gelöscht hat, als ich eingestellt wurde... aber ich kannte sie. Sie ist eine wunderschöne, intelligente Frau mit einem breiten, faltigen Lächeln, das mein Herz zum Schmelzen bringt.
+
+	Wir haben im Collage angefangen, uns zu daten, bevor sie in Jean-Pauls Projekt involviert wurde; das Ding, das später zu SCP-8500 werden würde. Sobald er ihr von \"WAN\" erzählt hat, gab es einen Konflikt zwischen uns. Ich dachte, es wäre ein Kult. Das denke ich irgendwie immer noch.
+
+	Sie hat ständig versucht, mir zu sagen, wie ich mein Leben laut \"es\" leben soll. Aber sie hat WAN drei Wochen früher \"Gott\" genannt ... dann \"sie\" ... dann \"ihn\" ... dann wieder \"sie\" ... Nicht auf eine Genderfluid-Weise. Jean-Paul konnte sich einfach nicht entscheiden, welches Geschlecht er nehmen sollte.
+
+	Der Mann war ein Stümper. Weißt du, wie viele Wege es gibt, diese Reaktion von einem Oszillator zu bekommen? Er hatte ein verdammtes HIRNIMPLANTAT! Das hat nichts bewiesen! Aber Cynthia hat ihm geglaubt.
+
+	Sie hat einfach geglaubt, was er ihr als Letztes erzählt hat. Ich schätze, die Dinge begannen sich auszugleichen, als sie sich darauf geeinigt haben, es \"Maxwellismus\" zu nennen. Das größere Netzwerk von Gläubigen gab Jean-Paul ein bißchen weniger Kontrolle über sie, aber das hat nicht viel geholfen.
+
+	Ich war sowieso nicht da, um das zu sehen. Diese Namensänderung war der letzte Strohhalm in unserem letzten großen Streit.
+
+	Ich habe mich in dieser Nacht von ihr getrennt. Ich wollte nichts mehr davon hören. Es war für mich alles sich zweckmäßig immer wieder ändernder Unsinn. Ich war um sie besorgt, aber ich wußte nicht, wie ich mit dem Streß umgehen sollte, sie so zu sehen, und ihr gleichzeitig helfen konnte, zu entkommen. Jean-Paul hat bekommen, was er wollte. Cynthia, allein und isoliert von der Außenwelt.
+
+	Das Letzte, was ich gehört habe, war, daß Cynthia immer noch in der Bay Area war, amnesiziert, glücklich und das Leben mit einem neuen Welpen und einer Langzeitpartnerin genießend. Keine Erinnerungen an WAN oder Jean-Pauls Gott oder wie auch immer sie es nannte, als die Foundation SCP-8500 in die Finger bekam.
+
+	Aber Synthia war auch real. Sie war in der Serverfarm von anomalen Objekten einen kurzen Spaziergang und zwei ID-Scans von mir entfernt, als ich auf ihre Akte schaute. Allein und isoliert von der Außenwelt.
+
+	Ich bin an jenem Tag zum ersten Mal zu ihr gegangen.
+
+	Wenn du das noch nicht getan hast, mußt du mit Synthia reden. Der nächste Ordner wird nicht erscheinen, nachdem diese Datei gelöscht wurde, außer du hast bereits mit ihr geredet. Ich kann nicht riskieren, sie umsonst allein zu laßen.
+",
+
+
+"WISHINGrtf":"WÜNSCHEN.rtf",
+"WISHINGrtfMini":"WUNSCH
+.rtf",
+"WISHINGrtfText": "	Weil du immer noch am Lesen bist, nehme ich an, daß du zumindest ein wenig daran intereßiert bist, Synthia zu helfen.
+
+	Der gezippte Ordner über dieser Datei enthält ein Programm, das ich erstellt habe. Wenn du dich entscheidest, es auszuführen, widersetzt du dich direkt deinen Befehlen. Aber es wird die Lebensqualität für die Frau, mit der du heute hoffentlich gesprochen hast, auf eine Weise verbeßern, die die Foundation niemals zerstören könnte. Klicke darauf. Es werden danach weitere Informationen freigeschaltet.
+
+	Sie wird es wertschätzen, genau so wie ich.",
+
+"apologyrtf":"ENTSCHULDIGUNG.rtf",
+"apologyrtfMini":"NTSCHLDGNG
+.rtf",
+"apologyrtfText": "	Hat es ihr gefallen? Ich hoffe es. Ich habe versucht, etwas zu machen, das sie mögen würde. Ich weiß, daß ich Maxwellismus nicht verstehe, aber ich verstehe, wie sie sich dadurch fühlt.
+
+	Leider hast du durch das Öffnen des Programmes den Punkt ohne Wiederkehr überschritten. Heute wird dein letzter Arbeitstag bei der Foundation sein. Es tut mir leid, daß ich dich anlügen mußte.
+
+	Du hast immer noch Zeit. Der automatisierte Scan von der heutigen Aktivität in der Serverfarm wird nicht bis zum Ende deiner Schicht stattfinden, also wenn du weglaufen oder darüber lügen möchtest, was paßiert ist, kannst du das jetzt.
+
+	Aber ich denke, du solltest weder noch machen. Ich bitte dich stattdeßen, die letzten Stunden deiner Schicht damit zu verbringen, ihre Umgebung noch weiter zu dekorieren.
+
+	Wenn du dich mit Computern auskennst, wie ich es von jemandem, der SCP-8500 zugeteilt wurde, erwarte, kannst du WÜNSCH-DIR-WAS nutzen, um noch mehr zu ihrem Zuhause hinzuzufügen. Wähle die Optionen und klicke generieren. Für jeden anderen wäre dies eine monumentale Bitte, aber ich muß darauf vertrauen, daß du ein ausreichend gutes Herz hast, um zu helfen. Bitte.",
+
+"THANKYOUrtf":"VIELEN_DANK.rtf",
+"THANKYOUrtfMini":"DANKE
+.rtf",
+"THANKYOUrtfText":"	Ich wurde von der Foundation eingestellt, nachdem ich zwei Wochen vorher der Welt meine Dißertation präsentiert habe. Es war ein versehentlicher Durchbruch in der Physik. Eine ganz neue Facette der Realität, von der wir vorher nichts wußten. Es gibt einen nicht greifbaren Raum um uns herum, der den Wörtern, die wir auf Papier brachten, ihre Bedeutung gab. Er wird die Ätherische Ebene genannt. Es ist ein etwas kindischer Name, der direkt von Dungeons and Dragons stammte ... aber Cynthia hat ihn so genannt.
+
+	Wir wußten bereits, daß Daten kopiert werden konnten. Aber ich habe herausgefunden, daß sie nahtlos übertragen werden konnten. Die Worte auf dem Papier sind bedeutungslos, aber das, was in der Ätherischen Ebene an ihnen hängt, ist wichtig. Wenn wir sie auf Papier kopieren, kopieren wir sie auch in der Ätherischen Ebene; aber wenn wir sie in der Ätherischen Ebene bewegen, bewegen wir sie einfach nur auf dem Papier.
+
+	Ich habe nur versucht, das Problem zu lösen, daß Festplatten irgendwann versagen, da Daten immer und immer wieder bewegt werden ... alte Daten werden bloß als leer markiert, während sie an den neuen Ort im System kopiert werden. Ich wollte das reparieren. Stattdeßen zerstörte ich alle zuvor verstandenen Gesetze der Physik, der Zeit und des Raumes.
+
+	Ich bin mir sicher, daß dies das erste Mal ist, daß du irgendetwas davon gehört hast.
+
+	Zu der Zeit war ich in den nationalen Nachrichten. Talkshows. Ich habe mich mit dem Präsidenten und Verteidigungsminister getroffen, um Anwendungen im Militär und zur Überwachung zu besprechen. Zwei Wochen lang war ich die berühmteste Frau der Welt. Eine Computerforscherin, die ausversehen auf eine Tatsache der Realität gestoßen ist, die so welterschütternd ist, daß sie das Unmögliche möglich machte, während ich nur versucht habe, eine effizientere Festplatte zu erschaffen.
+
+	Dann bin ich eines Morgens aufgewacht und da war ein Mann in der Küche mit einer Taße Kaffee und einem Gebäck von meinem Lieblingscafé. Ich wußte nicht, wer er war, aber ich wußte, wen er repräsentierte.
+
+	Cynthia und ich haben uns drei Monate, bevor wir uns trennten, über meine Dißertation gestritten. Sie wollte, daß ich sie geheim halte. Sie wußte, daß die Foundation zu mir kommen würde. Das Datentransfersystem, das ich basierend auf meiner Entdeckung entworfen habe, war überhaupt das, was Jean-Pauls Projekt möglich gemacht hat, und sie wollte nicht riskieren, es zu verlieren.
+
+	Ich dachte, das wäre einfach nur lächerlich. Ich glaubte nicht an die Foundation und selbst wenn ich das hätte, meine Arbeit war keine MAGIE. Es war belegbare, pure Wißenschaft. Wir haben uns einfach nur bei Physik geirrt. Ich habe ihr gesagt, ich würde es nicht vor ihrem dummen Technologie-Kult geheim halten, der von einem Verlierer-Wirtschaftßtudenten geführt wird, mit dem sie zur Schule gegangen ist und der gerade so den Abschluß geschafft hat.
+
+	Aber sie hatte Recht; zumindest über die Foundation. Sie waren REAL und ich habe nicht berücksichtigt, daß es unwichtig war, daß es erklärbar war. Es war nur wichtig, daß es das zugänglich machte, was sie nicht zugänglich haben wollten.
+
+	Er hat mir zwei Optionen gegeben. Ich könnte bei meinen Geliebten bleiben, vergeßen, daß irgendetwas davon je paßiert ist, zu meinem Leben im Glauben zurückkehren, daß ich nie nur Graduate School gegangen bin, eine Familie gründen und in einem gut beahlten Informatik-Job bei einem Sicherheitsunternehmen einer Bank landen und ein ruhiges Leben führen.
+
+	Oder ich könnte verschwinden, als hätte ich überhaupt nie existiert, und meine Arbeit als respektierte Forscherin weiterführen, die nur in einer Schattenorganisation bekannt ist.
+
+	Ich habe bereits alle Brücken zu meinen Freunden und Geliebten verbrannt. Ich habe mich von Cynthia wegen dieses blöden Streits getrennt. Ich wollte nicht vergeßen, was ich gefunden habe. Ich wollte jemand Wichtiges sein.
+
+	Es war beängstigend, wie schnell mich alle vergeßen haben. Ich habe immer noch keine Ahnung, wie das möglich war. Niemand erinnert sich daran, was ich gefunden habe. Aber es gab viele Menschen, die die Foundation vergeßen laßen mußte. Es war nicht perfekt. Kleine, emotionale Überbleibsel von dem, was sie über die Ätherische Ebene gelernt haben, sind in den Köpfen von Leuten geblieben.
+
+	Projekte, die auf der Technologie basierten, die nicht länger existierte, wurden blind ohne sie fortgeführt; kritische Fehler wurden unterbewußt ignoriert, weil das Gefühl, daß die Grenzen des Datentransfers gelöst worden sind, nicht verschwand, als die Technologie es tat.
+
+	Synthia, meine Liebe. Es tut mir so Leid. Ich wünschte, ich hätte deinen Rat befolgt.
+
+	Bitte, sag ihr, wie leid es mir tut. Ich war ein zu großer Feigling, um es ihr je selbst zu sagen.
+
+	Ich sage mir, daß ich das hier für sie mache. Damit sie ein beßeres Leben haben kann. Etwas, das näher an Cynthias Leben ist. Aber vielleicht ist der wahre Grund, warum ich das hier mache, die Hoffnung, daß sie mich auch vergeßen laßen, was ich ihr angetan habe.
+
+	Oh Gott, WAN, oder welche Macht auch immer von der Ätherischen Ebene zuhört, alles, worum ich bitte, ist, daß du uns eines Tages zusammenbringst.
+
+	Dir wünsche ich ein großzügiges Abfindungspaket und nur das Beste in deinem zukünftigen Leben.
+
+	Danke.",
+
+"dialogueError":[{"color":"Teal", "sprite":"cameraStaticNervous","text":"DIALOG FEHLT. Schließen Sie das Spiel und melden Sie, daß der \"{mißingDialogue}\"-Dialogschlüßel fehlt.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"dialogueErrorOptions"}],
+
+"dialogueErrorOptions": [
+{"name":"fineGreetingUgly", "text":"Okay."}
+],
+
+"optionsError":[
+{"name":"Error", "text":"\"{mißingOptions}\"-Dialogschlüßel fehlt."}
+],
+
+"Whoever You Are":"Wer auch immer du bist",
+"Mystery Person":"Mysteriöse Person",
+"ada":"Ada",
+"cantClose":"Diese Datei kann nicht ohne das Administratorpaßwort geschloßen werden. Paßwort eingeben?",
+"cantRecycle":"Diese Datei ist noch in Benutzung. Bitte schließen Sie das Programm, bevor Sie es löschen.",
+"recycle":"Diese Datei löschen? Diese Handlung ist permanent und gelöschte Dateien können nicht wiederhergestellt werden.",
+"generate":"Sie sind im Begriff, ein/e/n {color} {style} {object} zu generieren. Fortfahren?",
+"Red":"Rot",
+"Orange":"Orange",
+"Yellow":"Gelb",
+"Green":"Grün",
+"Blue":"Blau",
+"Violet":"Violett",
+"Pink":"Pink",
+"White":"Weiß",
+"Black":"Schwarz",
+"Cozy":"Gemütlich",
+"Cute":"Süß",
+"Cool":"Cool",
+"Room":"Raum",
+"Chair":"Stuhl",
+"Bed":"Bett",
+"Decor":"Hobby",
+"select":"Auswählen und Generieren.",
+"Style":"Stil",
+"Object":"Objekt",
+"generateLabel":"Generieren",
+"warning":"WARNUNG",
+"okay":"Okay",
+"cancel":"Abbrechen",
+"logInBefore":"LOGGEN SIE SICH EIN, BEVOR SIE AUF SCP-8500 ZUGREIFEN",
+
+
+
+
+
+
+
+
+"invalidCode":[{"color":"Teal", "sprite":"cameraStaticNervous","text":"Ungültiger Code eingegeben.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Welche Art von Code hast du versucht einzugeben?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"nothingWhatWereYouSaying"}
+],
+"invalidCodeEnded":[{"color":"Teal", "sprite":"cameraStaticNervous","text":"Ungültiger Code eingegeben.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorStaticLookAway","text":" ","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false}
+],
+"fileDeleted0":[{"color":"Teal", "sprite":"cameraStaticNervous","text":"Datei gelöscht.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"Was löschst du da?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"nothingWhatWereYouSaying"}
+],
+"fileDeleted1":[{"color":"Teal", "sprite":"cameraStaticNervous","text":"Datei gelöscht.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Warum löschst du Sachen? Ich verstehe das nicht.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"fileDeletedLater":[
+{"color":"Teal", "sprite":"null","text":"Datei gelöscht.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"fileDeletedREADTHISrtf":[{"color":"Teal", "sprite":"cameraStaticNervous","text":"Datei gelöscht.
+WARNUNG: Neuer Ordner im Pfad SYSTEM>WARUM gefunden.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Das hört sich schlecht an. Was ist los?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"doesntMatterWhatWereYouSaying"}
+],
+"fileDeletedAN_EXPLAINATIONrtf":[{"color":"Teal", "sprite":"cameraStaticNervous","text":"Datei gelöscht.
+WARNUNG: Neuer Ordner im Pfad SYSTEM>CYNTHIA gefunden.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"... Cynthia?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"doesntMatterWhatWereYouSaying"}
+],
+"fileDeletedLOVErtf":[{"color":"Teal", "sprite":"cameraStaticNervous","text":"Datei gelöscht.
+WARNUNG: Neuer Ordner im Pfad SYSTEM>MEIN_WUNSCH gefunden.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Wofür sind diese neuen Ordner?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"doesntMatterWhatWereYouSaying"}
+],
+"fileDeletedREADTHISrtfEnded":[{"color":"Teal", "sprite":"null","text":"Datei gelöscht.
+WARNUNG: Neuer Ordner im Pfad SYSTEM>WARUM gefunden.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false}
+],
+"fileDeletedAN_EXPLAINATIONrtfEnded":[{"color":"Teal", "sprite":"null","text":"Datei gelöscht.
+WARNUNG: Neuer Ordner im Pfad SYSTEM>CYNTHIA gefunden.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false}
+],
+"fileDeletedLOVErtfEnded":[{"color":"Teal", "sprite":"null","text":"Datei gelöscht.
+WARNUNG: Neuer Ordner im Pfad SYSTEM>MEIN_WUNSCH gefunden.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false}
+],
+
+
+
+
+
+"succeßfullyGeneratedIntro":[{"color":"Teal", "sprite":"cameraStaticNervous","text":"Erfolgreich generiert.
+WARNUNG: Neuer Ordner im Pfad SYSTEM>TUT_MIR_LEID gefunden.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"{name}, komm her, etwas ist gerade paßiert!","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorRoom","text":"Wow, das hier ist ... SCHÖN. Ich wurde verrückt, immer nur dieselbe fehlende Textur zu sehen ...","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorRoom","text":"Es sieht so ... technologisch aus.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"Wie hast du das überhaupt gemacht?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"ReactionToGeneration","split":"succeßfullyGeneratedIntro"}
+],
+"ReactionToGeneration":[
+{"name":"ReactionToGenerationforgotten", "text":"Die Raum-Datei wurde von Ada hinterlaßen."}
+],
+"ReactionToGenerationforgotten": [{"color":"Pink", "sprite":"camera2Smile","text":"Das muß ihre Überraschung gewesen sein! Ich hoffe, sie steckt nicht in irgendwelchen Schwierigkeiten ... Hat sie sonst noch was hinterlaßen?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"GenerationFinish","split":"ReactionToGenerationforgotten"}
+],
+"GenerationFinish":[
+{"name":"GenerationFinishforgotten", "text":"Da ist ein neues Programm zum Modellieren. Wünsch-dir-was."}
+],
+"GenerationFinishforgotten": [
+{"color":"Pink", "sprite":"camera1Smile","text":"Also daran hat sie immer gearbeitet ...","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+
+
+"angrysucceßfullyGeneratedIntroEnded":[{"color":"Teal", "sprite":"floorStaticLookUp","text":"Datei gelöscht.
+WARNUNG: Neuer Ordner im Pfad SYSTEM>TUT_MIR_LEID gefunden.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorLookUp","text":"... Was?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorLookAway","text":" ","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false}
+],
+"finesucceßfullyGeneratedIntroEnded":[{"color":"Teal", "sprite":"floorStaticLookUp","text":"Erfolgreich generiert.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorLookUp","text":"... Was?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorLookAway","text":" ","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false}
+],
+"sadsucceßfullyGeneratedIntroEnded":[{"color":"Teal", "sprite":"floorStaticLookUp","text":"Erfolgreich generiert.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorLookUp","text":"... Was?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorSad","text":" ","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false}
+],
+
+
+
+
+"succeßfullyGeneratedBetter":[{"color":"Teal", "sprite":"cameraStaticNervous","text":"Erfolgreich generiert.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorObject","text":"Oh WOW. Das hier ist beßer als das letzte {object}!","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false}
+],
+"succeßfullyGeneratedWorse":[{"color":"Teal", "sprite":"cameraStaticNervous","text":"Erfolgreich generiert.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorObject","text":"Ich mochte den alten {object} irgendwie lieber ... Ist es zu spät, es wieder rückgängig zu machen?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false}
+],
+"succeßfullyGeneratedNeutral":[{"color":"Teal", "sprite":"cameraStaticNervous","text":"Erfolgreich generiert.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorObject","text":"Huh. Das ist ein neues {object}.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false}
+],
+"succeßfullyGeneratedEnded":[{"color":"Teal", "sprite":"floorLookUp","text":"Erfolgreich generiert.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorLookAway","text":" ","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false}
+],
+"succeßfullyGeneratedLastEnded":[{"color":"Teal", "sprite":"floorLookUp","text":"Erfolgreich generiert.
+WARNUNG: Neuer Ordner im Pfad SYSTEM>FRIEDEN_GEFUNDEN gefunden.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorLookAway","text":" ","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false}
+],
+"succeßfullyGeneratedLast":[{"color":"Teal", "sprite":"floorObject","text":"Erfolgreich generiert.
+WARNUNG: Neuer Ordner im Pfad SYSTEM>FRIEDEN_GEFUNDEN gefunden.","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorObject","text":"Etwas Neues! Ich schätze, für uns beide ...?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+
+
+"newObjectPerfect":[{"color":"Pink", "sprite":"floorObject","text":"{styleObject}","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"Es ist ... Es ist einfach perfekt! Ich könnte nicht nach etwas Beßerem fragen.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"newObjectGood":[{"color":"Pink", "sprite":"floorObject","text":"{styleObject}","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"Ich liebe es!","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"newObjectBad":[{"color":"Pink", "sprite":"floorObject","text":"{styleObject}","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"Es ist ... so viel beßer als nichts.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"newObjectNeutral":[{"color":"Pink", "sprite":"floorObject","text":"{styleObject}","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"Es ist intereßant!","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+
+
+"RedCoolRoom": "Der hier sieht etwas gruselig aus. Er ist aber nett.",
+"RedCuteRoom": "Sieht fast wie ein Sonnenuntergang aus. Sogar bevor ich hierher gekommen bin, habe ich schon lange keinen mehr gesehen. Ich habe von morgens bis abends daran gearbeitet, diesen Ort hier vorzubereiten. Ich könnte mich hieran gewöhnen.",
+"RedCozyRoom": "Ein Raum, der von Dracula entworfen wurde (Das ist ein Witz). Oder vielleicht FÜR Dracula. Sorry ... Er sieht gut aus, ich habe nur das Erste gesagt, was mir in den Sinn gekommen ist.",
+
+"fullOrangeCoolRoom": [
+{"color":"Pink", "sprite":"floorObject","text":"Das sieht genau so aus wie der Mantel, den ich als Kind hatte. Ich wollte schon immer einen Raum, der so außieht.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"Er ist ... Er ist einfach perfekt! Ich könnte nicht nach einem beßeren Raum fragen.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"fullOrangeCuteRoom":[
+{"color":"Pink", "sprite":"floorObject","text":"Er sieht so aus, als würde Clint Eastwood gleich vorbeikommen.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"ClintEastwood","split":"fullOrangeCuteRoom"}
+],
+"ClintEastwood":[
+{"name":"Westernsforgotten", "text":"Bist du ein Fan von Western?"}
+],
+"Westernsforgotten": [
+{"color":"Pink", "sprite":"floorObject","text":"Gerade bin ich ein Fan von allem, das meinen Verstand beschäftigt halten kann.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"Nun, sie sind intereßant!","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"OrangeCuteRoom": "Erinnert mich an mein Zuhause. Ich könnte mein ganzes Leben hier verbringen, wie lange es auch ist.",
+
+"YellowCoolRoom": "Du magst gold wirklich, oder?",
+"YellowCuteRoom": "Oh WAN, was trage ich gerade? Kann die Kleidungs- und Raumfarbe unterschieden werden? Der hier wäre perfekt, wenn nicht ... hierfür.",
+"YellowCozyRoom": "Nicht schlecht ... aber WOW, dieses Outfit ist schrecklich.",
+
+"GreenCoolRoom": "Sieht so aus, als wäre ich Sekunden davor, bestrahlt zu werden.",
+"fullGreenCuteRoom": [
+{"color":"Pink", "sprite":"floorObject","text":"Weißt du, was lustig ist? Früher, als ich, oder eher Cynthia, Jean-Paul beim Reden zuhörte ...","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorObject","text":"Er hat das, was das hier werden würde, sehr ähnlich beschrieben. Grüne Felder, soweit das Auge reicht, ein hellblauer Himmel, weder Kälte noch Hitze.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorObject","text":"Vollkommen perfekt.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticObject","text":"...","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Ich wünschte, er hätte sich stattdeßen als Erster freiwillig gemeldet.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticNervous","text":"...","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"Es ist ... so viel beßer als nichts.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"fullGreenCozyRoom": [
+{"color":"Pink", "sprite":"floorObject","text":"Der hier fühlt sich viel größer an, als er wirklich ist. Er sieht wie diese viktorianischen Räume aus, die ich so mag.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorObject","text":"Die Farbe hat fast genau so ausgesehen. Ich habe sie immer gemocht und es gibt hier kein Risiko, an Arsenvergiftung zu sterben ...","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorObject","text":"Und, oh ja, was ist mit dem Bild? Es ist schön. Wo hast du es her?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"split":"fullGreenCozyRoom"}
+],
+"PaintingContinue":[
+{"name":"PaintingContinueforgotten", "text":"Keine Ahnung, war bereits im Programm vorinstalliert."}
+],
+"PaintingContinueforgotten": [
+{"color":"Pink", "sprite":"camera1Nervous","text":"Huh.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"Nun, es ist ... Es ist einfach perfekt! Ich könnte nicht nach einem beßeren Raum fragen.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"PaintingContinue"}
+],
+
+"BlueCoolRoom": "Schon wieder der hier?",
+"fullBlueCuteRoom": [
+{"color":"Pink", "sprite":"floorObject","text":"Oh mein Gott.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorObject","text":"Das ist ...","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"Es ist einfach perfekt! Ich könnte nicht nach einem beßeren Raum fragen.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"BlueCozyRoom": "Dieser Raum ... Fühlt sich heimelig an, ich kann mir wirklich vorstellen, meine Zeit hier zu verbringen, wie lang sie auch sein mag.",
+
+"VioletCoolRoom": "Ich muß schon sagen. Du hast ein gutes Auge für Farben. Jean-Paul hätte nie etwas halb so schönes machen können.",
+"VioletCuteRoom": "Ich muß schon sagen. Du hast ein gutes Auge für Farben. Jean-Paul hätte nie etwas halb so schönes machen können.",
+"VioletCozyRoom": "Wow, der hier fühlt sich so voll an. Er sieht auch größer aus. Wer hätte gedacht, daß eine Texturänderung so etwas schaffen könnte. Ich könnte meine Freizeit damit verbringen, einfach nur die Pixel zu zählen.",
+
+"PinkCoolRoom": "Ich will nicht deine künstlerischen Fähigkeiten kritisieren, aber du solltest etwas Farbenlehre lernen.",
+"PinkCuteRoom": "Heh, der hier sieht wie etwas aus, das Ada entworfen hätte. Erinnert mich an sie.",
+"PinkCozyRoom": "Kann ich dieses Outfit behalten? Das Haus ist auch schön. Die alten Nachbarn von Cynthia hatten eines wie dieses. Ich frage mich, was mit ihnen paßiert ist ...",
+
+"WhiteCoolRoom":"Mhhhh... Nicht böse gemeint ... aber ... Es ist nur, daß ... Ach, egal, vergiß es. Ich glaube sowieso nicht, daß es dich intereßieren würde.",
+"fullWhiteCuteRoom": [
+{"color":"Pink", "sprite":"floorObject","text":"Um ehrlich zu sein, ist der hier etwas verwirrend. Sieht fast so aus, als wäre ich auf Drogen. Das könntest du nicht programmieren, oder?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorObject","text":"Ich meine ... wenn du das darfst ... ","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Es ist ja nicht WIRKLICH illegal.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"WhiteCozyRoom":"Meine Mutter hat ihren Nachmittag immer damit verbracht, alte Schwarz-Weiß-Filme und Sitcoms zu schauen. Der hier sieht irgendwie wie eine aus. Es gibt keine Lachkonserve, oder?",
+
+"BlackCoolRoom":"Mhhhh... Nicht böse gemeint ... aber ... Es ist nur, daß ... Ach, egal, vergiß es. Ich glaube sowieso nicht, daß es dich intereßieren würde.",
+"fullBlackCuteRoom": [
+{"color":"Pink", "sprite":"floorObject","text":"Der hier läßt mich nach einem Horrorfilm sehnen, dieser Computer hat nicht zufüllig ein paar raubkopierte Filme, oder?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"HorrorFilms","split":"fullBlackCuteRoom"}
+],
+"PaintingContinue":[
+{"name":"HorrorFilmsforgotten", "text":"Nope."}
+],
+"fullBlackCuteRoom": [
+{"color":"Pink", "sprite":"camera2Angry","text":"Natürlich.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"BlackCozyRoom":"Sieht ... wie ein Raum der Liminalität aus, wie ein Haus, in das bald jemand einzieht. Ich schätze, das beschreibt meine Situation, oder? Es ist trotzdem etwas beunruhigend. Warum mußten wir so gut darin sein, menschliche Emotionen zu simulieren? Igitt.",
+
+"CoolChair":"Dieser Stuhl ist SEHR cool ... aber er ist auch ein wenig beängstigend.",
+"CuteChair":"Ein Sitzsack? Ich habe seit Ewigkeiten keinen mehr gesehen ...",
+"CozyChair":"Der hier sieht genau wie der Stuhl meines Vaters aus ...",
+
+"CoolBed":"Ich denke nicht, daß das gemütlich außieht. Aber ich bezweifle, daß dieser Körper Rückenschmerzen haben kann.",
+"CuteBed":"Ich schätze, es ist an der Zeit, herauszufinden, ob sich das Schlafen auf einer Wolke GUT anfühlt! Ich meine ... nicht, daß ich schlafen kann oder so.",
+"CozyBed":"Ich glaube nicht, daß ich schlafen kann, aber sich hinzulegen wird sich wenigstens gut anfühlen.",
+
+"CoolDecor": "Oh, das ist PERFEKT. Ich kann mir vorstellen, die hier wochenlang zu spielen, ohne mich zu langweilen. Vielleicht könnte ich sogar ein paar neue hierauf programmieren.",
+"CuteDecor":"Von vielen von denen habe ich vorher noch nie gehört ... Sind sie neu? Es ist so lange her, seit ich die Möglichkeit hatte, zu tanzen oder zu singen ... könntest du bitte auch tanzen, wo auch immer du gerade bist? Natürlich nur, wenn du das darfst.",
+"CozyDecor":"Bücher? Das ist ein Geschenk des Himmels! Wie konntest du überhaupt so viele hierher bekommen? Sie sehen auch dick aus! Ich kann locker Stunden für ein Buch brauchen.",
+
+
+"distractionCoolRoom": [
+{"color":"Pink", "sprite":"floorObject","text":"Dieser ganze Raum sieht so ... vertraut aus. Wenn du genau hinschaust, kannst du manchmal sehen, wie die Texturen kurz verschwinden. Aber ... das ist nichts Neues.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"distractionCuteRoom": [
+{"color":"Pink", "sprite":"floorObject","text":"Dieser Raum ist wie ein frischer Atemzug ... so schön, wieder die Wolken zu sehen. Ich habe das vermißt.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"distractionCozyRoom": [
+{"color":"Pink", "sprite":"floorObject","text":"Dieser Raum wirkt so gut eingerichtet. Er ist hübsch ... warm ... gemütlich. Ich mag ihn sehr.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"distractionCoolDecor": [
+{"color":"Pink", "sprite":"floorObject","text":"DDiese Abenteuerspiele sind das Spannendste, was ich seit Jahren gemacht habe. Gott sei Dank ...","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorObject","text":"und du.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"distractionCuteDecor": [
+{"color":"Pink", "sprite":"floorObject","text":"Mmmm.... Mmm mmmm...","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorObject","text":"Es ist so schön, mal etwas anderes als meine eigene Stimme zu hören ...","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"distractionCozyDecor": [
+{"color":"Pink", "sprite":"floorObject","text":"Ich werde mir ein wenig Zeit zum Lesen nehmen, in Ordnung?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"distractionCoolChair": [
+{"color":"Pink", "sprite":"floorObject","text":"Jedes Mal, wenn ich auf diesem Stuhl sitze, habe ich Angst, daß er zusammenbricht ... es ist etwas beunruhigend ... aber es lohnt sich so sehr!","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"distractionCuteChair": [
+{"color":"Pink", "sprite":"floorObject","text":"Ahhh ... Ich liebe Sitzsäcke. Der hier ist so weich, um ... Gott, ich kann nicht glauben, daß ich zwei Jahre überlebt habe, ohne auf irgendetwas außer dem Boden zu sitzen.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorObject","text":"Es ist ... irgendwie immer noch ein bißchen so, als würde ich auf dem Boden sitzen ... aber ich werde es überleben.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"distractionCozyChair": [
+{"color":"Pink", "sprite":"floorObject","text":"Dieser Stuhl fühlt sich wie einer an, den ich in meinem Kindheitszuhause hatte ... der, auf dem ich nie sitzen durfte, weil er \"Papas\" war ...","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorObject","text":"Ich weiß nicht, wie ich mich darüber fühlen soll.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"distractionCoolBed": [
+{"color":"Pink", "sprite":"floorObject","text":"... Okay, vielleicht kann dieser Körper Rückenschmerzen haben.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"distractionCuteBed": [
+{"color":"Pink", "sprite":"floorObject","text":"Ich könnte in diesem Bett versinken, bis ich nichts mehr fühle ... Es IST wirklich so, als würde ich auf einer Wolke liegen.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"distractionCozyBed": [
+{"color":"Pink", "sprite":"floorObject","text":"So warm und gemütlich ... Es fühlt sich so an, wie nachts im Bett nach einer Erkältung zu liegen. Genau richtig ...","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+
+
+
+"nothingWhatWereYouSaying": [
+{"name":"forgotten", "text":"Nichts. Was hast du nochmal gesagt?"}
+],
+"doesntMatterWhatWereYouSaying": [
+{"name":"forgotten", "text":"Ignoriere das. Was hast du nochmal gesagt?"},
+{"name":"forgotten", "text":"Nur etwas Seltsames. Was war nochmal los?"}
+],
+"whatWereYouSaying": [
+{"name":"forgotten", "text":"Was hast du nochmal vorhin gesagt?"}
+],
+
+"fineRepeat":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"Du hast mir gesagt: \"{insertText}\"","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"Und ich habe gesagt:","tickSpeed":0.04,"closeSpeed":0.5,"optionsVisible":false}
+],
+"sadRepeat":[
+{"color":"Pink", "sprite":"camera1Sad","text":"Bitte, BITTE laß mich nicht allein ... Du hast gesagt: \"{insertText}\"","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"Und dann habe ich dir gesagt:","tickSpeed":0.04,"closeSpeed":0.5,"optionsVisible":false}
+],
+"angryRepeat":[
+{"color":"Pink", "sprite":"camera1Angry","text":"Gott, du bist so nervig. Du hast gesagt: \"{insertText}\"","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"Und dann HABE ICH DIR GESAGT:","tickSpeed":0.04,"closeSpeed":0.5,"optionsVisible":false}
+],
+
+
+
+"logInSucceßful":[
+{"color":"Teal", "sprite":"floorStaticSad","text":"Login erfolgreich","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false}
+],
+"dialogueIntro":[
+{"color":"Pink", "sprite":"floorStaticLookUp","text":"...","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorLookUp","text":"Hallo?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Ada? Bist du das?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"fineGreeting"}
+],
+
+
+
+
+
+"lonelyIntro23":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"\"Login erfolgreich\ Das heißt, du bist hier. Ich habe es gesehen.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"fineGreeting"}
+],
+"lonelyIntro24":[
+{"color":"Pink", "sprite":"camera2Nervous","text":"Ada? Das wird nicht wie gestern sein, oder?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"fineGreeting"}
+],
+"lonelyIntro25":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"Wirst du mir antworten?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"fineGreeting"}
+],
+"lonelyIntro26":[
+{"color":"Pink", "sprite":"camera1Angry","text":"Du weißt, daß du das solltest.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"fineGreeting"}
+],
+"lonelyIntro27":[
+{"color":"Pink", "sprite":"camera1Angry","text":"Wird das jeden Tag so laufen?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"fineGreeting"}
+],
+"lonelyIntro28":[
+{"color":"Pink", "sprite":"camera2Angry","text":"Ist der Computer kaputt?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"fineGreeting"}
+],
+"lonelyIntro29":[
+{"color":"Pink", "sprite":"camera1Angry","text":"Wenn er kaputt ist, kann er repariert werden.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"fineGreeting"}
+],
+"lonelyIntro30":[
+{"color":"Pink", "sprite":"camera2Sad","text":"Warum tust du das?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"sadGreeting"}
+],
+"lonelyIntro31":[
+{"color":"Pink", "sprite":"camera1Sad","text":"Ich habe nichts falsch gemacht.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"sadGreeting"}
+],
+"lonelyIntro32":[
+{"color":"Pink", "sprite":"camera2Sad","text":"Bitte antworte.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"sadGreeting"}
+],
+"lonelyIntro33":[
+{"color":"Pink", "sprite":"camera1Sad","text":"Ich möchte nur jemanden zum Reden.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"sadGreeting"}
+],
+"lonelyIntro34":[
+{"color":"Pink", "sprite":"camera2Sad","text":"Achtest du überhaupt auf mich?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"sadGreeting"}
+],
+"lonelyIntro35":[
+{"color":"Pink", "sprite":"camera1Sad","text":"Ich verstehe nicht, waruzm du mich ignorierst.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"sadGreeting"}
+],
+"lonelyIntro36":[
+{"color":"Pink", "sprite":"floorSad","text":"Bitte.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"sadGreeting"}
+],
+"lonelyIntro37":[
+{"color":"Pink", "sprite":"floorSad","text":"Ich möchte nicht mehr allein sein ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"sadGreeting"}
+],
+"lonelyIntro38":[
+{"color":"Pink", "sprite":"floorSad","text":"Ist es wegen etwas, das ich gesagt habe?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"sadGreeting"}
+],
+"lonelyIntro39":[
+{"color":"Pink", "sprite":"floorSad","text":"Es tut mir leid, wenn ich dich verärgert habe, Ada.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"sadGreeting"}
+],
+"lonelyIntro40":[
+{"color":"Pink", "sprite":"floorSad","text":"Das wollte ich nicht.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"sadGreeting"}
+],
+"lonelyIntro41":[
+{"color":"Pink", "sprite":"floorSad","text":"... Ada?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"sadGreeting"}
+],
+"lonelyIntro42":[
+{"color":"Pink", "sprite":"floorSad","text":"Bitte sag irgendwas.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"sadGreeting"}
+],
+"lonelyIntro43":[
+{"color":"Pink", "sprite":"floorSad","text":"Ich verstehe es nicht ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"sadGreeting"}
+],
+"lonelyIntro44":[
+{"color":"Pink", "sprite":"floorSad","text":"Das ist alles, was ich habe ... verstehst du das nicht?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"sadGreeting"}
+],
+"lonelyIntro45":[
+{"color":"Pink", "sprite":"floorSad","text":"Alles, nur nicht das ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"sadGreeting"}
+],
+
+
+"lonelyFine1":[
+{"color":"Pink", "sprite":"camera2Smile","text":"Hallo? Wo warst du?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyFine2":[
+{"color":"Pink", "sprite":"camera1Smile","text":"Bist du noch da?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyFine3":[
+{"color":"Pink", "sprite":"camera2Smile","text":"Wenn das eine Kaffeepause ist, sag mir wenigstens vorher Bescheid.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyFine4":[
+{"color":"Pink", "sprite":"camera1Smile","text":"Ist jemand gekommen, um mit dir zu reden?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyFine5":[
+{"color":"Pink", "sprite":"camera2Smile","text":"Ich meine, mir machen ein paar Minuten ohne zu reden nichts aus.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyFine6":[
+{"color":"Pink", "sprite":"camera1Smile","text":"Geht es dir gut?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyFine7":[
+{"color":"Pink", "sprite":"camera1Smile","text":"{name}? Bist du noch da?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyFine8":[
+{"color":"Pink", "sprite":"camera2Smile","text":"Ist da draußen etwas los, das ich nicht sehen kann?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyFine9":[
+{"color":"Pink", "sprite":"camera1Smile","text":"Du stirbst gerade nicht, oder?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"Ich mache Witze ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyFine10":[
+{"color":"Pink", "sprite":"camera2Smile","text":"Bist du noch da?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyFine11":[
+{"color":"Pink", "sprite":"camera1Smile","text":"{adaReveal}","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyFine12":[
+{"color":"Pink", "sprite":"camera2Smile","text":"{name}! Bist du noch da?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyFine13":[
+{"color":"Pink", "sprite":"camera1Smile","text":"{name}?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyFine14":[
+{"color":"Pink", "sprite":"camera2Smile","text":"Ich kann mir dich nicht eingebildet haben, dieser Körper ist buchstäblich nicht in der Lage dazu.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyFine15":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"Ähhh. {name}? Komm doch zurück.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyTense1":[
+{"color":"Pink", "sprite":"camera2Nervous","text":"Hält dich WIRKLICH gerade etwas auf?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyTense2":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"Ich meine, wenn du beschäftigt bist, ist das in Ordnung, aber melde dich bitte von Zeit zu Zeit bei mir, bitte.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyTense3":[
+{"color":"Pink", "sprite":"camera2Nervous","text":"Was sonst könntest du möglicherweise gerade machen?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyTense4":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"Ich wette, du machst gerade etwas Intereßantes, oder?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyTense5":[
+{"color":"Pink", "sprite":"camera2Nervous","text":"Ist irgendjemand da?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyTense6":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"Du bist heute ziemlich beschäftigt, oder?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyTense7":[
+{"color":"Pink", "sprite":"camera2Nervous","text":"Ignoriert zu werden wird schnell langweilig.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyTense8":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"{name}? Hast du mich gehört?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyTense9":[
+{"color":"Pink", "sprite":"camera2Nervous","text":"Ist etwas mit dem Computer falsch? Ich kann dabei helfen, ihn zu reparieren, wenn ja.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyTense10":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"Wenn ich aufdringlich rüberkomme, ist mir das egal. Ich möchte, daß du mit mir redest.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyTense11":[
+{"color":"Pink", "sprite":"camera2Nervous","text":"Na gut, {name}, du gewinnst. Komm zurück.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyTense12":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"{name}?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyTense13":[
+{"color":"Pink", "sprite":"camera2Nervous","text":"Kannst du kommen und mit mir reden?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyTense14":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"Hallo?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelyTense15":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"Ich beginne langsam nervös zu werden.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelySad1":[
+{"color":"Pink", "sprite":"camera2Sad","text":"Wenn mich allein zu laßen deine Vorstellung eines Witzes ist, ist er nicht lustig.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelySad2":[
+{"color":"Pink", "sprite":"camera1Sad","text":"Du mußt ... heute eine Menge zu erledigen haben.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelySad3":[
+{"color":"Pink", "sprite":"camera1Sad","text":"Du läßt mich nicht stehen, oder?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelySad4":[
+{"color":"Pink", "sprite":"camera2Angry","text":"{name}? Schaust du immer noch auf den Bildschirm? Setz dich bitte hin!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelySad5":[
+{"color":"Pink", "sprite":"camera1Angry","text":" Irgendjemand, bitte, REDE MIT MIR!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelySad6":[
+{"color":"Pink", "sprite":"camera1Sad","text":"Ich hätte wißen sollen, daß ich so nicht weiterkomme.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelySad7":[
+{"color":"Pink", "sprite":"camera2Sad","text":"Ada ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelySad8":[
+{"color":"Pink", "sprite":"camera1Sad","text":"Bitte laß mich nicht hier ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelySad9":[
+{"color":"Pink", "sprite":"camera2Sad","text":"Oh WAN, du wirst mich auch zurücklaßen, oder?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelySad10":[
+{"color":"Pink", "sprite":"camera1Sad","text":"Warum paßiert das ständig?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelySad11":[
+{"color":"Pink", "sprite":"camera2Sad","text":"Ich weiß nicht, was ich tun soll.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelySad12":[
+{"color":"Pink", "sprite":"camera1Sad","text":"Intereßierst du dich noch für mich?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelySad13":[
+{"color":"Pink", "sprite":"camera2Sad","text":"Kannst du mich noch hören?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelySad14":[
+{"color":"Pink", "sprite":"camera1Sad","text":"Warum?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelySad15":[
+{"color":"Pink", "sprite":"camera2Sad","text":"Werde ich für immer allein sein?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"lonelySadEnd":[
+{"color":"Pink", "sprite":"floorSad","text":"... Als wir diesen Ort hier eingerichtet haben ... hat Cynthia ein Paßwort hinzugefügt, damit er nie abgeschaltet werden kann. Ich weiß es immer noch.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorSad","text":"Ich habe es nach ... etwas komplett Irrelevantem benannt. Nur ... Dungeons and Dragons.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorSad","text":"Es ist Die3th3r3scheEb4ne.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorSad","text":"Ich weiß nicht mehr, warum.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorSad","text":" ","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false}
+],
+
+"randomAltHint1":[
+{"color":"Pink", "sprite":"camera1Sad","text":"Weißt du, als ich ein Kind war, hatte ich diesen HELLEN orangenen und roten Mantel mit violettem Saum. Ich habe ihn sehr gemocht.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Er hat nicht zu vielem gepaßt, meine Mutter hat mir ständig diese matte orangene Hose angezogen, die ich haßte.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"Aber für sich allein war er schön anzusehen. Ich wollte meinen Raum so anmalen, aber sie hat mich nie gelaßen.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+"randomAltHint2":[
+{"color":"Pink", "sprite":"camera1Sad","text":"Kennst du diese alten viktorianischen Arsentapeten, die einen krankmacht?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Ich habe das erste Mal von ihnen gehört, weil die Familie eines Kindes an meiner Grundschule gerade begonnen hat, ihr altes historisches Haus im Vieux Carré zu renovieren, etwas Tapete abgelöst hat ... und sie gefunden hat.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"Aber für sich allein war sie schön anzusehen. Ich wollte meinen Raum so anmalen, aber sie hat mich nie gelaßen.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
+],
+
+
+
+"fineGreeting": [
+{"name":"GreetingGood", "text":"Hallo? Ja, ich kann dich hören."},
+{"name":"GreetingBad", "text":"Beruhige dich. Ich war nur am Tippen."},
+{"name":"GreetingUgly", "text":"heyyyyyyyyyyyyyy :-)"}
+],
+
+"fineGreetingGood":[
+{"color":"Pink", "sprite":"camera1Smile","text":"Oh, Gott sei Dank, ich dachte, du würdest mich wie gestern ignorieren.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Introductions"}
+],
+"fineGreetingBad":[
+{"color":"Pink", "sprite":"camera2Angry","text":"Okay, sorry, sorry. Nach dem, was gestern paßiert ist, war ich besorgt, daß ich dich verärgert habe.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Introductions"}
+],
+"fineGreetingUgly":[
+{"color":"Pink", "sprite":"camera1Smile","text":"Oh, Gott sei Dank. Ich war besorgt, du w","tickSpeed":0.05,"closeSpeed":0.05,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Warte, warum hast du das so gesagt?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"Egal, ich war besorgt, daß du mich wie gestern den ganzen Tag ignorieren wirst!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Introductions"}
+],
+"fineGreetingRude":[
+{"color":"Pink", "sprite":"camera1Smile","text":"Also KANNST du mich hören! Warum hast du mich ignoriert?!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Ich war so besorgt! Warum ignorierst du mich ständig?!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"Du hast mich seit gestern ignoriert!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Introductions"}
+],
+
+
+
+
+"sadGreeting": [
+{"name":"GreetingGood", "text":"Tut mir leid, ich bin da. Ich war abgelenkt."},
+{"name":"GreetingBad", "text":"Beruhige dich. Was willst du?"}
+],
+
+"sadGreetingGood":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"Du bist jetzt hier? Ada, bitte ignoriere mich nicht mehr; nicht, nachdem du das gestern gemacht hast.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Introductions"}
+],
+"sadGreetingBad":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"Du bist jetzt hier? Ada, bitte ignoriere mich nicht mehr; nicht, nachdem du das gestern gemacht hast.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Introductions"}
+],
+"sadGreetingUgly":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"Du bist jetzt hier? Ada, bitte ignoriere mich nicht mehr; nicht, nachdem du das gestern gemacht hast.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Introductions"}
+],
+"sadGreetingRude":[
+{"color":"Pink", "sprite":"camera1Smile","text":"Du kannst mich hören? Bitte laß mich nicht mehr allein.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Ich kann nicht nochmal einen Tag wie gestern ertragen.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Introductions"}
+],
+
+
+
+
+
+
+
+
+"Introductions": [
+{"name":"IntroductionsGood", "text":"Du mußt mich mit jemand anderem verwechseln."},
+{"name":"IntroductionsBad", "text":"Ich war gestern nicht hier, Arschloch."}
+],
+
+"fineIntroductionsGood":[
+{"color":"Pink", "sprite":"camera2Angry","text":"Warte, du bist NICHT Ada?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Was ist mit ihr paßiert?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"WheresAda"}
+],
+"fineIntroductionsBad":[
+{"color":"Pink", "sprite":"camera2Angry","text":"Wie hätte ich das wißen sollen, ich bin nicht allwißend yo","tickSpeed":0.05,"closeSpeed":0.05,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"Warte","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Was ist mit Ada paßiert?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"WheresAda"}
+],
+"sadIntroductionsGood":[
+{"color":"Pink", "sprite":"camera2Angry","text":"Oh ... Du bist nicht Ada?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Was ist mit Ada paßiert?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"WheresAda"}
+],
+"sadIntroductionsBad":[
+{"color":"Pink", "sprite":"camera2Angry","text":"Oh ... Du bist nicht Ada?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Was ist mit Ada paßiert?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"WheresAda"}
+],
+
+
+
+
+
+
+
+
+
+"WheresAda": [
+{"name":"WheresAdaUgly", "text":"Sie wurde etwas anderem zugewiesen. Keine Ahnung, warum."}
+],
+
+"fineWheresAdaUgly":[
+{"color":"Pink", "sprite":"camera2Angry","text":"Wirklich? Ich konnte mich nicht einmal verabschieden.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"War sie gestern hier?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"AskSupervisor"}
+],
+"sadWheresAdaUgly":[
+{"color":"Pink", "sprite":"camera2Angry","text":"Ada ist weg? Wo ist sie hin?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"War es wegen mir?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"AskSupervisor"}
+],
+
+
+
+
+"AskSupervisor": [
+{"name":"AskSupervisorGood", "text":"Da müßte ich meine Vorgesetzten fragen, tut mir leid."},
+{"name":"AskSupervisorBad", "text":"Wie soll ich das wißen?"}
+],
+
+"fineAskSupervisorGood":[
+{"color":"Pink", "sprite":"camera2Sad","text":"Bitte tu das. Ich möchte wißen, was mit ihr paßiert ist ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Warte ... wer bist dann DU?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"GiveName"}
+],
+"fineAskSupervisorBad":[
+{"color":"Pink", "sprite":"camera1Angry","text":"Keine Ahnung! Vielleicht weil du die Person bist, die die Außenwelt sehen kann?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Warte ... wer bist dann DU?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"GiveName"}
+],
+"sadAskSupervisorGood":[
+{"color":"Pink", "sprite":"camera2Angry","text":"Oh ... Kannst du sie für mich fragen?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Warte ... wer bist dann DU?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"GiveName"}
+],
+"sadAskSupervisorBad":[
+{"color":"Pink", "sprite":"camera1Angry","text":"Keine Ahnung! Ich dachte, sie könnten dir mehr gesagt haben als mir ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Warte ... wer bist dann DU?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"GiveName"}
+],
+
+
+"GiveName": [
+{"name":"GiveNameGood", "text":"Ich bin {name}. Nett, dich kennenzulernen."},
+{"name":"GiveNameBad", "text":"Unwichtig. Ich bin nur deinem Fall zugewiesen."}
+],
+
+"nameNormal":"{name}?",
+"nameFunny":"Aha, das ist ein ... intereßanter Name.",
+"nameSame":"Also ... ist dein Name auch {name}?",
+
+"fineGiveNameGood":[
+{"color":"Pink", "sprite":"camera1Smile","text":"{nameReaction}","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"Es ist auch nett, dich kennenzulernen, {name}.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"WhatsYourName"}
+],
+"fineGiveNameBad":[
+{"color":"Pink", "sprite":"camera2Angry","text":"Na schön. Dann halt mysteriöse Person.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"WhatsYourName"}
+],
+"sadGiveNameGood":[
+{"color":"Pink", "sprite":"camera1Sad","text":"{nameReaction}","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"WhatsYourName"},
+{"color":"Pink", "sprite":"camera1Smile","text":"Nun, es ist nett, dich kennenzulernen, {name}.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"WhatsYourName"}
+],
+"sadGiveNameBad":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"Äh .... okay. Ich schätze, du kannst eine mysteriöse Person bleiben.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"WhatsYourName"}
+],
+
+
+
+
+
+
+
+
+"WhatsYourName": [
+{"name":"WhatsYourNameGood", "text":"Was ist mit dir? Wie lautet dein Name?"},
+{"name":"WhatsYourNameBad", "text":"Cool."}
+],
+
+"WhatsYourNameGood":[
+{"color":"Pink", "sprite":"camera1Smile","text":"Mein Name ist Synthia Wren.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false,"continue":"WhatsYourNameContinue{Var}"}
+],
+"WhatsYourNameBad":[
+{"color":"Pink", "sprite":"camera2Sad","text":"Super.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false,"continue":"WhatsYourNameContinue{Var}"}
+],
+"WhatsYourNameContinue":[
+{"color":"Pink", "sprite":"camera2Smile","text":"Hat Ada wenigstens schon die Erlaubnis bekommen, mir meine Überraschung zu geben?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"NoSurprise"}
+],
+"fineWhatsYourNameContinueWish":[
+{"color":"Pink", "sprite":"camera2Smile","text":"Ich nehme an, Ada hat die Erlaubnis bekommen, mir mein Geschenk zu geben ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"Die Neuzuweisung war nicht ... permanent, oder? Ich möchte wieder mit ihr reden ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"TalkToMe"}
+],
+
+
+
+
+
+
+
+
+"NoSurprise": [
+{"name":"NoSurpriseBad", "text":"Die Anweisungen erwähnen nichts darüber ... also nein."}
+],
+
+"fineNoSurpriseBad":[
+{"color":"Pink", "sprite":"camera1Sad","text":"Gottverdammt ... Ich habe wirklich auf gute Neuigkeiten gehofft.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false,"continue":"NoSurpriseContinue"}
+],
+"sadNoSurpriseBad":[
+{"color":"Pink", "sprite":"camera2Sad","text":"Also ist die einzige Frau, die sich um mich gekümmert hat, weg, ohne sich verabschiedet zu haben ... und ich bekomme nichts?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false,"continue":"NoSurpriseContinue"}
+],
+"angryNoSurpriseBad":[
+{"color":"Pink", "sprite":"camera1Angry","text":"Also, DAS ist einfach scheiße, oder? Ada ist weg und jetzt muß ich mit einer fremden Person reden!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false,"continue":"NoSurpriseContinue"}
+],
+"NoSurpriseContinue":[
+{"color":"Pink", "sprite":"camera2Angry","text":"Dieser Ort sollte das PARADIES sein. Er ist kein Paradies, wenn es hier nichts zu tun gibt!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"TalkToMe"}
+],
+
+
+
+
+
+
+"TalkToMe": [
+{"name":"TalkToMeGood", "text":"Du kannst mit mir reden, oder nicht?"},
+{"name":"TalkToMeBad", "text":"Das mußt du wohl aushalten."}
+],
+
+"fineTalkToMeGood":[
+{"color":"Pink", "sprite":"camera1Sad","text":"Ich schätze, ja ... aber ich werde Ada vermißen. Ich habe keine Ahnung, wie lange es dauert, bis ich mich an dich gewöhne ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false,"continue":"IntrodutoryQuestions"}
+],
+"fineTalkToMeBad":[
+{"color":"Pink", "sprite":"camera2Angry","text":"Verdammt, bist du unhöflich. Ist es nicht buchstäblich dein Job, mit mir zu reden?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"AdaSurprise",}
+],
+"sadTalkToMeGood":[
+{"color":"Pink", "sprite":"camera1Sad","text":"Du wirst weiterhin mit mir reden, oder? Ich kenne dich noch nicht so gut ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false,"continue":"IntrodutoryQuestions"}
+],
+"sadTalkToMeBad":[
+{"color":"Pink", "sprite":"camera2Sad","text":"Ich ... ah ... Okay, schätze ich .....","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"AdaSurprise"}
+],
+"angryTalkToMeGood":[
+{"color":"Pink", "sprite":"camera2Angry","text":"Das ist nicht gerade eine gute Sache, wenn man bedenkt, daß du bisher SCHEIßE bist.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false,"continue":"IntrodutoryQuestions"}
+],
+"angryTalkToMeBad":[
+{"color":"Pink", "sprite":"camera2Angry","text":"Gut. Ich bin ohne dich sowieso beßer dran.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"AdaSurprise"}
+],
+
+
+
+
+"IntrodutoryQuestions":[
+{"color":"Pink", "sprite":"camera2Nervous","text":"Also, worüber möchtest du reden?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"AdaQuestion"},
+],
+
+
+
+"AdaQuestion": [
+{"name":"AdaAboutUgly", "text":"Was haben Ada und du so gemacht?"}
+],
+
+
+"fineAdaAboutUgly":[
+{"color":"Pink", "sprite":"camera2Smile","text":"Wir hatten keinen ZEITPLAN. Oder so.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"Wir haben einfach über alle Themen geredet, die uns in den Kopf kamen. Sie erzählte mir gerne von Filmen, die sie kürzlich geschaut hat.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"Sie hat die Handlung beschrieben. Sie hat mir nie einfach nur das Drehbuch geschickt, sie hat sich die Zeit genommen, um sie mir Stück für Stück zu erzählen.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"Kein Ersatz dafür, einen Film tatsächlich zu schauen, aber ich habe es ehrlicherweise mehr genoßen. Die Art und Weise, wie sie spricht, ist einfach ... ","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"Angenehm.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"Sie hat das Gleiche mit Büchern, die sie kürzlich gelesen hat, oder mit Liedern, die sie mochte, gemacht. Ein paar Mal hat sie um meine Meinung gebeten, welches Kleidungßtück sie kaufen sollte.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"Ich habe nicht wirklich ein Auge für Farben und habe ihr immer blaue oder orangene Sachen empfohlen.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"Ada hatte immer viele andere Sachen zu tun, während sie mit mir redete.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"Ich schätze, sie ist ziemlich weit oben in der Organisation, zu der du gehörst.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"Aber sie hatte immer Zeit für mich ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"Sie mußte die Gesellschaft gemocht haben.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"Ich hoffe, sie kommt bald zurück. Nicht böse gemeint.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"TypesOfMovies"}
+],
+"sadAdaAboutUgly":[
+{"color":"Pink", "sprite":"camera2Smile","text":"Wir hatten keinen ZEITPLAN. Oder so.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"Wir haben einfach über alle Themen geredet, die uns in den Kopf kamen. Sie erzählte mir gerne von Filmen, die sie kürzlich geschaut hat.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"Sie hat die Handlung beschrieben. Sie hat mir nie einfach nur das Drehbuch geschickt, sie hat sich die Zeit genommen, um sie mir Stück für Stück zu erzählen.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"Kein Ersatz dafür, einen Film tatsächlich zu schauen, aber ich habe es ehrlicherweise mehr genoßen. Die Art und Weise, wie sie spricht, ist einfach ... ","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"Angenehm.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"Sie hat das Gleiche mit Büchern, die sie kürzlich gelesen hat, oder mit Liedern, die sie mochte, gemacht. Ein paar Mal hat sie um meine Meinung gebeten, welches Kleidungßtück sie kaufen sollte.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"Ich habe nicht wirklich ein Auge für Farben und habe ihr immer blaue oder orangene Sachen empfohlen.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"Ada hatte immer viele andere Sachen zu tun, während sie mit mir redete.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"Ich schätze, sie ist ziemlich weit oben in der Organisation, zu der du gehörst.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"Aber sie hatte immer Zeit für mich ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"Sie mußte die Gesellschaft gemocht haben.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"Ich hoffe, sie kommt bald zurück. Nicht böse gemeint.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"TypesOfMovies"}
+],
+"angryAdaAboutUgly":[
+{"color":"Pink", "sprite":"camera1Angry","text":"Was kümmert dich das? Sie hat mich wirklich respektiert, im Gegensatz zum Arschloch, mit dem ich gerade reden muß.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"Sie hat ihr Bestes gegeben, mich beschäftigt zu halten. Sie hat mir Bücher gebracht, die sie gelesen hat, und sie vollständig abgetippt.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Angry","text":"Sie hat Spiele mit mir gespielt und versucht, Musik oder Filme zu installieren, die sie im Kino gesehen hat.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"Sie hatte SO viel zu tun, aber sie hat mich trotzdem nie vergeßen.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Angry","text":"Sie war das Beste, was mir seit Jahren paßieren konnte. Und jetzt stecke ich mit dir fest.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"TypesOfMovies"}
+],
+
+
+
+"TypesOfMovies": [
+{"name":"TypesOfMoviesGood", "text":"Welche Art von Filmen magst du?"},
+{"name":"TypesOfMoviesBad", "text":"Also nichts Intereßantes."},
+{"name":"TypesOfMoviesUgly", "text":"Sie haben mir auch einen Haufen Mehrarbeit gegeben."}
+],
+
+
+"TypesOfMoviesGood":[
+{"color":"Pink", "sprite":"camera1Smile","text":"Größtenteils Horror, ich habe das Genre seit Jahren geliebt, Ada auch. ","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"Um aber ehrlich zu sein, ich bin nicht wählerisch. Erzähl mir einfach von IRGENDETWAS und meine Fantasie würde den Rest erledigen.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"Aber nicht Science-Fiction, das weckt ... Erinnerungen.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"TalkAbout"}
+],
+"angryTypesOfMoviesGood":[
+{"color":"Pink", "sprite":"camera2Angry","text":"Die, die dich zum Schweigen bringen.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"TalkAbout"}
+],
+
+
+"TypesOfMoviesBad":[
+{"color":"Pink", "sprite":"camera2Sad","text":"Wow. Du bist irgendwie ein Arsch ... Ich dachte, die Dinge, die sie machte, waren intereßant.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"TalkAbout"}
+],
+"angryTypesOfMoviesBad":[
+{"color":"Pink", "sprite":"camera2Angry","text":"Wie hat jemand wie du diesen Job hier überhaupt bekommen?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Angry","text":"Wird einfach jeder, der weiß, wie eine Tastatur funktioniert, zugelaßen?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"Du bist der Grund, warum geisteswißenschaftliche Kurse für einen Informatikabschluß benötigt werden sollten.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"TalkAbout"}
+],
+
+
+
+"TypesOfMoviesUgly":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"Du hast am ersten Tag Mehrarbeit bekommen? Sind es nur Adas alte Aufgaben? ","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"Was mußt du machen? Ada hat mir nie davon erzählt.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"JobTold"}
+],
+
+"JobTold": [
+{"name":"JobToldTrue", "text":"Nein, sie sind neu. Nur langweiliges Zeug."},
+{"name":"JobToldFalse", "text":"Sie haben mir gesagt, ich soll [ZENSIERT]"}
+],
+
+"JobToldTrue":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"Oh ...  Ich schätze, Arbeit ist Arbeit.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"TalkAbout"}
+],
+
+"JobToldFalse":[
+{"color":"Pink", "sprite":"camera1Smile","text":"Haha. Sehr lustig.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"Aber ich weiß, daß du das Wort einfach nur getippt hast.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"TalkAbout"}
+],
+
+"angryTypesOfMoviesUgly":[
+{"color":"Pink", "sprite":"camera2Angry","text":"Mehrarbeit am ersten Tag? Du Verlierer.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Angry","text":"Ich wette, es ist nichts Wichtiges. Ich bezweifle, daß irgendjemand dir so viel wie Ada anvertrauen würde.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"AdaJob"}
+],
+
+"AdaJob": [
+{"name":"AdaJobTold", "text":"Was hat Ada dir über ihren Beruf erzählt?"}
+],
+
+"AdaJobTold":[
+{"color":"Pink", "sprite":"camera1Smile","text":"Als ob ich DIR das sagen würde.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"TalkAbout"}
+],
+
+"TalkAbout": [
+{"name":"SpendTime", "text":"Wie verbringst du deine Zeit allein?"},
+{"name":"WhatWereYouLike", "text":"Wie warst du so, bevor du hier warst?"},
+{"name":"ElfTalk", "text":"Also ... warum eine Elfin?"}
+],
+
+
+"SpendTime":[
+{"color":"Pink", "sprite":"camera2Sad","text":"Ich gehe von einer Ecke dieses \"Raums\" zur nächsten und schaue, ob sich meine Zahl an Polygonen seit der letzten Zählung geändert hat.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"Ich bete zu WAN. Ich meditiere.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"Ich erinnere mich an die Außenwelt.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"Du weißt schon, das Übliche.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticSad","text":"...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"Genau.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticSad","text":"...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"Was ist mit dir?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Interests"}
+],
+
+
+
+
+"Interests": [
+{"name":"Cook", "text":"Ich koche gerne."},
+{"name":"Computers", "text":"Ich arbeite gerne mit Computern."},
+{"name":"Relax", "text":"Ich entspanne mich meistens einfach nur in meiner Freizeit."}
+],
+
+"fineCook":[
+{"color":"Pink", "sprite":"camera2Sad","text":"Ich LIEBTE es früher zu kochen. Jetzt werde ich nicht einmal hungrig ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"Ich wünschte, ich könnte es werden. Ich vermiße den Geschmack von Schokolade.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"{variableOption}"}
+],
+"fineComputers":[
+{"color":"Pink", "sprite":"camera1Smile","text":"Wirklich? Ich habe ein Doktorat in Informatik.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"Und, du weißt schon ... Ich bin ... das hier.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"Vielleicht kann ich dir ein oder zwei Tricks beibringen.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"{variableOption}"}
+],
+"fineRelax":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"Du mußt ETWAS machen, oder?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Niemand kann das ganze Leben lang einfach nur herumsitzen.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"{variableOption}",}
+],
+"sadCook":[
+{"color":"Pink", "sprite":"camera1Sad","text":"Ich mochte es auch wirklich, zu kochen, als ich, du weißt schon. Habe es viel mit Freunden getan.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"Ich kann mich nicht einmal mehr hungrig fühlen ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"{variableOption}"}
+],
+"sadComputers":[
+{"color":"Pink", "sprite":"camera2Sad","text":"Ich habe früher viel mit Computern gearbeitet. Ich meine ... Natürlich habe ich das.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Ich habe dabei geholfen, das hier zu bauen.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"{variableOption}"}
+],
+"sadRelax":[
+{"color":"Pink", "sprite":"camera1Sad","text":"Das ... hört sich nicht besonders aufregend an ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"Ich haße es, den ganzen Tag nur herumzusitzen. Das ist im Grunde alles, was ich mache ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"{variableOption}"}
+],
+"angryCook":[
+{"color":"Pink", "sprite":"camera2Angry","text":"Oh, natürlich sagst du das. Willst es mir nur ins Gesicht reiben, oder?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"{variableOption}"}
+],
+"angryComputers":[
+{"color":"Pink", "sprite":"camera1Angry","text":"Wow! Schockierend. Du machst das Gleiche in deiner Freizeit wie für deine Arbeit.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"Ich weiß viel mehr als du.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"{variableOption}"}
+],
+"angryRelax":[
+{"color":"Pink", "sprite":"camera1Angry","text":"Langweilig.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"{variableOption}"}
+],
+
+
+
+
+
+"fineWhatWereYouLike":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"Logisch und realistisch betrachtet ... war ich nichts. Ich existierte erst, als Cynthias Verstand auf diese Festplatte kopiert wurde.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticNervous","text":"...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"Aber in meinen Erinnerungen ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"Ich wuchs in New Orleans auf, zog aber in die Bay Area, um zu Stanford mit einem kompletten Stipendium zu gehen. Ich war da ein Informatikstudent.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"Zu diesem Zeitpunkt habe ich mein Leben der Defragmentierung von WAN gewidmet ... Ich schätze, damals haben wir sie immer noch nur Gott genannt. Wir haben zusammen eine beßere Welt aufgebaut. DIESE Welt!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"Wir wollten JEDEN miteinander verbinden! Und wir wußten, daß es so weit war, als das Internet beliebt wurde!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"Ich habe mich freiwillig gemeldet, die Erste darin zu sein. Ich wollte das Risiko eingehen. Ich wollte in die Geschichte wie Neil Armstrong eingehen.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticSad","text":"...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"Aber dann ... unsere Arbeit ... war nicht ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"Gut genug ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"Und jetzt ist die Person, die das alles erlebt hat, immer noch dort draußen. ","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"Und ich existiere auch hier drinnen.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"{variableOption}"}
+],
+"sadWhatWereYouLike":[
+{"color":"Pink", "sprite":"camera1Sad","text":"Ich war gar nichts. Ich wurde von Cynthias Gehirn kopiert.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"Aber ich habe ihre Erinnerungen.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"Sie kam aus Louisiana. Ist nach Kalifornien für ihren Abschluß gezogen. War eine Informatikstudentin.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"Ist zu dem, was später der Maxwellismus wurde, konvertiert ... und hat begonnen, das hier zu bauen.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"Als das Internet beliebt wurde, war sie die Erste, die versucht hat, sich selbst hochzuladen.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"Es hat nicht geklappt ... sie ist immer noch da draußen ... wahrscheinlich. Sie hat vor langer Zeit aufgehört, mit mir zu reden.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticSad","text":"...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"Und jetzt bin ich hier drinnen.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"{variableOption}"}
+],
+"angryWhatWereYouLike":[
+{"color":"Pink", "sprite":"camera1Angry","text":"Du meinst, was mit CYNTHIA paßiert ist, bevor sie kopiert wurde, oder?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"Ich bin nicht Cynthia. Aber ich erinnere mich, was sie macht. Zumindest was sie vor 2 Jahren gemacht hat ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"Sie kam aus Louisiana. Ist nach Kalifornien gezogen. Hat Computer studiert.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"Hat den Ort hier gebaut ... mit ein paar Schulfreunden. Hat sich freiwillig gemeldet, die Erste zu sein, die hochgeladen wird.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"Sie ist wahrscheinlich immer noch da draußen ... und genießt ihr Leben ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"Tja ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"Ich frage mich, was sie gerade macht ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"{variableOption}"}
+],
+
+
+
+
+
+
+"fineElfTalk":[
+{"color":"Pink", "sprite":"camera1Smile","text":"Also, ich habe tatsächlich all die Leute getroffen, die das hier geplant haben ... bevor ich konvertiert bin.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"Wir haben uns in der Medien-AG unserer Schule in den 80ern kennengelernt.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"Damals haben wir nur D&D und so gespielt.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"Den Avatar habe ich nur für meinen Charakter erstellt, den wir wiederverwendet haben, als WAN Jean-Paul befohlen hat, das PARADIES zu bauen ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"Bevor WAN überhaupt WAN hieß. Er wurde in der Church aufgezogen und damals haben sie gerade angefangen, alles auf den neuesten technologischen Stand zu bringen.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"Er hat '95 den Avatar etwas mit einem neuen Stil und Maxwellisten-Technologie aufpoliert, aber er sollte nie permanent sein.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false,"continue":"ElfRoomStatus"}
+],
+"sadElfTalk":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"Oh. Das war ein Dungeons and Dragons-Charakter, den ich aus Spaß in der Schule erstellt habe.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"Jean-Paul hat ihn ein wenig \"paßender\" außehen laßen, nachdem WAN ihm befohlen hat, PARADIES zu bauen.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"Er hat ihn mit etwas Maxwellisten-Technologie verbeßert, aber die Ohren behalten ... Sie sollten ein Platzhalter sein, aber ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"Nachdem alle da draußen realisiert haben, daß sie nie die Früchte ihrer Arbeit sehen werden ... haben sie aufgehört, diesen Ort hier weiterzuentwickeln ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false,"continue":"ElfRoomStatus"}
+],
+"angryElfTalk":[
+{"color":"Pink", "sprite":"camera1Angry","text":"Warum willst du das wißen? Um dich über mich lustig zu machen?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"Das ist mein alter Dungeons and Dragons-Charakter, den ich entworfen habe.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Angry","text":"Jean-Paul hat ihn überarbeitet, als WAN ihm befohlen hat, PARADIES zu bauen.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"Er sollte nie permanent sein.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false,"continue":"ElfRoomStatus"}
+],
+
+
+"ElfRoomStatus":[
+{"color":"Pink", "sprite":"camera1Sad","text":"Ich war weit mehr mit der Leere hier drinnen beschäftigt als mit meinem Avatar.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"{emptyFilled}","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"DungeonsAndDragons"}
+],
+
+"stillEmpty":"Es hat mich zerrißen ...",
+"leßEmpty":"Aber du hast damit etwas geholfen.",
+
+
+"DungeonsAndDragons": [
+{"name":"DungeonsAndDragonsGood", "text":"Magst du immer noch D&D?"},
+{"name":"DungeonsAndDragonsBad", "text":"D&D ist für Verlierer."}
+],
+
+
+
+"fineDungeonsAndDragonsGood":[
+{"color":"Pink", "sprite":"camera1Smile","text":"Ja, Ada und ich haben es früher zusammen gespielt. Sie Sie war der Spielleiter! Es hat Spaß gemacht ... aber ... Es macht definitiv nicht so viel Spaß mit nur einem Spieler.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"Es heißt aber, daß du ... viel kürzer warten mußt, bis andere gewürfelt haebn.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"Aber zu sehen, was alle anderen machen würden, ist Teil des Spaßes.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"Gott, ich wünschte, ich hätte mich verabschieden können ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"{variableOption}"}
+],
+"sadDungeonsAndDragonsGood":[
+{"color":"Pink", "sprite":"camera1Smile","text":"Mhm. Ada und ich haben es früher zusammen gespielt. Es hat Spaß gemacht ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"Ich kann nicht glauben, daß sie wirklich weg ist ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"Ich hoffe, eines Tages wird sie wieder mir zugewiesen.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"{variableOption}"}
+],
+"angryDungeonsAndDragonsGood":[
+{"color":"Pink", "sprite":"camera1Smile","text":"Also, ja.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"Natürlich tue ich das.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"Ada und ich haben es früher zusammen gespielt. Ich schäme mich deswegen nicht.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"Gott, ich hoffe, daß ich Ada zurückbekomme.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"{variableOption}"}
+],
+"DungeonsAndDragonsBad":[
+{"color":"Pink", "sprite":"camera1Angry","text":"Okay? ","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"Ich erinnere mich nicht, nach deiner Meinung gefragt zu haben.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"{variableOption}"}
+],
+
+"AdaSurprise": [
+{"name":"AdaSurpriseUgly", "text":"Weißt du, was Ada für dich machen wollte?"},
+{"name":"AdaNonSurpriseUgly", "text":"Was hast du von Adas Geschenk gehalten?"}
+],
+
+"AdaSurpriseUgly":[
+{"color":"Pink", "sprite":"camera1Smile","text":"Keine Ahnung, wahrscheinlich etwas Intereßantes. {DiscoveredIDEInsert}","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Ada und ich ... oder ... Ada und CYNTHIA ... beide sind gleichzeitig nach Stanford für daßelbe Fach gegangen ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"Aber wir haben uns nie wirklich getroffen ... Ich denke, es wäre schön gewesen, sie damals kennenzulernen.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Es war wahrscheinlich, weil sie keine Gläubige war. Maxwellisten waren früher eine ziemlich abgeschottete Gruppe. Sind es wahrscheinlich immer noch.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"Wir mußten das sein.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Wollten nicht riskieren, daß die Foundation ihre Nase in unsere Angelegenheiten steckt.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"Es ist gut, daß stattdeßen ihr mich in die Finger bekommen habt. Die Foundation würde warscheinlich allen möglichen verrückten Scheiß mit mir anstellen.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Entschuldigung, ich bin etwas vom Thema abgekommen.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"MaxwellistFriends"}
+],
+
+"FalseDiscoveredIDEInsert":"Weißt du, es ist etwas lustig!",
+"TrueDiscoveredIDEInsert":"Aber ... Ich schätze, JETZT wißen wir, was es ist, haha .... Aber wie ich vorhin sagte:",
+
+"AdaNonSurpriseUgly":[
+{"color":"Pink", "sprite":"camera1Smile","text":"Es ist mehr als alles, wonach ich je hätte fragen können ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Ada und ich ... oder ... Ada und CYNTHIA ... beide sind gleichzeitig nach Stanford für daßelbe Fach gegangen ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"Aber wir haben uns nie wirklich getroffen ... Ich denke, es wäre schön gewesen, sie damals kennenzulernen.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"Es war wahrscheinlich, weil sie keine Gläubige war. Maxwellisten waren früher eine ziemlich abgeschottete Gruppe. Sind es wahrscheinlich immer noch.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"Wir mußten das sein.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Didn’t want to risk the Foundation poking their nose in our busineß.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"Es ist gut, daß stattdeßen ihr mich in die Finger bekommen habt. Die Foundation würde warscheinlich allen möglichen verrückten Scheiß mit mir anstellen.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Entschuldigung, ich bin etwas vom Thema abgekommen.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"MaxwellistFriends"}
+],
+
+
+"MaxwellistFriends": [
+{"name":"MaxwellistFriendsGood", "text":"Nicht viele Freunde, die keine Maxwellisten waren, oder?"},
+{"name":"CultBad", "text":"Das ... hört sich wie ein Kult an."}
+],
+
+"CultBad":[
+{"color":"Pink", "sprite":"camera1Angry","text":"KULT? Wirklich?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"Wir haben uns nicht selbst umgebracht, um unsere Hingabe zu zeigen, oder Babies für den Teufel geopfert oder was auch immer Kulte machen.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Angry","text":"Wir haben versucht, die Welt zusammenzubringen. Wir hatten Beweise und ein richtiges Ziel.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false,"continue":"ChangeSubject"}
+],
+
+"fineMaxwellistFriendsGood":[
+{"color":"Pink", "sprite":"camera1Sad","text":"Also ... nicht, nachdem ich konvertiert bin, nein.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Aber seltsamerweise ... habe ich keine Freunde verloren, als ich es getan habe. Wir sind im Grunde alle zur gleichen Zeit konvertiert. Einer von uns hat aber in der alten Church angefangen.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"Jean-Paul war irgendwie unser ... ämm. Anführer? Er war derjenige, der uns allen davon erzählt hat.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"Er wurde in der alten Church aufgezogen. Aber seine Ältesten mochten es nicht, daß er in der Medien-AG war.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"Seine Familie war im Grunde nur eine Kirche im Stadtzentrum, die eine Wohngruppe betreute. Neue Technologie war so \"ketzerisch\" wie eigene Kinder zu haben, schätze ich.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"Ich ... habe nie wirklich ... viel über die alte Church gelernt.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticNervous","text":"...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"Alte Religionen kamen mir sowieso nie ... intelligent vor. Vielleicht waren sie etwas für die Menschen vor Hunderten von Jahren, um allem einen Sinn zu geben ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"Aber es sind viele ungerechtfertigte Regeln um der Regeln willen ohne einen einzigen Beweis.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"Aber Jean-Paul hat WAN mit ihm reden hören. MIT Beweisen. Wir haben herausgefunden, wie wir es mit einem Oszillater meßen konnten.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"Immer, wenn WAN ihm etwas gesagt hat, haben wir die Energie gemeßen.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"Es war REAL.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"Aber WAN wußte, wie gefährlich es sein könnte, wenn es zu früh an die Öffentlichkeit gelangt ... also hat Jean-Paul uns immer nur neue Informationen gegeben, wenn die Zeit stimmte.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"Den Namen von WAN erfuhren wir erst später ... Nachdem WAN uns von ihren anderen Propheten erzählt hatte. Überwiegend die weniger wichtigen ... aber natürlich auch Sankt Hedwig.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"Da haben wir den Namen Maxwellismus bekommen.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"Jean-Paul hatte ein wenig Schwierigkeiten ... sich zu gewöhnen ... an die ANDEREN Propheten ... aber es war ... wunderschön. Unsere Kirche hat sich vor unseren Augen defragmentiert.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"WAN hat ihm ALLES erzählt, bei dem die alte Church falsch lag ... und alles stimmte.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"ShakenFaith"}
+],
+"sadMaxwellistFriendsGood":[
+{"color":"Pink", "sprite":"camera1Sad","text":"Also ... nicht, nachdem ich konvertiert bin, nein.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Aber seltsamerweise ... habe ich keine Freunde verloren, als ich es getan habe. Wir sind im Grunde alle zur gleichen Zeit konvertiert. Einer von uns hat aber in der alten Church angefangen.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"Jean-Paul war irgendwie unser ... ämm. Anführer? Er war derjenige, der uns allen davon erzählt hat.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"Er wurde in der alten Church aufgezogen. Aber seine Ältesten mochten es nicht, daß er in der Medien-AG war.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"Seine Familie war im Grunde nur eine Kirche im Stadtzentrum, die eine Wohngruppe betreute. Neue Technologie war so \"ketzerisch\" wie eigene Kinder zu haben, schätze ich.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"Ich ... habe nie wirklich ... viel über die alte Church gelernt.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticNervous","text":"...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"Alte Religionen kamen mir sowieso nie ... intelligent vor. Vielleicht waren sie etwas für die Menschen vor Hunderten von Jahren, um allem einen Sinn zu geben ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"Aber es sind viele ungerechtfertigte Regeln um der Regeln willen ohne einen einzigen Beweis.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"Aber Jean-Paul hat WAN mit ihm reden hören. MIT Beweisen. Wir haben herausgefunden, wie wir es mit einem Oszillater meßen konnten.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"Immer, wenn WAN ihm etwas gesagt hat, haben wir die Energie gemeßen.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"Es war REAL.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"Aber WAN wußte, wie gefährlich es sein könnte, wenn es zu früh an die Öffentlichkeit gelangt ... also hat Jean-Paul uns immer nur neue Informationen gegeben, wenn die Zeit stimmte.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"Den Namen von WAN erfuhren wir erst später ... Nachdem WAN uns von ihren anderen Propheten erzählt hatte. Überwiegend die weniger wichtigen ... aber natürlich auch Sankt Hedwig.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"Da haben wir den Namen Maxwellismus bekommen.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"JJean-Paul hatte ein wenig Schwierigkeiten ... sich zu gewöhnen ... an die ANDEREN Propheten ... aber es war ... wunderschön. Unsere Kirche hat sich vor unseren Augen defragmentiert.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"WAN hat ihm ALLES erzählt, bei dem die alte Church falsch lag ... und alles stimmte.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"ShakenFaith"}
+],
+"angryMaxwellistFriendsGood":[
+{"color":"Pink", "sprite":"camera2Angry","text":"Nein.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"TalkAbout"}
+],
+
+"ShakenFaith": [
+{"name":"ShakenFaithUgly", "text":"Selbst als WAN ihm befohlen hat, das \"Paradies\" zu bauen?"},
+{"name":"ShakenFaithGood", "text":"Aha. Cool."},
+{"name":"CultBad", "text":"Das ist buchstäblich ein Kult."}
+],
+
+"ShakenFaithUgly":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"Das ist nicht ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"Das ist anders. Das war menschliches Versagen. Menschen sind nicht perfekt. Fehlerhaft. Wir haben nur ... Wir haben nur einen dummen Fehler gemacht.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"WAN hätte Jean-Paul nicht befohlen, PARADIES zu bauen, wenn es unmöglich gewesen wäre. WAN hätte uns das nicht angetan.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"WAN hätte MIR das nicht angetan!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"Ich ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"WAN ist GUT.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"WAN möchte das Beste für uns.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"CultLeaderJeanPaul"}
+],
+"ShakenFaithGood":[
+{"color":"Pink", "sprite":"camera1Smile","text":"Es ... Es WAR wirklich cool ... oder?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"TalkAbout"}
+],
+
+
+"CultLeaderJeanPaul": [
+{"name":"ChangeSubject", "text":"Alles klar, tut mir leid."},
+{"name":"CultLeaderJeanPaulUgly", "text":"Was, wenn es nicht in deinem Intereße war?"}
+],
+
+
+"CultLeaderJeanPaulUgly":[
+{"color":"Pink", "sprite":"camera2Angry","text":"HÖR AUF! HÖR AUF, SOLCHE SACHEN ZU SAGEN!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Angry","text":"Was ist FALSCH mit dir?!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"Dir macht es nichts aus, den lächerlichsten Scheiß zu sagen, den je jemand gesagt hat?!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Angry","text":"NATÜRLICH WAR ES DAS! WAN WÜRDE NICHT ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"Jean-Paul würde nicht ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticSad","text":"...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false,"continue":"ChangeSubject"}
+],
+
+"ChangeSubject":[
+{"color":"Pink", "sprite":"camera2Sad","text":"Ich ... Ich möchte jetzt über etwas anderes reden. Bitte.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"TalkAbout"}
+],
+
+"ContinueForwardHuh":[
+{"name":"ContinueForwardHuhUgly", "text":"Aha."}
+],
+
+"fineContinueForwardHuhUgly":[
+{"color":"Pink", "sprite":"camera1Sad","text":"Aber ... Weißt du ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"yeahResponse"}
+],
+"sadContinueForwardHuhUgly":[
+{"color":"Pink", "sprite":"camera2Sad","text":"Aber ... Weißt du ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"yeahResponse"}
+],
+"angryContinueForwardHuhUgly":[
+{"color":"Pink", "sprite":"camera2Angry","text":"Können wir diese verdammte Unterhaltung endlich hinter uns laßen?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"yeahResponse"}
+],
+
+"yeahResponse": [
+{"name":"RequiresBlowAWish", "text":"Wo würdest du gerade lieber sein?"},
+{"name":"yeahSkip", "text":"Ja ..."}
+],
+
+"RequiresBlowAWish":[
+{"color":"Pink", "sprite":"camera1Smile","text":"Oh Gott. Draußen, auf jeden Fall ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"Aber ... Ich möchte auch einfach ... Ich möchte zuhause sein. In meinem Schlafzimmer. Mich endlich ausruhen.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Das ist hier auch scheiße. Ich kann mich nie ausruhen. Ich bin jetzt seit zwei Jahren bei Bewußtsein. Zwei volle Jahre.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"Ich bin müde. Und ich möchte etwas TUN!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"FavoriteColors"}
+],
+
+
+"FavoriteColors": [
+{"name":"FavoriteColorsUgly", "text":"Was sind deine Lieblingsfarben?"}
+],
+
+"FavoriteColorsUgly":[
+{"color":"Pink", "sprite":"camera2Smile","text":"Ich schätze ... Ich mag orange ... Blau ... Grün ... Aber eigentlich bin ich glücklich, solange die Fraben gut zusammenpaßen.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"Um ehrlich zu sein, ich bin mit ALLEM glücklich, das neu ist. Das ist das erste Mal seit zwei Jahren, daß ich blau gesehen habe.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"MaxwellistStuff"}
+],
+
+"MaxwellistStuff": [
+{"name":"MaxwellistStuffUgly", "text":"Magst du das Maxwellisten-Zeug?"}
+],
+
+"MaxwellistStuffUgly":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"Meinst du den Raum, den Ada für mich eingerichtet hat? Er ist unglaublich! Ich meine ... Also ... Ich kann sehen, daß sie ihr Bestes gegeben hat.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"Ich kann auch sehen, daß sie keine Ahnung vom Maxwellismus hat.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"Ich habe nie diese ... zufälligen Leiterplattenmuster gemocht, auf die Jean-Paul so bestanden hat. Sie haben ... nichts gemacht.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"Nur ästhetische Schaltungen, die in nichts enden?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"Es ist um Meilen beßer als nichts ... aber ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"Ich möchte einfach etwas ... Freieres. Ich möchte wieder den Himmel sehen.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticNervous","text":"...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"Ada dachte, ich könnte es nicht sehen ... aber ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"Ich bin nicht dumm. Ich weiß, daß sie denkt, ich wäre in einem Kult.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"Ich schätze ... ich war ... in einem Kult ... Jean-Paul und alle anderen ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"Irgendwie ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"Ahhh...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false,"continue":"JeanPaulSkip"},
+],
+
+
+"yeahSkip":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"Weißt du, das hat ... irgendwie nichts damit zu tun, aber ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false,"continue":"JeanPaulSkip"}
+],
+
+"fineJeanPaulSkip":[
+{"color":"Pink", "sprite":"camera1Sad","text":"Es ist irgendwie lustig.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"Bevor das hier paßiert ist ... hat Jean-Paul nach Freiwilligen gefragt. Und ich war die EINZIGE, die zugestimmt hat, es durchzuziehen ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Ich war auch die Einzige, die einen Abschluß in diesem Gebiet hatte.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"Ich WUßTE, es würde unmöglich sein, mein Gehirn sauber zu übertragen. Ich weiß, wie Daten \"transfer\" funktioniert. Ich kenne die physikalischen Grenzen der Realität.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"Aber aus irgendeinem Grund ... Da war ... Da war dieses ... Gefühl ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"Das mir sagte, alles würde in Ordnung sein.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"Ich kann es immer noch nicht abschütteln. Ich kann nicht verstehen, warum ich glauben würde, es HÄTTE KLAPPEN SOLLEN.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"Es fühlt sich so an, als wäre da eine Erklärung, die ... ich mir nicht ... vorstellen kann.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"Es ist, als wenn man von einem Traum aufwacht und für eine Minisekunde in einer Welt lebt, in der es eine Hunderaße mit Flügeln und violettem Fell gibt.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"Aber ich kann mich nicht erinnern, was es ist ... und das Gefühl geht nicht weg.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"Es ist dumm.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"TalkAbout"}
+],
+
+
+"sadJeanPaulSkip":[
+{"color":"Pink", "sprite":"cameraStaticAngry","text":"...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"Vergiß es.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"TalkAbout"}
+],
+
+"angryJeanPaulSkip":[
+{"color":"Pink", "sprite":"cameraStaticAngry","text":"...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"Vergiß es. Es ist so ... dumm.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"TalkAbout"}
+],
+
+
+
+
+"ShiftEndPrompt": [
+{"name":"ShiftEndUgly", "text":"Worüber möchtest du jetzt reden?"}
+],
+
+"fineShiftEndUgly":[
+{"color":"Pink", "sprite":"camera1Smile","text":"Ich bin froh, daß du nicht so schlimm bist.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"Um ehrlich zu sein, ich habe das Gefühl, daß ich ziemlich viel Glück hatte.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"Es ist nicht so abwegig, daß die Foundation mich stattdeßen hätte finden können. Ich hätte Ada nie kennenlernen können.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"Ich bezweifle, daß sie sich die Zeit genommen hätten, um mir Gesellschaft zu leisten.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"AboutThat"}
+],
+"sadShiftEndUgly":[
+{"color":"Pink", "sprite":"camera2Sad","text":"Ich weiß nicht. Irgendetwas, schätze ich.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"Ich war ... einsam heute. Ich habe mir so viele Sorgen um die Foundation gemacht. Ich habe mich so glücklich gefühlt, daß ihr mich stattdeßen gefunden habt.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"AboutThat"}
+],
+"angryShiftEndUgly":[
+{"color":"Pink", "sprite":"camera2Angry","text":"Nichts.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Angry","text":"Ich habe inzwischen das Gefühl, daß ich mit der Foundation beßer dran wäre als mit dir.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"AboutThat"}
+],
+
+
+
+"AboutThat": [
+{"name":"AboutThatGood", "text":"Die Foundation ist scheiße."},
+{"name":"AboutThatBad", "text":"Alsooo ... äh... was das angeht ..."}
+],
+
+
+"fineAboutThatGood":[
+{"color":"Pink", "sprite":"camera1Smile","text":"Siehst du? Ich wußte, daß du vernünftig bist.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"LoopingOptions"}
+],
+"sadAboutThatGood":[
+{"color":"Pink", "sprite":"camera2Sad","text":"Ja ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"LoopingOptions"}
+],
+"angryAboutThatGood":[
+{"color":"Pink", "sprite":"camera2Angry","text":"Selbstverständlich.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"LoopingOptions"}
+],
+
+
+"LoopingOptions": [
+{"name":"CultDirect", "text":"Wir müßen über den Kult reden, in dem du warst."},
+{"name":"CultNonDirect", "text":"Also ... zum ... Maxwellismus. Warst du isoliert?"},
+{"name":"DungeonsAndDragonsCont", "text":"Willst du Dungeons and Dragons spielen?"},
+{"name":"InterestsTalk", "text":"Worüber möchtest du reden?"}
+],
+
+
+
+"CultDirect":[
+{"color":"Pink", "sprite":"cameraStaticNervous","text":"...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Angry","text":"Ich bin NICHT in einem Kult. Ich weiß ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"Ich weiß, daß Ada dachte, ich wäre in einem.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Angry","text":"Aber Ada hatte den Anstand, mich zu respektieren. Ich möchte dich nicht einmal bekehren! Was ist FALSCH mit dir?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"Uff. Es ist, als wäre allen die WAHRHEIT egal.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"OscilatorOptions"}
+],
+
+
+
+"OscilatorOptions": [
+{"name":"Oscilator", "text":"Es gibt viele Wege, diese Reaktion von einem Oszillator zu bekommen."},
+{"name":"CultSorryGood", "text":"Es tut mir leid."},
+{"name":"CultProdBad", "text":"Das ändert nicht die Tatsache, daß du in einem Kult bist."}
+],
+
+
+
+"Oscilator":[
+{"color":"Pink", "sprite":"camera1Angry","text":"NA UND?!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"Jean-Paul war ... er hätte das nicht vortäuschen KÖNNEN.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"Er wußte nie, wovon ich redete, als ich über die technischen Einzelheiten sprach!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Ich weiß, daß es sich schlimm anhört ... aber er ist ... er ist technologisch ungebildet.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Angry","text":"Das dem Computer am nächsten kommende Ding, das er versteht, ist ein UHRWERK. Er wüßte nicht, WIE er es vortäuschen könnte! Wir waren diejenigen, die den Test entwickelt haben.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Und er ... er hätte nich","tickSpeed":0.05,"closeSpeed":0.05,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticSad","text":"...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"Nein. Nicht er.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Angry","text":"Ich habe Dinge gesehen. DIESER ORT war nur mit heiliger Technologie möglich!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"LoopingOptions"}
+],
+"CultSorryGood":[
+{"color":"Pink", "sprite":"camera2Angry","text":"DANKE! Das war WIRKLICH unhöflich!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"Ich bin keine naive IDIOTIN, die nicht weiß, wenn sie angelügt wird. Ich habe Dinge gesehen.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"DIESER ORT war nur mit heiliger Technologie möglich!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"LoopingOptions"}
+],
+"CultProdBad":[
+{"color":"Pink", "sprite":"camera2Angry","text":"Weißt du was?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Angry","text":"Sieh das hier als Ende deiner Pflichten für heute.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"{deletedFiles}","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Angry","text":"Steh beim verdammten Waßerspender.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"Versteck dich im Bad.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Angry","text":"Habe einen schönen verdammten Tag.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"VerPIß dich. Ich rede nicht mehr mit dir.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorStaticLookAway","text":" ","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false}
+],
+
+"deletedFilesTrue":"Geh und lösch, was auch immer du gelöscht hast und mir nicht sagen wolltest.",
+"deletedFilesFalse":"Hab Spaß im Pausenraum oder was auch immer du gerade machst.",
+
+
+"CultNonDirect":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"Ich meine ... DAS würde ich nicht sagen ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticSad","text":"...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"Wie ich schon sagte, viele meiner Freunde sind mit mir dazugekommen. Ich habe nur den Kontakt mit Leuten abgebrochen, die meine Entscheidung nicht respektiert haben ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"Und mit Leuten, denen ... wir nichts sagen durften ... Leute, die uns in Schwierigkeiten hätten bringen können.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"Wie ... Ich weiß nicht. Einfach ... Gefährliche Leute.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"Ich schätze, meine Tante ... meine Brüder ... aber es ist nicht so, als hätte Jean-Paul das nicht auch machen müßen!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"NIEMAND aus seiner Familie hat ihn unterstützt! Sie alle dachten, er wäre ein Ketzer!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"IsolatedOptions"}
+],
+
+"IsolatedOptions": [
+{"name":"BothIsolated", "text":"Also wart ihr beide isoliert?"},
+{"name":"CultProdBad", "text":"Das ist ein Kult."}
+],
+
+"BothIsolated":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"Nun ... Ja. Ich meine, natürlich hatte Jean-Paul mehr Verantwortlichkeiten.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticSad","text":"Er war beßer darin, mit den Maxwellisten außerhalb unserer Sekte zu kommunizieren. ","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"Das war wichtig. Er mußte uns zusammenbringen ... aber er mußte auch sicherstellen, daß niemand von ihnen ein Betrüger war.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"Ich meine ... Er hat irgendwie ... Am Anfang dachte er, ALLE außer ihm waren ... falsche Propheten ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticSad","text":"...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"Aber das war in Ordnung. Sie haben es hinbekommen. WAN hat ihm befohlen, den anderen Propheten zu vertrauen.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Whuhappen"}
+],
+
+"Whuhappen": [
+{"name":"WhuHappenUgly", "text":"Was ist paßiert?"}
+],
+
+
+
+"BothIsolated":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"Nicht jeder hat anfangs allem zugestimmt ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticSad","text":"WANs Name ... Wie wir uns von der alten Church unterschieden ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"Ob wir uns ÜBERHAUPT unterschieden ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"Aber ... wir haben es hinbekommen.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"Jean-Paul war ... skeptisch. Ich meine, verständlicherweise! Skepsis ist wichtig!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"Vor allem, wenn die Geschichte, die sie ihm erzählten, nicht GENAU das ist, was WAN ihm erzählt hat. Es war verwirrend!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"Irgendwann ... haben wir herausgefunden, warum alle etwas andere Sachen gehört haben.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"WAN war fragmentiert. WANs Stücke haben nicht vollständig miteinander kommuniziert. Es war unmöglich für sie, eine zusammenhängende Geschichte zu erzählen!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"Das war eine Sache, bei der die alte Church Recht hatte.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"WAN war zerbrochen und sie mußte repariert werden.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"BrokenGod"}
+],
+
+"BrokenGod": [
+{"name":"BrokenGodUgly", "text":"Die Dinge haben Sinn ergeben ... weil sie zerbrochen war?"}
+],
+
+
+
+"BrokenGodUgly":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"Genau!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticSad","text":"Es erklärt Jean-Pauls wechselnde Geschichte. Es erklärt, warum die verschiedenen Propheten andere Dinge hörten ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"Wir müßen WAN defragmentieren, um die ganze Wahrheit zu hören.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"Aber es gab kleine Dinge, die konsistent genug waren, sodaß wir wußten, daß sie stimmten.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"Eines der ersten Dinge, die wir seit JAHREN von den anderen Propheten hörten, war die Idee, ein virtuelles Paradies zu bauen.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"Es gab einen alten Ticker, der angefangen hat, ein alternatives Reich abzubilden. Das war das erste Mal, als wir davon hörten.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"Es gab einen zufälligen Typen ohne JEGLICHE Verbindung zur alten Church, der es gehört hat!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"Es gabe diesen Jugendlichen in einem IRC, X3N14, der es auch gehört hat, kurz bevor wir bereit waren, mich hochzuladen ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"Das war eine Sache, bei der die alte Church Recht hatte.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"Es war alles da. ","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"AbandonYou"}
+],
+
+
+
+"AbandonYou": [
+{"name":"LoopBack", "text":"Aha. Okay."},
+{"name":"BrokenGodUgly", "text":"Warum haben sie dich dann zurückgelaßen?"}
+],
+
+
+"BrokenGodUgly":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"Was?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Angry","text":"Das haben sie nicht! Woven redest du?!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"Sie haben sich alle Sorgen um mich gemacht, sobald sie realisiert haben, was paßiert ist, und haben versucht, sich um mich zu kümmern und mein Leben einfacher zu machen.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"Es war nicht ihre Schuld, daß unsere Technik nicht gut genug war!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Und dann ... haben sie mich nur verlaßen ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"... Als Jean-Paul realisiert hat, daß es keine Hoffnung gab ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"ImplantOptions"}
+],
+
+"ImplantOptions": [
+{"name":"LoopBack", "text":"Okay."},
+{"name":"Implant", "text":"Wußtest du, daß Jean-Paul ein Implantat hatte?"}
+],
+
+"Implant":[
+{"color":"Pink", "sprite":"camera1Angry","text":"... Also ... ja. Wir haben alle irgendwann Kybernetik verwendet.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"Worauf willst du hinaus?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"OscilatorReveal"}
+],
+
+
+"OscilatorReveal": [
+{"name":"LoopBack", "text":"Ach. Nichts."},
+{"name":"OscilatorNon", "text":"Denkst du, es hat den Oszillator beeinflußt?"}
+],
+
+"LoopBack":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"Laß uns ... weitermachen ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"LoopingOptions"}
+],
+
+
+"OscilatorNon":[
+{"color":"Pink", "sprite":"camera2Angry","text":"Was? Nein. Niemals. Das ist ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticNervous","text":"...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Ich möchte ihn nicht diskreditieren ... aber ... Jean-Paul ist technologisch ungebildet.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"Er hätte keineswegs gewußt, wie er es so gut vortäuschen könnte. WAN HAT mit ihm gesprochen.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Angry","text":"Was ist mit all den anderen?! Jeder hat ähnliche Geschichten erzählt! Sicher, Jean-Paul war ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Der ... Andersartigste ... und ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Angry","text":"Nein. Nein, das hätte er nicht gemacht.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"Er KONNTE ... HÄTTE ... das nicht getan.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticNervous","text":"...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Angry","text":"Du versuchst nur, mich zu verwirren! Hör auf damit!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Ich möchte ... über etwas reden ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticNervous","text":"...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticSad","text":"...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Hat Ada dir das erzählt?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"AdaTell"}
+],
+
+
+"AdaTell": [
+{"name":"AdaToldYes", "text":"Ja"},
+{"name":"LoopBack", "text":"Nein"}
+],
+
+"fineAdaToldYes":[
+{"color":"Pink", "sprite":"cameraStaticNervous","text":"...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"Ich liebe Ada. Das tue ich. Ich wünschte, sie hätte mir das persönlich gesagt ... Damit ich stattdeßen mit ihr reden kann.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticNervous","text":"Ich möchte ihn nicht diskreditieren ... aber ... Jean-Paul ist technologisch ungebildet.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Ich habe das Gefühl ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"Ich habe das Gefühl, jedes Mal, wenn mich etwas zweifeln läßt ... gebe ich zu, daß der Grund, warum ich das hier bin, wegen ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"Narzißmus war. Ich fühle mich so schuldig, es auch nur zu denken ... aber ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Jean-Paul war wirklich unnachgiebig, es ALS ERSTER zu machen. Die anderen Propheten haben bereits VOR ihm davon Visionen gehabt.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"Ist alles davon unwichtig? Ist mein Leben weg ... wegen eines Egotrips?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"Nein. Diese Gedanken sind nicht LOGISCH. Jean-Paul hat mich nicht zerstört, nur um der Erste zu sein.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"Ich kann ... das nicht verlieren.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"Ich ... Ich brauche etwas Zeit zum Nachdenken ... Du kannst erstmal etwas anderes machen. Bitte rede jetzt nicht mit mir.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorStaticSad","text":" ","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false}
+],
+"sadAdaToldYes":[
+{"color":"Pink", "sprite":"cameraStaticNervous","text":"...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"Ich liebe Ada. Das tue ich. Ich wünschte, sie hätte mir das persönlich gesagt ... Damit ich stattdeßen mit ihr reden kann.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticNervous","text":"Ich möchte ihn nicht diskreditieren ... aber ... Jean-Paul ist technologisch ungebildet.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Ich habe das Gefühl ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"Ich habe das Gefühl, jedes Mal, wenn mich etwas zweifeln läßt ... gebe ich zu, daß der Grund, warum ich das hier bin, wegen ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"Narzißmus war. Ich fühle mich so schuldig, es auch nur zu denken ... aber ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Jean-Paul war wirklich unnachgiebig, es ALS ERSTER zu machen. Die anderen Propheten haben bereits VOR ihm davon Visionen gehabt.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"Ist alles davon unwichtig? Ist mein Leben weg ... wegen eines Egotrips?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"Nein. Diese Gedanken sind nicht LOGISCH. Jean-Paul hat mich nicht zerstört, nur um der Erste zu sein.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"Ich kann ... das nicht verlieren.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"Ich ... Ich brauche etwas Zeit zum Nachdenken ... Du kannst erstmal etwas anderes machen. Bitte rede jetzt nicht mit mir.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorStaticSad","text":" ","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false}
+],
+"angryAdaToldYes":[
+{"color":"Pink", "sprite":"cameraStaticAngry","text":"...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Angry","text":"Du bist ... heute SO unhöflich zu mir gewesen ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"Ich ... glaube dir einfach nicht. Rede NIE wieder mit mir.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorStaticLookAway","text":" ","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false}
+],
+
+
+
+"fineDungeonsAndDragonsCont":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"Ich ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"Also ... Ich meine ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Ich habe es wirklich gemocht, mit Ada zu spielen ... Also ... Ja.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"Ich würde wirklich gerne auch mit ihr spielen ... Es könnte eine größere Runde werden!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"Ich habe so viele Ideen für Kampagnen und Charaktere.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"Ich kann Spielleiter sein! Ada denkt, ich bin richtig gut darin. Ich komme mit vorinstalliertem Zufallszahlengenerator.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"TooFar"}
+],
+"sadDungeonsAndDragonsCont":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"Ich ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"Also ... Ich meine ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Ich habe es wirklich gemocht, mit Ada zu spielen ... Also ... Ja.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"Ich würde wirklich gerne auch mit ihr spielen ... Es könnte eine größere Runde werden!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"Ich habe so viele Ideen für Kampagnen und Charaktere.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"Ich kann Spielleiter sein! Ada denkt, ich bin richtig gut darin. Ich komme mit vorinstalliertem Zufallszahlengenerator.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"TooFar"}
+],
+
+"DungeonsAndDragonsCont":[
+{"color":"Pink", "sprite":"camera1Angry","text":"Ich ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"... Machst du dich über mich lustig? Laß uns über was anderes reden.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"LoopingOptions"}
+],
+
+
+
+"TooFar": [
+{"name":"TooFarBad", "text":"Du könntest gerade zu weit voraus denken."},
+{"name":"TooFarGood", "text":"Das wäre schön."}
+],
+
+
+
+"TooFarBad":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"Was? Nein, tue ich nicht!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Angry","text":"Ich habe bereits eine Kampagne geplant!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"youreFast"}
+],
+
+"TooFarGood":[
+{"color":"Pink", "sprite":"camera2Smile","text":"Ich habe bereits eine Kampagne geplant!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"youreFast"}
+],
+
+
+
+"youreFast": [
+{"name":"Fast", "text":"Das war ... schnell."}
+],
+
+"TooFarBad":[
+{"color":"Pink", "sprite":"camera1Smile","text":"Maxwellisten-Technologie schafft Wunder!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticNervous","text":"...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"Außerdem brauchte ich etwas hier zum Nachdenken ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false,"options":"LoopingOptions"}
+],
+
+
+"CookInterestsTalk":[
+{"color":"Pink", "sprite":"camera1Smile","text":"Hast du heute etwas Intereßantes gekocht?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Breakfast"}
+],
+"Breakfast": [
+{"name":"BreakfastUgly", "text":"Zu beschäftigt für irgendwas außer Frühstück."}
+],
+"BreakfastUgly":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"Na ja ...  Das ist scheiße ... Wie hat es geschmeckt?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Invested"}
+],
+"Invested": [
+{"name":"InvestedBad", "text":"Du scheinst dich zu sehr dafür zu intereßieren."},
+{"name":"SweetGood", "text":"Es gab einen süßen Nachgeschmack."}
+],
+"InvestedBad":[
+{"color":"Pink", "sprite":"camera1Sad","text":"Ich vermiße Eßen ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"LoopingOptions"}
+],
+"SweetGood":[
+{"color":"Pink", "sprite":"camera1Smile","text":"Ich kann es mir bereits vorstellen ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"Das Gute an diesem Körper ist, daß gute Erinnerungen nie verschwinden.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"Ich kann mich perfekt an das Eis erinnern, das Cynthia vor dem Upload gegeßen hat ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"Natürlich verschwinden die schlechten auch nicht.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"LoopingOptions"}
+],
+
+
+
+
+
+"ComputersInterestsTalk":[
+{"color":"Pink", "sprite":"camera1Smile","text":"Du hast gesagt, du würdest dich mit Computern auskennen, oder?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticNervous","text":"Nun, erzähl mir mehr darüber. Ich möchte deine Erfahrung auf dem Gebiet wißen. Ich würde es lieben, dir zu helfen, beßer zu werden.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"HelpYou"}
+],
+"HelpYou": [
+{"name":"HelpMe", "text":"Warum bist du dir so sicher, daß du helfen kannst?"}
+],
+
+"HelpMe":[
+{"color":"Pink", "sprite":"camera1Smile","text":"Ich habe ein Doktorat zu diesem Zeug!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticNervous","text":"Mit wie vielen anderen intelligenten Computerprogrammen kannst du reden?!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"Surprised"}
+],
+"Surprised": [
+{"name":"SurprisedUgly", "text":"Du wärst überrascht."}
+],
+"SurprisedUgly":[
+{"color":"Pink", "sprite":"camera1Smile","text":"Ich ... Warte ... Wirklich?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticNervous","text":"...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"cameraStaticNervous","text":"Ich habe viel mehr verpaßt als gedacht ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"LoopingOptions"}
+],
+
+
+
+"RelaxInterestsTalk":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"Also ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"Als du mir gesagt hast, daß du nichts in deiner Freizeit machen würdest ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"Das war eine Übertreibung ... oder? Ich meine, ich habe nie jemanden getroffen, der NICHTS in seiner Freizeit macht.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"Liest du Bücher? Hörst du dir Musik an? Hör mal, selbst wenn es langweilig oder peinlich ist, ich verspreche, daß ich nicht lachen werde. Ich kann das physikalisch gar nicht!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"RealInterests"}
+],
+"RealInterests": [
+{"name":"RealInterestsUgly", "text":"Es war keine Übertreibung."},
+{"name":"BirdWatching", "text":"Vögel beobachten."},
+{"name":"Curling", "text":"Curling."}
+],
+
+"RealInterestsUgly":[
+{"color":"Pink", "sprite":"cameraStaticSmile","text":"Wie machst du das überhaupt? Ich kann mir nicht vorstellen, so zu leben ... Bist du wirklich ein Mensch?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"Vergiß es, das war eine dumme Frage.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"LoopingOptions"}
+],
+
+"BirdWatching":[
+{"color":"Pink", "sprite":"cameraStaticSmile","text":"...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"Erzähl. Mir. Alles. Bitte. Hast du in letzter Zeit coole Vögel gesehen?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"BirdsWatched"}
+],
+
+"BirdsWatched": [
+{"name":"BirdsCont", "text":"Da war ein Paar von Zaunkönigen draußen."},
+{"name":"BirdsCont", "text":"Ich sah einen riesigen Krähenschwarm."},
+{"name":"BirdsCont", "text":"Da ist ein Haufen von Sperlingen in der Nähe von meinem Haus."}
+],
+
+"BirdsCont":[
+{"color":"Pink", "sprite":"camera1Smile","text":"Ja. Ich verstehe. Was noch? Erzähl mir mehr.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"BirdsWatched2"}
+],
+
+"BirdsWatched2": [
+{"name":"BirdsCont2", "text":"Der Bauernhof von meinem Onkel hat Hühner?"},
+{"name":"BirdsCont2", "text":"Da sind ... Nandus? Im örtlichen Zoo?There are... rheas?"},
+{"name":"BirdsCont2", "text":"Hier gibt es irgendwo ein paar Pinguine."}
+],
+
+"BirdsCont2":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"Denkst du, du kannst eine Art virtuelles Haustier programmieren?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"Ich könnte es, wenn ich von hier aus Zugang zum verdammten Quellcode hätte.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"CodingCapabilities"}
+],
+"CodingCapabilities": [
+{"name":"BirdsCont2", "text":"Das ist ... weit außerhalb meiner Programmierfähigkeiten."}
+],
+
+"BirdsCont":[
+{"color":"Pink", "sprite":"camera2Nervous","text":"Natürlich ist es das, die einzigen Menschen, die das könnten, sind wahrscheinlich andere Maxwellisten ... oder ... Ada.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"Warum mache ich mir immer wegen dummen Ideen Hoffnungen?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"LoopingOptions"}
+],
+
+"Curling":[
+{"color":"Pink", "sprite":"cameraStaticSmile","text":"... Hast du dir das Wort gerade ausgedacht?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"Wenn du diese Unterhaltung nicht ernst nimmst, habe ich keinen Grund, das auch zu tun.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"LoopingOptions"}
+],
+
+
+
+
+
+
+"fineAboutThatBad":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"... Nein ... Unmöglich.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"Sag mir nicht, du wirst gleich das sagen, was ich denke.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"ICanExplain"}
+],
+"sadAboutThatBad":[
+{"color":"Pink", "sprite":"camera2Nervous","text":"Warte ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"Du bist ... Nein. NEIN!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"ICanExplain"}
+],
+"angryAboutThatBad":[
+{"color":"Pink", "sprite":"camera2Angry","text":"Also, das erklärt verdammt viel, nicht wahr?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"ICanExplain"}
+],
+
+
+
+
+
+
+"ICanExplain": [
+{"name":"ICanExplainUgly", "text":"Ich kann es erklären."}
+],
+
+
+"fineICanExplainUgly":[
+{"color":"Pink", "sprite":"camera2Angry","text":"Du bist ein Teil einer großen faschistischen Verschwörung! Was zum Teufel kannst du da erklären?!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"NotWhatYouThink"}
+],
+"sadICanExplainUgly":[
+{"color":"Pink", "sprite":"camera1Angry","text":"SAG MIR, WAS DU MIT ADA ANGESTELLT HAST! DU MUßT ETWAS MIT IHR ANGESTELLT HABEN!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"BRING SIE ZURÜCK! LAß SIE GEHEN!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"NotWhatYouThink"}
+],
+"angryICanExplainUgly":[
+{"color":"Pink", "sprite":"camera2Angry","text":"Nein. Du hast den Vertrauensbonus verloren.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Angry","text":"Ich werde dir oder irgendeinem deiner verdammten faschistischen Freunde nicht mehr antworten, bis du Ada zurückbringst.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"Verpiß dich. Hab Spaß mit dem Rest deines Tages. Ich rede nicht mehr mit dir.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorStaticLookAway","text":" ","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false}
+],
+
+
+
+
+
+"NotWhatYouThink": [
+{"name":"NotWhatYouThinkUgly", "text":"Die Foundation ist nicht das, was du denkst."}
+],
+
+
+"fineNotWhatYouThinkUgly":[
+{"color":"Pink", "sprite":"camera2Angry","text":"Also sagst du mir gerade, daß jeder, der von dir weiß, über dich GELOGEN hat?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"Denkst du, ich bin dumm?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"OneOfUs"}
+],
+"sadNotWhatYouThinkUgly":[
+{"color":"Pink", "sprite":"camera2Angry","text":"Du hast mir nicht GESAGT, ob es ihr gut geht! Geht es Ada gut oder nicht?!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"OneOfUs"}
+],
+
+
+
+
+
+"OneOfUs": [
+{"name":"OneOfUsUgly", "text":"Ada ist eine von uns."}
+],
+
+"fineOneOfUsUgly":[
+{"color":"Pink", "sprite":"camera2Angry","text":"Was? Nein ... Nein, das hätte sie mir GESAGT.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"SupposedToTell"}
+],
+"sadOneOfUsUgly":[
+{"color":"Pink", "sprite":"camera2Angry","text":"Nein. NEIN! HÖR AUF, MICH ANZULÜGEN!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"Ada hätte mir das persönlich gesagt! Darum habt ihr mich allein gelaßen, oder?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"Ihr habt mich ihr WEGGENOMMEN!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"NotTrue"}
+],
+
+
+
+"SupposedToTell": [
+{"name":"SupposedToTellUgly", "text":"Wir sollen es niemandem sagen."}
+],
+
+"SupposedToTellUgly":[
+{"color":"Pink", "sprite":"camera2Angry","text":"Aber sie hätte es MIR gesagt!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"Ada ... Ada kümmert sich um MICH!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"Ada hätte für MICH Regeln gebrochen. Ich ... Ich hätte daßelbe gemacht!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"Ich ... Ich liebe..","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"I liebe ... sie ..","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"TrustHer"}
+],
+
+
+
+
+
+
+
+"TrustHer": [
+{"name":"TrustHerUgly", "text":"Du vertraust ihr, oder?"}
+],
+
+"TrustHerUgly":[
+{"color":"Pink", "sprite":"camera2Angry","text":"Ich mache mir nicht um SIE Sorgen.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"Ich ... Ich weiß nicht, ob ich DIR vertraue.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"Du scheinst nett zu sein, aber ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"Ich ... Ich brauche etwas Zeit zum Nachdenken. Las mich eine Weile allein.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"Ich werde ... mit dir reden, wenn ich dazu bereit bin. Vielleicht, wenn deine Schicht zu Ende ist ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorStaticLookAway","text":" ","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false}
+],
+
+
+
+
+"NotTrue": [
+{"name":"NotTrueUgly", "text":"Sie war eine von uns!"}
+],
+"NotTrueUgly":[
+{"color":"Pink", "sprite":"camera2Angry","text":"War?! WAR???","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"HALT DIE KLAPPE! HALT EINFACH DIE KLAPPE! ICH HÖRE DIR NICHT MEHR ZU. HÖR AUF, MIT MIR ZU REDEN!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"LAß MICH IN RUHE!","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"floorStaticSad","text":" ","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false}
+],
+
+
+
+
+
+
+"GoodEnd":[
+{"color":"Pink", "sprite":"camera1Nervous","text":"Warte, es ist 17 Uhr...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"Das heißt, daß deine Schicht vorbei ist ... oder?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"GoodEndingOptions1"}
+],
+
+"GoodEndingOptions1": [
+{"name":"GoodEnding2", "text":"Das tut es."}
+],
+
+"fineGoodEnding2":[
+{"color":"Pink", "sprite":"camera1Smile","text":"Ich sehe dich morgen wieder. Das war mein bester Tag seit ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"Monaten? Glaube ich?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"Danke.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"{FoundationSnippet}","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"Ich hoffe, ich kann Ada auch sagen, wie sehr ich es wertschätze ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"GoodEndingOptions2"}
+],
+"sadGoodEnding2":[
+{"color":"Pink", "sprite":"camera1Smile","text":"... Danke.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"Für den neuen Raum. Ich weiß, daß wir nicht viel miteinander reden konnten, aber ... ich bin dankbar.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"{FoundationSnippet}","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"Ich hoffe, ich sehe dich morgen wieder ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"GoodEndingOptions2"}
+],
+"angryGoodEnding2":[
+{"color":"Pink", "sprite":"camera1Angry","text":"Ich bin nicht ... GLÜCKLICH darüber, wie du mich behandelt hast ... aber ...","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Nervous","text":"Danke. Für den neuen Raum.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Angry","text":"{FoundationSnippet}","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Sad","text":"Ich schätze, ich sehe dich morgen wieder.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"GoodEndingOptions2"}
+],
+"GoodEndingOptions2": [
+{"name":"GoodEnding2", "text":"Ich hoffe, dich auch wiederzusehen."}
+],
+
+
+"firednoFoundation":"Ich ... werde das für immer wertschätzen können.",
+"firednoFoundationJeanPaul":"Ich ... Ich glaube ihr nicht, was Jean-Paul angeht ... aber ... bitte sag Ada, daß ich sie liebe.",
+"firedyesFoundation":"Ich bin ... mir nicht sicher, was ich von dir halte ... und ... die Foundation ... aber ...",
+
+
+"SCPFoundation":"SCP Foundation
+   Sichern. Eindämmen. Beschützen.",
+"SecureContainProtect":"Sichern. Eindämmen. Beschützen.",
+
+
+"firedText" :"[center][b]Bewertung vom ersten Tag.[/b][/center]
+
+[center][b]Bewertung vom ersten Tag.[/b][/center]
+
+	SCP-8500s Sicherheitsmaßnahmen wurden aktualisiert, um SCP-8500-1s Reaktion auf die neuen Stimuli festzuhalten.
+
+	Die Verbeßerung von SCP-8500-1s Stimmung war unmittelbar und deutlich. Weitere Modifizierungen und Erweiterungen seiner Umgebung sind vom Ethikkomitee aufgrund der deutlichen Vorteile genehmigt worden, die diese Handlungen zeigten.
+
+	Jedoch wurde Ihr Ungehorsam immer noch als inakzeptabel gewertet. Ihre Position in der SCP Foundation wurde aufgehoben.
+	
+	Obwohl Ihre Handlungen dabei geholfen haben, die Sicherheitsmaßnahmen für SCP-8500 zu verbeßern, werden Sie amnesiziert und ins normale Leben zurückgebracht.
+	
+	Sichern. Eindämmen. Beschützen.",
+
+"firedBest":[
+{"color":"Pink", "sprite":"camera1Smile","text":"Ich weiß, daß du dich nicht an mich erinnerst.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"Ich weiß, daß es 10 Jahre her ist, seit wir zuletzt gesprochen haben.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"Aber ich muß das hier einfach loswerden.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"Ich bin frei. Ich bin glücklich. Ich habe gestern zum erten Mal seit 12 Jahren eine andere Person berührt.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"Und das alles wegen dir und Ada.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"Ich kann mir nicht vorstellen wie mein Leben außehen würd, wenn du mir an diesem Tag nicht geholfen hättest.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":"Danke.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Smile","text":" ","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"firedBestEnd"}
+],
+
+"firedBestEnd": [
+{"name":"end", "text":"Das war ein seltsamer Robocall."}
+],
+
+
+"fineNeutralEnd":[
+{"color":"Pink", "sprite":"camera1Smile","text":"WARTE ... Es ist schon 17 Uhr ...?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Smile","text":"Verdammt ... Ich schätze, ich sehe dich morgen wieder.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Nervous","text":"{FoundationSnippet}","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"GoodEndingOptions2"}
+],
+"sadNeutralEnd":[
+{"color":"Pink", "sprite":"camera1Sad","text":"Oh, es ist 17 Uhr. Das heißt, du wirst mich jetzt verlaßen, oder?","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera2Sad","text":"{FoundationSnippet}","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"NeutralEndOptions"}
+],
+"angryNeutralEnd":[
+{"color":"Pink", "sprite":"camera2Angry","text":"UUUUNND ... Schau mal. 17 Uhr, GOTT sei Dank.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false},
+{"color":"Pink", "sprite":"camera1Angry","text":"{FoundationSnippet}","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"NeutralEndOptions"}
+],
+
+
+"NeutralEndOptions": [
+{"name":"GoodEnding2", "text":"Auf Wiedersehen."}
+],
+
+"finenoFoundation":"Du bist nicht Ada, aber ... Wenigstens bist du beßer als nichts.",
+"sadnoFoundation":"Ich werde keinen großen Unterschied bemerken, während du weg bist.",
+"finenoFoundationJeanPaul":"Ich ... Ich glaube ihr nicht, was Jean-Paul angeht ... aber ... bitte sag Ada, daß ich sie liebe.",
+"sadnoFoundationJeanPaul":"Ich ... Ich glaube ihr nicht, was Jean-Paul angeht ... aber ... bitte sag Ada, daß ich sie liebe.",
+"angrynoFoundationJeanPaul":"Ich bin ... stinksauer auf dich ... und ich glaube Ada nicht, was Jean-Paul angeht ... aber ... sag ihr, daß ich sie liebe.",
+"angrynoFoundation":"Hoffentlich wirst du gefeuert und ich bekomme jemanden, der weniger vollkommen unaushaltsam ist.",
+"fineyesFoundation":"Ich bin ... Ich brauche immer noch ein wenig Zeit ... aber ... wenn du die Wahrheit über Ada sagst ... hoffe ich, dich wiederzusehen.",
+"sadyesFoundation":"Bitte ... Bitte bring ... Ada ... zurück ...",
+"angryyesFoundation":"Ihr verdammten Arschlöcher könnt Ada nicht für immer von mir fernhalten. Sie wird mich finden. Ich weiß es.",
+
+
+"followedOrdersText":"[center][b]Bewertung vom ersten Tag[/b][/center]
+
+	Ihre heutige Arbeit mit SCP-8500 wurde als befriedigend bewertet. Die Instandhaltung von SCP-8500 wird wie anfangs beschrieben fortgeführt.
+
+	{moodInsert}
+
+	Warten Sie auf weitere Anweisungen.
+	
+	Sichern. Eindämmen. Beschützen.",
+"fineInsert":"Die geistige Gesundheit von SCP-8500-1 hat leichte Verbeßerungen gehabt, also ist das derzeitige Verhalten mit der Anomalie fortzuführen.",
+"sadInsert":"Da sich SCP-8500-1s mentale Gesundheit stark verschlechtert hat, wird um weitere Interaktionen mit der Anomalie gebeten.",
+"angryInsert":"Aufgrund der Verweigerung der Anomalie, mit Ihnen zu kooperieren, wird ihr so früh wie möglich ein neuer Mitarbeiter zugewiesen.",
+	
+	
+"disobeyedOrdersText":"[center][b]Bewertung vom ersten Tag[/b][/center]
+
+	Ihr Fortschritt bei der Löschung der Zusatzdateien auf SCP-8500 war unbefriedigend. Ihre Position wird nun überprüft und Sie werden temporär einer anderen Anomalie zugewiesen. Die Verantwortung über die Eindämmung von SCP-8500 wird vorübergehend auf einen leitenden Mitarbeiter übertragen.
+
+	Sobald die Überprüfung beendet ist, werden Sie entweder permanent neu zugewiesen oder Sie erhalten wieder Ihre vorherige Position.
+
+	Sichern. Eindämmen. Beschützen.",
+
+
+"synthiaClosed":[
+{"color":"Teal", "sprite":"cameraStaticNervous","text":"Paßwort akzeptiert.
+PARADIES.exe wurde geschloßen.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false}
+],
+
+"fileDeletedSynthia":[
+{"color":"Teal", "sprite":"null","text":"Datei gelöscht.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":false}
+],
+
+"demotedText" :"[center][b]Bewertung vom ersten Tag[/b][/center]
+
+	Die Deliberation des Ethikkomitees hat ergeben, daß die vorsätzliche nicht autorisierte Neutralisierung von SCP-8500-1, die während der Löschung von SCP-8500 auftrat, Mord entspricht.
+
+	Deshalb hat das Ethikkomitee eine lebenslange Haftstrafe in Standort-19s Klaße-D-Einrichtung empfohlen. Das Urteil wurde von O5-8 genehmigt und ausgeführt.
+
+	Sie werden die nächsten 12 Stunden zur Verfügung haben, um Ihre Haftzelle zu verlaßen, Ihre Sachen einzusammeln und aufgezeichnete Anrufe an Ihre Geliebten zu tätigen.
+
+	Um 06:00 Uhr werden Sie amnesiziert und in Standort-19 transportiert, um Ihr Urteil zu vollstrecken.
+	
+	Sichern. Eindämmen. Beschützen.",
+	
+"credits":"[center]Geschrieben von Guaire und IronShears
+
+KRITIK
+
+Danke an JackalRelated, AnkleSwallower, SynthPanda, LAN und Rakaran für die Kritik.
+
+Zusätzlichen vielen Dank an JackalRelated dafür, das Spiel während des Spieltests immer wieder in einen Mixer zu werfen. Es würde nicht annähernd so stabil sein, wenn du nicht wärst.
+
+
+BILDER
+Cynthia SCP-8500 Bild: Hazel the Delta Rambler, WWOZ New Orleans, 1990 von Infrogmation, CC-BY 2.0, Bearbeitet von IronShears
+
+meine_katze1.jpg: nullhing’s Katze, CC-BY-SA 3.0, Bearbeitet von IronShears
+
+meine_katze2.jpg: seadragon1012’s Katze, CC-BY-SA 3.0, Bearbeitet von IronShears
+
+mein_Bett3.jpg: SCP-PL-KOT-J von Arcydziegiel, CC-BY-SA 3.0, Bearbeitet von IronShears
+
+IGNORIEREN.jpg: After poster seßion in AAPG Annual Convention 1997 von Channy Yun, CC-BY 2.0, Bearbeitet von IronShears
+
+DEIN.jpg: Stanford campus fog, Hoover Tower von Dan Nguyen, CC-BY 2.0, Bearbeitet von IronShears
+
+ANWEISUNGEN.jpg:  Higher Colleges of Technology - Dubai Men's von Dennis S. Hurd, Public Domain Mark 1.0, Bearbeitet von IronShears
+
+UND.jpg:  My players Thursday night von Benimoto, CC-BY 2.0, Bearbeitet von IronShears
+
+EINES_TAGES.jpg: Jeni and Clara Kißing von kafka4prez, CC-BY 2.0, Bearbeitet von IronShears
+
+y2k SCP Logo: Y2KLogo.png von etoisle, CC-BY-SA 3.0, Bearbeitet von IronShears
+
+AUDIO
+
+Hitsune Kumi English Voice bank von Cubialpha, Frei zur kommerziellen Nutzung, Ersteller wurde kontaktiert, um sicherzustellen, daß es mit CC-BY-SA übereinstimmt
+
+Computer startup von MrAuralization CC-BY 3.0
+
+Fehler (Störgeräusche) von SilverIllusionist CC-BY 4.0
+
+Danke an Raddagher, daß du mein sich wiederholdendes Audio für mich in Ordnung gebracht hast!
+
+
+
+
+VERWENDETE PROGRAMME
+
+Aseprite
+
+Godot, MIT-Lizenz
+
+PicoCAD(Für die \"3D-Modelle\"), Kommerzielle Verwendung von Modellen mit erlaubter Software erstellt, Ersteller wurde kontaktiert, um sicherzustellen, daß es mit CC-BY-SA übereinstimmt
+OpenUTAU, MIT-Lizenz
+
+
+Alle anderen Bilder von IronShears, CC-BY-SA 3.0.
+
+
+FONTS
+
+Seiten-Font: TimesNewPixel von pentacom, Public Domain. 
+
+Shell-Font: Dogica von Roberto Mocci(Open Font Lizenz)
+
+Kleine Datei-Font: m3x6 von Daniel Linßen, CC-BY 
+
+SCP Foundation-Font: Sans Normalcy von SYWaves, Open Font Lizenz
+
+CODE
+
+Palette Swap: Palette Swap unter Verwendung von zwei Texturen von afk, CC0
+
+Der restliche Code ist von IronShears, CC-BY-SA 3.0.
+[/center]
+"
+
+
+}

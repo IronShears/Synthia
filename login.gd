@@ -11,7 +11,7 @@ func _ready():
 	$SLURTIMEOUT/Label.text = UniversalFunctions.dialogueJson["ObsceneDisclaimer"]
 	$Background/LogIn.text = UniversalFunctions.dialogueJson["logInBefore"]
 	$Background/SecureContainProtect.text = UniversalFunctions.dialogueJson["SecureContainProtect"]
-	if UniversalFunctions.language != "":
+	if UniversalFunctions.language != "" and UniversalFunctions.language != "_DE":
 		#boldFont
 		for i in [$Background/LogIn, $Background/SecureContainProtect]:
 			i.add_font_override("font", load("res://Resources/GUIpieces/AltFonts/BoldFont"+UniversalFunctions.language+".tres"))
@@ -137,7 +137,7 @@ func check_funny(setName):
 		UniversalFunctions.nameReaction = "nameSame"
 
 func check_obscene(setName):
-	for i in ["rapist", "pedophile","nigger", "nigga", "nigguh", "niggar", "niggur", "faggot", "fagot","fag", "wetback", "wet back", "beaner", "kike", "raghead",  "rag head", "towelhead", "towel head", "dyke","chink", "racist", "sexist","homophobe","transphobe", "white power"]:
+	for i in ["rapist", "pedophile","nigger", "nigga", "nigguh", "niggar", "niggur", "faggot", "fagot","fag", "wetback", "wet back", "beaner", "kike", "raghead",  "rag head", "towelhead", "towel head", "dyke","chink", "racist", "sexist","homophobe","transphobe", "white power", "bright"]:
 		var slurChecker = setName.to_lower()
 		if i in slurChecker:
 			var doubleCheck = false

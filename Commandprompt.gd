@@ -36,7 +36,7 @@ var colorName = "Blue"
 var styleName = "Cool"
 
 func _ready():
-	if UniversalFunctions.language !="":
+	if UniversalFunctions.language != "" and UniversalFunctions.language != "_DE":
 		var counter = 1
 		for i in UniversalFunctions.languageOptionPosition[UniversalFunctions.language]:
 			get_tree().get_root().get_node_or_null("/root/world/Commandprompt/Options/Option"+str(counter)).rect_position.y = i

@@ -38,7 +38,7 @@ func set_up():
 	for i in visibleFolders:
 		get_tree().get_root().get_node_or_null("/root/world/FileSystem/VBoxContainer/"+i).visible = true
 		get_tree().get_root().get_node_or_null("/root/world/FileSystem/VBoxContainer/"+i+"/Label").text = UniversalFunctions.dialogueJson[i]
-		if UniversalFunctions.language !="":
+		if UniversalFunctions.language != "" and UniversalFunctions.language != "_DE":
 			get_tree().get_root().get_node_or_null("/root/world/FileSystem/VBoxContainer/"+i+"/Label").add_font_override("font", load("res://Resources/GUIpieces/AltFonts/ShellFont"+UniversalFunctions.language+".tres"))
 	#Makes correct items visible
 	for i in allItems[currentFolder]:
@@ -53,7 +53,7 @@ func set_up():
 			get_tree().get_root().get_node_or_null("/root/world/FileSystem/StorageFile"+str(counter)).play("text")
 		else:
 			get_tree().get_root().get_node_or_null("/root/world/FileSystem/StorageFile"+str(counter)).play("folder")
-		if UniversalFunctions.language !="":
+		if UniversalFunctions.language != "" and UniversalFunctions.language != "_DE":
 			get_tree().get_root().get_node_or_null("/root/world/FileSystem/StorageFile"+str(counter)+"/Label").add_font_override("font", load("res://Resources/GUIpieces/AltFonts/ShellFont"+UniversalFunctions.language+".tres"))
 			get_tree().get_root().get_node_or_null("/root/world/FileSystem/StorageFile"+str(counter)+"/Label").rect_position.x = UniversalFunctions.languageOptionPosition[UniversalFunctions.language+"FileSystem"]
 		counter+=1
