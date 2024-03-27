@@ -24,6 +24,9 @@ func _ready():
 		#theme setter
 		for i in [$SLURTIMEOUT/Label]:
 			i.set_theme(load("res://Resources/GUIpieces/AltFonts/PersephoneOS"+UniversalFunctions.language+".tres"))
+	if UniversalFunctions.language == "_DE":
+		$Background/LogIn.add_font_override("font", load("res://Resources/GUIpieces/ShellFont.tres"))
+		$Background/LogIn.rect_position.y = $Background/LogIn.rect_position.y -3
 func _on_Blinker_timeout():
 	if stage == UniversalFunctions.dialogueJson["Password"]:
 		if $Name.text == passwordFull:

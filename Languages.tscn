@@ -100,20 +100,20 @@ texture = ExtResource( 7 )
 centered = false
 
 [node name="ColorRect" type="ColorRect" parent="."]
-margin_left = 121.0
-margin_top = 100.0
-margin_right = 196.0
-margin_bottom = 129.0
+margin_left = 122.0
+margin_top = 95.0
+margin_right = 197.0
+margin_bottom = 138.0
 color = Color( 0.517647, 0.541176, 0.592157, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="English" type="TextureButton" parent="."]
-margin_left = 122.0
-margin_top = 101.0
-margin_right = 195.0
-margin_bottom = 114.0
+margin_left = 123.0
+margin_top = 96.0
+margin_right = 196.0
+margin_bottom = 109.0
 texture_normal = ExtResource( 2 )
 texture_pressed = ExtResource( 5 )
 __meta__ = {
@@ -134,17 +134,18 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Chinese" type="TextureButton" parent="English"]
-margin_top = 14.0
-margin_right = 73.0
-margin_bottom = 27.0
+[node name="Chinese" type="TextureButton" parent="."]
+margin_left = 123.0
+margin_top = 110.0
+margin_right = 196.0
+margin_bottom = 123.0
 texture_normal = ExtResource( 2 )
 texture_pressed = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="English/Chinese"]
+[node name="Label" type="Label" parent="Chinese"]
 margin_left = 3.0
 margin_right = 71.0
 margin_bottom = 14.0
@@ -158,11 +159,10 @@ __meta__ = {
 }
 
 [node name="German" type="TextureButton" parent="."]
-visible = false
-margin_left = 122.0
-margin_top = 129.0
-margin_right = 195.0
-margin_bottom = 142.0
+margin_left = 123.0
+margin_top = 124.0
+margin_right = 196.0
+margin_bottom = 137.0
 texture_normal = ExtResource( 2 )
 texture_pressed = ExtResource( 5 )
 __meta__ = {
@@ -192,5 +192,5 @@ centered = false
 script = ExtResource( 8 )
 
 [connection signal="pressed" from="English" to="." method="_on_English_pressed"]
-[connection signal="pressed" from="English/Chinese" to="." method="_on_Chinese_pressed"]
+[connection signal="pressed" from="Chinese" to="." method="_on_Chinese_pressed"]
 [connection signal="pressed" from="German" to="." method="_on_German_pressed"]

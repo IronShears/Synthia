@@ -87,7 +87,7 @@ Das Gerät mit SCP-8500 wurde während einer Razzia der Foundation von einem E-P
 "documents":"DOKUMENTE",
 "documentsPath":">SYSTEM>DOKUMENTE",
 "clickMe":"KLICKMICH",
-"clickMePath":">SYSTEM>DOKUMENTE>KLICKMICH",
+"clickMePath":">SYS...>DOKU...>KLICKMICH",
 "why":"WARUM",
 "whyPath":">SYSTEM>WARUM",
 "cynthia":"CYNTHIA",
@@ -95,9 +95,9 @@ Das Gerät mit SCP-8500 wurde während einer Razzia der Foundation von einem E-P
 "myWish":"MEIN_WUNSCH",
 "myWishPath":">SYSTEM>MEIN_WUNSCH",
 "imSorry":"TUT_MIR_LEID",
-"imSorryPath":">SYSTEM>TUT_MIR_LEID",
+"imSorryPath":">SYS...>TUT_MIR_LEID",
 "atPeace":"FRIEDEN_GEFUNDEN",
-"atPeacePath":">SYSTEM>FRIEDEN_GEFUNDEN",
+"atPeacePath":">SYS..>FRIEDEN_GEFUNDEN",
 "Testtxt":"Test.txt",
 "BLOW_A_WISHzip": "MIT_LIEBE_VON_ADA.zip",
 "TesttxtMini":"Test
@@ -382,7 +382,7 @@ WARNUNG: Neuer Ordner im Pfad SYSTEM>TUT_MIR_LEID gefunden.","tickSpeed":0.04,"c
 "ReactionToGenerationforgotten": [{"color":"Pink", "sprite":"camera2Smile","text":"Das muss ihre Überraschung gewesen sein! Ich hoffe, sie steckt nicht in irgendwelchen Schwierigkeiten ... Hat sie sonst noch was hinterlassen?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"GenerationFinish","split":"ReactionToGenerationforgotten"}
 ],
 "GenerationFinish":[
-{"name":"GenerationFinishforgotten", "text":"Da ist ein neues Programm zum Modellieren. Wünsch-dir-was."}
+{"name":"GenerationFinishforgotten", "text":"Da ist ein neues Programm. Wünsch-dir-was."}
 ],
 "GenerationFinishforgotten": [
 {"color":"Pink", "sprite":"camera1Smile","text":"Also daran hat sie immer gearbeitet ...","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"options":"whatWereYouSaying"}
@@ -482,7 +482,7 @@ WARNUNG: Neuer Ordner im Pfad SYSTEM>FRIEDEN_GEFUNDEN gefunden.","tickSpeed":0.0
 {"color":"Pink", "sprite":"floorObject","text":"Und, oh ja, was ist mit dem Bild? Es ist schön. Wo hast du es her?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":true,"split":"fullGreenCozyRoom"}
 ],
 "PaintingContinue":[
-{"name":"PaintingContinueforgotten", "text":"Keine Ahnung, war bereits im Programm vorinstalliert."}
+{"name":"PaintingContinueforgotten", "text":"Keine Ahnung, war schon im Programm installiert."}
 ],
 "PaintingContinueforgotten": [
 {"color":"Pink", "sprite":"camera1Nervous","text":"Huh.","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
@@ -932,7 +932,7 @@ WARNUNG: Neuer Ordner im Pfad SYSTEM>FRIEDEN_GEFUNDEN gefunden.","tickSpeed":0.0
 
 
 "WheresAda": [
-{"name":"WheresAdaUgly", "text":"Sie wurde etwas anderem zugewiesen. Keine Ahnung, warum."}
+{"name":"WheresAdaUgly", "text":"Sie wurde neu zugewiesen. Keine Ahnung, warum."}
 ],
 
 "fineWheresAdaUgly":[
@@ -948,7 +948,7 @@ WARNUNG: Neuer Ordner im Pfad SYSTEM>FRIEDEN_GEFUNDEN gefunden.","tickSpeed":0.0
 
 
 "AskSupervisor": [
-{"name":"AskSupervisorGood", "text":"Da müsste ich meine Vorgesetzten fragen, tut mir leid."},
+{"name":"AskSupervisorGood", "text":"Da müsste ich meine Vorgesetzten fragen, sorry."},
 {"name":"AskSupervisorBad", "text":"Wie soll ich das wissen?"}
 ],
 
@@ -1028,7 +1028,7 @@ WARNUNG: Neuer Ordner im Pfad SYSTEM>FRIEDEN_GEFUNDEN gefunden.","tickSpeed":0.0
 
 
 "NoSurprise": [
-{"name":"NoSurpriseBad", "text":"Die Anweisungen erwähnen nichts darüber ... also nein."}
+{"name":"NoSurpriseBad", "text":"Die Anweisungen sagen nichts davon... also nein."}
 ],
 
 "fineNoSurpriseBad":[
@@ -1128,7 +1128,7 @@ WARNUNG: Neuer Ordner im Pfad SYSTEM>FRIEDEN_GEFUNDEN gefunden.","tickSpeed":0.0
 "TypesOfMovies": [
 {"name":"TypesOfMoviesGood", "text":"Welche Art von Filmen magst du?"},
 {"name":"TypesOfMoviesBad", "text":"Also nichts Interessantes."},
-{"name":"TypesOfMoviesUgly", "text":"Sie haben mir auch einen Haufen Mehrarbeit gegeben."}
+{"name":"TypesOfMoviesUgly", "text":"Sie haben mir auch viel Mehrarbeit gegeben."}
 ],
 
 
@@ -1209,7 +1209,7 @@ WARNUNG: Neuer Ordner im Pfad SYSTEM>FRIEDEN_GEFUNDEN gefunden.","tickSpeed":0.0
 "Interests": [
 {"name":"Cook", "text":"Ich koche gerne."},
 {"name":"Computers", "text":"Ich arbeite gerne mit Computern."},
-{"name":"Relax", "text":"Ich entspanne mich meistens einfach nur in meiner Freizeit."}
+{"name":"Relax", "text":"Ich entspanne mich oft nur in meiner Freizeit."}
 ],
 
 "fineCook":[
@@ -1383,7 +1383,7 @@ WARNUNG: Neuer Ordner im Pfad SYSTEM>FRIEDEN_GEFUNDEN gefunden.","tickSpeed":0.0
 
 
 "MaxwellistFriends": [
-{"name":"MaxwellistFriendsGood", "text":"Nicht viele Freunde, die keine Maxwellisten waren, oder?"},
+{"name":"MaxwellistFriendsGood", "text":"Nicht viele Nicht-Maxwellisten-Freunde, oder?"},
 {"name":"CultBad", "text":"Das ... hört sich wie ein Kult an."}
 ],
 
@@ -1436,7 +1436,7 @@ WARNUNG: Neuer Ordner im Pfad SYSTEM>FRIEDEN_GEFUNDEN gefunden.","tickSpeed":0.0
 ],
 
 "ShakenFaith": [
-{"name":"ShakenFaithUgly", "text":"Selbst als WAN ihm befohlen hat, das \"Paradies\" zu bauen?"},
+{"name":"ShakenFaithUgly", "text":"Auch als WAN ihm befahl, das \"Paradies\" zu bauen?"},
 {"name":"ShakenFaithGood", "text":"Aha. Cool."},
 {"name":"CultBad", "text":"Das ist buchstäblich ein Kult."}
 ],
@@ -1602,7 +1602,7 @@ WARNUNG: Neuer Ordner im Pfad SYSTEM>FRIEDEN_GEFUNDEN gefunden.","tickSpeed":0.0
 
 "LoopingOptions": [
 {"name":"CultDirect", "text":"Wir müssen über den Kult reden, in dem du warst."},
-{"name":"CultNonDirect", "text":"Also ... zum ... Maxwellismus. Warst du isoliert?"},
+{"name":"CultNonDirect", "text":"Also... zum... Maxwellismus. Warst du isoliert?"},
 {"name":"DungeonsAndDragonsCont", "text":"Willst du Dungeons and Dragons spielen?"},
 {"name":"InterestsTalk", "text":"Worüber möchtest du reden?"}
 ],
@@ -1620,9 +1620,9 @@ WARNUNG: Neuer Ordner im Pfad SYSTEM>FRIEDEN_GEFUNDEN gefunden.","tickSpeed":0.0
 
 
 "OscilatorOptions": [
-{"name":"Oscilator", "text":"Es gibt viele Wege, diese Reaktion von einem Oszillator zu bekommen."},
+{"name":"Oscilator", "text":"Man kann leicht so was vom Oszillator kriegen."},
 {"name":"CultSorryGood", "text":"Es tut mir leid."},
-{"name":"CultProdBad", "text":"Das ändert nicht die Tatsache, dass du in einem Kult bist."}
+{"name":"CultProdBad", "text":"Trotzdem bist du in einem Kult."}
 ],
 
 
@@ -1702,7 +1702,7 @@ WARNUNG: Neuer Ordner im Pfad SYSTEM>FRIEDEN_GEFUNDEN gefunden.","tickSpeed":0.0
 ],
 
 "BrokenGod": [
-{"name":"BrokenGodUgly", "text":"Die Dinge haben Sinn ergeben ... weil sie zerbrochen war?"}
+{"name":"BrokenGodUgly", "text":"Alles ergab Sinn ... weil sie zerbrochen war?"}
 ],
 
 
@@ -1903,7 +1903,7 @@ WARNUNG: Neuer Ordner im Pfad SYSTEM>FRIEDEN_GEFUNDEN gefunden.","tickSpeed":0.0
 {"color":"Pink", "sprite":"cameraStaticNervous","text":"Nun, erzähl mir mehr darüber. Ich möchte deine Erfahrung auf dem Gebiet wissen. Ich würde es lieben, dir zu helfen, besser zu werden.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"HelpYou"}
 ],
 "HelpYou": [
-{"name":"HelpMe", "text":"Warum bist du dir so sicher, dass du helfen kannst?"}
+{"name":"HelpMe", "text":"Warum bist du so sicher, dass du helfen kannst?"}
 ],
 
 "HelpMe":[
@@ -1946,7 +1946,7 @@ WARNUNG: Neuer Ordner im Pfad SYSTEM>FRIEDEN_GEFUNDEN gefunden.","tickSpeed":0.0
 "BirdsWatched": [
 {"name":"BirdsCont", "text":"Da war ein Paar von Zaunkönigen draußen."},
 {"name":"BirdsCont", "text":"Ich sah einen riesigen Krähenschwarm."},
-{"name":"BirdsCont", "text":"Da ist ein Haufen von Sperlingen in der Nähe von meinem Haus."}
+{"name":"BirdsCont", "text":"Da sind viele Sperlinge nahe meines Hauses."}
 ],
 
 "BirdsCont":[
@@ -1955,7 +1955,7 @@ WARNUNG: Neuer Ordner im Pfad SYSTEM>FRIEDEN_GEFUNDEN gefunden.","tickSpeed":0.0
 
 "BirdsWatched2": [
 {"name":"BirdsCont2", "text":"Der Bauernhof von meinem Onkel hat Hühner?"},
-{"name":"BirdsCont2", "text":"Da sind ... Nandus? Im örtlichen Zoo?There are... rheas?"},
+{"name":"BirdsCont2", "text":"Da sind ... Nandus? Im örtlichen Zoo?"},
 {"name":"BirdsCont2", "text":"Hier gibt es irgendwo ein paar Pinguine."}
 ],
 
@@ -1964,7 +1964,7 @@ WARNUNG: Neuer Ordner im Pfad SYSTEM>FRIEDEN_GEFUNDEN gefunden.","tickSpeed":0.0
 {"color":"Pink", "sprite":"camera2Angry","text":"Ich könnte es, wenn ich von hier aus Zugang zum verdammten Quellcode hätte.","tickSpeed":0.05,"closeSpeed":1,"optionsVisible":true,"options":"CodingCapabilities"}
 ],
 "CodingCapabilities": [
-{"name":"BirdsCont2", "text":"Das ist ... weit außerhalb meiner Programmierfähigkeiten."}
+{"name":"BirdsCont2", "text":"Das ist ... weit außerhalb meiner Fähigkeiten."}
 ],
 
 "BirdsCont":[
