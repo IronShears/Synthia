@@ -399,7 +399,7 @@ SCP-8500被安装于PoI-8000-2（\"Jean-Paul Myrrh\"）办公室的一台设备�
 ],
 "successfullyGeneratedLast":[{"color":"Teal", "sprite":"floorObject","text":"成功生成。
 警告：检测到“系统>安息”路径上出现新文件夹。","tickSpeed":0.04,"closeSpeed":1.1,"optionsVisible":false},
-{"color":"Pink", "sprite":"floorObject","text":"是新的东西！我猜猜，是不是给我们一起分享的......呢？Something new! I guess for both of us...?","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false}
+{"color":"Pink", "sprite":"floorObject","text":"是新的东西！我猜猜，是不是给我们一起分享的......呢？","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false}
 ],
 
 "newObjectPerfect":[{"color":"Pink", "sprite":"floorObject","text":"{styleObject}","tickSpeed":0.04,"closeSpeed":1,"optionsVisible":false},
@@ -1961,8 +1961,6 @@ SCP-8500被安装于PoI-8000-2（\"Jean-Paul Myrrh\"）办公室的一台设备�
 "SecureContainProtect":"控制。收容。保护。",
 
 "firedText" :"[center][b]首日评估报告。[/b][/center]
-
-[center][b]首日评估报告。[/b][/center]
 
     为测验SCP-8500-1对新刺激源的反应，SCP-8500的收容措施已完成相应调整。
 
