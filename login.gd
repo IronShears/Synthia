@@ -141,7 +141,7 @@ func check_obscene(setName):
 		var slurChecker = setName.to_lower()
 		if i in slurChecker:
 			var doubleCheck = false
-			for x in ["cofagrigus", "fage", "snigger", "therapist", "pachinko"]:
+			for x in ["brighte", "cofagrigus", "fage", "snigger", "therapist", "pachinko"]:
 				if x in slurChecker:
 					doubleCheck = true
 			if doubleCheck == false:
